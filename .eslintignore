@@ -1,0 +1,7 @@
+**/node_modules
+**/bower_components
+**/lib
+**/vendor
+**/*.min.js
+**/public/bundle.js
+jest.config.js

@@ -4,9 +4,9 @@
   "description": "A one-stop grocery shop for working adults and young families. This website is designed to assist those with little to no time to shop for groceries find a quick alternative. Aside from grocery shopping this website offers meal plans, nutrition tracking, avenue to local farmers, and more.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "react:dev": "webpack --mode development",
-    "react:prod": "webpack --mode production"
+    "test": "jest --detectOpenHandles",
+    "react-dev": "webpack -w",
+    "start": "nodemon server/index.js"
   },
   "repository": {
     "type": "git",
@@ -20,15 +20,33 @@
   },
   "homepage": "https://github.com/HR-Billy/BestEats#readme",
   "devDependencies": {
-    "webpack": "^5.58.2",
-    "webpack-cli": "^4.9.0",
     "@babel/core": "^7.15.8",
     "@babel/preset-env": "^7.15.8",
     "@babel/preset-react": "^7.14.5",
-    "babel-loader": "^8.2.2"
+    "babel-loader": "^8.2.2",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.26.1",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "webpack": "^5.58.2",
+    "webpack-cli": "^4.9.0"
   },
   "dependencies": {
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.1.2",
+    "axios": "^0.23.0",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^27.2.5",
+    "babel-polyfill": "^6.26.0",
+    "express": "^4.17.1",
+    "jest": "^27.2.5",
+    "nodemon": "^2.0.13",
+    "path": "^0.12.7",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "react-test-renderer": "^17.0.2",
+    "styled-components": "^5.3.1"
   }
 }
