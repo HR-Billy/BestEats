@@ -20,6 +20,14 @@ app.use((req, res, next) => {
   next();
 });
 
+app.get('/*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../public/index.html'), (err) => {
+    if (err) {
+      res.status(500).send(err);
+    }
+  });
+});
+
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
 });
