@@ -1,5 +1,7 @@
-# node modules folder
-node_modules/
-
-#bundle file
-client/dist/bundle.js
+*.log
+.DS_Store
+bower_components
+node_modules
+bundle.js
+config.js
+coverage

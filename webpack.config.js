@@ -1,19 +1,28 @@
 const path = require('path');
 
+const source = path.join(__dirname, 'client', 'src', 'index.jsx');
+const destination = path.join(__dirname, 'public');
+
 module.exports = {
-  entry: './client/src/index.jsx',
+  entry: source,
   output: {
-    path: path.resolve(__dirname, 'client/dist'),
+    path: destination,
     filename: 'bundle.js',
   },
-  watch: true,
   module: {
     rules: [
       {
         test: /\.(js|jsx)$/,
-        use: 'babel-loader',
-        exclude: /node_modules/,
+        exclude: /(node_modules|bower_components)/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env', '@babel/preset-react'],
+          },
+        },
       },
     ],
   },
+  mode: 'development',
+  devtool: 'eval-source-map',
 };
