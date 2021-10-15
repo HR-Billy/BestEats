@@ -24,4 +24,13 @@ app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
 });
 
+// Allows refresh of page on routes
+app.get('/*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../public/index.html'), (err) => {
+    if (err) {
+      res.status(500).send(err);
+    }
+  });
+});
+
 module.exports = app;
