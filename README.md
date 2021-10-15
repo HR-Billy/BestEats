@@ -6,8 +6,8 @@ A one-stop grocery shop for working adults and young families. This website is d
 First install dependencies:
 npm install
 
-To create a production build:
-npm run react:prod
-
 To create a development build:
-npm run react:dev
+npm run react-dev
+
+To start server:
+npm run start
