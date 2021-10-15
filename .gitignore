@@ -1,0 +1,5 @@
+# node modules folder
+node_modules/
+
+#bundle file
+client/dist/bundle.js
