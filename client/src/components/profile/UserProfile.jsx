@@ -1,4 +1,3 @@
-/* eslint-disable import/extensions */
 import React, { useState } from 'react';
 import { Context } from './Context.jsx';
 import ProfilePic from './features/ProfilePic.jsx';
