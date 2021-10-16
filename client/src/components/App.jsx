@@ -7,7 +7,9 @@ import {
   CurrentPage,
   MainSet,
 } from './styles.jsx';
+import Checkout from './subscription/Checkout.jsx';
 import Subscribe from './subscription/Subscribe.jsx';
+import SignIn from './subscription/SignIn.jsx';
 
 const App = () => (
   <div>
@@ -91,14 +93,14 @@ const App = () => (
           exact
           path="/subscribe"
           render={() => (
-            <Subscribe />
+            <Checkout />
           )}
         />
         <Route
           exact
           path="/login"
           render={() => (
-            <h1> Login component goes here </h1>
+            <SignIn />
           )}
         />
       </CurrentPage>
