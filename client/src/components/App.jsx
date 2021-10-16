@@ -1,6 +1,5 @@
 import React from 'react';
 import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
-import UserProfile from './profile/UserProfile.jsx';
 import {
   Text,
   NavigationBar,
@@ -99,13 +98,6 @@ const App = () => (
           path="/login"
           render={() => (
             <h1> Login component goes here </h1>
-          )}
-        />
-        <Route
-          exact
-          path="/profile"
-          render={() => (
-            <UserProfile />
           )}
         />
       </CurrentPage>
