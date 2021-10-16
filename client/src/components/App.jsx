@@ -1,40 +1,47 @@
 import React from 'react';
 import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
-import { Text, NavigationBar, CurrentPage } from './styles.jsx';
+import { Text, NavigationBar, Login, CurrentPage, MainSet } from './styles.jsx';
 
 const App = () => (
   <div>
     <Router>
       <NavigationBar>
-        <Link to="/" style={{ textDecoration: 'none' }}>
-          <Text>
-            Home
-          </Text>
-        </Link>
-        <Link to="/meal-plan" style={{ textDecoration: 'none' }}>
-          <Text>
-            Meals
-          </Text>
-        </Link>
-        <Link to="/farmers" style={{ textDecoration: 'none' }}>
-          <Text>
-            Farmers
-          </Text>
-        </Link>
-        <Link to="/store" style={{ textDecoration: 'none' }}>
-          <Text>
-            Store
-          </Text>
-        </Link>
-        <Link to="/healthy" style={{ textDecoration: 'none' }}>
-          <Text>
-            Health
-          </Text>
-        </Link>
-        <Link to="/subscribe" style={{ textDecoration: 'none' }}>
-          <Text>
-            Subscribe
-          </Text>
+        <MainSet>
+          <Link to="/" style={{ textDecoration: 'none' }}>
+            <Text>
+              Home
+            </Text>
+          </Link>
+          <Link to="/meal-plan" style={{ textDecoration: 'none' }}>
+            <Text>
+              Meals
+            </Text>
+          </Link>
+          <Link to="/farmers" style={{ textDecoration: 'none' }}>
+            <Text>
+              Farmers
+            </Text>
+          </Link>
+          <Link to="/store" style={{ textDecoration: 'none' }}>
+            <Text>
+              Store
+            </Text>
+          </Link>
+          <Link to="/healthy" style={{ textDecoration: 'none' }}>
+            <Text>
+              Health
+            </Text>
+          </Link>
+          <Link to="/subscribe" style={{ textDecoration: 'none' }}>
+            <Text>
+              Subscribe
+            </Text>
+          </Link>
+        </MainSet>
+        <Link to="/login" style={{ textDecoration: 'none' }}>
+          <Login>
+            Login
+          </Login>
         </Link>
       </NavigationBar>
       <CurrentPage>
