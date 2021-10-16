@@ -1,5 +1,10 @@
 import React from 'react';
+import { OrdersContainer } from '../styles.jsx';
 
-const Orders = () => (<h1>Orders</h1>);
+const Orders = () => (
+  <OrdersContainer>
+    <h1>Orders</h1>
+  </OrdersContainer>
+);
 
 export default Orders;
