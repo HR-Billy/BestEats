@@ -33,7 +33,7 @@ const App = () => (
               Store
             </Text>
           </Link>
-          <Link to="/healthy" style={{ textDecoration: 'none' }}>
+          <Link to="/health" style={{ textDecoration: 'none' }}>
             <Text>
               Health
             </Text>
@@ -81,7 +81,7 @@ const App = () => (
         />
         <Route
           exact
-          path="/healthy"
+          path="/health"
           render={() => (
             <h1>Health section component goes here</h1>
           )}
@@ -91,6 +91,13 @@ const App = () => (
           path="/subscribe"
           render={() => (
             <h1>Subscription component goes here</h1>
+          )}
+        />
+        <Route
+          exact
+          path="/login"
+          render={() => (
+            <h1> Login component goes here </h1>
           )}
         />
       </CurrentPage>
