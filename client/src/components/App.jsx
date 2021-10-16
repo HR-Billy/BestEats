@@ -1,6 +1,12 @@
 import React from 'react';
 import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
-import { Text, NavigationBar, Login, CurrentPage, MainSet } from './styles.jsx';
+import {
+  Text,
+  NavigationBar,
+  Login,
+  CurrentPage,
+  MainSet,
+} from './styles.jsx';
 
 const App = () => (
   <div>

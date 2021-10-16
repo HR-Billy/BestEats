@@ -36,4 +36,10 @@ const MainSet = styled.div`
   gap: 100px;
 `;
 
-export { Text, NavigationBar, Login, CurrentPage, MainSet };
+export {
+  Text,
+  NavigationBar,
+  Login,
+  CurrentPage,
+  MainSet,
+};
