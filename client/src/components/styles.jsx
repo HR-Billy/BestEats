@@ -1,33 +1,45 @@
 import styled from 'styled-components';
 
-export const Wrapper = styled.div`
-  position: relative;
-  width: 1440px;
-  height: 900px;
-`;
-
-export const HeaderContainer = styled.header`
+const NavigationBar = styled.div`
+  background-color: #C4C4C4;
   display: flex;
-  flex-direction: row;
-  position: absolute;
-  width: 1440px;
-  height: 100px;
-  left: 0px;
-  top: 0px;
-  background: #74FF5C;
+  align-content: center;
+  justify-content: space-between;
+  margin-left: -10px;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
 `;
 
-export const FooterContainer = styled.header`
+const Text = styled.span`
+  color: black;
+  font-size: 1.6em;
+  text-decoration: none;
+`;
+
+const Login = styled.button`
   display: flex;
-  flex-direction: row;
-  position: absolute;
-  position: absolute;
-  width: 1440px;
-  height: 100px;
-  left: 0px;
-  top: 800px;
-
-  background: #74FF5C;
+  margin-right: 50px;
+  font-size: 1.6em;
+  &:hover {
+    background-color: green;
+  }
 `;
 
-export default styled;
+const CurrentPage = styled.div`
+  margin-top: 50px;
+`;
+
+const MainSet = styled.div`
+  display: flex;
+  gap: 100px;
+`;
+
+export {
+  Text,
+  NavigationBar,
+  Login,
+  CurrentPage,
+  MainSet,
+};
