@@ -7,6 +7,7 @@ import {
   CurrentPage,
   MainSet,
 } from './styles.jsx';
+import Subscribe from './subscription/Subscribe.jsx';
 
 const App = () => (
   <div>
@@ -90,7 +91,7 @@ const App = () => (
           exact
           path="/subscribe"
           render={() => (
-            <h1>Subscription component goes here</h1>
+            <Subscribe />
           )}
         />
         <Route
