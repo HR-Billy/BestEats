@@ -1,17 +1,42 @@
 import React from 'react';
 import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
+import { Text, NavigationBar } from './styles.jsx';
 
 const App = () => (
   <div>
     <Router>
-      <div>
-        <Link to="/">Home </Link>
-        <Link to="/meal-plan">Meals </Link>
-        <Link to="/farmers">Farmers </Link>
-        <Link to="/store">Store </Link>
-        <Link to="/healthy">Health </Link>
-        <Link to="/subscribe">Subscribe</Link>
-      </div>
+      <NavigationBar>
+        <Link to="/" style={{ textDecoration: 'none' }}>
+          <Text>
+            Home
+          </Text>
+        </Link>
+        <Link to="/meal-plan" style={{ textDecoration: 'none' }}>
+          <Text>
+            Meals
+          </Text>
+        </Link>
+        <Link to="/farmers" style={{ textDecoration: 'none' }}>
+          <Text>
+            Farmers
+          </Text>
+        </Link>
+        <Link to="/store" style={{ textDecoration: 'none' }}>
+          <Text>
+            Store
+          </Text>
+        </Link>
+        <Link to="/healthy" style={{ textDecoration: 'none' }}>
+          <Text>
+            Health
+          </Text>
+        </Link>
+        <Link to="/subscribe" style={{ textDecoration: 'none' }}>
+          <Text>
+            Subscribe
+          </Text>
+        </Link>
+      </NavigationBar>
       <Route
         exact
         path="/"
