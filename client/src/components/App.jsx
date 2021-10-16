@@ -1,14 +1,15 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Header from './Header.jsx'
+import Footer from './Footer.jsx';
 // import Home from './home/Home.jsx';
-import UserProfile from './userProfile/UserProfile.jsx';
-
+import UserProfile from './profile/UserProfile.jsx';
+import { Wrapper } from './styles.jsx';
 
 const App = () => (
   <Router>
-    <div>
-        <Header />
+    <Wrapper>
+      <Header />
       <div>
         <Switch>
 
@@ -22,8 +23,8 @@ const App = () => (
 
         </Switch>
       </div>
-      {/* <Footer /> */}
-    </div>
+      <Footer />
+    </Wrapper>
   </Router>
 );
 
