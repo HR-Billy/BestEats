@@ -1,20 +1,35 @@
-import { styled } from '@mui/styles';
-import { Avatar } from '@mui/material';
+import { makeStyles } from '@mui/styles';
 
-/* ---------------------------------- MAIN ---------------------------------- */
-/* ------------------------------- - MAIN SC -------------------------------- */
-/* ------------------------------ PROFILE PIC ------------------------------  */
-export const ProfileImage = styled(Avatar)({
-  width: 200,
-  height: 200,
+const useStyles = makeStyles({
+  page: {
+
+  },
+  pic: {
+    minHeight: '20vh',
+  },
+  nutrition: {
+    minHeight: '65vh',
+  },
+  status: {
+    minHeight: '15vh',
+  },
+  feed: {
+    minHeight: '70vh',
+  },
+  subscribe: {
+    minHeight: '5vh',
+  },
+  order: {
+    minHeight: '22.69vh',
+  },
+  card: {
+    minheight: '30vh',
+  },
+
+  avatar: {
+    minHeight: '20vh',
+    minWidth: '10vw',
+  },
 });
 
-/* ------------------------------- NUTRITION -------------------------------- */
-/* -------------------------------- STATUS ---------------------------------- */
-
-/* --------------------------------- FEED  ---------------------------------- */
-/* ------------------------------- SUBSCRIBE -------------------------------  */
-
-/* -------------------------------- ORDERS ---------------------------------  */
-
-export default styled;
+export default useStyles;

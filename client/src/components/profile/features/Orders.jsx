@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card, CardHeader, CardContext } from '@mui/material';
-import useStyles from '../themes.jsx';
+import useStyles from '../styles.jsx';
 
 const Orders = ({ text }) => {
   const classes = useStyles();
