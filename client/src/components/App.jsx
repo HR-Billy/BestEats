@@ -8,6 +8,8 @@ import {
   MainSet,
 } from './styles.jsx';
 
+import MealPlan from './meals/MealPlan.jsx';
+
 const App = () => (
   <div>
     <Router>
@@ -62,7 +64,7 @@ const App = () => (
           exact
           path="/meal-plan"
           render={() => (
-            <h1>Meal Plan component goes here</h1>
+            <MealPlan />
           )}
         />
         <Route
