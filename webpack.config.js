@@ -23,6 +23,11 @@ module.exports = {
       },
     ],
   },
+  resolve: {
+    alias: {
+      '@mui/styled-engine': '@mui/styled-engine-sc',
+    },
+  },
   mode: 'development',
   devtool: 'eval-source-map',
 };
