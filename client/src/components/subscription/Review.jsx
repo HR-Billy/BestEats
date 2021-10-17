@@ -6,30 +6,6 @@ import ListItemText from '@mui/material/ListItemText';
 import Grid from '@mui/material/Grid';
 import mytheme from './theme.jsx';
 
-const products = [
-  {
-    name: '3 meals per week',
-    desc: 'A nice thing',
-    price: '$29.99',
-  },
-  {
-    name: 'Product 2',
-    desc: 'Another thing',
-    price: '$3.45',
-  },
-  {
-    name: 'Product 3',
-    desc: 'Something else',
-    price: '$6.51',
-  },
-  {
-    name: 'Product 4',
-    desc: 'Best thing of all',
-    price: '$14.11',
-  },
-  { name: 'Shipping', desc: '', price: 'Free' },
-];
-
 const addresses = ['1 MUI Drive', 'Reactville', 'Anytown', '99999', 'USA'];
 const payments = [
   { name: 'Card type', detail: 'Visa' },
@@ -38,7 +14,30 @@ const payments = [
   { name: 'Expiry date', detail: '04/2024' },
 ];
 
-export default function Review() {
+export default function Review({mealPlan}) {
+  const products = [
+    {
+      name: `${mealPlan} meals per week`,
+      desc: 'A nice thing',
+      price: '$29.99',
+    },
+    {
+      name: 'Product 2',
+      desc: 'Another thing',
+      price: '$3.45',
+    },
+    {
+      name: 'Product 3',
+      desc: 'Something else',
+      price: '$6.51',
+    },
+    {
+      name: 'Product 4',
+      desc: 'Best thing of all',
+      price: '$14.11',
+    },
+    { name: 'Shipping', desc: '', price: 'Free' },
+  ];
   return (
     <>
       <Typography variant="h6" gutterBottom>

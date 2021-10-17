@@ -40,7 +40,7 @@ export default function Subscribe() {
   const steps = ['Select Plan', 'Shipping Details', 'Checkout', 'Select Your Meals'];
 
   const [activeStep, setActiveStep] = useState(0);
-  const [mealQty, setMealQty] = useState(3);
+  const [mealPlan, setMealPlan] = useState(3);
 
   const handleNext = () => {
     setActiveStep(activeStep + 1);
@@ -70,13 +70,13 @@ export default function Subscribe() {
   function getStepContent(step) {
     switch (step) {
       case 0:
-        return <SelectPlan mealQty={mealQty} setMealQty={setMealQty} />;
+        return <SelectPlan setMealPlan={setMealPlan} />;
       case 1:
         return <AddressForm />;
       case 2:
         return <PaymentForm />;
       case 3:
-        return <Review mealQty={mealQty} />;
+        return <Review mealPlan={mealPlan} />;
       default:
         throw new Error('Unknown step');
     }
@@ -100,8 +100,8 @@ export default function Subscribe() {
           </Typography>
         </Toolbar>
       </AppBar> */}
-      <Container component="main" maxWidth="sm" sx={{ mb: 4 }}>
-        <Paper variant="outlined" sx={{ my: { xs: 3, md: 6 }, p: { xs: 2, md: 3 } }}>
+      <Container component="main" maxWidth="md" sx={{ mb: 4 }}>
+        <Paper elevation={0} sx={{ my: { xs: 3, md: 6 }, p: { xs: 2, md: 3 } }}>
           <Typography component="h1" variant="h4" align="center">
             Subscribe
           </Typography>

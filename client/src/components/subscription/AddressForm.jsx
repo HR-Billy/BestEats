@@ -7,20 +7,20 @@ import Checkbox from '@mui/material/Checkbox';
 import mytheme from './theme.jsx';
 
 export default function AddressForm() {
-  // const [address, setAddress] = useState({
-  //   firstName: '',
-  //   lastName: '',
-  //   address1: '',
-  //   address2: '',
-  //   city: '',
-  //   zip: '',
-  //   country: '',
-  //   saveAddress: 'no',
-  // });
+  const [address, setAddress] = useState({
+    firstName: '',
+    lastName: '',
+    address1: '',
+    address2: '',
+    city: '',
+    zip: '',
+    country: '',
+    saveAddress: 'no',
+  });
 
-  // const handleChange = (e) => {
-  //   setAddress({ ...address, [e.target.name]: e.target.value });
-  // };
+  const handleChange = (e) => {
+    setAddress({ ...address, [e.target.name]: e.target.value });
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
