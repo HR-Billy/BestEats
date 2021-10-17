@@ -20,6 +20,8 @@ import Review from './Review.jsx';
 import Meals from './Meals.jsx'; // just a placeholder for testing
 import mytheme from './theme.jsx';
 
+// const theme = createTheme();
+
 function Copyright() {
   return (
     <Typography variant="body2" color="text.secondary" align="center">
@@ -34,34 +36,22 @@ function Copyright() {
   );
 }
 
-const steps = ['Select Plan', 'Shipping Details', 'Checkout', 'Select Your Meals'];
-
-function getStepContent(step) {
-  switch (step) {
-    case 0:
-      return <SelectPlan />;
-    case 1:
-      return <AddressForm />;
-    case 2:
-      return <PaymentForm />;
-    case 3:
-      return <Review />;
-    default:
-      throw new Error('Unknown step');
-  }
-}
-
-// const theme = createTheme();
-
 export default function Subscribe() {
-  const [activeStep, setActiveStep] = React.useState(0);
+  const steps = ['Select Plan', 'Shipping Details', 'Checkout', 'Select Your Meals'];
 
+  const [activeStep, setActiveStep] = React.useState(0);
+  const [mealQty, setMealQty] = React.useState(3);
+  
   const handleNext = () => {
     setActiveStep(activeStep + 1);
   };
 
   const handleBack = () => {
     setActiveStep(activeStep - 1);
+  };
+
+  const updatePlan = (plan) => {
+    setChosenPlan(plan);
   };
 
   const seeAllMeals = () => {
@@ -79,6 +69,21 @@ export default function Subscribe() {
         />
       </Router>
     );
+  };
+
+  function getStepContent(step) {
+    switch (step) {
+      case 0:
+        return <SelectPlan updatePlan={updatePlan} />;
+      case 1:
+        return <AddressForm />;
+      case 2:
+        return <PaymentForm />;
+      case 3:
+        return <Review />;
+      default:
+        throw new Error('Unknown step');
+    }
   }
 
   return (

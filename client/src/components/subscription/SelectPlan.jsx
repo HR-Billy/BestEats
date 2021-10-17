@@ -14,7 +14,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import mytheme from './theme.jsx';
 
-export default function SelectPlan() {
+export default function SelectPlan({updatePlan}) {
   const [mealQty, setMealQty] = React.useState(3);
 
   const planOptions = {
@@ -31,6 +31,7 @@ export default function SelectPlan() {
 
   const handleChange = (e) => {
     setMealQty(e.target.value);
+    updatePlan(e.target.value);
   };
 
   return (
