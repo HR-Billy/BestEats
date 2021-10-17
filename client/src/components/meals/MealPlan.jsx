@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import mockupMeals from './mockupMeals.jsx';
 import MealCard from './MealCard.jsx';
 import { SubscribeButton } from './mealStyles.jsx';
-import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
 
 const MealPlan = () => {
   const [meals, setMeals] = useState(mockupMeals);
@@ -17,13 +17,11 @@ const MealPlan = () => {
           <MealCard key={meal.name} meal={meal} />
         ))}
       </div>
-      <Router>
-        <div className="subscribeBar">
-          <Link to="/subscribe">
-            <SubscribeButton type="button"> subscribe </SubscribeButton>
-          </Link>
-        </div>
-      </Router>
+      <div className="subscribeBar">
+        <Link to="/subscribe">
+          <SubscribeButton type="button"> Subscribe </SubscribeButton>
+        </Link>
+      </div>
     </>
   );
 };
