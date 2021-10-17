@@ -4,12 +4,13 @@ import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
 import Grid from '@mui/material/Grid';
+import mytheme from './theme.jsx';
 
 const products = [
   {
-    name: 'Product 1',
+    name: '3 meals per week',
     desc: 'A nice thing',
-    price: '$9.99',
+    price: '$29.99',
   },
   {
     name: 'Product 2',

@@ -1,64 +1,156 @@
 import * as React from 'react';
-import Button from '@mui/material/Button';
-import TextField from '@mui/material/TextField';
-import Typography from '@mui/material/Typography';
+import CssBaseline from '@mui/material/CssBaseline';
+import AppBar from '@mui/material/AppBar';
+import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
+import Toolbar from '@mui/material/Toolbar';
 import Paper from '@mui/material/Paper';
-import Grid from '@mui/material/Grid';
-
+import Stepper from '@mui/material/Stepper';
+import Step from '@mui/material/Step';
+import StepLabel from '@mui/material/StepLabel';
+import Button from '@mui/material/Button';
+import Link from '@mui/material/Link';
+import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import SelectPlan from './SelectPlan.jsx';
+import AddressForm from './AddressForm.jsx';
+import PaymentForm from './PaymentForm.jsx';
+import Review from './Review.jsx';
+import Meals from './Meals.jsx'; // just a placeholder for testing
+import mytheme from './theme.jsx';
 
-function Subscribe() {
-  const theme = createTheme({
-    typography: {
-      h2: {
-        fontSize: 36,
-        marginbottom: 12,
-      },
-    },
-    palette: {
-      type: 'light',
-      primary: {
-        main: '#609e00',
-        light: '#B0C800',
-      },
-      secondary: {
-        main: '#F24B6A',
-      },
-      success: {
-        main: '#4caf50',
-        light: '#B0C800',
-      },
-    },
-  });
+function Copyright() {
+  return (
+    <Typography variant="body2" color="text.secondary" align="center">
+      {'Copyright © '}
+      <Link color="inherit" href="https://besteats.com/">
+        Best Eats Inc.
+      </Link>
+      {' '}
+      {new Date().getFullYear()}
+      .
+    </Typography>
+  );
+}
+
+const steps = ['Select Plan', 'Shipping Details', 'Checkout', 'Select Your Meals'];
+
+function getStepContent(step) {
+  switch (step) {
+    case 0:
+      return <SelectPlan />;
+    case 1:
+      return <AddressForm />;
+    case 2:
+      return <PaymentForm />;
+    case 3:
+      return <Review />;
+    default:
+      throw new Error('Unknown step');
+  }
+}
+
+// const theme = createTheme();
+
+export default function Subscribe() {
+  const [activeStep, setActiveStep] = React.useState(0);
+
+  const handleNext = () => {
+    setActiveStep(activeStep + 1);
+  };
+
+  const handleBack = () => {
+    setActiveStep(activeStep - 1);
+  };
+
+  const seeAllMeals = () => {
+    console.log('clicked');
+    // return <Meals />;
+    return (
+      <Router>
+        <Link to="/meal-plan">Meal Plan</Link>
+        <Route
+          exact
+          path="/meal-plan"
+          render={() => (
+            <Meals />
+          )}
+        />
+      </Router>
+    );
+  }
 
   return (
-    <ThemeProvider theme={theme}>
-      <Container maxWidth="lg">
-        <Grid container spacing={4} justify="center">
-          <Grid item xs={12} sm={6}>
-            <Paper style={{ height: 75, width: 50 }} />
-          </Grid>
-          <Grid item>
-            <Paper style={{ height: 75, width: 50 }} />
-          </Grid>
-          <Grid item>
-            <Paper style={{ height: 75, width: 50 }} />
-          </Grid>
-        </Grid>
-        <div className="Subscription">
-          <Typography variant="h2" component="div">
-            Testing this size
+    <ThemeProvider theme={mytheme}>
+      <CssBaseline />
+      {/* <AppBar
+        position="absolute"
+        color="default"
+        elevation={0}
+        sx={{
+          position: 'relative',
+          borderBottom: (t) => `1px solid ${t.palette.divider}`,
+        }}
+      > */}
+        {/* <Toolbar>
+          <Typography variant="h6" color="inherit" noWrap>
+            Company name
           </Typography>
-        </div>
-        <TextField
-          variant="outlined"
-          color="primary"
-        />
-        <Button variant="contained">Hello World</Button>
+        </Toolbar>
+      </AppBar> */}
+      <Container component="main" maxWidth="sm" sx={{ mb: 4 }}>
+        <Paper variant="outlined" sx={{ my: { xs: 3, md: 6 }, p: { xs: 2, md: 3 } }}>
+          <Typography component="h1" variant="h4" align="center">
+            Subscribe
+          </Typography>
+          <Stepper activeStep={activeStep} sx={{ pt: 3, pb: 5 }}>
+            {steps.map((label) => (
+              <Step key={label}>
+                <StepLabel>{label}</StepLabel>
+              </Step>
+            ))}
+          </Stepper>
+          <>
+            {activeStep === steps.length ? (
+              <>
+                <Typography variant="h5" gutterBottom>
+                  Thank you for subscribing!
+                </Typography>
+                <Typography variant="subtitle1">
+                  You have unlocked access to our fresh and tasty meals.
+                  Please head over to our menu to select your first week of meals.
+                </Typography>
+                <Box sx={{ display: 'flex', justifyContent: 'flex-end' }}>
+                  <Button variant="contained" onClick={seeAllMeals} sx={{ mt: 3, ml: 1 }}>
+                    See All Meals
+                  </Button>
+                </Box>
+              </>
+            ) : (
+              <>
+                {getStepContent(activeStep)}
+                <Box sx={{ display: 'flex', justifyContent: 'flex-end' }}>
+                  {activeStep !== 0 && (
+                    <Button onClick={handleBack} sx={{ mt: 3, ml: 1 }}>
+                      Back
+                    </Button>
+                  )}
+
+                  <Button
+                    variant="contained"
+                    onClick={handleNext}
+                    sx={{ mt: 3, ml: 1 }}
+                  >
+                    {activeStep === steps.length - 1 ? 'Place order' : 'Next'}
+                  </Button>
+                </Box>
+              </>
+            )}
+          </>
+        </Paper>
+        <Copyright />
       </Container>
     </ThemeProvider>
   );
 }
-
-export default Subscribe;

@@ -12,6 +12,7 @@ import Grid from '@mui/material/Grid';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import mytheme from './theme.jsx';
 
 function Copyright(props) {
   return (
@@ -27,7 +28,7 @@ function Copyright(props) {
   );
 }
 
-const theme = createTheme();
+// const theme = createTheme();
 
 export default function SignIn() {
   const handleSubmit = (event) => {
@@ -41,7 +42,7 @@ export default function SignIn() {
   };
 
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={mytheme}>
       <Grid container component="main" sx={{ height: '100vh' }}>
         <CssBaseline />
         <Grid
@@ -51,7 +52,8 @@ export default function SignIn() {
           md={7}
           sx={{
             // backgroundImage: 'url(https://source.unsplash.com/random)',
-            backgroundImage: 'url(https://images.pexels.com/photos/1099680/pexels-photo-1099680.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260)',
+            // backgroundImage: 'url(https://images.pexels.com/photos/1099680/pexels-photo-1099680.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260)',
+            backgroundImage: 'url(https://images.pexels.com/photos/936611/pexels-photo-936611.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260)',
             backgroundRepeat: 'no-repeat',
             backgroundColor: (t) => (t.palette.mode === 'light' ? t.palette.grey[50] : t.palette.grey[900]),
             backgroundSize: 'cover',
