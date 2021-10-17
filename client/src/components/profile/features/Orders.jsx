@@ -1,10 +1,10 @@
 import React from 'react';
-import { OrdersContainer } from '../styles.jsx';
+import { Card, CardHeader, CardContext } from '@mui/material';
 
 const Orders = () => (
-  <OrdersContainer>
+  <Card>
     <h1>Orders</h1>
-  </OrdersContainer>
+  </Card>
 );
 
 export default Orders;

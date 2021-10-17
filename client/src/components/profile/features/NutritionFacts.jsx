@@ -1,10 +1,10 @@
 import React from 'react';
-import { NutritionContainer } from '../styles.jsx';
+import { Card, CardHeader, CardContext } from '@mui/material';
 
 const NutritionFacts = () => (
-  <NutritionContainer>
+  // <Card>
     <h1>NutritionFacts </h1>
-  </NutritionContainer>
+  // </Card>
 );
 
 export default NutritionFacts;

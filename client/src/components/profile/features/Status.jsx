@@ -1,10 +1,20 @@
 import React from 'react';
-import { StatusContainer } from '../styles.jsx';
+import { Box, CardHeader, CardContext, TextField, Button } from '@mui/material';
 
 const Status = () => (
-  <StatusContainer>
-    <h1>UpdateStatus</h1>
-  </StatusContainer>
+  <div>
+    <Box
+      component="form"
+      sx={{
+        '& > :not(style)': { xs: 12 },
+      }}
+      noValidate
+      autoComplete="off"
+    >
+      <TextField label="Update" variant="filled" />
+    </Box>
+    <Button>Update</Button>
+  </div>
 );
 
 export default Status;

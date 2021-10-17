@@ -1,10 +1,10 @@
 import React from 'react';
-import { FeedContainer } from '../styles.jsx';
+import { Card, CardHeader, CardContext } from '@mui/material';
 
 const Feed = () => (
-  <FeedContainer>
+  <Card>
     <h1>Feed</h1>
-  </FeedContainer>
+  </Card>
 );
 
 export default Feed;
