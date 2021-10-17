@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, { useState, useEffect } from 'react';
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
@@ -14,8 +14,8 @@ import CssBaseline from '@mui/material/CssBaseline';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import mytheme from './theme.jsx';
 
-export default function SelectPlan({updatePlan}) {
-  const [mealQty, setMealQty] = React.useState(3);
+export default function SelectPlan({ mealQty }, { setMealQty } ) {
+  // const [mealQty, setMealQty] = useState(3);
 
   const planOptions = {
     3: 25.99,
@@ -31,13 +31,12 @@ export default function SelectPlan({updatePlan}) {
 
   const handleChange = (e) => {
     setMealQty(e.target.value);
-    updatePlan(e.target.value);
   };
 
   return (
     <ThemeProvider theme={mytheme}>
-      <Grid container component="main" sx={{ height: '100vh' }}>
-        <CssBaseline />
+      <CssBaseline />
+      <Grid container sx={{ height: '100vh' }}>
         <Typography variant="h6" gutterBottom>
           Choose Your Meal Plan
         </Typography>

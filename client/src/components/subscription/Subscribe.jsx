@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, { useState, useEffect } from 'react';
 import CssBaseline from '@mui/material/CssBaseline';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -39,19 +39,15 @@ function Copyright() {
 export default function Subscribe() {
   const steps = ['Select Plan', 'Shipping Details', 'Checkout', 'Select Your Meals'];
 
-  const [activeStep, setActiveStep] = React.useState(0);
-  const [mealQty, setMealQty] = React.useState(3);
-  
+  const [activeStep, setActiveStep] = useState(0);
+  const [mealQty, setMealQty] = useState(3);
+
   const handleNext = () => {
     setActiveStep(activeStep + 1);
   };
 
   const handleBack = () => {
     setActiveStep(activeStep - 1);
-  };
-
-  const updatePlan = (plan) => {
-    setChosenPlan(plan);
   };
 
   const seeAllMeals = () => {
@@ -74,13 +70,13 @@ export default function Subscribe() {
   function getStepContent(step) {
     switch (step) {
       case 0:
-        return <SelectPlan updatePlan={updatePlan} />;
+        return <SelectPlan mealQty={mealQty} setMealQty={setMealQty} />;
       case 1:
         return <AddressForm />;
       case 2:
         return <PaymentForm />;
       case 3:
-        return <Review />;
+        return <Review mealQty={mealQty} />;
       default:
         throw new Error('Unknown step');
     }
