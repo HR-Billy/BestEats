@@ -1,10 +1,15 @@
 import React from 'react';
-import { Card, CardHeader, CardContext } from '@mui/material';
+import { Grid, Card } from '@mui/material';
 
 const Feed = () => (
-  <Card>
-    <h1>Feed</h1>
-  </Card>
+  <Grid container>
+    <Grid item>
+      <Card>
+
+      </Card>
+    </Grid>
+
+  </Grid>
 );
 
 export default Feed;

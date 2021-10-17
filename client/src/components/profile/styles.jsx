@@ -1,13 +1,12 @@
-import styled from 'styled-components';
-import { styled as mui } from '@mui/styles';
+import { styled } from '@mui/styles';
 import { Avatar } from '@mui/material';
 
 /* ---------------------------------- MAIN ---------------------------------- */
 /* ------------------------------- - MAIN SC -------------------------------- */
 /* ------------------------------ PROFILE PIC ------------------------------  */
-export const ProfileImage = mui(Avatar)({
-  width: '50%',
-  height: '50%',
+export const ProfileImage = styled(Avatar)({
+  width: 200,
+  height: 200,
 });
 
 /* ------------------------------- NUTRITION -------------------------------- */

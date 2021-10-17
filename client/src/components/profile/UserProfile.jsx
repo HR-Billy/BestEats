@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Container, Grid, Paper } from '@mui/material';
+import { Container, Grid, Paper, Card } from '@mui/material';
 import { Context } from './Context.jsx';
 import ProfilePic from './features/ProfilePic.jsx';
 import NutritionFacts from './features/NutritionFacts.jsx';
@@ -7,21 +7,7 @@ import Status from './features/Status.jsx';
 import Feed from './features/Feed.jsx';
 import Subscribe from './features/Subscribe.jsx';
 import Orders from './features/Orders.jsx';
-import useStyles from './theme.jsx';
-
-// export default function SimplePaper() {
-//   const classes = useStyles();
-
-//   return (
-//     <div>
-//       <Paper className={classes.paper}>
-//         <Card className={classes.card}>
-//           <CardContent>Hello World</CardContent>
-//         </Card>
-//       </Paper>
-//     </div>
-//   );
-// }
+import useStyles from './themes.jsx';
 
 const UserProfile = () => {
   const classes = useStyles();
@@ -29,7 +15,7 @@ const UserProfile = () => {
 
   return (
     <Context.Provider value={{ user, setUser }}>
-      <Container>
+      <Container className={classes.wrapper}>
         <Grid container spacing={3}>
 
           <Grid item xs={4}>
@@ -50,12 +36,12 @@ const UserProfile = () => {
           <Grid item xs={4}>
             <Grid container spacing={3}>
               <Grid item xs={12}>
-                <Paper>
+                <Paper className={classes.status}>
                   <Status />
                 </Paper>
               </Grid>
               <Grid item xs={12}>
-                <Paper>
+                <Paper className={classes.feed}>
                   <Feed />
                 </Paper>
               </Grid>
@@ -65,23 +51,23 @@ const UserProfile = () => {
           <Grid item xs={4}>
             <Grid container spacing={3}>
               <Grid item xs={12}>
-                <Paper>
-                  <Subscribe />
+                <Paper className={classes.subscribe}>
+                  {/* <Subscribe /> */}
                 </Paper>
               </Grid>
               <Grid item xs={12}>
-                <Paper>
-                  <Orders />
+                <Paper className={classes.order}>
+                  <Orders text={'on its way'} />
                 </Paper>
               </Grid>
               <Grid item xs={12}>
-                <Paper>
-                  <Orders />
+                <Paper className={classes.order}>
+                  <Orders text={'recent orders'} />
                 </Paper>
               </Grid>
               <Grid item xs={12}>
-                <Paper>
-                  <Orders />
+                <Paper className={classes.order}>
+                  <Orders text={'suggested meals'} />
                 </Paper>
               </Grid>
             </Grid>

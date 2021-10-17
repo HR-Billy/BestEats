@@ -3,7 +3,7 @@ import { Card, CardHeader, CardContext } from '@mui/material';
 
 const NutritionFacts = () => (
   // <Card>
-    <h1>NutritionFacts </h1>
+    <h1>nutrition table</h1>
   // </Card>
 );
 
