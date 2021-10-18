@@ -20,7 +20,7 @@ const UserProfile = () => {
         <Grid container spacing={3}>
 
           <Grid item xs={4}>
-            <Grid container>
+            <Grid container spacing={1.5}>
               <Grid item xs={12}>
                 <Paper className={classes.picContainer}>
                   <ProfilePic />

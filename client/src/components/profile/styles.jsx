@@ -10,12 +10,11 @@ const useStyles = makeStyles({
   },
   nutritionContainer: {
     minHeight: '65vh',
+    paddingTop: '2%',
   },
   statusContainer: {
     minHeight: '13vh',
-    paddingTop: '5%',
-    paddingLeft: '2%',
-    paddingRight: '2%',
+    padding: '2%',
   },
   feedContainer: {
     minHeight: '68vh',
