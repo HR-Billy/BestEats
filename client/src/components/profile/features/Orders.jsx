@@ -16,11 +16,11 @@ const Orders = ({ text }) => {
         <Grid container spacing={3}>
           <Grid item xs={4}>
 
-            <Paper className={classes.meal}>
-              <Grid container direction="column" alignItems="center">
+            <Paper className={classes.mealContainer}>
+              <Grid container spacing={2} direction="column" alignItems="center">
 
                 <Grid item>
-                  <Avatar alt="meal" className={classes.mealPhoto} />
+                  <Avatar className={classes.mealPhoto} alt="meal" src="insert meal photo" />
                 </Grid>
 
                 <Grid item>

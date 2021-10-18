@@ -2,11 +2,11 @@ import React from 'react';
 import { Grid, TextField, Button } from '@mui/material';
 
 const Status = () => (
-  <Grid container>
+  <Grid container spacing={1}>
     <Grid item xs={12}>
       <TextField fullWidth label="update" value="Update" />
     </Grid>
-    <Grid>
+    <Grid item xs={12}>
       <Button variant="contained">post</Button>
     </Grid>
   </Grid>

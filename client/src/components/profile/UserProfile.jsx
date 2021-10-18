@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Container, Grid, Paper, Card } from '@mui/material';
-import { Context } from './ProfileContext.jsx';
+import { Container, Grid, Paper } from '@mui/material';
+import { ProfileContext } from './ProfileContext.jsx';
 import ProfilePic from './features/ProfilePic.jsx';
 import NutritionFacts from './features/NutritionFacts.jsx';
 import Status from './features/Status.jsx';
@@ -12,21 +12,22 @@ import useStyles from './styles.jsx';
 const UserProfile = () => {
   const classes = useStyles();
   const [user, setUser] = useState([]);
+  const[hasSubsctiption, setHasSubsctiption] = useState([]);
 
   return (
-    <Context.Provider value={{ user, setUser }}>
-      <Container className={classes.page}>
+    <ProfileContext.Provider value={{ user, setUser }}>
+      <Container className={classes.wrapper}>
         <Grid container spacing={3}>
 
           <Grid item xs={4}>
             <Grid container>
               <Grid item xs={12}>
-                <Paper className={classes.pic}>
+                <Paper className={classes.picContainer}>
                   <ProfilePic />
                 </Paper>
               </Grid>
               <Grid item xs={12}>
-                <Paper className={classes.nutrition}>
+                <Paper className={classes.nutritionContainer}>
                   <NutritionFacts />
                 </Paper>
               </Grid>
@@ -36,12 +37,12 @@ const UserProfile = () => {
           <Grid item xs={3}>
             <Grid container spacing={3}>
               <Grid item xs={12}>
-                <Paper className={classes.status}>
+                <Paper className={classes.statusContainer}>
                   <Status />
                 </Paper>
               </Grid>
               <Grid item xs={12}>
-                <Paper className={classes.feed}>
+                <Paper className={classes.feedContainer}>
                   <Feed />
                 </Paper>
               </Grid>
@@ -56,17 +57,17 @@ const UserProfile = () => {
                 </Paper>
               </Grid> */}
               <Grid item xs={12}>
-                <Paper className={classes.order}>
+                <Paper className={classes.orderContainer}>
                   <Orders text={'on its way'} />
                 </Paper>
               </Grid>
               <Grid item xs={12}>
-                <Paper className={classes.order}>
+                <Paper className={classes.orderContainer}>
                   <Orders text={'recent orders'} />
                 </Paper>
               </Grid>
               <Grid item xs={12}>
-                <Paper className={classes.order}>
+                <Paper className={classes.orderContainer}>
                   <Orders text={'suggested meals'} />
                 </Paper>
               </Grid>
@@ -75,7 +76,7 @@ const UserProfile = () => {
 
         </Grid>
       </Container>
-    </Context.Provider>
+    </ProfileContext.Provider>
   );
 };
 

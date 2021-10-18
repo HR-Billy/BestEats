@@ -1,38 +1,43 @@
 import { makeStyles } from '@mui/styles';
 
 const useStyles = makeStyles({
-  page: {
+  wrapper: {
     paddingTop: '1%',
   },
-  pic: {
+  picContainer: {
     minHeight: '20vh',
     paddingLeft: '30%',
   },
-  nutrition: {
+  nutritionContainer: {
     minHeight: '65vh',
   },
-  status: {
-    minHeight: '15vh',
+  statusContainer: {
+    minHeight: '13vh',
+    paddingTop: '5%',
+    paddingLeft: '2%',
+    paddingRight: '2%',
   },
-  feed: {
-    minHeight: '70vh',
+  feedContainer: {
+    minHeight: '68vh',
+    paddingTop: '5%',
+    paddingLeft: '2%',
+    paddingRight: '2%',
   },
-  subscribe: {
-    minHeight: '5vh',
+  messageContainer: {
+    minHeight: '10vh',
   },
-  order: {
-    // minHeight: '22.69vh',
+  // subscribe: {
+  //   minHeight: '5vh',
+  // },
+  orderContainer: {
     minHeight: '28.2vh',
+    paddingLeft: '2%',
   },
-  card: {
-    minheight: '30vh',
-  },
-
-  avatar: {
+  profilePhoto: {
     minHeight: '20vh',
     minWidth: '10vw',
   },
-  meal: {
+  mealContainer: {
     minHeight: '18vh',
     paddingTop: '15%',
   },

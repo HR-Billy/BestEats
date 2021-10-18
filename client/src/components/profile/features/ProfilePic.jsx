@@ -6,7 +6,7 @@ const ProfilePic = () => {
   const classes = useStyles();
 
   return (
-    <Avatar className={classes.avatar} alt="profile picture" />
+    <Avatar className={classes.profilePhoto} alt="profile picture" />
   );
 };
 
