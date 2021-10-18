@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
+import { Avatar } from '@mui/material';
 import { Context } from '../Context.jsx';
 import {
   Text,
@@ -10,10 +11,10 @@ import {
 } from './styles.jsx';
 
 const App = () => {
-  const [loggedIn, setLoggedIn] = useState(false);
+  const [loggedIn, setLoggedIn] = useState(true);
 
   return (
-    <Context.Provider values={{ loggedIn, setLoggedIn }}>
+    <Context.Provider value={{ loggedIn, setLoggedIn }}>
       <div>
         <Router>
           <NavigationBar>
@@ -50,9 +51,8 @@ const App = () => {
               </Link>
             </MainSet>
             <Link to="/login" style={{ textDecoration: 'none' }}>
-              <Login>
-                Login
-              </Login>
+              {!loggedIn && <Login>Login</Login>}
+              {loggedIn && <Avatar alt="profile picture" src="insert when db is connected" /> }
             </Link>
           </NavigationBar>
           <CurrentPage>
