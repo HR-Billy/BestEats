@@ -5,6 +5,7 @@ import { Paper } from '@mui/material';
 const Profile = styled(Paper)`
   color: black;
   margin: 10px;
+  padding: 10px;
 `;
 
 const FarmerCard = ({ farmer }) => {
@@ -14,7 +15,7 @@ const FarmerCard = ({ farmer }) => {
         {farmer.firstName} {farmer.lastName}
       </div>
       <div>{farmer.biography}</div>
-      <div>{farmer.farm}</div>
+      <div>Farm: {farmer.farm}</div>
       <div>{farmer.email}</div>
       <div>{farmer.phone}</div>
     </Profile>

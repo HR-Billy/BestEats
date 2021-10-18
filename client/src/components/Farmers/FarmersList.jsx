@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Grid } from '@mui/material';
 
 import FarmersMockData from './FarmersMockData.js';
 import FarmerCard from './FarmerCard.jsx';
@@ -11,9 +12,13 @@ const ListContainer = styled.div`
 const FarmersList = ({ farmers, index }) => {
   return (
     <ListContainer>
-      {farmers.slice(0, index).map((farmer) => (
-        <FarmerCard farmer={farmer} />
-      ))}
+      <Grid container>
+        {farmers.slice(0, index).map((farmer) => (
+          <Grid item>
+            <FarmerCard farmer={farmer} />
+          </Grid>
+        ))}
+      </Grid>
     </ListContainer>
   );
 };
