@@ -2,9 +2,9 @@ import React from 'react';
 import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
 import { Text, NavigationBar, Login, CurrentPage, MainSet } from './styles.jsx';
 
-import SignIn from './SignIn.jsx';
 import FarmersPage from './Farmers/FarmersPage.jsx';
 import Subscribe from './subscription/Subscribe.jsx';
+import SignIn from './SignIn.jsx';
 
 const App = () => (
   <div>

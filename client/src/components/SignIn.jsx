@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import CssBaseline from '@mui/material/CssBaseline';
@@ -28,8 +28,6 @@ function Copyright(props) {
   );
 }
 
-// const theme = createTheme();
-
 export default function SignIn() {
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -42,7 +40,7 @@ export default function SignIn() {
   };
 
   return (
-    <ThemeProvider theme={myTheme}>
+    <ThemeProvider theme={mytheme}>
       <Grid container component="main" sx={{ height: '100vh' }}>
         <CssBaseline />
         <Grid
@@ -51,8 +49,6 @@ export default function SignIn() {
           sm={4}
           md={7}
           sx={{
-            // backgroundImage: 'url(https://source.unsplash.com/random)',
-            // backgroundImage: 'url(https://images.pexels.com/photos/1099680/pexels-photo-1099680.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260)',
             backgroundImage: 'url(https://images.pexels.com/photos/936611/pexels-photo-936611.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260)',
             backgroundRepeat: 'no-repeat',
             backgroundColor: (t) => (t.palette.mode === 'light' ? t.palette.grey[50] : t.palette.grey[900]),
@@ -117,7 +113,7 @@ export default function SignIn() {
                 </Grid>
                 <Grid item>
                   <Link href="#" variant="body2">
-                    Don't have an account? Sign Up
+                    Don&#39;t have an account? Sign Up
                   </Link>
                 </Grid>
               </Grid>
