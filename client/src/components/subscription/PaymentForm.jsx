@@ -4,9 +4,21 @@ import Grid from '@mui/material/Grid';
 import TextField from '@mui/material/TextField';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
-import mytheme from '../theme.jsx';
 
-export default function PaymentForm() {
+export default function PaymentForm( {setPaymentInfo} ) {
+  const [payment, setPayment] = useState({
+    cardName: '',
+    cardNumber: '',
+    expDate: '',
+    cvv: '',
+    saveCard: 'no',
+  });
+
+  const handleChange = (e) => {
+    setPayment({ ...payment, [e.target.name]: e.target.value });
+    setPaymentInfo({ ...payment, [e.target.name]: e.target.value });
+  };
+
   return (
     <>
       <Typography variant="h6" gutterBottom>

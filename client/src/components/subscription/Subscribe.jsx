@@ -37,30 +37,81 @@ export default function Subscribe() {
   const steps = ['Select Plan', 'Shipping Details', 'Checkout', 'Select Your Meals'];
 
   const [activeStep, setActiveStep] = useState(0);
-  const [mealPlan, setMealPlan] = useState(3);
+  const [mealPlan, setMealPlan] = useState('');
+  const [fullAddress, setFullAddress] = useState('');
+  const [paymentInfo, setPaymentInfo] = useState('');
+
+  let errorMessage = 'Please complete all required fields before continuing.';
+
+  const validate = (step) => {
+    console.log('validating step', step);
+    console.log('fullAddress', fullAddress);
+    console.log('payment Info', paymentInfo);
+    switch (step) {
+      case 0:
+        if (mealPlan === '') {
+          errorMessage = 'select a meal plan';
+          return false;
+        }
+        return true;
+      case 1:
+        if (fullAddress === '') {
+          errorMessage = 'complete all required address fields';
+          return false;
+        }
+        Object.entries(fullAddress).forEach((entry) => {
+          if (entry.key !== 'address2') {
+            if (entry.value === '') {
+              errorMessage = 'complete all required address fields';
+              return false;
+            }
+          }
+          return true;
+        });
+        return true;
+      case 2:
+        if (paymentInfo === '') {
+          errorMessage = 'complete all required payment fields';
+          return false;
+        }
+        Object.entries(paymentInfo).forEach((entry) => {
+          if (entry.value === '') {
+            return false;
+          }
+          return true;
+        });
+        return true;
+      default:
+        return true;
+    }
+  };
 
   const handleNext = () => {
-    setActiveStep(activeStep + 1);
+    if (validate(activeStep)) {
+      setActiveStep(activeStep + 1);
+    } else {
+      alert(`Please ${errorMessage} to continue.`);
+    }
   };
 
   const handleBack = () => {
     setActiveStep(activeStep - 1);
   };
 
-  function getStepContent(step) {
+  const getStepContent = (step) => {
     switch (step) {
       case 0:
         return <SelectPlan setMealPlan={setMealPlan} />;
       case 1:
-        return <AddressForm />;
+        return <AddressForm setFullAddress={setFullAddress} />;
       case 2:
-        return <PaymentForm />;
+        return <PaymentForm setPaymentInfo={setPaymentInfo} />;
       case 3:
-        return <Review mealPlan={mealPlan} />;
+        return <Review mealPlan={mealPlan} fullAddress={fullAddress} paymentInfo={paymentInfo} />;
       default:
         throw new Error('Unknown step');
     }
-  }
+  };
 
   return (
     <ThemeProvider theme={mytheme}>

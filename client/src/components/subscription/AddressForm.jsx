@@ -4,9 +4,8 @@ import Typography from '@mui/material/Typography';
 import TextField from '@mui/material/TextField';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
-import mytheme from '../theme.jsx';
 
-export default function AddressForm() {
+export default function AddressForm({ setFullAddress }) {
   const [address, setAddress] = useState({
     firstName: '',
     lastName: '',
@@ -20,11 +19,7 @@ export default function AddressForm() {
 
   const handleChange = (e) => {
     setAddress({ ...address, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("address added", address);
+    setFullAddress({ ...address, [e.target.name]: e.target.value });
   };
 
   return (
@@ -32,7 +27,6 @@ export default function AddressForm() {
       <Typography variant="h6" gutterBottom>
         Shipping address
       </Typography>
-      <form onSubmit={handleSubmit}>
         <Grid container spacing={3}>
           <Grid item xs={12} sm={6}>
             <TextField
@@ -135,7 +129,6 @@ export default function AddressForm() {
             />
           </Grid>
         </Grid>
-      </form>
     </>
   );
 }

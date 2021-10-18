@@ -4,39 +4,35 @@ import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
 import Grid from '@mui/material/Grid';
-import mytheme from '../theme.jsx';
 
-const addresses = ['1 MUI Drive', 'Reactville', 'Anytown', '99999', 'USA'];
-const payments = [
-  { name: 'Card type', detail: 'Visa' },
-  { name: 'Card holder', detail: 'Mr John Smith' },
-  { name: 'Card number', detail: 'xxxx-xxxx-xxxx-1234' },
-  { name: 'Expiry date', detail: '04/2024' },
-];
-
-export default function Review({mealPlan}) {
+export default function Review({ mealPlan, fullAddress, paymentInfo }) {
   const products = [
     {
-      name: `${mealPlan} meals per week`,
-      desc: 'A nice thing',
-      price: '$29.99',
+      name: `${mealPlan.mealQty} meals per week`,
+      price: `$${mealPlan.planPrice}`,
     },
     {
-      name: 'Product 2',
-      desc: 'Another thing',
-      price: '$3.45',
+      name: 'Tax',
+      price: `$${mealPlan.tax}`,
     },
     {
-      name: 'Product 3',
-      desc: 'Something else',
-      price: '$6.51',
+      name: 'Shipping',
+      price: `$${mealPlan.shipping}`,
     },
-    {
-      name: 'Product 4',
-      desc: 'Best thing of all',
-      price: '$14.11',
-    },
-    { name: 'Shipping', desc: '', price: 'Free' },
+  ];
+
+  const streetAddress = fullAddress.address2 === '' ? fullAddress.address1 : `${fullAddress.address1}, ${fullAddress.address2}`;
+
+  const cityStateZipCountry = [
+    fullAddress.city,
+    fullAddress.state,
+    fullAddress.zip,
+    fullAddress.country,
+  ];
+  const payments = [
+    { name: 'Card holder', detail: paymentInfo.cardName },
+    { name: 'Card number', detail: paymentInfo.cardNumber },
+    { name: 'Expiry date', detail: paymentInfo.expDate },
   ];
   return (
     <>
@@ -54,7 +50,8 @@ export default function Review({mealPlan}) {
         <ListItem sx={{ py: 1, px: 0 }}>
           <ListItemText primary="Total" />
           <Typography variant="subtitle1" sx={{ fontWeight: 700 }}>
-            $34.06
+            $
+            {mealPlan.total}
           </Typography>
         </ListItem>
       </List>
@@ -63,8 +60,9 @@ export default function Review({mealPlan}) {
           <Typography variant="h6" gutterBottom sx={{ mt: 2 }}>
             Shipping
           </Typography>
-          <Typography gutterBottom>John Smith</Typography>
-          <Typography gutterBottom>{addresses.join(', ')}</Typography>
+          <Typography gutterBottom>{`${fullAddress.firstName} ${fullAddress.lastName}`}</Typography>
+          <Typography gutterBottom>{streetAddress}</Typography>
+          <Typography gutterBottom>{cityStateZipCountry.join(', ')}</Typography>
         </Grid>
         <Grid item container direction="column" xs={12} sm={6}>
           <Typography variant="h6" gutterBottom sx={{ mt: 2 }}>

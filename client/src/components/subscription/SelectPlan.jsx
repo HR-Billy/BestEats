@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import Button from '@mui/material/Button';
-import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
@@ -14,7 +12,7 @@ import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import CssBaseline from '@mui/material/CssBaseline';
 
-import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { ThemeProvider } from '@mui/material/styles';
 import mytheme from '../theme.jsx';
 
 export default function SelectPlan({ setMealPlan }) {
@@ -38,9 +36,16 @@ export default function SelectPlan({ setMealPlan }) {
   const shipping = 10;
   const total = planPrice + tax + shipping;
 
+  useEffect(() => setMealPlan({
+    mealQty,
+    planPrice,
+    tax,
+    shipping,
+    total,
+  }), [mealQty]);
+
   const handleChange = (e) => {
     setMealQty(e.target.value);
-    setMealPlan(e.target.value);
   };
 
   return (
