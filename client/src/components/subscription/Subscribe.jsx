@@ -47,42 +47,44 @@ export default function Subscribe() {
     console.log('validating step', step);
     console.log('fullAddress', fullAddress);
     console.log('payment Info', paymentInfo);
+    let result = true;
     switch (step) {
       case 0:
         if (mealPlan === '') {
           errorMessage = 'select a meal plan';
-          return false;
+          result = false;
         }
-        return true;
+        return result;
       case 1:
         if (fullAddress === '') {
           errorMessage = 'complete all required address fields';
-          return false;
+          result = false;
         }
+        console.log(Object.entries(fullAddress));
         Object.entries(fullAddress).forEach((entry) => {
-          if (entry.key !== 'address2') {
-            if (entry.value === '') {
+          console.log(entry[1]);
+          if (entry[0] !== 'address2') {
+            if (entry[1] === '') {
               errorMessage = 'complete all required address fields';
-              return false;
+              result = false;
             }
           }
-          return true;
         });
-        return true;
+        return result;
       case 2:
         if (paymentInfo === '') {
           errorMessage = 'complete all required payment fields';
-          return false;
+          result = false;
         }
         Object.entries(paymentInfo).forEach((entry) => {
           if (entry.value === '') {
-            return false;
+            result = false;
           }
-          return true;
+          return result;
         });
-        return true;
+        return result;
       default:
-        return true;
+        return result;
     }
   };
 
