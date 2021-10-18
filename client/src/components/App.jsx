@@ -5,12 +5,13 @@ import { Text, NavigationBar, Login, CurrentPage, MainSet } from './styles.jsx';
 import { Context } from '../Context.jsx';
 
 import FarmersPage from './Farmers/FarmersPage.jsx';
+import SignIn from './SignIn.jsx';
 
 const App = () => {
   const [loggedIn, setLoggedIn] = useState(false);
 
   return (
-    <Context.Provider value={{ loggedIn, setLoggedIn }}>
+    <Context.Provider value={{ loggedIn, setLoggedIn }} />
       <div>
         <Router>
           <NavigationBar>
@@ -69,7 +70,9 @@ const App = () => {
             <Route
               exact
               path="/login"
-              render={() => <h1> Login component goes here </h1>}
+              render={() => (
+                <SignIn />
+              )}
             />
           </CurrentPage>
         </Router>

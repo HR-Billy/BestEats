@@ -34,8 +34,12 @@
     "webpack-cli": "^4.9.0"
   },
   "dependencies": {
+<<<<<<< HEAD
     "@emotion/react": "^11.4.1",
     "@emotion/styled": "^11.3.0",
+=======
+    "@mui/icons-material": "^5.0.4",
+>>>>>>> 0f9b92dbdd7ff74361e96f425dfdac90ece20bba
     "@mui/material": "^5.0.4",
     "@mui/styled-engine-sc": "^5.0.3",
     "@testing-library/jest-dom": "^5.14.1",
