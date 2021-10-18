@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Container, Grid, Paper, Card } from '@mui/material';
-import { Context } from './Context.jsx';
+import { Context } from './ProfileContext.jsx';
 import ProfilePic from './features/ProfilePic.jsx';
 import NutritionFacts from './features/NutritionFacts.jsx';
 import Status from './features/Status.jsx';
@@ -15,11 +15,11 @@ const UserProfile = () => {
 
   return (
     <Context.Provider value={{ user, setUser }}>
-      <Container className={classes.wrapper}>
+      <Container className={classes.page}>
         <Grid container spacing={3}>
 
           <Grid item xs={4}>
-            <Grid container spacing={3}>
+            <Grid container>
               <Grid item xs={12}>
                 <Paper className={classes.pic}>
                   <ProfilePic />
@@ -33,7 +33,7 @@ const UserProfile = () => {
             </Grid>
           </Grid>
 
-          <Grid item xs={4}>
+          <Grid item xs={3}>
             <Grid container spacing={3}>
               <Grid item xs={12}>
                 <Paper className={classes.status}>
@@ -48,13 +48,13 @@ const UserProfile = () => {
             </Grid>
           </Grid>
 
-          <Grid item xs={4}>
+          <Grid item xs={5}>
             <Grid container spacing={3}>
-              <Grid item xs={12}>
+              {/* <Grid item xs={12}>
                 <Paper className={classes.subscribe}>
                   <Subscribe />
                 </Paper>
-              </Grid>
+              </Grid> */}
               <Grid item xs={12}>
                 <Paper className={classes.order}>
                   <Orders text={'on its way'} />
