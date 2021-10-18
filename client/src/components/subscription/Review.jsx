@@ -5,7 +5,7 @@ import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
 import Grid from '@mui/material/Grid';
 
-export default function Review({ mealPlan, fullAddress, paymentInfo }) {
+export default function Review({ mealPlan, address, paymentInfo }) {
   const prices = [
     {
       name: `${mealPlan.mealQty} meals per week`,
@@ -21,13 +21,13 @@ export default function Review({ mealPlan, fullAddress, paymentInfo }) {
     },
   ];
 
-  const streetAddress = fullAddress.address2 === '' ? fullAddress.address1 : `${fullAddress.address1}, ${fullAddress.address2}`;
+  const streetAddress = address.address2 === '' ? address.address1 : `${address.address1}, ${address.address2}`;
 
   const cityStateZipCountry = [
-    fullAddress.city,
-    fullAddress.state,
-    fullAddress.zip,
-    fullAddress.country,
+    address.city,
+    address.state,
+    address.zip,
+    address.country,
   ];
   const payments = [
     { name: 'Card holder', detail: paymentInfo.cardName },
@@ -63,7 +63,7 @@ export default function Review({ mealPlan, fullAddress, paymentInfo }) {
           <Typography variant="h6" gutterBottom sx={{ mt: 2 }}>
             Shipping
           </Typography>
-          <Typography gutterBottom>{`${fullAddress.firstName} ${fullAddress.lastName}`}</Typography>
+          <Typography gutterBottom>{`${address.firstName} ${address.lastName}`}</Typography>
           <Typography gutterBottom>{streetAddress}</Typography>
           <Typography gutterBottom>{cityStateZipCountry.join(', ')}</Typography>
         </Grid>

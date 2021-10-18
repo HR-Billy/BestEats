@@ -36,16 +36,27 @@ function Copyright() {
 export default function Subscribe() {
   const steps = ['Select Plan', 'Shipping Details', 'Checkout', 'Select Your Meals'];
 
+  const [address, setAddress] = useState({
+    firstName: '',
+    lastName: '',
+    address1: '',
+    address2: '',
+    city: '',
+    zip: '',
+    country: '',
+    saveAddress: 'no',
+  });
+
   const [activeStep, setActiveStep] = useState(0);
   const [mealPlan, setMealPlan] = useState('');
-  const [fullAddress, setFullAddress] = useState('');
+  // const [address, setAddress] = useState('');
   const [paymentInfo, setPaymentInfo] = useState('');
 
   let errorMessage = 'Please complete all required fields before continuing.';
 
   const validate = (step) => {
     console.log('validating step', step);
-    console.log('fullAddress', fullAddress);
+    console.log('address', address);
     console.log('payment Info', paymentInfo);
     let result = true;
     switch (step) {
@@ -56,12 +67,12 @@ export default function Subscribe() {
         }
         return result;
       case 1:
-        if (fullAddress === '') {
+        if (address === '') {
           errorMessage = 'complete all required address fields';
           result = false;
         }
-        console.log(Object.entries(fullAddress));
-        Object.entries(fullAddress).forEach((entry) => {
+        console.log(Object.entries(address));
+        Object.entries(address).forEach((entry) => {
           console.log(entry[1]);
           if (entry[0] !== 'address2') {
             if (entry[1] === '') {
@@ -105,11 +116,11 @@ export default function Subscribe() {
       case 0:
         return <SelectPlan setMealPlan={setMealPlan} />;
       case 1:
-        return <AddressForm setFullAddress={setFullAddress} />;
+        return <AddressForm address={address} setAddress={setAddress} />;
       case 2:
         return <PaymentForm setPaymentInfo={setPaymentInfo} />;
       case 3:
-        return <Review mealPlan={mealPlan} fullAddress={fullAddress} paymentInfo={paymentInfo} />;
+        return <Review mealPlan={mealPlan} address={address} paymentInfo={paymentInfo} />;
       default:
         throw new Error('Unknown step');
     }
@@ -134,16 +145,16 @@ export default function Subscribe() {
     }
     const userInfo = {
       meals_per_week: mealPlan.mealQty,
-      first_name: fullAddress.firstName,
-      last_name: fullAddress.lastName,
-      email: fullAddress.email,
-      phone: fullAddress.phone,
-      address1: fullAddress.address1,
-      address2: fullAddress.address2,
-      city: fullAddress.city,
-      state: fullAddress.state,
-      zip: fullAddress.zip,
-      country: fullAddress.country,
+      first_name: address.firstName,
+      last_name: address.lastName,
+      email: address.email,
+      phone: address.phone,
+      address1: address.address1,
+      address2: address.address2,
+      city: address.city,
+      state: address.state,
+      zip: address.zip,
+      country: address.country,
       cardholder_name: savedCardName,
       card_number: savedCardNumber,
       exp_date: savedExpDate,

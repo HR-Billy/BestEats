@@ -5,21 +5,9 @@ import TextField from '@mui/material/TextField';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
 
-export default function AddressForm({ setFullAddress }) {
-  const [address, setAddress] = useState({
-    firstName: '',
-    lastName: '',
-    address1: '',
-    address2: '',
-    city: '',
-    zip: '',
-    country: '',
-    saveAddress: 'no',
-  });
-
+export default function AddressForm({ address, setAddress }) {
   const handleChange = (e) => {
     setAddress({ ...address, [e.target.name]: e.target.value });
-    setFullAddress({ ...address, [e.target.name]: e.target.value });
   };
 
   return (
