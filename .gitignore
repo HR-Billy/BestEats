@@ -5,5 +5,4 @@ node_modules
 bundle.js
 config.js
 coverage
-client/src/components/Farmers/FarmersMockData.js
 package-lock.json
