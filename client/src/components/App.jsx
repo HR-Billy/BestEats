@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
+import Store from './grocery_page/Store.jsx';
 import {
   Text,
   NavigationBar,
@@ -76,7 +77,7 @@ const App = () => (
           exact
           path="/store"
           render={() => (
-            <h1>Grocery store component goes here</h1>
+            <Store />
           )}
         />
         <Route
