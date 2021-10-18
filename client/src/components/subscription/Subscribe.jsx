@@ -9,10 +9,10 @@ import Stepper from '@mui/material/Stepper';
 import Step from '@mui/material/Step';
 import StepLabel from '@mui/material/StepLabel';
 import Button from '@mui/material/Button';
-import Link from '@mui/material/Link';
+import StyleLink from '@mui/material/Link';
 import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import SelectPlan from './SelectPlan.jsx';
 import AddressForm from './AddressForm.jsx';
 import PaymentForm from './PaymentForm.jsx';
@@ -26,9 +26,9 @@ function Copyright() {
   return (
     <Typography variant="body2" color="text.secondary" align="center">
       {'Copyright © '}
-      <Link color="inherit" href="https://besteats.com/">
+      <StyleLink color="inherit" href="https://besteats.com/">
         Best Eats Inc.
-      </Link>
+      </StyleLink>
       {' '}
       {new Date().getFullYear()}
       .
@@ -55,7 +55,7 @@ export default function Subscribe() {
     // return <Meals />;
     return (
       <Router>
-        <Link to="/meal-plan">Meal Plan</Link>
+        <StyleLink to="/meal-plan">Meal Plan</StyleLink>
         <Route
           exact
           path="/meal-plan"
@@ -123,9 +123,11 @@ export default function Subscribe() {
                   Please head over to our menu to select your first week of meals.
                 </Typography>
                 <Box sx={{ display: 'flex', justifyContent: 'flex-end' }}>
-                  <Button variant="contained" onClick={seeAllMeals} sx={{ mt: 3, ml: 1 }}>
-                    See All Meals
-                  </Button>
+                  <Link to="/meal-plan" style={{ textDecoration: 'none' }}>
+                    <Button variant="contained" sx={{ mt: 3, ml: 1 }}>
+                      See All Meals
+                    </Button>
+                  </Link>
                 </Box>
               </>
             ) : (
