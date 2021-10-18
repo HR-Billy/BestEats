@@ -15,7 +15,7 @@ import Grid from '@mui/material/Grid';
 import CssBaseline from '@mui/material/CssBaseline';
 
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import mytheme from './theme.jsx';
+import mytheme from '../theme.jsx';
 
 export default function SelectPlan({ setMealPlan }) {
   const [mealQty, setMealQty] = useState(3);

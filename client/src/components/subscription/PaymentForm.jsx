@@ -4,7 +4,7 @@ import Grid from '@mui/material/Grid';
 import TextField from '@mui/material/TextField';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
-import mytheme from './theme.jsx';
+import mytheme from '../theme.jsx';
 
 export default function PaymentForm() {
   return (

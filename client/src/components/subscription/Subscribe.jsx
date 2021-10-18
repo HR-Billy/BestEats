@@ -11,16 +11,13 @@ import StepLabel from '@mui/material/StepLabel';
 import Button from '@mui/material/Button';
 import StyleLink from '@mui/material/Link';
 import Typography from '@mui/material/Typography';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { ThemeProvider } from '@mui/material/styles';
 import { Link } from 'react-router-dom';
 import SelectPlan from './SelectPlan.jsx';
 import AddressForm from './AddressForm.jsx';
 import PaymentForm from './PaymentForm.jsx';
 import Review from './Review.jsx';
-import Meals from './Meals.jsx'; // just a placeholder for testing
-import mytheme from './theme.jsx';
-
-// const theme = createTheme();
+import mytheme from '../theme.jsx';
 
 function Copyright() {
   return (
@@ -50,23 +47,6 @@ export default function Subscribe() {
     setActiveStep(activeStep - 1);
   };
 
-  const seeAllMeals = () => {
-    console.log('clicked');
-    // return <Meals />;
-    return (
-      <Router>
-        <StyleLink to="/meal-plan">Meal Plan</StyleLink>
-        <Route
-          exact
-          path="/meal-plan"
-          render={() => (
-            <Meals />
-          )}
-        />
-      </Router>
-    );
-  };
-
   function getStepContent(step) {
     switch (step) {
       case 0:
@@ -85,21 +65,6 @@ export default function Subscribe() {
   return (
     <ThemeProvider theme={mytheme}>
       <CssBaseline />
-      {/* <AppBar
-        position="absolute"
-        color="default"
-        elevation={0}
-        sx={{
-          position: 'relative',
-          borderBottom: (t) => `1px solid ${t.palette.divider}`,
-        }}
-      > */}
-        {/* <Toolbar>
-          <Typography variant="h6" color="inherit" noWrap>
-            Company name
-          </Typography>
-        </Toolbar>
-      </AppBar> */}
       <Container component="main" maxWidth="md" sx={{ mb: 4 }}>
         <Paper elevation={0} sx={{ my: { xs: 3, md: 6 }, p: { xs: 2, md: 3 } }}>
           <Typography component="h1" variant="h4" align="center">

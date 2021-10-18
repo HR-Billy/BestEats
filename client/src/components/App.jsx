@@ -8,9 +8,7 @@ import {
   MainSet,
 } from './styles.jsx';
 import Subscribe from './subscription/Subscribe.jsx';
-import SignIn from './subscription/SignIn.jsx';
-import Meals from './subscription/Meals.jsx';
-
+import SignIn from './SignIn.jsx';
 
 const App = () => (
   <div>
@@ -66,8 +64,7 @@ const App = () => (
           exact
           path="/meal-plan"
           render={() => (
-            <Meals />
-            // <h1>Meal Plan component goes here</h1>
+            <h1>Meal Plan component goes here</h1>
           )}
         />
         <Route
