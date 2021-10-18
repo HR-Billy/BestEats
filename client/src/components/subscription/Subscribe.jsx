@@ -185,7 +185,7 @@ export default function Subscribe() {
           <>
             {activeStep === steps.length ? (
               <>
-              {saveUserInfo()}
+                {saveUserInfo()}
                 <Typography variant="h5" gutterBottom>
                   Thank you for subscribing!
                 </Typography>
