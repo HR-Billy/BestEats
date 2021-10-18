@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
 import { Text, NavigationBar, Login, CurrentPage, MainSet } from './styles.jsx';
 
 import FarmersPage from './Farmers/FarmersPage.jsx';
+import SignIn from './SignIn.jsx';
 
 const App = () => (
   <div>
@@ -62,7 +63,9 @@ const App = () => (
         <Route
           exact
           path="/login"
-          render={() => <h1> Login component goes here </h1>}
+          render={() => (
+            <SignIn />
+          )}
         />
       </CurrentPage>
     </Router>
