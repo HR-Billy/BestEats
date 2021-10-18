@@ -1,7 +1,12 @@
 import React, { useState } from 'react';
+import { Container } from '@mui/material';
 
 const FarmersPage = () => {
-  return <div>Intro To farmers Page</div>;
+  return (
+    <Container>
+      <div>Intro To farmers Page</div>
+    </Container>
+  );
 };
 
 export default FarmersPage;
