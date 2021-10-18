@@ -9,7 +9,7 @@ const Container = styled.div`
   padding-left: 30px;
 `;
 
-export default function Cart({products}) {
+export default function Cart({ products, setCart }) {
   function getTotal() {
     let total = 0;
     products.forEach((p) => {
@@ -23,7 +23,7 @@ export default function Cart({products}) {
   return (
     <Container>
       {products.map((product) => (
-        <CartItem product={product} key={product.id} />
+        <CartItem product={product} key={product.id} setCart={setCart} />
       ))}
       <span><strong>{`Total $${total}  `}</strong></span>
       <Button variant="contained">Checkout</Button>

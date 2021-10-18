@@ -22,7 +22,7 @@ const Wrapper = styled.div`
   display: flex;
 `
 
-export default function() {
+export default function Store() {
   const [activeCategory, setActiveCategory] = useState('Produce');
   const [activeProducts, setActiveProducts] = useState(null);
   const [search, setSearch] = useState('');
@@ -48,7 +48,7 @@ export default function() {
       <Category setActiveCategory={setActiveCategory} />
       <Wrapper>
         {activeProducts && <Items products={activeProducts} setCart={setCart} />}
-        {cart.length > 0 && <Cart products={cart}/>}
+        {cart.length > 0 && <Cart products={cart} setCart={setCart} />}
       </Wrapper>
     </Container>
   );

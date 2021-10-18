@@ -249,4 +249,11 @@ const data = [{"id":1,"name":"Mushroom - Portebello","price":"$15.15","category"
 {"id":249,"name":"Wine - Jafflin Bourgongone","price":"$5.02","category":"Meat","calories":515,"carbs":138,"protein":45,"fats":187,"image":"http://dummyimage.com/x.png/dddddd/000000","quantity":314,"onSale":false,"promo":"Summer","unitType":"null","unitSize":5,"servingSize":2},
 {"id":250,"name":"Rice - 7 Grain Blend","price":"$3.51","category":"Meat","calories":223,"carbs":36,"protein":82,"fats":168,"image":"http://dummyimage.com/x.png/5fa2dd/ffffff","quantity":317,"onSale":false,"promo":"Fall","unitType":"oz","unitSize":4,"servingSize":10}]
 
+const images = ['https://ipcdn.freshop.com/resize?url=https://images.freshop.com/00000000045490/d15efb0c268b95e85f87e8549b078335_large.png&width=256&type=webp&quality=80', 'https://ipcdn.freshop.com/resize?url=https://images.freshop.com/00228588000001/684d9bb43b365efbd4a1393c27c8af0a_large.png&width=256&type=webp&quality=80', "https://www.terhuneorchards.com/wp-content/uploads/2020/06/products-white_loaf__82103.1586278247.1000.1200.png", "https://ipcdn.freshop.com/resize?url=https://images.freshop.com/1564405684707498128/0efdc54b9b372292829e8f7ca2e7f80b_large.png&width=256&type=webp&quality=80"];
+
+for (let i = 0; i < data.length; i++) {
+  let randomImage = images[Math.floor(Math.random() * 4)];
+  data[i].image = randomImage;
+}
+
 module.exports = data;

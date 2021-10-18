@@ -16,7 +16,7 @@ const Input = styled.input`
   text-align: center;
 `;
 
-export default function Search({setSearch}) {
+export default function Search({ setSearch }) {
   function handleChange(e) {
     setSearch(e.target.value);
   }
