@@ -1,7 +1,12 @@
 import React from 'react';
+import Landing from './Landing.jsx';
+import Tiles from './Tiles.jsx';
 
 const Home = () => (
-  <h1>Home</h1>
+  <>
+    <Landing />
+    <Tiles />
+  </>
 );
 
 export default Home;
