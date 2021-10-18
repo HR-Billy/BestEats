@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Typography from '@mui/material/Typography';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
 import Grid from '@mui/material/Grid';
 
-export default function Review({ mealPlan, address, paymentInfo }) {
+export default function Review({ mealPlan, address, payment }) {
   const prices = [
     {
       name: `${mealPlan.mealQty} meals per week`,
@@ -29,10 +29,10 @@ export default function Review({ mealPlan, address, paymentInfo }) {
     address.zip,
     address.country,
   ];
-  const payments = [
-    { name: 'Card holder', detail: paymentInfo.cardName },
-    { name: 'Card number', detail: paymentInfo.cardNumber },
-    { name: 'Expiry date', detail: paymentInfo.expDate },
+  const payInfo = [
+    { name: 'Card holder', detail: payment.cardName },
+    { name: 'Card number', detail: payment.cardNumber },
+    { name: 'Expiry date', detail: payment.expDate },
   ];
   return (
     <>
@@ -72,13 +72,13 @@ export default function Review({ mealPlan, address, paymentInfo }) {
             Payment details
           </Typography>
           <Grid container>
-            {payments.map((payment) => (
-              <React.Fragment key={payment.name}>
+            {payInfo.map((info) => (
+              <React.Fragment key={info.name}>
                 <Grid item xs={6}>
-                  <Typography gutterBottom>{payment.name}</Typography>
+                  <Typography gutterBottom>{info.name}</Typography>
                 </Grid>
                 <Grid item xs={6}>
-                  <Typography gutterBottom>{payment.detail}</Typography>
+                  <Typography gutterBottom>{info.detail}</Typography>
                 </Grid>
               </React.Fragment>
             ))}

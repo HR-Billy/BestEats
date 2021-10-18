@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { createTheme } from '@mui/material/styles';
 
-const mytheme = createTheme({
+const myTheme = createTheme({
   typography: {
     h2: {
       fontSize: 36,
@@ -24,4 +24,4 @@ const mytheme = createTheme({
   },
 });
 
-export default mytheme;
+export default myTheme;

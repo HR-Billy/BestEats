@@ -1,9 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import CssBaseline from '@mui/material/CssBaseline';
-import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
-import Toolbar from '@mui/material/Toolbar';
 import Paper from '@mui/material/Paper';
 import Stepper from '@mui/material/Stepper';
 import Step from '@mui/material/Step';
@@ -36,6 +34,9 @@ function Copyright() {
 export default function Subscribe() {
   const steps = ['Select Plan', 'Shipping Details', 'Checkout', 'Select Your Meals'];
 
+  const [activeStep, setActiveStep] = useState(0);
+  const [mealPlan, setMealPlan] = useState('');
+
   const [address, setAddress] = useState({
     firstName: '',
     lastName: '',
@@ -47,17 +48,20 @@ export default function Subscribe() {
     saveAddress: 'no',
   });
 
-  const [activeStep, setActiveStep] = useState(0);
-  const [mealPlan, setMealPlan] = useState('');
-  // const [address, setAddress] = useState('');
-  const [paymentInfo, setPaymentInfo] = useState('');
+  const [payment, setPayment] = useState({
+    cardName: '',
+    cardNumber: '',
+    expDate: '',
+    cvv: '',
+    saveCard: 'no',
+  });
 
   let errorMessage = 'Please complete all required fields before continuing.';
 
   const validate = (step) => {
     console.log('validating step', step);
     console.log('address', address);
-    console.log('payment Info', paymentInfo);
+    console.log('payment Info', payment);
     let result = true;
     switch (step) {
       case 0:
@@ -83,11 +87,11 @@ export default function Subscribe() {
         });
         return result;
       case 2:
-        if (paymentInfo === '') {
+        if (payment === '') {
           errorMessage = 'complete all required payment fields';
           result = false;
         }
-        Object.entries(paymentInfo).forEach((entry) => {
+        Object.entries(payment).forEach((entry) => {
           if (entry.value === '') {
             result = false;
           }
@@ -118,9 +122,9 @@ export default function Subscribe() {
       case 1:
         return <AddressForm address={address} setAddress={setAddress} />;
       case 2:
-        return <PaymentForm setPaymentInfo={setPaymentInfo} />;
+        return <PaymentForm payment={payment} setPayment={setPayment} />;
       case 3:
-        return <Review mealPlan={mealPlan} address={address} paymentInfo={paymentInfo} />;
+        return <Review mealPlan={mealPlan} address={address} payment={payment} />;
       default:
         throw new Error('Unknown step');
     }
@@ -132,11 +136,11 @@ export default function Subscribe() {
     let savedCardNumber;
     let savedExpDate;
     let savedCvv;
-    if (paymentInfo.saveCard) {
-      savedCardName = paymentInfo.cardName;
-      savedCardNumber = paymentInfo.cardNumber;
-      savedExpDate = paymentInfo.expDate;
-      savedCvv = paymentInfo.cvv;
+    if (payment.saveCard) {
+      savedCardName = payment.cardName;
+      savedCardNumber = payment.cardNumber;
+      savedExpDate = payment.expDate;
+      savedCvv = payment.cvv;
     } else {
       savedCardName = null;
       savedCardNumber = null;
