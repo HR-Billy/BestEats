@@ -7,6 +7,7 @@ import {
   CurrentPage,
   MainSet,
 } from './styles.jsx';
+import SignIn from './SignIn.jsx';
 
 const App = () => (
   <div>
@@ -97,7 +98,7 @@ const App = () => (
           exact
           path="/login"
           render={() => (
-            <h1> Login component goes here </h1>
+            <SignIn />
           )}
         />
       </CurrentPage>
