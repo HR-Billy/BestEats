@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 
 const NavigationBar = styled.div`
-  background-color: #C4C4C4;
+  background-color: #c4c4c4;
   display: flex;
   align-content: center;
   justify-content: space-between;
   margin-left: -10px;
-  padding: 10px;
+  padding: 5px;
   position: fixed;
   top: 0;
   width: 100%;
@@ -36,10 +36,4 @@ const MainSet = styled.div`
   gap: 100px;
 `;
 
-export {
-  Text,
-  NavigationBar,
-  Login,
-  CurrentPage,
-  MainSet,
-};
+export { Text, NavigationBar, Login, CurrentPage, MainSet };
