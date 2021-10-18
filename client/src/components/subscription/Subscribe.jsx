@@ -117,7 +117,39 @@ export default function Subscribe() {
 
   // this function will save all user info to the database
   const saveUserInfo = () => {
-
+    let savedCardName;
+    let savedCardNumber;
+    let savedExpDate;
+    let savedCvv;
+    if (paymentInfo.saveCard) {
+      savedCardName = paymentInfo.cardName;
+      savedCardNumber = paymentInfo.cardNumber;
+      savedExpDate = paymentInfo.expDate;
+      savedCvv = paymentInfo.cvv;
+    } else {
+      savedCardName = null;
+      savedCardNumber = null;
+      savedExpDate = null;
+      savedCvv = null;
+    }
+    const userInfo = {
+      meals_per_week: mealPlan.mealQty,
+      first_name: fullAddress.firstName,
+      last_name: fullAddress.lastName,
+      email: fullAddress.email,
+      phone: fullAddress.phone,
+      address1: fullAddress.address1,
+      address2: fullAddress.address2,
+      city: fullAddress.city,
+      state: fullAddress.state,
+      zip: fullAddress.zip,
+      country: fullAddress.country,
+      cardholder_name: savedCardName,
+      card_number: savedCardNumber,
+      exp_date: savedExpDate,
+      cvv: savedCvv,
+    };
+    console.log(userInfo);
   };
 
   return (
