@@ -6,18 +6,18 @@ import ListItemText from '@mui/material/ListItemText';
 import Grid from '@mui/material/Grid';
 
 export default function Review({ mealPlan, fullAddress, paymentInfo }) {
-  const products = [
+  const prices = [
     {
       name: `${mealPlan.mealQty} meals per week`,
-      price: `$${mealPlan.planPrice}`,
+      price: mealPlan.planPrice,
     },
     {
       name: 'Tax',
-      price: `$${mealPlan.tax}`,
+      price: mealPlan.tax,
     },
     {
       name: 'Shipping',
-      price: `$${mealPlan.shipping}`,
+      price: mealPlan.shipping,
     },
   ];
 
@@ -40,10 +40,13 @@ export default function Review({ mealPlan, fullAddress, paymentInfo }) {
         Order summary
       </Typography>
       <List disablePadding>
-        {products.map((product) => (
-          <ListItem key={product.name} sx={{ py: 1, px: 0 }}>
-            <ListItemText primary={product.name} secondary={product.desc} />
-            <Typography variant="body2">{product.price}</Typography>
+        {prices.map((item) => (
+          <ListItem key={item.name} sx={{ py: 1, px: 0 }}>
+            <ListItemText primary={item.name} secondary={item.desc} />
+            <Typography variant="body2">
+              $
+              {parseFloat(item.price).toFixed(2)}
+            </Typography>
           </ListItem>
         ))}
 
@@ -51,7 +54,7 @@ export default function Review({ mealPlan, fullAddress, paymentInfo }) {
           <ListItemText primary="Total" />
           <Typography variant="subtitle1" sx={{ fontWeight: 700 }}>
             $
-            {mealPlan.total}
+            {parseFloat(mealPlan.total).toFixed(2)}
           </Typography>
         </ListItem>
       </List>

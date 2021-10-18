@@ -115,6 +115,11 @@ export default function Subscribe() {
     }
   };
 
+  // this function will save all user info to the database
+  const saveUserInfo = () => {
+
+  };
+
   return (
     <ThemeProvider theme={mytheme}>
       <CssBaseline />
@@ -133,6 +138,7 @@ export default function Subscribe() {
           <>
             {activeStep === steps.length ? (
               <>
+              {saveUserInfo()}
                 <Typography variant="h5" gutterBottom>
                   Thank you for subscribing!
                 </Typography>
