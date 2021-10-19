@@ -6,3 +6,4 @@ bundle.js
 config.js
 coverage
 onepirate
+package-lock.json
