@@ -50,9 +50,18 @@ export default function Subscribe() {
   });
 
   const [payment, setPayment] = useState({
+    billing_firstName: '',
+    billing_lastName: '',
+    billing_address1: '',
+    billing_address2: '',
+    billing_city: '',
+    billing_zip: '',
+    billing_country: '',
     cardName: '',
     cardNumber: '',
-    expDate: '',
+    exMonth: '',
+    exYear: '',
+    // expDate: `${payment.exMonth} ${payment.exYear}`,
     cvv: '',
     saveCard: 'no',
   });
@@ -153,8 +162,8 @@ export default function Subscribe() {
       meals_per_week: mealPlan.mealQty,
       first_name: address.firstName,
       last_name: address.lastName,
-      email: address.email,
-      phone: address.phone,
+      // email: address.email,
+      // phone: address.phone,
       address1: address.address1,
       address2: address.address2,
       city: address.city,
