@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import CssBaseline from '@mui/material/CssBaseline';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
@@ -33,7 +33,7 @@ function Copyright() {
 }
 
 export default function Subscribe() {
-  const steps = ['Select Plan', 'Shipping Details', 'Checkout', 'Select Your Meals'];
+  const steps = ['Select Plan', 'Shipping', 'Payment', 'Select Your Meals'];
 
   const [activeStep, setActiveStep] = useState(0);
   const [mealPlan, setMealPlan] = useState('');
@@ -44,9 +44,10 @@ export default function Subscribe() {
     address1: '',
     address2: '',
     city: '',
+    state: '',
     zip: '',
     country: '',
-    saveAddress: 'no',
+    saveAddress: false,
   });
 
   const [payment, setPayment] = useState({
@@ -63,8 +64,24 @@ export default function Subscribe() {
     exYear: '',
     // expDate: `${payment.exMonth} ${payment.exYear}`,
     cvv: '',
-    saveCard: 'no',
+    saveCard: false,
   });
+
+  const updateBillingInfo = () => {
+    if (address.saveAddress) {
+      setPayment({
+        billing_firstName: address.firstName,
+        billing_lastName: address.lastName,
+        billing_address1: address.address1,
+        billing_address2: address.address2,
+        billing_city: address.city,
+        billing_zip: address.zip,
+        billing_country: address.country,
+      });
+    }
+  };
+
+  useEffect(() => updateBillingInfo(), [address.saveAddress]);
 
   let errorMessage = 'complete all required fields';
 

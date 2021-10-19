@@ -7,7 +7,7 @@ import Checkbox from '@mui/material/Checkbox';
 
 export default function AddressForm({ address, setAddress }) {
   const handleChange = (e) => {
-    setAddress({ ...address, [e.target.name]: e.target.value });
+    setAddress({ ...address, [e.target.name]: e.target.type === 'checkbox' ? e.target.checked : e.target.value });
   };
 
   return (
@@ -26,6 +26,7 @@ export default function AddressForm({ address, setAddress }) {
               fullWidth
               autoComplete="given-name"
               variant="standard"
+              value={address.firstName}
               onChange={handleChange}
             />
           </Grid>
@@ -38,6 +39,7 @@ export default function AddressForm({ address, setAddress }) {
               fullWidth
               autoComplete="family-name"
               variant="standard"
+              value={address.lastName}
               onChange={handleChange}
             />
           </Grid>
@@ -50,6 +52,7 @@ export default function AddressForm({ address, setAddress }) {
               fullWidth
               autoComplete="shipping address-line1"
               variant="standard"
+              value={address.address1}
               onChange={handleChange}
             />
           </Grid>
@@ -61,6 +64,7 @@ export default function AddressForm({ address, setAddress }) {
               fullWidth
               autoComplete="shipping address-line2"
               variant="standard"
+              value={address.address2}
               onChange={handleChange}
             />
           </Grid>
@@ -71,8 +75,9 @@ export default function AddressForm({ address, setAddress }) {
               name="city"
               label="City"
               fullWidth
-              autoComplete="shipping address-level2"
+              autoComplete="shipping city"
               variant="standard"
+              value={address.city}
               onChange={handleChange}
             />
           </Grid>
@@ -83,6 +88,7 @@ export default function AddressForm({ address, setAddress }) {
               label="State/Province/Region"
               fullWidth
               variant="standard"
+              value={address.state}
               onChange={handleChange}
             />
           </Grid>
@@ -95,6 +101,7 @@ export default function AddressForm({ address, setAddress }) {
               fullWidth
               autoComplete="shipping postal-code"
               variant="standard"
+              value={address.zip}
               onChange={handleChange}
             />
           </Grid>
@@ -107,6 +114,7 @@ export default function AddressForm({ address, setAddress }) {
               fullWidth
               autoComplete="shipping country"
               variant="standard"
+              value={address.country}
               onChange={handleChange}
             />
           </Grid>
