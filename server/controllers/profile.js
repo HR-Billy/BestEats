@@ -1,4 +1,4 @@
-const model = require('./model.js');
+const model = require('../../database/models/profile/profile.js');
 
 const router = (req, res) => {
   const { username } = req.query;

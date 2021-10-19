@@ -1,4 +1,4 @@
-const db = require('../database');
+const db = require('../../index.js');
 const { selectData } = require('./queries');
 
 module.exports = {

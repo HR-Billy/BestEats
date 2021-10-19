@@ -1,6 +1,6 @@
 const express = require('express');
 const path = require('path');
-const runProfileRte = require('../profile/controller.js');
+const runProfileRte = require('./controllers/profile.js');
 
 const app = express();
 const port = 3000;
@@ -53,7 +53,6 @@ app.get('/*', (req, res) => {
       res.status(404).send('Page Isn\'t Available');
   }
 */
-
   res.sendFile(path.join(__dirname, '../public/index.html'), (err) => {
     if (err) {
       res.status(500).send(err);
