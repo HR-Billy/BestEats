@@ -1,5 +1,5 @@
 const { Client } = require('pg');
-const { USERNAME, PASSWORD } = require('./config.js');
+const { USERNAME, PASSWORD } = require('../config.js');
 
 const client = new Client({
   user: USERNAME,

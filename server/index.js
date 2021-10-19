@@ -1,5 +1,6 @@
 const express = require('express');
 const path = require('path');
+const runProfileRte = require('../profile/controller.js');
 
 const app = express();
 const port = 3000;
@@ -26,11 +27,87 @@ app.listen(port, () => {
 
 // Allows refresh of page on routes
 app.get('/*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../public/index.html'), (err) => {
-    if (err) {
-      res.status(500).send(err);
-    }
-  });
+  const { url } = req;
+  const routes = url.split('/');
+
+  switch (routes[1]) {
+    case 'meal-plan':
+      // DO SOMETHING
+      break;
+    case 'farmers':
+    // DO SOMETHING
+      break;
+    case 'store':
+      // DO SOMETHING
+      break;
+    case 'health':
+      // DO SOMETHING
+      break;
+    case 'login':
+      // DO SOMETHING
+      break;
+    case 'profile':
+      runProfileRte(req, res);
+      break;
+    default:
+      res.status(404).send('Page Isn\'t Available');
+  }
+});
+
+app.post('/*', (req, res) => {
+  const { url } = req;
+  const routes = url.split('/');
+
+  switch (routes[1]) {
+    case 'meal-plan':
+      // DO SOMETHING
+      break;
+    case 'farmers':
+    // DO SOMETHING
+      break;
+    case 'store':
+      // DO SOMETHING
+      break;
+    case 'health':
+      // DO SOMETHING
+      break;
+    case 'login':
+      // DO SOMETHING
+      break;
+    case 'profile':
+      runProfileRte(req, res);
+      break;
+    default:
+      res.status(404).send('Page Isn\'t Available');
+  }
+});
+
+app.patch('/*', (req, res) => {
+  const { url } = req;
+  const routes = url.split('/');
+
+  switch (routes[1]) {
+    case 'meal-plan':
+      // DO SOMETHING
+      break;
+    case 'farmers':
+    // DO SOMETHING
+      break;
+    case 'store':
+      // DO SOMETHING
+      break;
+    case 'health':
+      // DO SOMETHING
+      break;
+    case 'login':
+      // DO SOMETHING
+      break;
+    case 'profile':
+      runProfileRte(req, res);
+      break;
+    default:
+      res.status(404).send('Page Isn\'t Available');
+  }
 });
 
 module.exports = app;

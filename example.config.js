@@ -1,4 +1,4 @@
 const USERNAME = 'username';
-const PASSWORD = PASSWORD;
+const PASSWORD = 'password';
 
 module.exports = { USERNAME, PASSWORD };

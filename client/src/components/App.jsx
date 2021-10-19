@@ -2,7 +2,6 @@ import React from 'react';
 import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
 import FarmersPage from './Farmers/FarmersPage.jsx';
 import SignIn from './SignIn.jsx';
-import UserProfile from './profile/UserProfile.jsx';
 import { Text, NavigationBar, Login, CurrentPage, MainSet } from './styles.jsx';
 
 const App = () => (
@@ -65,13 +64,6 @@ const App = () => (
           path="/login"
           render={() => (
             <SignIn />
-          )}
-        />
-        <Route
-          exact
-          path="/profile"
-          render={() => (
-            <UserProfile />
           )}
         />
       </CurrentPage>
