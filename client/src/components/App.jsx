@@ -11,7 +11,7 @@ const App = () => {
   const [loggedIn, setLoggedIn] = useState(false);
 
   return (
-    <Context.Provider value={{ loggedIn, setLoggedIn }} />
+    <Context.Provider value={{ loggedIn, setLoggedIn }}>
       <div>
         <Router>
           <NavigationBar>
