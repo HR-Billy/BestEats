@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const NavigationBar = styled.div`
-  background-color: #c4c4c4;
+  background-color: white;
   display: flex;
   align-content: center;
   justify-content: space-between;

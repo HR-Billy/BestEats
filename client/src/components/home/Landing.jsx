@@ -18,13 +18,13 @@ const Landing = () => (
       src={backgroundImage}
       alt="increase priority"
     />
-    <Typography color="inherit" align="center" variant="h2" marked="center">
+    <Typography color="inherit" align="center" variant="h1" marked="center">
       Welcome to Best Eats.
     </Typography>
     <Typography
       color="inherit"
       align="center"
-      variant="h5"
+      variant="h2"
       sx={{ mb: 4, mt: { sx: 4, sm: 10 } }}
     >
       A one stop shop for the best healthy food,

@@ -16,19 +16,37 @@ function Tiles() {
   return (
     <Box
       component="section"
-      sx={{ display: 'flex', overflow: 'hidden', bgcolor: 'secondary.light' }}
+      sx={{ display: 'flex', overflow: 'hidden', bgcolor: 'primary.light' }}
     >
       <Container sx={{
         mt: 15, mb: 30, display: 'flex', position: 'relative',
       }}
       >
-        <Box
+        {/* <Box
           component="img"
           src="/static/themes/onepirate/productCurvyLines.png"
           alt="curvy lines"
           sx={{ pointerEvents: 'none', position: 'absolute', top: -180 }}
-        />
+        /> */}
         <Grid container spacing={5}>
+
+          <Grid item xs={12} md={4}>
+            <Box sx={item}>
+              <Box
+                component="img"
+                src="/static/themes/onepirate/productValues3.svg"
+                alt="clock"
+                sx={{ height: 55 }}
+              />
+              <Typography variant="h6" sx={{ my: 5 }}>
+                Know your farmers.
+              </Typography>
+              <Typography variant="h5">
+                We work closely with local farmers and sustainable businesses giving them
+                a platform to interact directly with our users.
+              </Typography>
+            </Box>
+          </Grid>
           <Grid item xs={12} md={4}>
             <Box sx={item}>
               <Box
@@ -55,7 +73,7 @@ function Tiles() {
                 sx={{ height: 55 }}
               />
               <Typography variant="h6" sx={{ my: 5 }}>
-                We're a lifestyle, not a product.
+                Lifestyle, not a product.
               </Typography>
               <Typography variant="h5">
                 Our focus is teaching you how to live a healthy and sustainable life;
@@ -63,23 +81,7 @@ function Tiles() {
               </Typography>
             </Box>
           </Grid>
-          <Grid item xs={12} md={4}>
-            <Box sx={item}>
-              <Box
-                component="img"
-                src="/static/themes/onepirate/productValues3.svg"
-                alt="clock"
-                sx={{ height: 55 }}
-              />
-              <Typography variant="h6" sx={{ my: 5 }}>
-                Know where your food came from.
-              </Typography>
-              <Typography variant="h5">
-                We work closely with local farmers and sustainable businesses giving them
-                a platform to interact directly with our users.
-              </Typography>
-            </Box>
-          </Grid>
+
         </Grid>
       </Container>
     </Box>
