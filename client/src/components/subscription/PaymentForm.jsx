@@ -1,4 +1,6 @@
-import React, { useState, useEffect } from 'react';
+/* eslint-disable import/extensions */
+import React from 'react';
+import PropTypes from 'prop-types';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import TextField from '@mui/material/TextField';
@@ -8,7 +10,7 @@ import Select from '@mui/material/Select';
 import MenuItem from '@mui/material/MenuItem';
 import InputLabel from '@mui/material/InputLabel';
 
-export default function PaymentForm({ address, payment, setPayment }) {
+const PaymentForm = ({ address, payment, setPayment }) => {
   const handleChange = (e) => {
     setPayment({ ...payment, [e.target.name]: e.target.type === 'checkbox' ? e.target.checked : e.target.value });
   };
@@ -20,7 +22,7 @@ export default function PaymentForm({ address, payment, setPayment }) {
           <Typography variant="h6" gutterBottom>
             Billing Address
           </Typography>
-          <Grid container spacing={3} gutterBottom>
+          <Grid container spacing={3}>
             <Grid item xs={12} sm={6}>
               <TextField
                 required
@@ -129,11 +131,20 @@ export default function PaymentForm({ address, payment, setPayment }) {
     return '';
   };
 
+  const generateYears = () => {
+    const years = [];
+    const currentYear = new Date().getFullYear();
+    for (let i = 0; i < 10; i += 1) {
+      years.push(currentYear + i);
+    }
+    return years.map((year) => <MenuItem key={year} value={year.toString()}>{year}</MenuItem>);
+  };
+
   return (
     <>
       <Grid container sx={{ width: 500 }}>
         {renderBillingAddress()}
-        <Grid container sx={{ width: 500 }}>
+        <Grid container sx={{ width: 500, mb: 20 }}>
           <Typography variant="h6" gutterBottom>
             Payment method
           </Typography>
@@ -202,17 +213,7 @@ export default function PaymentForm({ address, payment, setPayment }) {
               onChange={handleChange}
             >
               <MenuItem value="0">Enter year</MenuItem>
-              <MenuItem value="2021">2021</MenuItem>
-              <MenuItem value="2022">2022</MenuItem>
-              <MenuItem value="2023">2023</MenuItem>
-              <MenuItem value="2024">2024</MenuItem>
-              <MenuItem value="2025">2025</MenuItem>
-              <MenuItem value="2026">2026</MenuItem>
-              <MenuItem value="2027">2027</MenuItem>
-              <MenuItem value="2028">2028</MenuItem>
-              <MenuItem value="2029">2029</MenuItem>
-              <MenuItem value="2030">2030</MenuItem>
-              <MenuItem value="2031">2031</MenuItem>
+              {generateYears()}
             </Select>
             <Grid item xs={12} md={6}>
               <TextField
@@ -240,4 +241,37 @@ export default function PaymentForm({ address, payment, setPayment }) {
       </Grid>
     </>
   );
-}
+};
+
+PaymentForm.propTypes = {
+  setPayment: PropTypes.func.isRequired,
+  address: PropTypes.shape({
+    firstName: PropTypes.string.isRequired,
+    lastName: PropTypes.string.isRequired,
+    address1: PropTypes.string.isRequired,
+    address2: PropTypes.string,
+    city: PropTypes.string.isRequired,
+    state: PropTypes.string.isRequired,
+    zip: PropTypes.number.isRequired,
+    country: PropTypes.string.isRequired,
+    saveAddress: PropTypes.bool.isRequired,
+  }).isRequired,
+  payment: PropTypes.shape({
+    billing_firstName: PropTypes.string.isRequired,
+    billing_lastName: PropTypes.string.isRequired,
+    billing_address1: PropTypes.string.isRequired,
+    billing_address2: PropTypes.string,
+    billing_city: PropTypes.string.isRequired,
+    billing_state: PropTypes.string.isRequired,
+    billing_zip: PropTypes.number.isRequired,
+    billing_country: PropTypes.string.isRequired,
+    cardName: PropTypes.string.isRequired,
+    cardNumber: PropTypes.number.isRequired,
+    exMonth: PropTypes.number.isRequired,
+    exYear: PropTypes.number.isRequired,
+    cvv: PropTypes.number.isRequired,
+    saveCard: PropTypes.bool.isRequired,
+  }).isRequired,
+};
+
+export default PaymentForm;

@@ -1,4 +1,6 @@
+/* eslint-disable import/extensions */
 import React, { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 import Typography from '@mui/material/Typography';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
@@ -13,7 +15,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 import { ThemeProvider } from '@mui/material/styles';
 import mytheme from '../theme.jsx';
 
-export default function SelectPlan({ setMealPlan }) {
+const SelectPlan = ({ setMealPlan }) => {
   const [mealQty, setMealQty] = useState(3);
 
   const planOptions = {
@@ -31,7 +33,7 @@ export default function SelectPlan({ setMealPlan }) {
   const planPrice = planOptions[mealQty];
   const costPerMeal = planPrice / mealQty;
   const tax = planPrice * 0.09;
-  const shipping = 10;
+  const shipping = 10; // set an arbitrary flat rate shipping cost of $10
   const total = planPrice + tax + shipping;
 
   useEffect(() => setMealPlan({
@@ -131,4 +133,10 @@ export default function SelectPlan({ setMealPlan }) {
       </Grid>
     </ThemeProvider>
   );
-}
+};
+
+SelectPlan.propTypes = {
+  setMealPlan: PropTypes.func.isRequired,
+};
+
+export default SelectPlan;

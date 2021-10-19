@@ -1,11 +1,13 @@
-import React, { useState, useEffect } from 'react';
+/* eslint-disable import/extensions */
+import React from 'react';
+import PropTypes from 'prop-types';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import TextField from '@mui/material/TextField';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
 
-export default function AddressForm({ address, setAddress }) {
+const AddressForm = ({ address, setAddress }) => {
   const handleChange = (e) => {
     setAddress({ ...address, [e.target.name]: e.target.type === 'checkbox' ? e.target.checked : e.target.value });
   };
@@ -129,4 +131,21 @@ export default function AddressForm({ address, setAddress }) {
       </Grid>
     </>
   );
-}
+};
+
+AddressForm.propTypes = {
+  setAddress: PropTypes.func.isRequired,
+  address: PropTypes.shape({
+    firstName: PropTypes.string.isRequired,
+    lastName: PropTypes.string.isRequired,
+    address1: PropTypes.string.isRequired,
+    address2: PropTypes.string.isRequired,
+    city: PropTypes.string.isRequired,
+    state: PropTypes.string.isRequired,
+    zip: PropTypes.string.isRequired,
+    country: PropTypes.string.isRequired,
+    saveAddress: PropTypes.bool.isRequired,
+  }).isRequired,
+};
+
+export default AddressForm;

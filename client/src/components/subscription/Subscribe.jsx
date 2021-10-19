@@ -1,4 +1,6 @@
+/* eslint-disable import/extensions */
 import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 import CssBaseline from '@mui/material/CssBaseline';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
@@ -18,21 +20,19 @@ import PaymentForm from './PaymentForm.jsx';
 import Review from './Review.jsx';
 import mytheme from '../theme.jsx';
 
-function Copyright() {
-  return (
-    <Typography variant="body2" color="text.secondary" align="center">
-      {'Copyright © '}
-      <StyleLink color="inherit" href="https://besteats.com/">
-        Best Eats Inc.
-      </StyleLink>
-      {' '}
-      {new Date().getFullYear()}
-      .
-    </Typography>
-  );
-}
+const Copyright = () => (
+  <Typography variant="body2" color="text.secondary" align="center">
+    {'Copyright © '}
+    <StyleLink color="inherit" href="https://besteats.com/">
+      Best Eats Inc.
+    </StyleLink>
+    {' '}
+    {new Date().getFullYear()}
+    .
+  </Typography>
+);
 
-export default function Subscribe() {
+const Subscribe = () => {
   const steps = ['Select Plan', 'Shipping', 'Payment', 'Select Your Meals'];
 
   const [activeStep, setActiveStep] = useState(0);
@@ -56,16 +56,17 @@ export default function Subscribe() {
     billing_address1: '',
     billing_address2: '',
     billing_city: '',
+    billing_state: '',
     billing_zip: '',
     billing_country: '',
     cardName: '',
     cardNumber: '',
     exMonth: '',
     exYear: '',
-    // expDate: `${payment.exMonth} ${payment.exYear}`,
     cvv: '',
     saveCard: false,
   });
+  // expDate: `${payment.exMonth} ${payment.exYear}`,
 
   const updateBillingInfo = () => {
     if (address.saveAddress) {
@@ -75,8 +76,15 @@ export default function Subscribe() {
         billing_address1: address.address1,
         billing_address2: address.address2,
         billing_city: address.city,
+        billing_state: address.state,
         billing_zip: address.zip,
         billing_country: address.country,
+        cardName: '',
+        cardNumber: '',
+        exMonth: '',
+        exYear: '',
+        cvv: '',
+        saveCard: false,
       });
     }
   };
@@ -158,7 +166,7 @@ export default function Subscribe() {
     }
   };
 
-  // this function will save all user info to the database
+  // this function will send all user info to the database
   const saveUserInfo = () => {
     let savedCardName;
     let savedCardNumber;
@@ -167,7 +175,7 @@ export default function Subscribe() {
     if (payment.saveCard) {
       savedCardName = payment.cardName;
       savedCardNumber = payment.cardNumber;
-      savedExpDate = payment.expDate;
+      savedExpDate = `${payment.exMonth}-${payment.exYear}`;
       savedCvv = payment.cvv;
     } else {
       savedCardName = null;
@@ -176,6 +184,7 @@ export default function Subscribe() {
       savedCvv = null;
     }
     const userInfo = {
+      subscription_date: new Date(),
       meals_per_week: mealPlan.mealQty,
       first_name: address.firstName,
       last_name: address.lastName,
@@ -193,6 +202,11 @@ export default function Subscribe() {
       cvv: savedCvv,
     };
     console.log(userInfo);
+    axios.post('/api/users', userInfo)
+      .then((res) => {
+        console.log(res);
+      })
+      .catch(console.log);
   };
 
   return (
@@ -259,4 +273,6 @@ export default function Subscribe() {
       </Container>
     </ThemeProvider>
   );
-}
+};
+
+export default Subscribe;
