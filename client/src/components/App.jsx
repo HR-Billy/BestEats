@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
 import FarmersPage from './Farmers/FarmersPage.jsx';
+import SignIn from './SignIn.jsx';
 import UserProfile from './profile/UserProfile.jsx';
 import { Text, NavigationBar, Login, CurrentPage, MainSet } from './styles.jsx';
 
@@ -63,13 +64,15 @@ const App = () => (
           exact
           path="/login"
           render={() => (
-            <h1> Login component goes here </h1>
+            <SignIn />
           )}
         />
         <Route
           exact
           path="/profile"
-          render={() => <UserProfile />}
+          render={() => (
+            <UserProfile />
+          )}
         />
       </CurrentPage>
     </Router>
