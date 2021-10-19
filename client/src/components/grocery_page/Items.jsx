@@ -5,6 +5,7 @@ import Item from './Item.jsx';
 const Container = styled.div`
   padding-top: 100px;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
 `;

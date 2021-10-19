@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import Button from '@mui/material/Button';
 import CartItem from './CartItem.jsx';
 
 const Container = styled.div`
@@ -9,24 +8,24 @@ const Container = styled.div`
   padding-left: 30px;
 `;
 
-export default function Cart({ products, setCart }) {
+export default function Cart({ cart, setCart }) {
   function getTotal() {
     let total = 0;
-    products.forEach((p) => {
-      total += Number(p.price.slice(1));
+    cart.forEach((product) => {
+      total += (Number(product.price.slice(1)) * product.cartQuantity);
     });
     return total.toFixed(2);
   }
 
-  const total = getTotal(products);
+  const total = getTotal(cart);
 
   return (
     <Container>
-      {products.map((product) => (
+      {cart.map((product) => (
         <CartItem product={product} key={product.id} setCart={setCart} />
       ))}
       <span><strong>{`Total $${total}  `}</strong></span>
-      <Button variant="contained">Checkout</Button>
+      <button>Checkout</button>
     </Container>
   );
 }

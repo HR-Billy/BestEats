@@ -8,18 +8,19 @@ const data = require('./MOCK_DATA');
 
 const H1 = styled.h1`
   padding-top: 60px;
-  font-family: Sans-serif;
   text-align: center;
   font-size: 80px;
 `
 
 const Container = styled.div`
-  width: 90%;
+  width: 85%;
   margin: auto;
+  font-family: Sans-Serif;
 `
 
 const Wrapper = styled.div`
   display: flex;
+  flex-direction: row-reverse;
 `
 
 export default function Store() {
@@ -47,8 +48,8 @@ export default function Store() {
       <Search setSearch={setSearch}/>
       <Category setActiveCategory={setActiveCategory} />
       <Wrapper>
+        {cart.length > 0 && <Cart cart={cart} setCart={setCart} />}
         {activeProducts && <Items products={activeProducts} setCart={setCart} />}
-        {cart.length > 0 && <Cart products={cart} setCart={setCart} />}
       </Wrapper>
     </Container>
   );

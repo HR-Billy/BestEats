@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import TextField from '@mui/material/TextField';
 
 const Container = styled.div`
   width: 100%;
@@ -22,7 +21,6 @@ export default function Search({ setSearch }) {
   }
   return (
     <Container>
-      {/* <TextField fullWidth label="fullWidth" id="fullWidth" /> */}
       <Input onChange={handleChange} placeholder="Search Products" type="text" />
     </Container>
   );
