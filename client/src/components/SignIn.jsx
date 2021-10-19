@@ -40,7 +40,7 @@ export default function SignIn() {
   };
 
   return (
-    <ThemeProvider theme={mytheme}>
+    <ThemeProvider theme={myTheme}>
       <Grid container component="main" sx={{ height: '100vh' }}>
         <CssBaseline />
         <Grid

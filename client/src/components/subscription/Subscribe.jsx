@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import CssBaseline from '@mui/material/CssBaseline';
 import Box from '@mui/material/Box';
+import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import Paper from '@mui/material/Paper';
 import Stepper from '@mui/material/Stepper';
@@ -56,7 +57,7 @@ export default function Subscribe() {
     saveCard: 'no',
   });
 
-  let errorMessage = 'Please complete all required fields before continuing.';
+  let errorMessage = 'complete all required fields';
 
   const validate = (step) => {
     console.log('validating step', step);
@@ -74,29 +75,30 @@ export default function Subscribe() {
         if (address === '') {
           errorMessage = 'complete all required address fields';
           result = false;
-        }
-        console.log(Object.entries(address));
-        Object.entries(address).forEach((entry) => {
-          console.log(entry[1]);
-          if (entry[0] !== 'address2') {
-            if (entry[1] === '') {
-              errorMessage = 'complete all required address fields';
-              result = false;
+        } else {
+          Object.entries(address).forEach((entry) => {
+            console.log(entry[1]);
+            if (entry[0] !== 'address2') {
+              if (entry[1] === '') {
+                errorMessage = 'complete all required address fields';
+                result = false;
+              }
             }
-          }
-        });
+          });
+        }
         return result;
       case 2:
         if (payment === '') {
           errorMessage = 'complete all required payment fields';
           result = false;
+        } else {
+          Object.entries(payment).forEach((entry) => {
+            if (entry[1] === '') {
+              errorMessage = 'complete all required payment fields';
+              result = false;
+            }
+          });
         }
-        Object.entries(payment).forEach((entry) => {
-          if (entry.value === '') {
-            result = false;
-          }
-          return result;
-        });
         return result;
       default:
         return result;
@@ -122,7 +124,7 @@ export default function Subscribe() {
       case 1:
         return <AddressForm address={address} setAddress={setAddress} />;
       case 2:
-        return <PaymentForm payment={payment} setPayment={setPayment} />;
+        return <PaymentForm address={address} payment={payment} setPayment={setPayment} />;
       case 3:
         return <Review mealPlan={mealPlan} address={address} payment={payment} />;
       default:
@@ -160,8 +162,8 @@ export default function Subscribe() {
       zip: address.zip,
       country: address.country,
       cardholder_name: savedCardName,
-      card_number: savedCardNumber,
-      exp_date: savedExpDate,
+      cc_number: savedCardNumber,
+      cc_exp: savedExpDate,
       cvv: savedCvv,
     };
     console.log(userInfo);
@@ -185,6 +187,7 @@ export default function Subscribe() {
           <>
             {activeStep === steps.length ? (
               <>
+
                 {saveUserInfo()}
                 <Typography variant="h5" gutterBottom>
                   Thank you for subscribing!
@@ -200,10 +203,13 @@ export default function Subscribe() {
                     </Button>
                   </Link>
                 </Box>
+
               </>
             ) : (
               <>
-                {getStepContent(activeStep)}
+                <Grid container justifyContent="center" alignItems="center">
+                  {getStepContent(activeStep)}
+                </Grid>
                 <Box sx={{ display: 'flex', justifyContent: 'flex-end' }}>
                   {activeStep !== 0 && (
                     <Button onClick={handleBack} sx={{ mt: 3, ml: 1 }}>

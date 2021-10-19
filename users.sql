@@ -14,14 +14,15 @@ CREATE TABLE users (
   email VARCHAR(50) NOT NULL,
   phone INT NOT NULL,
 
-  address VARCHAR(50) NOT NULL,
+  address1 VARCHAR(50) NOT NULL,
+  address2 VARCHAR(50),
   city VARCHAR(36) NOT NULL,
   state VARCHAR(2) NOT NULL,
   zip VARCHAR(10) NOT NULL,
 
-  billing_address VARCHAR(50) NOT NULL,
-  billing_zip VARCHAR(10) NOT NULL,
-  credit_card VARCHAR(20) NOT NULL,
+
+  cardholder_name VARCHAR(50) NOT NULL,
+  cc_number VARCHAR(20) NOT NULL,
   cc_exp DATE NOT NULL,
   cvv INT NOT NULL,
 
