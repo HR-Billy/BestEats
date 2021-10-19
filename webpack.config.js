@@ -4,7 +4,7 @@ const source = path.join(__dirname, 'client', 'src', 'index.jsx');
 const destination = path.join(__dirname, 'public');
 
 module.exports = {
-  entry: source,
+  entry: ['babel-polyfill', source],
   output: {
     path: destination,
     filename: 'bundle.js',
