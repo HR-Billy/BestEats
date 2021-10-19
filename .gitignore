@@ -6,3 +6,6 @@ bundle.js
 config.js
 coverage
 package-lock.json
+
+# test data
+database/data
