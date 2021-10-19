@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Container, Grid, Paper } from '@mui/material';
 import { ProfileContext } from './ProfileContext.jsx';
 import ProfilePic from './features/ProfilePic.jsx';
