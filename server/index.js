@@ -29,7 +29,7 @@ app.listen(port, () => {
 app.get('/*', (req, res) => {
   const { url } = req;
   const routes = url.split('/');
-
+/*
   switch (routes[1]) {
     case 'meal-plan':
       // DO SOMETHING
@@ -52,6 +52,13 @@ app.get('/*', (req, res) => {
     default:
       res.status(404).send('Page Isn\'t Available');
   }
+*/
+
+  res.sendFile(path.join(__dirname, '../public/index.html'), (err) => {
+    if (err) {
+      res.status(500).send(err);
+    }
+  });
 });
 
 app.post('/*', (req, res) => {
