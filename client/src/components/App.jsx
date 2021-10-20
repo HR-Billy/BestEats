@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
-import { Context } from '../Context.jsx';
+import { Text, NavigationBar, Login, CurrentPage, MainSet } from './styles.jsx';
 import Store from './grocery_page/Store.jsx';
 import FarmersPage from './Farmers/FarmersPage.jsx';
 import HealthPage from './Health/HealthPage.jsx';
@@ -59,7 +59,7 @@ const App = () => {
         <Route
           exact
           path="/subscribe"
-          render={() => <h1>Subscription component goes here</h1>}
+          render={() => <Subscribe />}
         />
         <Route exact path="/login" render={() => <SignIn />} />
       </CurrentPage>

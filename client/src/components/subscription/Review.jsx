@@ -1,7 +1,9 @@
 /* eslint-disable import/extensions */
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Grid, Typography, List, ListItem, ListItemText } from '@mui/material';
+import {
+  Grid, Typography, List, ListItem, ListItemText,
+} from '@mui/material';
 
 const Review = ({ mealPlan, address, payment }) => {
   const prices = [
@@ -30,7 +32,7 @@ const Review = ({ mealPlan, address, payment }) => {
   const payInfo = [
     { name: 'Card holder', detail: payment.cardName },
     { name: 'Card number', detail: payment.cardNumber },
-    { name: 'Expiry date', detail: `${payment.exMonth}-${payment.exYear}` },
+    { name: 'Expiry date', detail: `${payment.exMonth}/${payment.exYear}` },
   ];
   return (
     <>

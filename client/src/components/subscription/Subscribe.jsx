@@ -1,7 +1,10 @@
 /* eslint-disable import/extensions */
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { ThemeProvider, CssBaseline, Typography, Grid, Box, Container, Paper, Stepper, Step, StepLabel, Button } from '@mui/material';
+import {
+  ThemeProvider, CssBaseline, Typography, Grid, Box, Container,
+  Paper, Stepper, Step, StepLabel, Button,
+} from '@mui/material';
 import StyleLink from '@mui/material/Link';
 import { Link } from 'react-router-dom';
 import SelectPlan from './SelectPlan.jsx';
@@ -9,6 +12,8 @@ import AddressForm from './AddressForm.jsx';
 import PaymentForm from './PaymentForm.jsx';
 import Review from './Review.jsx';
 import myTheme from '../theme.jsx';
+import { useAuth0 } from '@auth0/auth0-react';
+
 
 const Copyright = () => (
   <Typography variant="body2" color="text.secondary" align="center">
@@ -23,6 +28,12 @@ const Copyright = () => (
 );
 
 const Subscribe = () => {
+  const { user } = useAuth0();
+  console.log(user);
+  // this component assumes the user is already logged in;
+  // below is just a placeholder which will be updated with userId from authentication
+  const userId = Math.round((Math.random() * 500) + 1);
+
   const steps = ['Select Plan', 'Shipping', 'Payment', 'Select Your Meals'];
 
   const [activeStep, setActiveStep] = useState(0);
@@ -97,7 +108,7 @@ const Subscribe = () => {
           result = false;
         } else {
           Object.entries(address).forEach((entry) => {
-            console.log(entry[1]);
+            // console.log(entry[1]);
             if (entry[0] !== 'address2') {
               if (entry[1] === '') {
                 errorMessage = 'complete all required address fields';
@@ -113,9 +124,11 @@ const Subscribe = () => {
           result = false;
         } else {
           Object.entries(payment).forEach((entry) => {
-            if (entry[1] === '') {
-              errorMessage = 'complete all required payment fields';
-              result = false;
+            if (entry[0] !== 'billing_address2') {
+              if (entry[1] === '') {
+                errorMessage = 'complete all required payment fields';
+                result = false;
+              }
             }
           });
         }
@@ -157,38 +170,63 @@ const Subscribe = () => {
     let savedCardName;
     let savedCardNumber;
     let savedExpDate;
-    let savedCvv;
     if (payment.saveCard) {
       savedCardName = payment.cardName;
       savedCardNumber = payment.cardNumber;
-      savedExpDate = `${payment.exMonth}-${payment.exYear}`;
-      savedCvv = payment.cvv;
+      savedExpDate = `${payment.exYear}-${payment.exMonth}-01`;
     } else {
       savedCardName = null;
       savedCardNumber = null;
       savedExpDate = null;
-      savedCvv = null;
     }
+
+    let subscriptionId;
+    switch (mealPlan.mealQty) {
+      case 3:
+        subscriptionId = 1;
+        break;
+      case 4:
+        subscriptionId = 2;
+        break;
+      case 5:
+        subscriptionId = 3;
+        break;
+      case 6:
+        subscriptionId = 4;
+        break;
+      default:
+        subscriptionId = 1;
+    }
+
     const userInfo = {
-      subscription_date: new Date(),
-      meals_per_week: mealPlan.mealQty,
+      id: userId,
       first_name: address.firstName,
       last_name: address.lastName,
-      // email: address.email,
-      // phone: address.phone,
       address1: address.address1,
       address2: address.address2,
       city: address.city,
       state: address.state,
-      zip: address.zip,
+      postal_code: address.zip,
       country: address.country,
+      subscribed: true,
+      subscription_start_date: new Date(),
+      weekly_start_date: new Date(),
+      allow_meals: true,
+      subscription_id: subscriptionId,
+      meals_per_week: mealPlan.mealQty,
       cardholder_name: savedCardName,
-      cc_number: savedCardNumber,
-      cc_exp: savedExpDate,
-      cvv: savedCvv,
+      card_number: savedCardNumber,
+      card_exp_date: savedExpDate,
+      billing_address1: payment.billing_address1,
+      billing_address2: payment.billing_address2,
+      billing_city: payment.billing_city,
+      billing_state: payment.billing_state,
+      billing_postal_code: payment.billing_zip,
+      billing_country: payment.billing_country,
     };
-    // console.log(userInfo);
-    axios.post('/api/users', userInfo)
+
+    console.log(userInfo);
+    axios.patch('/subscribe/update', userInfo)
       .then((res) => {
         console.log(res);
       })

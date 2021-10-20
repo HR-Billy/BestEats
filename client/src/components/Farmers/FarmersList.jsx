@@ -11,16 +11,18 @@ const ListContainer = styled(Box)`
   overflow-y: auto;
 `;
 
-const FarmersList = ({ farmers, index }) => (
-  <ListContainer>
-    <Grid container>
-      {farmers.slice(0, index).map((farmer) => (
-        <Grid item>
-          <FarmerCard farmer={farmer} />
-        </Grid>
-      ))}
-    </Grid>
-  </ListContainer>
-);
+const FarmersList = ({ farmers, index }) => {
+  return (
+    <ListContainer>
+      <Grid container>
+        {farmers.slice(0, index).map((farmer, index) => (
+          <Grid key={index} item>
+            <FarmerCard farmer={farmer} />
+          </Grid>
+        ))}
+      </Grid>
+    </ListContainer>
+  );
+};
 
 export default FarmersList;

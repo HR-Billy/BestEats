@@ -1,10 +1,8 @@
 const express = require('express');
 const path = require('path');
-<<<<<<< HEAD
 const runProfileRte = require('./controllers/profile');
-=======
+const runSubscribeRte = require('./controllers/subscribe');
 require('dotenv').config();
->>>>>>> authentication
 
 const app = express();
 const port = 3000;
@@ -19,7 +17,7 @@ app.use('/home', FIX_ME);
 app.use('/meal-plan', FIX_ME);
 app.use('/farmers', FIX_ME);
 app.use('/health', FIX_ME);
-app.use('/subscribe', FIX_ME);
+app.use('/subscribe', runSubscribeRte);
 app.use('/login', FIX_ME);
 app.use('/profile', runProfileRte);
 
