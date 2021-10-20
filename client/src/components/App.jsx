@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
 import { ThemeProvider } from '@mui/material/styles';
+import { Button, Typography } from '@mui/material';
 import {
   Text,
   NavigationBar,
@@ -20,22 +21,65 @@ const App = () => (
         <NavigationBar>
           <MainSet>
             <Link to="/" style={{ textDecoration: 'none' }}>
-              <Text>HOME</Text>
+              <Typography
+                color="black"
+                align="center"
+                variant="h5"
+                // sx={{ mb: 4, mt: { sx: 4, sm: 10 } }}
+                sx={{ mb: 3, mt: 3, ml: 3 }}
+              >
+                HOME
+              </Typography>
             </Link>
             <Link to="/meal-plan" style={{ textDecoration: 'none' }}>
-              <Text>MEALS</Text>
+              <Typography
+                color="black"
+                align="center"
+                variant="h5"
+                sx={{ mb: 3, mt: 3, ml: 3 }}
+              >
+                MEALS
+              </Typography>
             </Link>
             <Link to="/farmers" style={{ textDecoration: 'none' }}>
-              <Text>FARMERS</Text>
+              <Typography
+                color="black"
+                align="center"
+                variant="h5"
+                sx={{ mb: 3, mt: 3, ml: 3 }}
+              >
+                FARMERS
+              </Typography>
             </Link>
             <Link to="/store" style={{ textDecoration: 'none' }}>
-              <Text>STORE</Text>
+              <Typography
+                color="black"
+                align="center"
+                variant="h5"
+                sx={{ mb: 3, mt: 3, ml: 3 }}
+              >
+                STORE
+              </Typography>
             </Link>
             <Link to="/health" style={{ textDecoration: 'none' }}>
-              <Text>HEALTH</Text>
+              <Typography
+                color="black"
+                align="center"
+                variant="h5"
+                sx={{ mb: 3, mt: 3, ml: 3 }}
+              >
+                LIFESTYLE
+              </Typography>
             </Link>
             <Link to="/subscribe" style={{ textDecoration: 'none' }}>
-              <Text>SUBSCRIBE</Text>
+              <Typography
+                color="black"
+                align="center"
+                variant="h5"
+                sx={{ mb: 3, mt: 3, ml: 3 }}
+              >
+                MEMBERSHIP
+              </Typography>
             </Link>
           </MainSet>
           <Link to="/login" style={{ textDecoration: 'none' }}>
