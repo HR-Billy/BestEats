@@ -13,7 +13,7 @@ import Grid from '@mui/material/Grid';
 import CssBaseline from '@mui/material/CssBaseline';
 
 import { ThemeProvider } from '@mui/material/styles';
-import mytheme from '../theme.jsx';
+import myTheme from '../theme.jsx';
 
 const SelectPlan = ({ setMealPlan }) => {
   const [mealQty, setMealQty] = useState(3);
@@ -49,7 +49,7 @@ const SelectPlan = ({ setMealPlan }) => {
   };
 
   return (
-    <ThemeProvider theme={mytheme}>
+    <ThemeProvider theme={myTheme}>
       <CssBaseline />
       <Grid container sx={{ height: '60vh' }}>
         <Typography variant="h6" gutterBottom>

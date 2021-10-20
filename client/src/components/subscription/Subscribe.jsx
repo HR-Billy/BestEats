@@ -18,7 +18,7 @@ import SelectPlan from './SelectPlan.jsx';
 import AddressForm from './AddressForm.jsx';
 import PaymentForm from './PaymentForm.jsx';
 import Review from './Review.jsx';
-import mytheme from '../theme.jsx';
+import myTheme from '../theme.jsx';
 
 const Copyright = () => (
   <Typography variant="body2" color="text.secondary" align="center">
@@ -206,7 +206,7 @@ const Subscribe = () => {
   };
 
   return (
-    <ThemeProvider theme={mytheme}>
+    <ThemeProvider theme={myTheme}>
       <CssBaseline />
       <Container component="main" maxWidth="md" sx={{ mb: 4 }}>
         <Paper elevation={0} sx={{ my: { xs: 3, md: 6 }, p: { xs: 2, md: 3 } }}>
