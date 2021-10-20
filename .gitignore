@@ -6,3 +6,5 @@ bundle.js
 config.js
 coverage
 package-lock.json
+users.sql
+subConnection.js
