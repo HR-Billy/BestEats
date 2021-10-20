@@ -1,6 +1,7 @@
 const express = require('express');
 const path = require('path');
 const runProfileRte = require('./controllers/profile');
+const runGroceryRte = require('./controllers/grocery');
 
 const app = express();
 const port = 3000;
@@ -14,6 +15,7 @@ const FIX_ME = () => { console.log('https://www.youtube.com/watch?v=iM_S4RczozU 
 app.use('/home', FIX_ME);
 app.use('/meal-plan', FIX_ME);
 app.use('/farmers', FIX_ME);
+app.use('/store', runGroceryRte);
 app.use('/health', FIX_ME);
 app.use('/subscribe', FIX_ME);
 app.use('/login', FIX_ME);

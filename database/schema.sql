@@ -5,20 +5,20 @@ CREATE DATABASE best_eats;
 
 CREATE TABLE products (
   id SERIAL NOT NULL PRIMARY KEY,
-  product_name VARCHAR(40) NOT NULL,
-  product_price INT NOT NULL,
+  name VARCHAR(40) NOT NULL,
+  price VARCHAR(20) NOT NULL,
   category VARCHAR(40) NOT NULL,
   calories INT NOT NULL,
   carbs INT NOT NULL,
   protein INT NOT NULL,
   fats INT NOT NULL,
-  image VARCHAR(200) NOT NULL,
+  image VARCHAR(400) NOT NULL,
   quantity INT NOT NULL,
-  sale_price INT NOT NULL,
+  onSale BOOLEAN DEFAULT false,
   promo VARCHAR(20),
-  unit_type VARCHAR(20),
-  unit_size INT NOT NULL,
-  serving_size INT NOT NULL
+  unitType VARCHAR(20),
+  unitSize INT NOT NULL,
+  servingSize INT NOT NULL
 );
 
 CREATE TABLE meal (
@@ -113,13 +113,13 @@ CREATE TABLE user_meals (
   date_received DATE NOT NULL
 );
 
-COPY products(id, product_name, product_price, category, calories, carbs, protein, fats, image, quantity, sale_price, promo, unit_type, unit_size, serving_size)
-FROM '/Users/timjordan/HackReactor/BestEats/database/data/products.csv'
+COPY products(id, name, price, category, calories, carbs, protein, fats, image, quantity, onSale, promo, unitType, unitSize, servingSize)
+FROM '/Users/joshzigler/Developer/HR/blue-ocean/database/CSV Data/productsMockData.csv'
 DELIMITER ','
 CSV HEADER;
 
 COPY meal(id, meal_name, photo, description, time, low_calorie, vegetarian, pescatarian, vegan, halal, spicy, easy_prep, easy_cleanup)
-FROM '/Users/timjordan/HackReactor/BestEats/database/data/meals.csv'
+FROM '/Users/joshzigler/Developer/HR/blue-ocean/database/CSV Data/meals.csv'
 DELIMITER ','
 CSV HEADER;
 
@@ -129,16 +129,16 @@ CSV HEADER;
 -- CSV HEADER;
 
 COPY users(id,username, hash_password, first_name, last_name, email, phone, address1, address2, city, state, postal_code, country, subscribed, member_start_date, member_end_date, subscription_start_date, subscription_end_date, weekly_start_date, meals_per_week, price)
-FROM '/Users/timjordan/HackReactor/BestEats/database/data/users.csv'
+FROM '/Users/joshzigler/Developer/HR/blue-ocean/database/CSV Data/users.csv'
 DELIMITER ','
 CSV HEADER;
 
 COPY status(id, text, emoji, user_id, created_at)
-FROM '/Users/timjordan/HackReactor/BestEats/database/data/status.csv'
+FROM '/Users/joshzigler/Developer/HR/blue-ocean/database/CSV Data/status.csv'
 DELIMITER ','
 CSV HEADER;
 
 COPY user_meals(id, user_id, meal_id, date_ordered, date_received)
-FROM '/Users/timjordan/HackReactor/BestEats/database/data/user_meals.csv'
+FROM '/Users/joshzigler/Developer/HR/blue-ocean/database/CSV Data/user_meals.csv'
 DELIMITER ','
 CSV HEADER;

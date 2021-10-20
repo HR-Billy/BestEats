@@ -14,7 +14,7 @@ const FarmersList = ({ farmers, index }) => (
     <Grid container>
       {farmers.slice(0, index).map((farmer) => (
         <Grid item>
-          <FarmerCard farmer={farmer} />
+          <FarmerCard farmer={farmer} key={farmer.id} />
         </Grid>
       ))}
     </Grid>

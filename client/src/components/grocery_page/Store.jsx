@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import axios from 'axios';
+import React, { useEffect, useState, useRef } from 'react';
 import styled from 'styled-components';
 import Search from './Search.jsx';
 import Category from './Category.jsx';
@@ -10,36 +11,63 @@ const H1 = styled.h1`
   padding-top: 60px;
   text-align: center;
   font-size: 80px;
-`
+`;
 
 const Container = styled.div`
   width: 85%;
   margin: auto;
   font-family: Sans-Serif;
-`
+`;
 
 const Wrapper = styled.div`
   display: flex;
   flex-direction: row-reverse;
-`
+`;
+
+const useDidMountEffect = (func, deps) => {
+  const didMount = useRef(false);
+
+  useEffect(() => {
+    if (didMount.current) {
+      func();
+    } else {
+      didMount.current = true;
+    }
+  }, deps);
+};
 
 export default function Store() {
   const [activeCategory, setActiveCategory] = useState('Produce');
+  const [products, setProducts] = useState(null);
   const [activeProducts, setActiveProducts] = useState(null);
   const [search, setSearch] = useState('');
   const [cart, setCart] = useState([]);
 
   useEffect(() => {
-    const filteredProducts = data.filter((d) => d.category === activeCategory);
+    axios.get('store/produce')
+      .then(({ data }) => {
+        setActiveProducts(data);
+      });
+  }, []);
+
+  useEffect(() => {
+    axios.get('store/products')
+      .then(({ data }) => {
+        setProducts(data);
+      });
+  }, []);
+
+  useDidMountEffect(() => {
+    const filteredProducts = products.filter((d) => d.category === activeCategory);
     setActiveProducts(filteredProducts);
   }, [activeCategory]);
 
-  useEffect(() => {
+  useDidMountEffect(() => {
     if (search === '') {
-      const filteredProducts = data.filter((d) => d.category === activeCategory);
+      const filteredProducts = products.filter((d) => d.category === activeCategory);
       setActiveProducts(filteredProducts);
     } else {
-      const filteredProducts = data.filter((d) => d.name.toLowerCase().includes(search.toLowerCase()));
+      const filteredProducts = products.filter((d) => d.name.toLowerCase().includes(search.toLowerCase()));
       setActiveProducts(filteredProducts);
     }
   }, [search]);
@@ -48,7 +76,7 @@ export default function Store() {
     <Container>
       <H1>Best Eats</H1>
       <Search setSearch={setSearch}/>
-      <Category setActiveCategory={setActiveCategory} />
+      <Category setActiveCategory={setActiveCategory} activeCategory={activeCategory}/>
       <Wrapper>
         {cart.length > 0 && <Cart cart={cart} setCart={setCart} />}
         {activeProducts && <Items products={activeProducts} setCart={setCart} />}
