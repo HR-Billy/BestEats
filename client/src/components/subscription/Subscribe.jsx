@@ -26,6 +26,10 @@ const Copyright = () => (
 );
 
 const Subscribe = () => {
+  // this component assumes the user is already logged in;
+  // below is just a placeholder which will be updated with userId from authentication
+  const userId = Math.round((Math.random() * 500) + 1);
+
   const steps = ['Select Plan', 'Shipping', 'Payment', 'Select Your Meals'];
 
   const [activeStep, setActiveStep] = useState(0);
@@ -100,7 +104,7 @@ const Subscribe = () => {
           result = false;
         } else {
           Object.entries(address).forEach((entry) => {
-            console.log(entry[1]);
+            // console.log(entry[1]);
             if (entry[0] !== 'address2') {
               if (entry[1] === '') {
                 errorMessage = 'complete all required address fields';
@@ -116,9 +120,11 @@ const Subscribe = () => {
           result = false;
         } else {
           Object.entries(payment).forEach((entry) => {
-            if (entry[1] === '') {
-              errorMessage = 'complete all required payment fields';
-              result = false;
+            if (entry[0] !== 'billing_address2') {
+              if (entry[1] === '') {
+                errorMessage = 'complete all required payment fields';
+                result = false;
+              }
             }
           });
         }
@@ -188,8 +194,6 @@ const Subscribe = () => {
         subscriptionId = 1;
     }
 
-    // placeholder: will update with userId from authentication
-    const userId = Math.round((Math.random() * 500) + 1);
     const userInfo = {
       id: userId,
       first_name: address.firstName,

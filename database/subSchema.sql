@@ -31,7 +31,7 @@ CREATE TABLE users (
   meals_per_week SMALLINT DEFAULT 0,
   cardholder_name	VARCHAR(100),
   card_number VARCHAR(64),
-  card_exp_date DATE NOT NULL,
+  card_exp_date DATE,
   billing_address1 VARCHAR(100) NOT NULL,
   billing_address2 VARCHAR(100),
   billing_city VARCHAR(100),
