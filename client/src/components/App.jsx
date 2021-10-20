@@ -90,9 +90,7 @@ const App = () => {
             <Route
               exact
               path="/profile"
-              render={() => (
-                <Profile />
-              )}
+              render={() => <Profile />}
             />
           </CurrentPage>
         </Router>
