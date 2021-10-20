@@ -66,7 +66,6 @@ const Subscribe = () => {
     cvv: '',
     saveCard: false,
   });
-  // expDate: `${payment.exMonth} ${payment.exYear}`,
 
   const updateBillingInfo = () => {
     if (address.saveAddress) {
@@ -94,9 +93,6 @@ const Subscribe = () => {
   let errorMessage = 'complete all required fields';
 
   const validate = (step) => {
-    console.log('validating step', step);
-    console.log('address', address);
-    console.log('payment Info', payment);
     let result = true;
     switch (step) {
       case 0:
@@ -201,7 +197,7 @@ const Subscribe = () => {
       cc_exp: savedExpDate,
       cvv: savedCvv,
     };
-    console.log(userInfo);
+    // console.log(userInfo);
     axios.post('/api/users', userInfo)
       .then((res) => {
         console.log(res);

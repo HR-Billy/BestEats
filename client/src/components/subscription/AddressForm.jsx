@@ -26,7 +26,6 @@ const AddressForm = ({ address, setAddress }) => {
               name="firstName"
               label="First name"
               fullWidth
-              autoComplete="given-name"
               variant="standard"
               value={address.firstName}
               onChange={handleChange}
@@ -39,7 +38,6 @@ const AddressForm = ({ address, setAddress }) => {
               name="lastName"
               label="Last name"
               fullWidth
-              autoComplete="family-name"
               variant="standard"
               value={address.lastName}
               onChange={handleChange}
@@ -52,7 +50,6 @@ const AddressForm = ({ address, setAddress }) => {
               name="address1"
               label="Address line 1"
               fullWidth
-              autoComplete="shipping address-line1"
               variant="standard"
               value={address.address1}
               onChange={handleChange}
@@ -64,7 +61,6 @@ const AddressForm = ({ address, setAddress }) => {
               name="address2"
               label="Address line 2"
               fullWidth
-              autoComplete="shipping address-line2"
               variant="standard"
               value={address.address2}
               onChange={handleChange}
@@ -77,7 +73,6 @@ const AddressForm = ({ address, setAddress }) => {
               name="city"
               label="City"
               fullWidth
-              autoComplete="shipping city"
               variant="standard"
               value={address.city}
               onChange={handleChange}
@@ -101,7 +96,6 @@ const AddressForm = ({ address, setAddress }) => {
               name="zip"
               label="Zip / Postal code"
               fullWidth
-              autoComplete="shipping postal-code"
               variant="standard"
               value={address.zip}
               onChange={handleChange}
@@ -114,7 +108,6 @@ const AddressForm = ({ address, setAddress }) => {
               name="country"
               label="Country"
               fullWidth
-              autoComplete="shipping country"
               variant="standard"
               value={address.country}
               onChange={handleChange}

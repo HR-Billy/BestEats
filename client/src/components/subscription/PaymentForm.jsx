@@ -30,7 +30,6 @@ const PaymentForm = ({ address, payment, setPayment }) => {
                 name="billing_firstName"
                 label="First name"
                 fullWidth
-                autoComplete="given-name"
                 variant="standard"
                 value={payment.billing_firstName}
                 onChange={handleChange}
@@ -43,7 +42,6 @@ const PaymentForm = ({ address, payment, setPayment }) => {
                 name="billing_lastName"
                 label="Last name"
                 fullWidth
-                autoComplete="family-name"
                 variant="standard"
                 value={payment.billing_lastName}
                 onChange={handleChange}
@@ -56,7 +54,6 @@ const PaymentForm = ({ address, payment, setPayment }) => {
                 name="billing_address1"
                 label="Address line 1"
                 fullWidth
-                autoComplete="billing address-line1"
                 variant="standard"
                 value={payment.billing_address1}
                 onChange={handleChange}
@@ -68,7 +65,6 @@ const PaymentForm = ({ address, payment, setPayment }) => {
                 name="billing_address2"
                 label="Address line 2"
                 fullWidth
-                autoComplete="billing address-line2"
                 variant="standard"
                 value={payment.billing_address2}
                 onChange={handleChange}
@@ -81,7 +77,6 @@ const PaymentForm = ({ address, payment, setPayment }) => {
                 name="billing_city"
                 label="City"
                 fullWidth
-                autoComplete="billing address-level2"
                 variant="standard"
                 value={payment.billing_city}
                 onChange={handleChange}
@@ -105,7 +100,6 @@ const PaymentForm = ({ address, payment, setPayment }) => {
                 name="billing_zip"
                 label="Zip / Postal code"
                 fullWidth
-                autoComplete="billing postal-code"
                 variant="standard"
                 value={payment.billing_zip}
                 onChange={handleChange}
@@ -118,7 +112,6 @@ const PaymentForm = ({ address, payment, setPayment }) => {
                 name="billing_country"
                 label="Country"
                 fullWidth
-                autoComplete="billing country"
                 variant="standard"
                 value={payment.billing_country}
                 onChange={handleChange}
