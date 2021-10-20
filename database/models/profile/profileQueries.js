@@ -1,5 +1,5 @@
 module.exports = {
   selectData: `
-  SELECT * FROM users WHERE username = $1;
+  SELECT * FROM status WHERE user_id = $1;
   `,
 };
