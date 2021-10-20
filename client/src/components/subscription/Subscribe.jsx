@@ -12,6 +12,8 @@ import AddressForm from './AddressForm.jsx';
 import PaymentForm from './PaymentForm.jsx';
 import Review from './Review.jsx';
 import myTheme from '../theme.jsx';
+import { useAuth0 } from '@auth0/auth0-react';
+
 
 const Copyright = () => (
   <Typography variant="body2" color="text.secondary" align="center">
@@ -26,6 +28,8 @@ const Copyright = () => (
 );
 
 const Subscribe = () => {
+  const { user } = useAuth0();
+  console.log(user);
   // this component assumes the user is already logged in;
   // below is just a placeholder which will be updated with userId from authentication
   const userId = Math.round((Math.random() * 500) + 1);

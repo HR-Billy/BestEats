@@ -2,6 +2,7 @@ const express = require('express');
 const path = require('path');
 const runProfileRte = require('./controllers/profile');
 const runSubscribeRte = require('./controllers/subscribe');
+require('dotenv').config();
 
 const app = express();
 const port = 3000;
