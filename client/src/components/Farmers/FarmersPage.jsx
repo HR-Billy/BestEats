@@ -1,31 +1,102 @@
 import React, { useState } from 'react';
-import { Container, Button } from '@mui/material';
+import {
+  Container,
+  Button,
+  Typography,
+  Box,
+  Autocomplete,
+  TextField,
+} from '@mui/material';
+import { useTheme } from '@mui/material/styles';
 import styled from 'styled-components';
 
 import FarmersMockData from './FarmersMockData.js';
 import FarmersList from './FarmersList.jsx';
 
-const Intro = styled.p`
-  color: black;
-  text-align: center;
-`;
-
 const FarmersPage = () => {
-  const [numberOfProfiles, setNumberOfProfiles] = useState(2);
+  const theme = useTheme();
+  const [numberOfProfiles, setNumberOfProfiles] = useState(4);
+  const [farmer, setFarmer] = useState('');
 
   const loadMoreFarmers = () => {
     setNumberOfProfiles(numberOfProfiles + 1);
   };
 
   return (
-    <Container maxWidth="lg">
-      <Intro>
-        Meet your farmers! <br /> These are the hardworking people growing the
-        very products we source from their very own farms!
-      </Intro>
-      <FarmersList farmers={FarmersMockData} index={numberOfProfiles} />
-      <Button onClick={loadMoreFarmers}>Load More</Button>
-    </Container>
+    <Box
+      sx={{
+        height: 'calc(100vh - 58px)',
+        display: 'grid',
+        gridTemplateRows: '[intro] auto [body] 1fr [button] auto',
+        gridGap: theme.spacing(1),
+      }}
+    >
+      <Box>
+        <Typography align="center" sx={{ fontWeight: 'bold' }}>
+          Meet your farmers!
+        </Typography>
+        <Typography align="center">
+          These are the hardworking people growing the very products we source.
+          You can learn a little more about their farms and their biography
+          here.
+        </Typography>
+      </Box>
+
+      <Box
+        sx={{
+          height: '100%',
+          overflowY: 'auto',
+          display: 'grid',
+          gridTemplateRows: '[search] auto [content] minmax(0,1fr)',
+          gridGap: theme.spacing(1),
+          paddingTop: theme.spacing(1),
+        }}
+      >
+        <Container>
+          <Autocomplete
+            freeSolo
+            onChange={(e, nV) => {
+              setFarmer(nV);
+            }}
+            onInputChange={(e, nV) => {
+              setFarmer(nV);
+            }}
+            options={[
+              ...new Set(
+                FarmersMockData.map(
+                  (farmer) => `${farmer.firstName} ${farmer.lastName}`
+                )
+              ),
+            ]}
+            renderInput={(params) => {
+              return <TextField {...params} label="Farmer Search" />;
+            }}
+          />
+        </Container>
+
+        <Container maxWidth="lg">
+          <FarmersList
+            farmers={
+              farmer
+                ? FarmersMockData.filter((farmerMockData) => {
+                    const [firstName, lastName] = farmer.split(' ');
+                    return (
+                      farmerMockData.firstName === firstName &&
+                      farmerMockData.lastName === lastName
+                    );
+                  })
+                : FarmersMockData
+            }
+            index={numberOfProfiles}
+          />
+        </Container>
+      </Box>
+      <Box sx={{ display: 'flex', justifyContent: 'center' }}>
+        <Button onClick={loadMoreFarmers} variant="contained">
+          Load More
+        </Button>
+      </Box>
+    </Box>
   );
 };
 
