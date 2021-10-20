@@ -1,19 +1,7 @@
 /* eslint-disable import/extensions */
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import Typography from '@mui/material/Typography';
-import FormControl from '@mui/material/FormControl';
-import Select from '@mui/material/Select';
-import MenuItem from '@mui/material/MenuItem';
-import InputLabel from '@mui/material/InputLabel';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemText from '@mui/material/ListItemText';
-import Grid from '@mui/material/Grid';
-import CssBaseline from '@mui/material/CssBaseline';
-
-import { ThemeProvider } from '@mui/material/styles';
-import mytheme from '../theme.jsx';
+import { Grid, Typography, FormControl, InputLabel, Select, MenuItem, List, ListItem, ListItemText } from '@mui/material';
 
 const SelectPlan = ({ setMealPlan }) => {
   const [mealQty, setMealQty] = useState(3);
@@ -49,8 +37,7 @@ const SelectPlan = ({ setMealPlan }) => {
   };
 
   return (
-    <ThemeProvider theme={mytheme}>
-      <CssBaseline />
+    <>
       <Grid container sx={{ height: '60vh' }}>
         <Typography variant="h6" gutterBottom>
           Select Your Meal Plan
@@ -131,7 +118,7 @@ const SelectPlan = ({ setMealPlan }) => {
           />
         </Grid>
       </Grid>
-    </ThemeProvider>
+      </>
   );
 };
 

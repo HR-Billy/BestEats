@@ -1,24 +1,14 @@
 /* eslint-disable import/extensions */
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import CssBaseline from '@mui/material/CssBaseline';
-import Box from '@mui/material/Box';
-import Grid from '@mui/material/Grid';
-import Container from '@mui/material/Container';
-import Paper from '@mui/material/Paper';
-import Stepper from '@mui/material/Stepper';
-import Step from '@mui/material/Step';
-import StepLabel from '@mui/material/StepLabel';
-import Button from '@mui/material/Button';
+import { ThemeProvider, CssBaseline, Typography, Grid, Box, Container, Paper, Stepper, Step, StepLabel, Button } from '@mui/material';
 import StyleLink from '@mui/material/Link';
-import Typography from '@mui/material/Typography';
-import { ThemeProvider } from '@mui/material/styles';
 import { Link } from 'react-router-dom';
 import SelectPlan from './SelectPlan.jsx';
 import AddressForm from './AddressForm.jsx';
 import PaymentForm from './PaymentForm.jsx';
 import Review from './Review.jsx';
-import mytheme from '../theme.jsx';
+import myTheme from '../theme.jsx';
 
 const Copyright = () => (
   <Typography variant="body2" color="text.secondary" align="center">
@@ -206,7 +196,7 @@ const Subscribe = () => {
   };
 
   return (
-    <ThemeProvider theme={mytheme}>
+    <ThemeProvider theme={myTheme}>
       <CssBaseline />
       <Container component="main" maxWidth="md" sx={{ mb: 4 }}>
         <Paper elevation={0} sx={{ my: { xs: 3, md: 6 }, p: { xs: 2, md: 3 } }}>
