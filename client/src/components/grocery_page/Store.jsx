@@ -35,8 +35,10 @@ export default function Store() {
   }, [activeCategory]);
 
   useEffect(() => {
-    if (search === '') setActiveCategory(activeCategory);
-    else {
+    if (search === '') {
+      const filteredProducts = data.filter((d) => d.category === activeCategory);
+      setActiveProducts(filteredProducts);
+    } else {
       const filteredProducts = data.filter((d) => d.name.toLowerCase().includes(search.toLowerCase()));
       setActiveProducts(filteredProducts);
     }
