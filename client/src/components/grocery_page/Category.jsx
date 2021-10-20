@@ -12,10 +12,10 @@ const Cat = styled.div`
 
 const Image = styled.img`
   border-radius: 30px;
+  /* filter: brightness(50%); */
 `;
 
-export default function Category({setActiveCategory}) {
-
+export default function Category({ setActiveCategory, activeCategory }) {
   function handleClick(e) {
     setActiveCategory(e.target.name);
   }
@@ -27,7 +27,7 @@ export default function Category({setActiveCategory}) {
         <h2>Dairy/Eggs</h2>
       </Cat>
       <Cat>
-        <Image onClick={handleClick} name="Produce" src="https://media-exp1.licdn.com/dms/image/C561BAQECKYPL5SZdgA/company-background_10000/0/1614115930420?e=2159024400&v=beta&t=iLyQjii2ykrlQBvL5eeDnAaGJR4e0t23JN3XHd-tssU" width="243px" height="135px" />
+        <Image onClick={handleClick} name="Produce" src2="https://media-exp1.licdn.com/dms/image/C561BAQECKYPL5SZdgA/company-background_10000/0/1614115930420?e=2159024400&v=beta&t=iLyQjii2ykrlQBvL5eeDnAaGJR4e0t23JN3XHd-tssU" width="243px" height="135px" src="https://static.onecms.io/wp-content/uploads/sites/19/2018/02/13/fruits-vegetables-rainbow-hero-getty-2000.jpg" />
         <h2>Produce</h2>
       </Cat>
       <Cat>

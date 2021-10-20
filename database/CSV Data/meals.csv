@@ -1,0 +1,1001 @@
+id,meal_name,photo,description,time,low_calorie,vegetarian,pescatarian,vegan,halal,spicy,easy_prep,easy_cleanup
+1,WARFARIN SODIUM,http://dummyimage.com/181x100.png/5fa2dd/ffffff,"Revision of Spacer in Sacrococcygeal Jt, Perc Endo Approach",21,false,true,true,false,false,true,true,true
+2,"Diphenhydramine Hydrochloride, Zinc Acetate",http://dummyimage.com/115x100.png/ff4444/ffffff,"Revision of Infusion Dev in Sacrococcygeal Jt, Open Approach",7,true,false,true,true,false,false,false,false
+3,Phenylephrine HCl,http://dummyimage.com/116x100.png/cc0000/ffffff,Low Dose Rate (LDR) Brachytherapy of Kidney using Iodine 125,15,false,false,false,true,false,true,true,false
+4,Giant Wild Rye,http://dummyimage.com/222x100.png/cc0000/ffffff,"Excision of Right External Iliac Artery, Perc Approach",21,true,true,true,true,false,false,false,false
+5,Cetirizine Hydrochloride,http://dummyimage.com/195x100.png/5fa2dd/ffffff,"Drain Oral Cav & Throat w Drain Dev, Perc Endo",19,false,false,true,true,false,false,true,false
+6,Iohexol,http://dummyimage.com/188x100.png/dddddd/000000,"Destruction of Right Innominate Vein, Perc Endo Approach",16,true,true,false,false,false,false,true,false
+7,Pyrithione Zinc,http://dummyimage.com/107x100.png/ff4444/ffffff,"Introduction of Analg/Hypnot/Sedat into Up GI, Endo",5,false,false,false,false,true,false,false,false
+8,PredniSONE,http://dummyimage.com/226x100.png/ff4444/ffffff,Magnetic Resonance Imaging (MRI) of R Eye using Oth Contrast,26,false,false,true,false,false,true,false,false
+9,"OCTINOXATE, OXYBENZONE",http://dummyimage.com/195x100.png/cc0000/ffffff,"Extirpation of Matter from Right Renal Artery, Open Approach",1,true,false,true,true,true,true,false,true
+10,NAFCILLIN SODIUM,http://dummyimage.com/244x100.png/cc0000/ffffff,Gait Training/Ambulat Treatment using Oth Equip,29,true,false,true,false,true,true,true,true
+11,"Titanium Dioxide, Octinoxate",http://dummyimage.com/101x100.png/dddddd/000000,"Insertion of Infusion Dev into L Radial Art, Perc Approach",7,true,false,true,true,true,false,true,false
+12,LIDOCAINE HYDROCHLORIDE,http://dummyimage.com/104x100.png/cc0000/ffffff,"Transfer Right Foot Skin, External Approach",24,false,true,true,true,false,false,true,true
+13,sertraline hydrochloride,http://dummyimage.com/220x100.png/ff4444/ffffff,"Repair Ear, Nose and Sinus in Products of Conception, Endo",28,true,false,false,false,false,true,false,true
+14,Stavudine,http://dummyimage.com/162x100.png/ff4444/ffffff,"Supplement R Up Arm Tendon with Nonaut Sub, Open Approach",26,true,false,false,true,false,true,true,false
+15,Warfarin Sodium,http://dummyimage.com/229x100.png/ff4444/ffffff,"Fusion of Left Tarsal Joint with Int Fix, Perc Endo Approach",6,false,false,true,false,false,true,true,false
+16,TITANIUM DIOXIDE,http://dummyimage.com/122x100.png/5fa2dd/ffffff,"Reposition Right Knee Joint with Int Fix, Perc Approach",13,true,false,false,false,false,true,true,true
+17,Ampicillin Sodium,http://dummyimage.com/191x100.png/ff4444/ffffff,"Occlusion of Low Esophag with Intralum Dev, Open Approach",15,false,true,true,false,false,true,true,true
+18,ISOSORBIDE MONONITRATE,http://dummyimage.com/233x100.png/ff4444/ffffff,"Supplement Right Basilic Vein with Synth Sub, Open Approach",26,true,true,false,false,false,true,false,false
+19,Filbert,http://dummyimage.com/214x100.png/cc0000/ffffff,"Dilate R Int Iliac Art, Bifurc, w Drug-elut Intra, Perc",30,true,false,true,true,true,true,true,true
+20,Octinoxate,http://dummyimage.com/144x100.png/cc0000/ffffff,"Dilate R Com Carotid, Bifurc, w 2 Intralum Dev, Perc",17,false,true,false,true,false,false,true,false
+21,"Hydroquinone, Padimate O",http://dummyimage.com/176x100.png/dddddd/000000,"Dilation of Trachea, Open Approach",19,false,false,true,true,false,false,false,false
+22,Prednisone,http://dummyimage.com/237x100.png/dddddd/000000,"Dilation of 2 Cor Art with 4 Drug-elut, Perc Endo Approach",2,false,true,false,false,true,true,true,true
+23,Tramadol ER,http://dummyimage.com/133x100.png/5fa2dd/ffffff,"Alteration of Left Wrist Region, Open Approach",23,true,true,false,true,false,false,false,true
+24,California Walnut Black Pollen,http://dummyimage.com/192x100.png/5fa2dd/ffffff,Change Cast on Face,22,false,true,true,true,false,false,true,true
+25,Warfarin Sodium,http://dummyimage.com/244x100.png/5fa2dd/ffffff,"Supplement C-thor Disc with Nonaut Sub, Open Approach",29,false,false,true,false,false,false,false,true
+26,pramoxine hydrochloride,http://dummyimage.com/153x100.png/ff4444/ffffff,"Bypass Lower Esophagus to Ileum with Synth Sub, Endo",1,true,false,true,true,true,true,true,false
+27,"BENZALKONIUM CHLORIDE, BACITRACIN ZINC, NEOMYCIN SULFATE, POLYMYXIN B SULFATE, WATER, ISOPROPYL ALCOHOL, BENZOCAINE, ALCOHOL, ASPIRIN,",http://dummyimage.com/119x100.png/cc0000/ffffff,"Repair Right Elbow Bursa and Ligament, Open Approach",13,true,false,true,true,true,false,false,false
+28,ZINC OXIDE,http://dummyimage.com/198x100.png/cc0000/ffffff,"Drainage of Left Carpal Joint, Percutaneous Approach",10,false,false,true,true,false,false,false,false
+29,Insulin lispro,http://dummyimage.com/211x100.png/5fa2dd/ffffff,"Supplement L Post Tib Art with Synth Sub, Open Approach",1,false,false,true,true,true,true,false,false
+30,"TITANIUM DIOXIDE, ZINC OXIDE",http://dummyimage.com/100x100.png/dddddd/000000,"Dilation of 1 Cor Art with Drug-elut Intra, Perc Approach",24,false,true,true,true,false,false,true,true
+31,"Avobenzone, Homosalate, Octisalate, Octocrylene, and Oxybenzone",http://dummyimage.com/237x100.png/dddddd/000000,"Revision of Nonaut Sub in L Tibia, Perc Approach",15,false,false,false,true,false,false,true,false
+32,"Balsam Peru, Castor Oil and Trypsin",http://dummyimage.com/204x100.png/dddddd/000000,"Introduction of Immunosuppressive into Periph Art, Perc",4,true,true,false,true,true,false,true,true
+33,Ethyl alcohol,http://dummyimage.com/223x100.png/5fa2dd/ffffff,"Reposition L Up Femur with Intramed Fix, Perc Endo Approach",26,true,false,true,true,false,false,false,true
+34,divalproex sodium,http://dummyimage.com/119x100.png/dddddd/000000,"Excision of Right Breast, External Approach",21,false,true,false,true,true,true,true,true
+35,Wheat Stem Rust,http://dummyimage.com/102x100.png/5fa2dd/ffffff,"Excision of Nasal Septum, Open Approach",14,false,false,false,true,false,true,false,true
+36,"Aluminum Hydroxide, Magnesium Hydroxide, Simethicone",http://dummyimage.com/152x100.png/cc0000/ffffff,"Occlusion of R Hand Art with Intralum Dev, Perc Approach",20,true,true,false,false,true,false,true,false
+37,Triclosan,http://dummyimage.com/160x100.png/dddddd/000000,"Reposition Left Lacrimal Gland, Open Approach",15,true,false,false,true,false,true,false,true
+38,olmesartan medoxomil and hydrochlorothiazide,http://dummyimage.com/151x100.png/dddddd/000000,"Replace R Sphenoid Bone w Nonaut Sub, Perc Endo",27,false,false,true,false,true,true,true,false
+39,Water,http://dummyimage.com/248x100.png/dddddd/000000,"Removal of Monitoring Device from Pleura, Perc Approach",8,true,false,true,false,false,true,false,false
+40,olopatadine hydrochloride,http://dummyimage.com/172x100.png/5fa2dd/ffffff,"Destruction of Left Hand Muscle, Percutaneous Approach",14,true,false,true,false,false,false,true,false
+41,Aluminum Zirconium Tetrachlorohydrex GLY,http://dummyimage.com/125x100.png/dddddd/000000,"Replacement of Right Clavicle with Synth Sub, Open Approach",27,false,false,true,true,true,false,false,true
+42,ulmus pumila pollen,http://dummyimage.com/170x100.png/ff4444/ffffff,"Revision of Nonaut Sub in Thor Disc, Perc Approach",5,true,true,true,true,true,false,true,false
+43,BENZALKONIUM CHLORIDE AND LIDOCAINE HYDROCHLORIDE,http://dummyimage.com/223x100.png/5fa2dd/ffffff,"Replace L Up Arm Skin w Synth Sub, Part Thick, Extern",19,true,true,true,false,false,false,false,false
+44,Activated Charcoal,http://dummyimage.com/106x100.png/dddddd/000000,"Extirpation of Matter from Right Foot Tendon, Open Approach",7,false,false,false,true,false,false,true,true
+45,Meloxicam,http://dummyimage.com/170x100.png/cc0000/ffffff,"Supplement Right Rib with Nonaut Sub, Perc Endo Approach",25,true,false,true,true,false,false,true,false
+46,"MATRICARIA RECUTITA, RHUBARB, PHYTOLACCA AMERICANA ROOT",http://dummyimage.com/235x100.png/ff4444/ffffff,"Excision of Right Foot Tendon, Perc Endo Approach",8,false,true,false,false,false,true,false,true
+47,fluoxetine,http://dummyimage.com/151x100.png/ff4444/ffffff,CT Scan of Cereb Vent using L Osm Contrast,17,false,false,false,true,false,false,true,false
+48,Potassium Chloride,http://dummyimage.com/185x100.png/5fa2dd/ffffff,"Dilate L Renal Art, Bifurc, w 3 Intralum Dev, Open",27,false,true,true,true,true,false,false,false
+49,Normal Saline with Phenol,http://dummyimage.com/228x100.png/ff4444/ffffff,"Insertion of Int Fix into Occip Jt, Open Approach",5,true,true,false,true,false,true,true,false
+50,Ipratropium Bromide and Albuterol Sulfate,http://dummyimage.com/187x100.png/cc0000/ffffff,"Inspection of Left Toe Phalangeal Joint, Perc Approach",19,true,false,false,false,true,true,true,true
+51,Povidone-Iodine,http://dummyimage.com/196x100.png/ff4444/ffffff,"Ultrasonography of Right Internal Carotid Artery, Intravasc",29,true,false,true,false,false,true,false,false
+52,clonidine hydrochloride,http://dummyimage.com/106x100.png/cc0000/ffffff,"Bypass L Renal Vein to Low Vein w Autol Sub, Open",20,false,false,false,false,true,true,true,true
+53,DIMETHICONE,http://dummyimage.com/133x100.png/cc0000/ffffff,"Dilation of Lower Esophagus with Intralum Dev, Open Approach",5,true,false,true,false,true,false,true,false
+54,ibuprofen,http://dummyimage.com/242x100.png/cc0000/ffffff,"Revision of Ext Fix in R Toe Phalanx, Perc Endo Approach",25,false,false,false,true,false,false,true,true
+55,Bisacodyl,http://dummyimage.com/201x100.png/5fa2dd/ffffff,"Removal of Infusion Device from Bladder, Perc Endo Approach",15,true,false,false,false,true,false,false,true
+56,Triclosan,http://dummyimage.com/246x100.png/dddddd/000000,"Excision of Left Wrist Region, Perc Endo Approach, Diagn",23,true,true,true,true,true,false,true,true
+57,sildenafil citrate,http://dummyimage.com/217x100.png/5fa2dd/ffffff,"Supplement Left Cornea with Synth Sub, Open Approach",13,false,true,true,false,true,false,false,true
+58,Allantoin,http://dummyimage.com/209x100.png/ff4444/ffffff,"Drainage of Right Hand with Drain Dev, Perc Endo Approach",17,true,true,false,false,false,true,false,true
+59,potassium citrate,http://dummyimage.com/234x100.png/dddddd/000000,"Supplement Sigmoid Colon with Synth Sub, Via Opening",19,false,true,false,false,true,false,true,false
+60,Nicotine polacrilex,http://dummyimage.com/160x100.png/5fa2dd/ffffff,"Excision of Left Epididymis, Open Approach",30,true,false,false,false,false,false,false,false
+61,Losartan Potassium,http://dummyimage.com/215x100.png/ff4444/ffffff,"Revision of Synth Sub in L Carpal Jt, Open Approach",14,false,false,true,false,true,false,true,false
+62,methylprednisolone sodium succinate,http://dummyimage.com/164x100.png/dddddd/000000,"Resection of Ascending Colon, Endo",20,true,false,true,true,false,false,false,true
+63,Treatment Set TS351201,http://dummyimage.com/162x100.png/5fa2dd/ffffff,"Revision of Radioactive Element in Neck, Perc Approach",5,false,false,true,false,false,true,true,true
+64,Citalopram Hydrobromide,http://dummyimage.com/181x100.png/dddddd/000000,"Reattachment of Sigmoid Colon, Open Approach",27,false,true,true,false,false,false,true,false
+65,"TITANIUM DIOXIDE, OCTINOXATE, ZINC OXIDE",http://dummyimage.com/161x100.png/5fa2dd/ffffff,"Reposition Left Parietal Bone, Percutaneous Approach",14,false,false,true,true,false,false,false,true
+66,Rhodotorula mucilaginosa,http://dummyimage.com/178x100.png/ff4444/ffffff,"Drainage of Bilateral Vas Deferens, Perc Endo Approach",8,false,false,false,true,true,false,true,false
+67,Raloxifene hydrochloride,http://dummyimage.com/181x100.png/5fa2dd/ffffff,Wound Mgmt Trmt Musculosk Up Back/UE w Mech Equip,3,false,true,false,true,false,true,true,true
+68,"OXYBENZONE, OCTINOXATE, ZINC OXIDE",http://dummyimage.com/223x100.png/dddddd/000000,"Drain of Pelvic Subcu/Fascia with Drain Dev, Perc Approach",7,true,true,false,true,true,false,true,false
+69,METHYLPREDNISOLONE SODIUM SUCCINATE,http://dummyimage.com/205x100.png/ff4444/ffffff,"Excision of Right External Carotid Artery, Open Approach",15,false,false,false,true,true,true,false,false
+70,fenofibrate,http://dummyimage.com/177x100.png/ff4444/ffffff,"Resection of Right Hepatic Duct, Endo",27,false,true,false,false,true,false,true,true
+71,"Bacitracin Zinc, Neomycin Sulfate, Polymyxin B Sulfate, and Pramoxine Hydrochloride",http://dummyimage.com/155x100.png/ff4444/ffffff,"Dilate of R Com Carotid with 2 Drug-elut, Perc Endo Approach",27,true,true,true,false,false,true,true,false
+72,Strophanthus Aurum,http://dummyimage.com/161x100.png/dddddd/000000,"Transfuse Nonaut Plasma Cryoprecip in POC, Circ, Perc",7,false,true,false,false,true,true,false,true
+73,DIMERCAPROL,http://dummyimage.com/203x100.png/5fa2dd/ffffff,"Irrigation of Lower GI using Irrigat, Via Opening, Diagn",13,true,false,false,false,true,false,false,true
+74,Prednisone,http://dummyimage.com/148x100.png/5fa2dd/ffffff,Coord/Dexterity Trmt Neuro Up Back/UE w Assist Equip,17,false,true,true,false,false,true,true,true
+75,everolimus,http://dummyimage.com/118x100.png/dddddd/000000,"Insertion of Radioactive Element into L Nipple, Via Opening",19,false,true,false,false,false,true,false,true
+76,ALUMINUM CHLOROHYDRATE,http://dummyimage.com/164x100.png/ff4444/ffffff,"Division of Lumbar Sympathetic Nerve, Perc Endo Approach",20,true,true,false,true,true,false,false,false
+77,Velvet Grass,http://dummyimage.com/111x100.png/5fa2dd/ffffff,"Dilation of Coronary Artery, One Artery, Open Approach",10,true,false,false,false,true,true,false,true
+78,"Cetirizine HCl, Pseudoephedrine HCl",http://dummyimage.com/154x100.png/cc0000/ffffff,"Bypass R Subclav Art to Bi Low Leg Art w Autol Art, Open",12,true,false,true,true,true,true,false,true
+79,nicotine polacrilex,http://dummyimage.com/142x100.png/ff4444/ffffff,"Repair Large Intestine, Percutaneous Approach",11,true,false,true,false,false,true,true,true
+80,Octinoxate and Oxybenzone,http://dummyimage.com/249x100.png/cc0000/ffffff,LDR Brachytherapy of Salivary Gland using Cesium 137,14,false,false,false,false,true,false,false,true
+81,"OCTINOXATE, HOMOSALATE, OXYBENZONE, AVOBENZONE",http://dummyimage.com/205x100.png/cc0000/ffffff,"Revision of Nonaut Sub in Aort Valve, Open Approach",3,false,true,true,false,false,false,false,true
+82,Technetium Tc-99m Generator,http://dummyimage.com/120x100.png/5fa2dd/ffffff,"Bypass Left Ureter to Colon with Autol Sub, Open Approach",13,false,false,true,true,false,false,true,false
+83,"RIMANTADINE HYDROCHLORIDE, ARGININE",http://dummyimage.com/219x100.png/cc0000/ffffff,"Drainage of Male Perineum with Drain Dev, Perc Endo Approach",25,true,false,false,true,false,true,true,false
+84,Shampoo plus Conditioner,http://dummyimage.com/125x100.png/dddddd/000000,"Msrmt & Monitor, Physiological Sys, Measure",23,true,false,true,true,false,false,true,false
+85,Salicylic Acid,http://dummyimage.com/111x100.png/cc0000/ffffff,"Removal of Infusion Device from Thor Jt, Open Approach",7,false,false,false,false,true,true,true,false
+86,leuprolide acetate,http://dummyimage.com/191x100.png/5fa2dd/ffffff,"Dilation of Descending Colon with Intralum Dev, Via Opening",29,false,true,false,false,false,false,false,false
+87,Pecan Pollen,http://dummyimage.com/216x100.png/5fa2dd/ffffff,"Repair Right Knee Region, Percutaneous Approach",23,false,true,true,false,false,true,false,false
+88,"Acetaminophen, Pseudoephedrine HCl",http://dummyimage.com/244x100.png/ff4444/ffffff,"Resection of Middle Esophagus, Endo",6,false,false,true,false,true,false,true,true
+89,"Acetaminophen, Dextromethorphan HBr, Doxylamine succinate, Phenylephrine HCl",http://dummyimage.com/154x100.png/5fa2dd/ffffff,"Supplement Left Hip Joint with Autol Sub, Perc Approach",25,true,false,true,true,false,false,true,true
+90,HydrOXYzine Hydrochloride,http://dummyimage.com/225x100.png/5fa2dd/ffffff,"Excision of Left Lesser Saphenous Vein, Open Approach, Diagn",10,true,true,true,true,false,false,true,true
+91,Octinoxate and Oxybenzone,http://dummyimage.com/123x100.png/dddddd/000000,"Removal of Other Device from Male Perineum, Extern Approach",25,true,false,false,false,false,false,false,false
+92,Walnut Black Pollen,http://dummyimage.com/243x100.png/cc0000/ffffff,"Replacement of Right Vocal Cord with Autol Sub, Endo",26,true,true,false,false,false,false,false,false
+93,Lidocaine,http://dummyimage.com/220x100.png/5fa2dd/ffffff,"Drainage of L Abd Tendon with Drain Dev, Perc Endo Approach",1,true,false,false,true,true,false,false,false
+94,Titanium Dioxide,http://dummyimage.com/137x100.png/cc0000/ffffff,"Removal of Autol Sub from L Clavicle, Open Approach",15,false,false,true,true,false,true,false,false
+95,ASPIRIN,http://dummyimage.com/127x100.png/cc0000/ffffff,"Release Right Patella, Percutaneous Endoscopic Approach",4,false,true,true,true,false,false,true,true
+96,Sodium Fluoride,http://dummyimage.com/141x100.png/dddddd/000000,"Inspection of Right Lower Arm, External Approach",13,true,true,true,false,false,false,true,true
+97,GLYCERIN,http://dummyimage.com/187x100.png/ff4444/ffffff,"Restriction of Ileum with Intraluminal Device, Perc Approach",17,false,false,true,true,false,true,false,false
+98,"Titanium Dioxide, Zinc Oxide, and Octinoxate",http://dummyimage.com/104x100.png/ff4444/ffffff,"Revision of Infusion Device in L Pleural Cav, Perc Approach",4,true,true,false,true,true,false,false,true
+99,hydrocortisone,http://dummyimage.com/126x100.png/cc0000/ffffff,"Inspection of Ureter, Percutaneous Endoscopic Approach",4,false,false,true,true,true,true,false,false
+100,West Sycamore,http://dummyimage.com/184x100.png/dddddd/000000,"Replacement of R Hypogast Vein with Autol Sub, Open Approach",27,true,true,true,false,false,true,false,true
+101,Salicylic Acid,http://dummyimage.com/240x100.png/dddddd/000000,"Drainage of R Temporomandib Jt, Perc Approach, Diagn",23,true,false,false,false,false,false,true,true
+102,Bisacodyl,http://dummyimage.com/206x100.png/dddddd/000000,"Occlusion of Lingula Bronc with Extralum Dev, Perc Approach",14,false,false,false,true,true,true,false,true
+103,Diphenhydramine HCl,http://dummyimage.com/158x100.png/cc0000/ffffff,"Restriction of Right Ureter with Extralum Dev, Perc Approach",18,false,false,true,false,false,false,true,true
+104,Ensulizole,http://dummyimage.com/208x100.png/5fa2dd/ffffff,Exercise Trmt Musculosk Low Back/LE w Physical Agent,24,true,true,false,true,true,false,true,true
+105,Pyrithione Zinc,http://dummyimage.com/178x100.png/cc0000/ffffff,"Revision of Nonaut Sub in Omentum, Perc Approach",22,false,true,false,false,false,true,false,false
+106,Octinoxate and Oxybenzone,http://dummyimage.com/156x100.png/dddddd/000000,"Removal of Radioactive Element from Mesentery, Open Approach",7,true,true,false,true,false,false,true,false
+107,Cefuroxime,http://dummyimage.com/122x100.png/dddddd/000000,"Insertion of VAD into R Low Leg Subcu/Fascia, Perc Approach",5,false,false,false,false,false,true,true,false
+108,Paricalcitol,http://dummyimage.com/248x100.png/cc0000/ffffff,"Excision of Left Lower Leg, Open Approach, Diagnostic",22,false,false,true,false,false,false,false,true
+109,"acetaminophen, dextromethorphan Hbr, Phenylephrine HCl",http://dummyimage.com/208x100.png/cc0000/ffffff,"Drainage of L Com Iliac Vein with Drain Dev, Open Approach",17,true,true,true,false,true,true,false,true
+110,lisinopril,http://dummyimage.com/245x100.png/dddddd/000000,"Extirpate matter from R Ulnar Art, Bifurc, Perc Endo",5,true,false,true,false,false,false,true,false
+111,Curly Dock,http://dummyimage.com/151x100.png/dddddd/000000,"Replacement of Epiglottis with Nonaut Sub, Open Approach",25,true,false,false,false,true,true,false,false
+112,"Aesculus hippocastanum, flos, Agrimonia eupatoria, flos, Caladium seguinum, Capsicum annuum, Daphne indica, Eugenia jambosa, Helianthus annuus, Juglans regia, flos, Kali phosphoricum, Lobelia inflata, Lonicera caprifolium, flos, Nicotinum, Nux vomica, Plantago major, Saccharum officinale, Staphysagria, Tabacum",http://dummyimage.com/205x100.png/5fa2dd/ffffff,"Bypass Azygos Vein to Up Vein w Autol Sub, Perc Endo",16,false,false,true,false,false,false,false,true
+113,Mucor racemosus immunoserum rabbit,http://dummyimage.com/244x100.png/5fa2dd/ffffff,"Revision of Drain Dev in Retroperitoneum, Open Approach",15,true,true,true,false,false,true,true,false
+114,"HYDROCODONE BITARTRATE, ACETAMINOPHEN",http://dummyimage.com/191x100.png/dddddd/000000,"Occlusion of Left Fallopian Tube, Via Opening",6,true,false,true,false,true,false,false,true
+115,"octinoxate, oxybenzone and petrolatum",http://dummyimage.com/115x100.png/cc0000/ffffff,"Revision of VAD in Up Extrem Subcu/Fascia, Perc Approach",29,false,false,false,false,false,true,false,false
+116,Mometasone Furoate,http://dummyimage.com/184x100.png/cc0000/ffffff,"Excision of Left Ankle Tendon, Percutaneous Approach",6,false,false,true,false,false,true,true,true
+117,Warfarin Sodium,http://dummyimage.com/213x100.png/cc0000/ffffff,"Lower Joints, Extirpation",28,false,false,true,true,false,false,true,false
+118,Oxygen,http://dummyimage.com/224x100.png/ff4444/ffffff,"Destruction of Left Eustachian Tube, Endo",26,false,false,true,true,false,false,false,false
+119,Sulfamethoxazole and Trimethoprim,http://dummyimage.com/110x100.png/cc0000/ffffff,"Supplement R Up Leg Subcu/Fascia w Nonaut Sub, Open",26,false,true,false,true,true,false,false,false
+120,CALCAREA FLUORICA,http://dummyimage.com/174x100.png/dddddd/000000,"Drainage of Right Kidney, Open Approach",7,true,true,true,false,false,true,true,true
+121,"Glandula Suprarenalis Suis, Brain (suis), Kidney (suis), Ubiquinone, Agaricus Muscarius, Coccus Cacti, Conium Maculatum, Phosphorus",http://dummyimage.com/241x100.png/cc0000/ffffff,"Repair Lumbosacral Disc, Open Approach",24,false,false,false,true,true,true,true,false
+122,Povidone iodine swabstick,http://dummyimage.com/147x100.png/ff4444/ffffff,"Destruction of Middle Colic Artery, Perc Endo Approach",9,false,true,true,true,true,true,false,true
+123,Leucovorin Calcium,http://dummyimage.com/188x100.png/dddddd/000000,"Bypass L Axilla Art to L Extracran Art w Autol Vn, Open",6,true,true,true,true,false,false,true,true
+124,Phenol,http://dummyimage.com/249x100.png/ff4444/ffffff,"Transfer Perineum Subcu/Fascia, Open Approach",15,false,false,true,true,false,true,true,false
+125,Phentermine Hydrochloride,http://dummyimage.com/216x100.png/ff4444/ffffff,"Dilation of R Up Lobe Bronc with Intralum Dev, Perc Approach",3,true,true,false,true,true,true,true,false
+126,Salicylic Acid,http://dummyimage.com/141x100.png/ff4444/ffffff,"Dilate R Ext Iliac Art, Bifurc, w 3 Drug-elut, Perc",10,false,true,true,true,false,true,false,true
+127,Lidocaine,http://dummyimage.com/111x100.png/5fa2dd/ffffff,"Revision of Synth Sub in L Up Extrem, Extern Approach",2,false,true,true,false,true,false,true,true
+128,fentanyl transdermal system,http://dummyimage.com/153x100.png/5fa2dd/ffffff,"Release Right Vertebral Artery, Perc Endo Approach",5,true,true,false,true,false,false,true,true
+129,ESZOPICLONE,http://dummyimage.com/197x100.png/5fa2dd/ffffff,"Insertion of Intralum Dev into R Axilla Vein, Perc Approach",10,false,false,true,true,false,false,false,true
+130,MINOXIDIL,http://dummyimage.com/105x100.png/5fa2dd/ffffff,"Nuclear Medicine, ENT & Mouth, Planar Nucl Med Imag",15,false,true,false,false,false,true,true,true
+131,Amlodipine besylate,http://dummyimage.com/123x100.png/5fa2dd/ffffff,"Dilation of R Hypogast Vein with Intralum Dev, Perc Approach",13,false,true,false,true,false,false,false,false
+132,Alcohol,http://dummyimage.com/239x100.png/cc0000/ffffff,"Release Left Neck Muscle, External Approach",9,true,false,false,true,true,false,true,true
+133,"Octinoxate, Avobenzone, and Octisalate",http://dummyimage.com/144x100.png/5fa2dd/ffffff,"Revision of Synth Sub in Spinal Canal, Open Approach",16,true,false,true,false,false,false,false,false
+134,"Octinoxate, Oxybenzone",http://dummyimage.com/100x100.png/cc0000/ffffff,"Excision of Bilateral Fallopian Tubes, Perc Approach, Diagn",15,true,true,false,false,false,true,true,true
+135,linezolid,http://dummyimage.com/189x100.png/dddddd/000000,"Bypass Left Lesser Saphenous Vein to Low Vein, Open Approach",17,true,false,false,true,true,false,false,true
+136,fluticasone propionate,http://dummyimage.com/119x100.png/dddddd/000000,"Bypass Stomach to Duodenum with Nonaut Sub, Endo",8,false,true,true,false,true,true,false,false
+137,Brussels Sprout,http://dummyimage.com/213x100.png/ff4444/ffffff,"Removal of Intraluminal Device from Left Ear, Open Approach",5,true,true,true,false,true,false,false,true
+138,Water Hemp,http://dummyimage.com/122x100.png/5fa2dd/ffffff,"Replace Neck Skin w Nonaut Sub, Full Thick, Extern",4,true,false,false,false,true,false,false,true
+139,Serotonin,http://dummyimage.com/210x100.png/ff4444/ffffff,"Inspection of Bilateral Femoral Region, Perc Approach",25,false,false,true,true,false,false,true,false
+140,"mineral oil, petrolatum, phenylephrine hydrochloride, shark liver oil",http://dummyimage.com/201x100.png/dddddd/000000,"Reposition Thor Jt with Int Fix, Perc Approach",26,true,true,true,true,false,true,true,true
+141,Valacyclovir Hydrochloride,http://dummyimage.com/138x100.png/cc0000/ffffff,"Bypass Cystic Duct to Duodenum, Perc Endo Approach",29,false,true,false,true,true,false,true,true
+142,Promethazine Hydrochloride and Codeine Phosphate,http://dummyimage.com/135x100.png/dddddd/000000,"Excision of Left Finger Phalanx, Open Approach",26,false,true,false,false,false,true,false,true
+143,ZINC OXIDE,http://dummyimage.com/141x100.png/cc0000/ffffff,"Release Left Upper Leg Muscle, Percutaneous Approach",16,false,false,false,false,false,false,true,false
+144,"Acetaminophen, Dextromethorphan Hydrobromide, Doxylamine Succinate",http://dummyimage.com/196x100.png/ff4444/ffffff,"Excision of Right Fibula, Percutaneous Endoscopic Approach",29,true,false,true,true,false,true,true,false
+145,Naja e veneno 10,http://dummyimage.com/176x100.png/cc0000/ffffff,"Bypass L Axilla Art to L Up Leg Art w Autol Art, Open",29,true,false,false,false,false,true,true,true
+146,prochlorperazine maleate,http://dummyimage.com/135x100.png/ff4444/ffffff,"Introduce Electrol/Water Bal in Male Reprod, Via Opening",19,false,false,false,false,false,false,false,true
+147,"Titanium Dioxide, Zinc Oxide",http://dummyimage.com/154x100.png/5fa2dd/ffffff,"Dilation of Bi Ureter with Intralum Dev, Perc Endo Approach",20,true,true,false,true,true,true,true,true
+148,Papaya,http://dummyimage.com/196x100.png/ff4444/ffffff,"Drainage of Right Breast, Endo",29,true,false,true,false,true,true,false,true
+149,alpha-1 proteinase inhibitor human,http://dummyimage.com/190x100.png/5fa2dd/ffffff,"Removal of Extraluminal Device from Stomach, Endo",16,false,false,true,true,false,true,false,true
+150,Ibuprofen,http://dummyimage.com/117x100.png/dddddd/000000,"Destruction of Ampulla of Vater, Endo",26,true,true,false,true,true,true,false,false
+151,Aliskiren Hemifumarate and Amlodipine Besylate and Hydrochlorothiazide,http://dummyimage.com/158x100.png/cc0000/ffffff,"Removal of Drainage Device from Bone Marrow, Open Approach",23,false,true,true,false,true,true,false,false
+152,METHYL SALICYLATE MENTHOL CAPSAICIN LIDOCAINE,http://dummyimage.com/241x100.png/5fa2dd/ffffff,"Resection of Left Parotid Gland, Open Approach",6,false,false,true,false,false,true,false,false
+153,"Avobenzone, Homosalate, Octisalate, Octocrylene, and Oxybenzone",http://dummyimage.com/215x100.png/cc0000/ffffff,"Removal of Nonaut Sub from Thor Jt, Perc Endo Approach",5,true,true,true,true,true,true,true,false
+154,"Belladonna, Canthris, Apis mellifica, Arnica montana, Allium cepa, Rhus aromatica, Equisetum hyemale",http://dummyimage.com/190x100.png/ff4444/ffffff,"Restriction of Jejunum, Open Approach",3,false,true,true,false,false,true,true,true
+155,Octocrylene and Oxybenzone and Avobenzone,http://dummyimage.com/107x100.png/5fa2dd/ffffff,"Supplement Urethra with Nonaut Sub, Open Approach",1,false,false,true,false,false,false,true,false
+156,Benzalkonium Chloride,http://dummyimage.com/122x100.png/cc0000/ffffff,"Remove Synth Sub from Epididymis/Sperm Cord, Perc Endo",30,true,false,false,true,false,true,false,false
+157,ZINC OXIDE,http://dummyimage.com/220x100.png/5fa2dd/ffffff,Fluoroscopy of Pelvic Arteries using High Osmolar Contrast,30,false,false,false,true,false,false,false,false
+158,ketorolac tromethamine,http://dummyimage.com/236x100.png/5fa2dd/ffffff,"Extirpation of Matter from Spleen, Percutaneous Approach",7,true,false,true,true,false,false,true,true
+159,Smelt,http://dummyimage.com/181x100.png/5fa2dd/ffffff,Change Bandage on Right Upper Extremity,12,true,false,true,true,true,false,false,true
+160,Gabapentin,http://dummyimage.com/240x100.png/dddddd/000000,"Repair Left Metacarpal, Percutaneous Endoscopic Approach",28,false,false,true,true,false,false,true,false
+161,"OCTINOXATE, OCTISALATE, TITANIUM DIOXIDE, and ZINC OXIDE",http://dummyimage.com/155x100.png/cc0000/ffffff,"Dilation of Lingula Bronchus, Percutaneous Approach",14,true,true,true,true,false,true,false,true
+162,ziprasidone hydrochloride,http://dummyimage.com/131x100.png/5fa2dd/ffffff,Exercise Trmt Musculosk Low Back/LE w Physical Agent,10,false,false,false,true,false,true,false,true
+163,Benzocaine,http://dummyimage.com/154x100.png/cc0000/ffffff,"Dilation of L Thyroid Art with 3 Intralum Dev, Open Approach",24,true,false,true,false,false,true,false,true
+164,Droperidol,http://dummyimage.com/212x100.png/dddddd/000000,"Repair Right Lesser Saphenous Vein, Percutaneous Approach",14,false,true,true,false,false,false,true,false
+165,Glycerin,http://dummyimage.com/125x100.png/5fa2dd/ffffff,"Reposition L Up Femur with Hybrid Ext Fix, Open Approach",5,true,false,true,true,false,true,true,false
+166,Methylergonovine Maleate,http://dummyimage.com/245x100.png/ff4444/ffffff,"Bypass Duodenum to Trans Colon w Nonaut Sub, Open",29,true,false,false,true,true,true,true,false
+167,propolis,http://dummyimage.com/161x100.png/ff4444/ffffff,"Restrict of Abd Aorta with Intralum Dev, Temp, Perc Approach",12,true,false,true,true,true,true,false,false
+168,Bumetanide,http://dummyimage.com/176x100.png/dddddd/000000,"Drainage of Right Large Intestine, Open Approach",12,true,false,false,false,false,false,false,false
+169,robinia pseudoacacia pollen,http://dummyimage.com/227x100.png/cc0000/ffffff,"Bypass Innominate Artery to Bi Up Leg Art, Open Approach",22,true,true,true,true,false,true,false,false
+170,POTASSIUM CHLORATE,http://dummyimage.com/230x100.png/ff4444/ffffff,"Resection of Left Foot Tendon, Perc Endo Approach",16,true,false,true,true,true,true,true,false
+171,Etodolac,http://dummyimage.com/205x100.png/cc0000/ffffff,"Removal of Nonaut Sub from Face, Perc Endo Approach",13,true,false,false,false,false,false,false,true
+172,"AVOBENZONE, OCTISALATE, OCTOCRYLENE",http://dummyimage.com/229x100.png/dddddd/000000,"Dilate R Verteb Art, Bifurc, w 2 Intralum Dev, Open",23,true,false,true,false,false,false,true,false
+173,cefuroxime axetil,http://dummyimage.com/165x100.png/ff4444/ffffff,"Bypass R Atrium to L Pulm Art with Autol Vn, Open Approach",13,false,false,true,true,true,true,true,false
+174,clindamycin hydrochloride,http://dummyimage.com/175x100.png/ff4444/ffffff,"Fluoroscopy Sup Mesent Art w Oth Contrast, Laser Intraop",1,false,false,false,false,false,false,false,true
+175,"AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE, OXYBENZONE",http://dummyimage.com/220x100.png/dddddd/000000,"Drainage of Right Shoulder Muscle, Open Approach, Diagnostic",10,true,true,false,true,false,false,true,true
+176,Levetiracetam,http://dummyimage.com/185x100.png/5fa2dd/ffffff,"Removal of Nonaut Sub from L Carpal, Open Approach",21,false,true,false,true,false,false,false,true
+177,"Avobenzone, Homosalate, Octisalate, Octocrylene, and Oxybenzone",http://dummyimage.com/112x100.png/ff4444/ffffff,"Revision of Radioactive Element in Vagina & Cul-de-sac, Endo",6,true,true,false,false,false,false,true,true
+178,Prednisolone Sodium Phosphate,http://dummyimage.com/131x100.png/5fa2dd/ffffff,"Drainage of Left Main Bronchus, Perc Endo Approach",29,false,false,true,true,true,false,false,true
+179,ALCOHOL,http://dummyimage.com/159x100.png/ff4444/ffffff,"Insertion of Pressure Sens into L Pulm Vein, Open Approach",18,false,true,true,true,false,true,true,true
+180,ropinirole,http://dummyimage.com/186x100.png/cc0000/ffffff,"Removal of Ext Fix from L Knee Jt, Perc Endo Approach",27,false,true,true,false,false,true,false,false
+181,Erythromycin,http://dummyimage.com/144x100.png/cc0000/ffffff,LDR Brachytherapy of Cervix using Iridium 192,23,true,true,true,false,true,true,false,true
+182,meclizine hydrochloride,http://dummyimage.com/159x100.png/5fa2dd/ffffff,"Replace Perineum Skin w Nonaut Sub, Part Thick, Extern",21,true,true,true,true,false,true,false,false
+183,Treatment Set TS338384,http://dummyimage.com/201x100.png/cc0000/ffffff,"Replacement of Upper Gingiva with Autol Sub, Open Approach",18,true,true,false,true,true,true,true,false
+184,Galantamine,http://dummyimage.com/212x100.png/5fa2dd/ffffff,"Drainage of Right Nipple with Drainage Device, Perc Approach",22,true,false,true,true,true,false,false,true
+185,Aspirin,http://dummyimage.com/133x100.png/5fa2dd/ffffff,"Extirpation of Matter from Pancreatic Duct, Open Approach",2,false,false,true,true,true,true,true,true
+186,passalora fulva,http://dummyimage.com/114x100.png/cc0000/ffffff,"Replacement of Left Eye with Synth Sub, Open Approach",24,true,true,false,false,true,true,false,true
+187,"rSomatotropin, rIGF-I, rIGF-II, RNA, DNA,Glandula Suprarenalis Suis, Hepar Suis, Pituitarium Posterium, Thymus, Thyroidinum, Placenta Totalis Suis, Orchitinum, Abrotanum, Anacard Or, Arsenicum Alb, Baryta Carb, Baryta Mur, Calc Carb, Calc Phos, Ferrum Met, Fucus, Hekla, Hellebor Nig, Ignatia, Lycopodium, Nicotinamidium, Secale, Silicea, Cobaltum Met, Lithium Carb, Mag Phos, Mang Acet, Kali Phos, Selenium Met, Zinc Met.",http://dummyimage.com/247x100.png/ff4444/ffffff,"Release Perineum Subcu/Fascia, Extern Approach",26,false,false,true,true,true,false,true,true
+188,Bismuth Subsalicylate,http://dummyimage.com/164x100.png/dddddd/000000,"Dilation of Uterus with Intralum Dev, Perc Endo Approach",6,false,false,true,false,true,true,true,false
+189,TITANIUM DIOXIDE,http://dummyimage.com/154x100.png/ff4444/ffffff,"Fusion of Right Metatarsal-Tarsal Joint, Perc Approach",2,true,true,false,false,true,true,true,false
+190,GLYCERIN,http://dummyimage.com/217x100.png/cc0000/ffffff,"Supplement Atrial Septum with Autol Sub, Perc Approach",10,false,true,true,false,true,true,false,true
+191,Methenamine Mandelate,http://dummyimage.com/106x100.png/ff4444/ffffff,"Removal of Intralum Dev from Cisterna Chyli, Perc Approach",23,false,true,false,false,false,false,true,true
+192,GOLDENSEAL,http://dummyimage.com/158x100.png/ff4444/ffffff,"Drainage of Large Intestine, Via Opening, Diagn",24,true,false,false,false,true,false,false,false
+193,Morphine Sulfate,http://dummyimage.com/168x100.png/5fa2dd/ffffff,"Occlusion of Stomach, Pylrs with Extralum Dev, Perc Approach",3,false,true,true,false,false,false,false,false
+194,"AVOBENZONE, HOMOSALATE, OCTOCRYLENE, OXYBENZONE",http://dummyimage.com/163x100.png/5fa2dd/ffffff,CT Scan of Bi Hand & Wrist using L Osm Contrast,7,true,false,true,true,true,true,false,true
+195,"Aqua sulis, Argentum metallicum, Aurum metallicum, Cuprum metallicum, Lapis albus, Manganum metallicum Vanadium Metallicum Viscum album, Zincum metallicum,",http://dummyimage.com/157x100.png/ff4444/ffffff,"Revision of Synth Sub in L Glenoid Cav, Extern Approach",13,true,true,true,true,true,false,false,false
+196,Pioglitazone Hydrochloride,http://dummyimage.com/205x100.png/dddddd/000000,"Resection of Atrial Septum, Percutaneous Endoscopic Approach",20,true,false,false,true,true,true,true,true
+197,Sulfur 30 Special Order,http://dummyimage.com/150x100.png/5fa2dd/ffffff,"Fragmentation in Cranial Cavity, External Approach",22,false,true,false,false,true,true,false,false
+198,Nefazodone Hydrochloride,http://dummyimage.com/198x100.png/dddddd/000000,"Supplement Left Radius with Nonaut Sub, Perc Endo Approach",23,true,false,true,false,false,true,false,false
+199,"AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE, OXYBENZONE",http://dummyimage.com/223x100.png/dddddd/000000,"Revision of Synth Sub in Chest Wall, Extern Approach",11,true,false,false,false,true,true,false,false
+200,"Avobenzone, Homosalate, Octisalate and Octocrylene",http://dummyimage.com/105x100.png/ff4444/ffffff,"Dilation of Lower Artery with 4 Drug-elut, Open Approach",22,false,false,false,true,false,true,false,true
+201,Herring,http://dummyimage.com/113x100.png/dddddd/000000,"Excision of Anus, Open Approach",23,true,true,true,false,false,false,true,false
+202,Bahia Grass,http://dummyimage.com/122x100.png/dddddd/000000,"Supplement Cerv Disc with Nonaut Sub, Perc Endo Approach",30,true,true,false,true,false,false,false,false
+203,Isoniazid,http://dummyimage.com/189x100.png/5fa2dd/ffffff,"Replacement of R Low Femur with Autol Sub, Perc Approach",1,true,false,true,true,false,true,false,false
+204,Triclosan,http://dummyimage.com/238x100.png/dddddd/000000,"Dilation of 1 Cor Art with 4 Drug-elut, Perc Endo Approach",26,true,true,true,true,true,true,false,false
+205,Sodium Sulfacetamide and Sulfur,http://dummyimage.com/242x100.png/cc0000/ffffff,Stereotactic Particulate Radiosurgery of Thymus,2,true,true,true,false,true,true,true,false
+206,METOPROLOL TARTRATE,http://dummyimage.com/108x100.png/dddddd/000000,"Revision of Autol Sub in Sacrum, Extern Approach",22,false,true,false,true,false,true,false,false
+207,"Chelidonium majus, Spongia tosta, Lac defloratum, Fucus vesiculosus, Hepar, Pituitary, Thyroidinum, Iodium,",http://dummyimage.com/231x100.png/ff4444/ffffff,"Reposition Left Lower Femur with Intramed Fix, Perc Approach",3,true,false,true,false,true,true,false,true
+208,Zinc oxide,http://dummyimage.com/199x100.png/5fa2dd/ffffff,"Insert Endobronch Valve in L Main Bronc, Perc Endo",20,true,false,true,true,false,false,true,true
+209,fluticasone furoate,http://dummyimage.com/124x100.png/5fa2dd/ffffff,"Revision of Monitoring Device in Azygos Vein, Open Approach",27,false,false,false,true,true,false,false,false
+210,Quetiapine Fumarate,http://dummyimage.com/115x100.png/5fa2dd/ffffff,"Alteration of R Low Leg with Autol Sub, Perc Endo Approach",1,true,true,false,true,false,false,false,true
+211,Furosemide,http://dummyimage.com/227x100.png/5fa2dd/ffffff,"Excision of Carina, Percutaneous Endoscopic Approach",28,true,true,true,false,false,true,true,false
+212,zinc oxide,http://dummyimage.com/150x100.png/dddddd/000000,"Insertion of Other Device into R Hand, Perc Endo Approach",26,true,true,false,false,true,true,false,false
+213,Couch Quack Grass,http://dummyimage.com/138x100.png/dddddd/000000,"Occlusion of Intracran Vein with Extralum Dev, Open Approach",20,false,true,true,false,false,false,true,false
+214,Rosuvastatin calcium,http://dummyimage.com/212x100.png/cc0000/ffffff,"Insertion of Intralum Dev into L Brach Art, Open Approach",28,true,false,false,false,false,false,false,false
+215,Dextromethorphan Hydrobromide,http://dummyimage.com/130x100.png/cc0000/ffffff,"Replace of R Great Saphenous with Autol Sub, Open Approach",28,false,true,false,false,false,false,false,true
+216,Salicylic Acid,http://dummyimage.com/140x100.png/dddddd/000000,"Excision of Middle Esophagus, Open Approach, Diagnostic",13,false,false,false,false,false,true,true,true
+217,arformoterol tartrate,http://dummyimage.com/185x100.png/ff4444/ffffff,"Excision of Brachial Plexus, Perc Endo Approach, Diagn",17,false,false,true,false,false,true,false,true
+218,AMMONIUM PHOSPHORICUM,http://dummyimage.com/126x100.png/dddddd/000000,"Removal of Int Fix from L Tarsal, Open Approach",7,true,true,true,true,false,true,false,false
+219,SERTRALINE HYDROCHLORIDE,http://dummyimage.com/165x100.png/5fa2dd/ffffff,"Occlusion of R Axilla Vein with Intralum Dev, Perc Approach",21,false,false,true,true,true,false,true,false
+220,ALUMINUM CHLOROHYDRATE,http://dummyimage.com/183x100.png/ff4444/ffffff,"Repair Right Sublingual Gland, Percutaneous Approach",9,true,true,false,true,true,true,true,false
+221,Naphazoline hydrochloride and Pheniramine Maleate,http://dummyimage.com/165x100.png/ff4444/ffffff,"Drainage of Descend Colon with Drain Dev, Perc Endo Approach",7,true,true,true,true,false,true,false,false
+222,Olanzapine,http://dummyimage.com/247x100.png/cc0000/ffffff,"Fusion Cerv Jt w Nonaut Sub, Post Appr P Col, Perc Endo",2,true,true,false,true,true,false,false,true
+223,POLYETHYLENE GLYCOL 3350,http://dummyimage.com/124x100.png/ff4444/ffffff,"Revision of Feeding Dev in Low Intest Tract, Perc Approach",22,true,false,false,false,false,false,true,false
+224,ALLANTOIN,http://dummyimage.com/137x100.png/5fa2dd/ffffff,Fluoroscopy of Right Forearm,4,true,false,true,true,true,true,false,true
+225,Phenol,http://dummyimage.com/179x100.png/cc0000/ffffff,"Division of Right Mandible, Percutaneous Approach",30,false,true,true,true,false,false,false,true
+226,Midazolam,http://dummyimage.com/162x100.png/cc0000/ffffff,"Insertion of Feeding Device into Ileum, Perc Approach",15,false,true,true,false,true,false,false,false
+227,CONIUM MACULATUM,http://dummyimage.com/208x100.png/5fa2dd/ffffff,Fluoroscopy of Bladder and Urethra using H Osm Contrast,17,true,true,false,false,false,false,true,true
+228,"Redtop Grass, Standardized",http://dummyimage.com/241x100.png/dddddd/000000,"Bypass L Fem Art to Post Tib Art w Autol Vn, Perc Endo",8,true,false,true,true,true,true,false,false
+229,Zonisamide,http://dummyimage.com/170x100.png/ff4444/ffffff,"Revision of Synth Sub in L Acetabulum, Extern Approach",27,true,true,true,false,true,false,true,true
+230,Aspirin,http://dummyimage.com/236x100.png/ff4444/ffffff,"Revision of Nonaut Sub in L Ulna, Extern Approach",4,true,false,false,false,false,true,true,false
+231,TOXICODENDRON RADICANS LEAF,http://dummyimage.com/128x100.png/cc0000/ffffff,"Repair Left Ureter, Endo",5,true,false,true,false,true,false,false,true
+232,Firebush/Burning Bush,http://dummyimage.com/106x100.png/5fa2dd/ffffff,Stereotactic Gamma Beam Radiosurgery of Axillary Lymphatics,26,false,false,true,false,false,false,false,true
+233,ALCOHOL,http://dummyimage.com/180x100.png/5fa2dd/ffffff,"Revision of Autol Sub in L Clavicle, Open Approach",30,false,true,false,false,true,false,true,true
+234,Salicylic Acid,http://dummyimage.com/153x100.png/cc0000/ffffff,"Extirpation of Matter from R Renal Art, Perc Endo Approach",2,false,true,true,false,true,true,true,false
+235,"AVOBENZONE, OCTOCRYLENE, OXYBENZONE",http://dummyimage.com/118x100.png/dddddd/000000,Fluoroscopy of Left Hand/Finger Joint using H Osm Contrast,4,false,true,true,true,true,false,true,true
+236,Propoxyphene Napsylate and Acetaminophen,http://dummyimage.com/204x100.png/cc0000/ffffff,"Division of Phrenic Nerve, Percutaneous Approach",17,true,false,false,true,true,false,false,false
+237,Quetiapine fumarate,http://dummyimage.com/116x100.png/5fa2dd/ffffff,"Release Left External Iliac Artery, Open Approach",6,false,false,false,true,false,true,true,true
+238,acetic acid,http://dummyimage.com/148x100.png/cc0000/ffffff,"Insertion of Spacer into Left Knee Joint, Perc Endo Approach",15,false,false,false,true,false,false,false,false
+239,oxandrolone,http://dummyimage.com/248x100.png/ff4444/ffffff,"Dilation of Right Ventricle, Perc Endo Approach",23,false,false,true,false,true,true,true,true
+240,Loperamide HCl,http://dummyimage.com/114x100.png/dddddd/000000,"Extraction of L Abd Bursa/Lig, Perc Endo Approach",22,false,false,true,false,false,true,false,false
+241,OXYGEN,http://dummyimage.com/167x100.png/ff4444/ffffff,"Occlusion of Cystic Duct, Open Approach",27,false,true,true,false,false,false,true,false
+242,Carbamazepine,http://dummyimage.com/192x100.png/5fa2dd/ffffff,"Detachment at Left Index Finger, Mid, Open Approach",28,false,true,false,false,true,true,false,false
+243,POVIDONE-IODINE,http://dummyimage.com/145x100.png/ff4444/ffffff,"Dilation of L Ext Carotid with 3 Intralum Dev, Open Approach",7,true,false,false,true,true,false,true,false
+244,"avobenzone, octinoxate",http://dummyimage.com/150x100.png/cc0000/ffffff,"Drainage of Left Kidney Pelvis, Via Opening",22,false,true,false,true,false,false,true,true
+245,Ranitidine Hydrochloride,http://dummyimage.com/237x100.png/5fa2dd/ffffff,"Supplement L Popl Art with Synth Sub, Perc Approach",23,true,false,true,true,false,false,false,false
+246,"Elm, Chinese Ulmus parvifolia",http://dummyimage.com/250x100.png/ff4444/ffffff,"Drainage of Right Renal Vein, Percutaneous Approach, Diagn",1,true,true,false,false,true,false,true,true
+247,Aluminum zirconium tetrachlorohydrex gly,http://dummyimage.com/229x100.png/5fa2dd/ffffff,"Monitoring of Gastrointestinal Motility, Via Opening",23,true,false,true,false,true,false,false,false
+248,Amlodipine besylate,http://dummyimage.com/103x100.png/ff4444/ffffff,"Revision of Monitoring Device in Bladder, Endo",1,true,true,false,false,false,true,false,false
+249,Alcohol,http://dummyimage.com/240x100.png/ff4444/ffffff,"Excision of Left Carpal Joint, Open Approach, Diagnostic",8,false,false,false,false,true,false,true,true
+250,Cephalosporium roseum,http://dummyimage.com/105x100.png/cc0000/ffffff,"Drainage of Left Face Vein, Percutaneous Approach, Diagn",30,true,true,false,true,true,false,false,true
+251,flurazepam hydrochloride,http://dummyimage.com/240x100.png/cc0000/ffffff,"Bypass Low Esophag to Jejunum w Nonaut Sub, Perc Endo",4,false,false,true,true,true,false,false,false
+252,Simethicone,http://dummyimage.com/172x100.png/dddddd/000000,"Dilate L Verteb Art, Bifurc, w 3 Intralum Dev, Open",8,true,true,false,true,true,false,false,true
+253,Octinoxate,http://dummyimage.com/180x100.png/5fa2dd/ffffff,"Insert Infusion Dev in L Ext Iliac Vein, Perc Endo",9,false,true,true,true,false,false,true,false
+254,Lorazepam,http://dummyimage.com/160x100.png/ff4444/ffffff,"Assistance with Resp Ventilation, >96 Hrs, Intermit Neg Air",19,true,true,true,true,false,true,true,false
+255,UREA,http://dummyimage.com/162x100.png/ff4444/ffffff,"Supplement Small Intestine with Synth Sub, Open Approach",6,true,true,false,false,false,false,true,false
+256,"Octinoxate, Titanium Dioxide, and Zinc Oxide",http://dummyimage.com/174x100.png/ff4444/ffffff,Tomo Nucl Med Imag of Head & Neck using Fluorine 18,22,false,false,false,true,true,false,true,false
+257,Western Ragweed,http://dummyimage.com/159x100.png/dddddd/000000,"Occlusion of Right Ureter with Intraluminal Device, Endo",25,false,false,true,true,true,true,true,false
+258,darbepoetin alfa,http://dummyimage.com/210x100.png/ff4444/ffffff,"Destruction of Back Skin, Multiple, External Approach",3,true,true,false,true,true,true,false,false
+259,Petrolatum,http://dummyimage.com/194x100.png/cc0000/ffffff,"Release Left Upper Femur, Open Approach",23,true,true,false,true,false,true,true,true
+260,ONDANSETRON HYDROCHLORIDE,http://dummyimage.com/224x100.png/dddddd/000000,"Bypass Left Common Iliac Artery to L Int Ilia, Open Approach",30,false,true,true,true,false,false,true,true
+261,Ketoconazole,http://dummyimage.com/208x100.png/ff4444/ffffff,"Supplement Left Hip Muscle with Nonaut Sub, Open Approach",8,true,false,false,true,true,false,true,true
+262,Simvastatin,http://dummyimage.com/144x100.png/ff4444/ffffff,"Extirpation of Matter from Appendix, Open Approach",25,true,false,false,false,true,false,false,false
+263,Oxaliplatin,http://dummyimage.com/214x100.png/ff4444/ffffff,"Reposition Right Lacrimal Bone, Open Approach",18,true,false,false,true,false,false,true,true
+264,Alcohol,http://dummyimage.com/110x100.png/ff4444/ffffff,"Excision of Olfactory Nerve, Open Approach, Diagnostic",15,true,false,true,false,true,true,true,true
+265,Hydrocortisone,http://dummyimage.com/158x100.png/cc0000/ffffff,"Supplement Lumbar Vertebra with Synth Sub, Perc Approach",13,false,true,true,false,false,true,true,true
+266,ETHYL ALCOHOL,http://dummyimage.com/234x100.png/ff4444/ffffff,"Supplement L Ext Iliac Vein with Autol Sub, Perc Approach",25,true,false,false,false,true,false,false,true
+267,"Glycerin, Hypromellose, Polyethylene glycol 400",http://dummyimage.com/233x100.png/ff4444/ffffff,"Alteration of Right Upper Extremity, Percutaneous Approach",14,true,false,true,false,true,false,true,false
+268,Simethicone 180 mg,http://dummyimage.com/148x100.png/ff4444/ffffff,"Bypass R Fallopian Tube to L Fallop w Autol Sub, Open",11,false,true,true,false,false,true,false,true
+269,Guaifenesin,http://dummyimage.com/127x100.png/5fa2dd/ffffff,"Extraction of Left Frontal Sinus, Percutaneous Approach",18,true,false,true,true,true,true,true,true
+270,pancrelipase,http://dummyimage.com/134x100.png/dddddd/000000,"Drainage of Vagina, Via Natural or Artificial Opening, Diagn",21,true,true,true,true,false,true,true,false
+271,Isradipine,http://dummyimage.com/137x100.png/dddddd/000000,"Revision of Drain Dev in Peritoneum, Perc Endo Approach",29,true,false,false,true,false,false,false,true
+272,Sulfamethoxazole and Trimethoprim,http://dummyimage.com/225x100.png/5fa2dd/ffffff,"Dilate L Foot Art, Bifurc, w Intralum Dev, Perc",21,false,true,true,false,false,true,true,true
+273,Amoxicillin,http://dummyimage.com/111x100.png/cc0000/ffffff,"Fusion T-lum Jt w Synth Sub, Post Appr A Col, Open",7,true,false,false,true,false,false,true,true
+274,Levofloxacin,http://dummyimage.com/188x100.png/5fa2dd/ffffff,"Release Right Palatine Bone, Open Approach",25,true,false,false,false,true,false,false,true
+275,"AVOBENZONE, OCTINOXATE, OCTISALATE, OXYBENZONE",http://dummyimage.com/158x100.png/dddddd/000000,"Revision of Spacer in Left Hip Joint, Perc Endo Approach",20,true,false,true,false,false,false,true,false
+276,Nicotine Polacrilex,http://dummyimage.com/111x100.png/ff4444/ffffff,"Release Thoracolumbar Vertebral Disc, External Approach",6,true,false,true,false,true,false,true,false
+277,Ranitidine,http://dummyimage.com/182x100.png/cc0000/ffffff,"Replacement of Innom Art with Synth Sub, Perc Endo Approach",5,false,false,true,true,true,false,false,true
+278,"Aconite 30c, Belladonna 30c, Chamomilla 30c, Cimicifuga 30c, Ignatia 30c, Lachesis 30c, Pulsatilla 30c, Sepia 30c, Nux Vomica 30c Sulphur 30c",http://dummyimage.com/151x100.png/dddddd/000000,"Excision of L Metatarsophal Jt, Perc Approach, Diagn",22,true,true,true,true,true,true,true,false
+279,Doxazosin Mesylate,http://dummyimage.com/250x100.png/dddddd/000000,"Destruction of L Up Extrem Lymph, Perc Endo Approach",24,false,false,true,true,true,false,false,true
+280,Sodium Acetate,http://dummyimage.com/131x100.png/5fa2dd/ffffff,"Dilate Mitral Valve w Drug-elut Intra, Perc Endo",19,true,true,false,false,false,false,true,false
+281,Olanzapine,http://dummyimage.com/204x100.png/5fa2dd/ffffff,"Replacement of L Hepatic Duct with Synth Sub, Open Approach",23,true,true,true,true,true,true,false,false
+282,not applicable,http://dummyimage.com/136x100.png/dddddd/000000,"Supplement Left Hand with Synth Sub, Open Approach",7,true,false,true,false,false,false,false,true
+283,Hydrochlorothiazide,http://dummyimage.com/177x100.png/cc0000/ffffff,"Repair Left Ventricle, Percutaneous Endoscopic Approach",30,true,false,false,true,true,true,true,true
+284,"Triticum aestivum, Glycyrrhiza glabra, Lappa major, Phytolacca decandra, Rhamnus purshiana, Trifolium pratense, Nitricum acidum,",http://dummyimage.com/159x100.png/5fa2dd/ffffff,"Revision of Nonaut Sub in R Sacroiliac Jt, Open Approach",24,true,false,false,false,false,false,true,true
+285,"Calcarea silicata, Lithium carbonicum, Natrum muriaticum, Phytolacca decandra, Sarsaparilla, Sulphur iodatum, Thyroidinum,",http://dummyimage.com/240x100.png/5fa2dd/ffffff,"Repair Ascending Colon, Percutaneous Approach",11,true,true,false,true,false,false,true,true
+286,vilazodone hydrochloride,http://dummyimage.com/221x100.png/cc0000/ffffff,"Supplement Chordae Tendineae with Synth Sub, Open Approach",23,true,true,false,false,true,true,false,false
+287,Lidocaine Hydrochloride,http://dummyimage.com/233x100.png/ff4444/ffffff,"Supplement L Up Arm Tendon with Synth Sub, Open Approach",19,false,false,true,true,true,true,false,true
+288,CHLOROXYLENOL,http://dummyimage.com/183x100.png/ff4444/ffffff,"Replace of L Innom Vein with Autol Sub, Perc Endo Approach",15,true,true,true,true,false,true,false,true
+289,Acamprosate Calcium,http://dummyimage.com/142x100.png/cc0000/ffffff,"Occlusion of Lower Vein with Extralum Dev, Perc Approach",3,false,false,false,false,true,false,false,false
+290,"Loratadine, Pseudoephedrine",http://dummyimage.com/204x100.png/ff4444/ffffff,"Replacement of Pancreatic Duct with Synth Sub, Open Approach",10,true,true,false,false,false,true,false,false
+291,ketorolac tromethamine,http://dummyimage.com/143x100.png/ff4444/ffffff,"Bypass Sup Vena Cava to L Pulm Vn w Synth Sub, Open",7,true,true,true,true,false,false,true,false
+292,Citalopram,http://dummyimage.com/249x100.png/cc0000/ffffff,HDR Brachytherapy of Hard Palate using Palladium 103,22,false,true,false,false,true,true,false,false
+293,"folic acid, ascorbic acid, cholecalciferol, .alpha.-tocopherol, pyridoxine, cyanocobalamin, biotin, calcium carbonate, ferrous fumarate, potassium iodide, magnesium oxide, doconexent and icosapent",http://dummyimage.com/108x100.png/5fa2dd/ffffff,"Drainage of Aortic Body, Open Approach, Diagnostic",6,false,true,false,false,true,false,true,true
+294,Pravastatin Sodium,http://dummyimage.com/121x100.png/5fa2dd/ffffff,"Supplement R Innom Vein with Nonaut Sub, Perc Endo Approach",28,true,true,false,false,false,true,false,false
+295,"BENZOCAINE, MENTHOL",http://dummyimage.com/168x100.png/ff4444/ffffff,"Replacement of L Pulm Vein with Nonaut Sub, Open Approach",24,false,false,true,false,false,true,false,false
+296,lomustine,http://dummyimage.com/154x100.png/ff4444/ffffff,"Resection of Right Lower Lobe Bronchus, Perc Endo Approach",30,true,false,true,false,false,false,true,true
+297,Bethanechol Chloride,http://dummyimage.com/211x100.png/5fa2dd/ffffff,"Revision of Drainage Device in Testis, Percutaneous Approach",27,true,false,true,false,false,true,true,false
+298,Titanium Dioxide and Zinc Oxide,http://dummyimage.com/143x100.png/5fa2dd/ffffff,"Extirpation of Matter from Right Elbow Joint, Perc Approach",10,true,false,true,false,true,false,false,true
+299,Lamotrigine,http://dummyimage.com/127x100.png/ff4444/ffffff,"Revision of Nonaut Sub in L Ear, Perc Endo Approach",4,true,false,true,true,true,false,false,true
+300,Alcohol,http://dummyimage.com/157x100.png/cc0000/ffffff,Removal of Cast on Right Thumb,4,true,false,true,true,true,false,true,true
+301,Titanium Dioxide,http://dummyimage.com/245x100.png/ff4444/ffffff,"Release Right Anterior Chamber, Percutaneous Approach",23,true,false,false,true,true,false,true,true
+302,Ethyl Alcohol,http://dummyimage.com/159x100.png/5fa2dd/ffffff,"Revision of Synth Sub in L Pleural Cav, Open Approach",29,true,true,false,true,true,false,true,true
+303,Calendula officinalis,http://dummyimage.com/136x100.png/5fa2dd/ffffff,"Revision of Synthetic Substitute in Thor Jt, Extern Approach",29,false,true,true,true,true,false,false,true
+304,"Dextromethorphan HBr, Guaifenesin",http://dummyimage.com/131x100.png/cc0000/ffffff,"Drainage of Right Metacarpophalangeal Joint, Open Approach",17,true,false,true,true,false,false,false,false
+305,Lisinopril,http://dummyimage.com/110x100.png/ff4444/ffffff,Change Traction Apparatus on Right Hand,5,false,false,true,true,true,true,true,true
+306,Triamterene and Hydrochlorothiazide,http://dummyimage.com/144x100.png/5fa2dd/ffffff,"Monitoring of Respiratory Capacity, External Approach",5,true,false,true,false,true,true,false,false
+307,ethyl alcohol,http://dummyimage.com/120x100.png/dddddd/000000,"Repair Right Shoulder Bursa and Ligament, Open Approach",11,false,true,false,false,false,true,false,false
+308,Acetaminophen,http://dummyimage.com/212x100.png/dddddd/000000,Plain Radiography of Left Heart using High Osmolar Contrast,16,false,false,false,false,false,true,false,false
+309,Diltiazem Hydrochloride,http://dummyimage.com/186x100.png/dddddd/000000,Transfer Assessment using Prosthesis,24,false,true,true,false,true,false,true,false
+310,ALCOHOL,http://dummyimage.com/207x100.png/cc0000/ffffff,"Bypass Duodenum to Cutaneous with Synth Sub, Perc Approach",28,true,true,false,false,true,false,true,false
+311,Cyclobenzaprine Hydrochloride,http://dummyimage.com/249x100.png/5fa2dd/ffffff,"Excision of Left Femoral Artery, Open Approach, Diagnostic",20,false,true,true,true,false,false,true,true
+312,"Echinacea, Baptisia Tinctoria, Hydrastis Canadensis, Thiaminum Hydrochloricum, Pantothenic Acid, Pyridoxinum Hydrochloricum",http://dummyimage.com/245x100.png/cc0000/ffffff,"Resection of Right Metacarpocarpal Joint, Open Approach",8,true,false,true,false,true,false,true,false
+313,SALICYLIC ACID,http://dummyimage.com/130x100.png/ff4444/ffffff,"Dilation of Superior Vena Cava, Perc Endo Approach",17,false,false,true,true,true,true,true,false
+314,"Octinoxate, Octisalate, and Titanium Dioxide",http://dummyimage.com/174x100.png/dddddd/000000,"Bypass L Int Iliac Art to R Femor A w Synth Sub, Perc Endo",20,false,true,false,true,false,true,false,true
+315,"Avobenzone, Octocrylene",http://dummyimage.com/104x100.png/dddddd/000000,CT Scan of Renal Art Transplant using Oth Contrast,9,false,false,true,false,true,false,false,true
+316,Candesartan cilexetil,http://dummyimage.com/236x100.png/ff4444/ffffff,"Revision of Nonaut Sub in R Tarsal Jt, Perc Approach",14,false,true,false,false,true,false,false,true
+317,HYDROCORTISONE BUTYRATE,http://dummyimage.com/208x100.png/ff4444/ffffff,"Bypass Lower Esophagus to Ileum, Endo",1,true,true,true,true,false,false,false,true
+318,Quetiapine fumarate,http://dummyimage.com/117x100.png/ff4444/ffffff,Speech and/or Language Screening Assessment,3,true,true,false,true,true,false,false,true
+319,Loperamide HCl,http://dummyimage.com/210x100.png/5fa2dd/ffffff,"Extraction of Pelvic Subcu/Fascia, Perc Approach",28,false,true,true,false,true,true,true,true
+320,Doxycycline Hyclate,http://dummyimage.com/145x100.png/ff4444/ffffff,"Transfer Radial Nerve to Median Nerve, Perc Endo Approach",2,false,false,true,false,false,true,true,true
+321,Calcium Carbonate,http://dummyimage.com/126x100.png/dddddd/000000,"Supplement L Ant Tib Art with Synth Sub, Open Approach",27,true,true,false,true,false,true,false,false
+322,Calcium Acetate,http://dummyimage.com/156x100.png/dddddd/000000,"Drainage of Right Kidney Pelvis, Open Approach",9,true,true,true,false,false,true,true,false
+323,Mometasone Furoate,http://dummyimage.com/249x100.png/5fa2dd/ffffff,"Drainage of Chest Wall, Open Approach",17,false,true,false,false,true,true,false,false
+324,promethazine hydrochloride,http://dummyimage.com/203x100.png/ff4444/ffffff,"Drainage of Right Hand Tendon, Open Approach, Diagnostic",29,true,false,false,false,false,true,true,false
+325,SOLANUM DULCAMARA TOP,http://dummyimage.com/105x100.png/ff4444/ffffff,"Drainage of Right Trunk Tendon, Open Approach, Diagnostic",18,false,false,false,false,false,false,true,true
+326,"AVOBENZONE, HOMOSALATE, OCTINOXATE, OCTISALATE, OCTOCRYLENE",http://dummyimage.com/123x100.png/ff4444/ffffff,"Revision of Int Fix in Sacrum, Open Approach",8,false,false,true,false,true,true,true,false
+327,Ibuprofen,http://dummyimage.com/204x100.png/cc0000/ffffff,"Repair Right Abdomen Muscle, Perc Endo Approach",11,false,false,true,false,false,false,false,true
+328,Lovastatin,http://dummyimage.com/144x100.png/dddddd/000000,"Insertion of Radioact Elem into Chest Wall, Perc Approach",19,true,true,true,false,false,false,false,true
+329,propranolol hydrochloride,http://dummyimage.com/127x100.png/ff4444/ffffff,"Division of Left Foot Bursa and Ligament, Perc Endo Approach",8,false,true,false,false,false,true,false,false
+330,docusate sodium,http://dummyimage.com/209x100.png/5fa2dd/ffffff,"Drainage of Para-aortic Body, Perc Endo Approach",26,true,false,false,false,false,true,true,false
+331,Famotidine,http://dummyimage.com/138x100.png/5fa2dd/ffffff,"Repair Left Femoral Artery, Open Approach",20,true,false,false,true,true,false,false,false
+332,ALOE - ALUMINUM OXIDE - BRYONIA ALBA ROOT - CHELIDONIUM MAJUS - CHOLECALCIFEROL - COLLINSONIA - FRANGULA ALNUS BARK - NIACIN - PANTOTHENIC ACID - POTASSIUM CARBONATE - RHUBARB - SILYBUM MARIANUM SEED,http://dummyimage.com/135x100.png/5fa2dd/ffffff,"Drainage of R Foot Bursa/Lig, Open Approach, Diagn",18,true,true,false,true,true,false,true,false
+333,ASPIRIN,http://dummyimage.com/180x100.png/dddddd/000000,"Repair Lower Esophagus, Percutaneous Approach",13,true,false,false,true,true,true,false,true
+334,"TITANIUM DIOXIDE, ZINC OXIDE",http://dummyimage.com/194x100.png/ff4444/ffffff,"Replace R Less Saphenous w Autol Sub, Perc Endo",3,false,false,false,true,true,false,true,false
+335,carvedilol,http://dummyimage.com/102x100.png/dddddd/000000,Plaque Radiation of Abdomen Lymphatics,8,false,false,false,true,false,false,true,false
+336,TITANIUM DIOXIDE,http://dummyimage.com/204x100.png/dddddd/000000,"Replace Buttock Subcu/Fascia w Nonaut Sub, Open",5,false,true,true,false,true,false,false,false
+337,PREDNISONE,http://dummyimage.com/194x100.png/cc0000/ffffff,"Drainage of Left Foot Artery, Open Approach",15,true,false,true,false,true,true,true,true
+338,Citric Acid Monohydrate,http://dummyimage.com/174x100.png/5fa2dd/ffffff,"Bypass Right Ventricle to R Pulm Art, Open Approach",16,true,true,false,false,true,false,false,false
+339,ibuprofen,http://dummyimage.com/243x100.png/dddddd/000000,"Supplement Azygos Vein with Synth Sub, Perc Approach",22,false,false,true,false,false,true,false,true
+340,Simvastatin,http://dummyimage.com/137x100.png/5fa2dd/ffffff,"Release Left Axillary Vein, Percutaneous Approach",19,true,true,true,true,false,false,false,true
+341,"WITCH HAZEL, CARTHAMUS TINCTORIS FLOWER BED, CORYDALIS AMBIGUA TUBER, LONGICERA CAPRIFOLIUM CAPRIFOLIUM FLOWER",http://dummyimage.com/228x100.png/dddddd/000000,"Occlusion R Ext Carotid w Bioact Intralum, Perc Endo",26,false,true,true,true,false,false,true,false
+342,Natural Menthol,http://dummyimage.com/183x100.png/dddddd/000000,"Drainage of Right Thyroid Gland Lobe, Open Approach",7,false,false,false,true,true,false,true,true
+343,Doxycycline,http://dummyimage.com/208x100.png/cc0000/ffffff,"Destruction of Left Tibia, Percutaneous Approach",21,true,false,false,false,true,true,true,true
+344,rosiglitazone maleate,http://dummyimage.com/152x100.png/dddddd/000000,"Occlusion L Innom Vein w Intralum Dev, Perc Endo",11,true,true,false,false,false,false,false,true
+345,"Benzalkonium Chloride, Lidocaine Hydrochloride",http://dummyimage.com/150x100.png/ff4444/ffffff,"Destruction of Right Renal Artery, Percutaneous Approach",20,true,true,false,true,true,true,true,true
+346,Oxygen,http://dummyimage.com/130x100.png/ff4444/ffffff,"Drainage of Perineum Skin with Drain Dev, Extern Approach",10,true,true,true,true,false,true,true,false
+347,Valacyclovir Hydrochloride,http://dummyimage.com/221x100.png/cc0000/ffffff,"Reposition Left Upper Femur with Ext Fix, Perc Approach",1,false,true,true,true,false,true,true,false
+348,Calcium Carbonate,http://dummyimage.com/156x100.png/5fa2dd/ffffff,"Removal of Infusion Device from Vas Deferens, Endo",29,false,true,true,true,false,false,true,true
+349,amlodipine besylate and atorvastatin calcium,http://dummyimage.com/107x100.png/ff4444/ffffff,"Supplement Left Frontal Bone with Nonaut Sub, Open Approach",18,false,true,true,true,false,true,false,false
+350,Diphenhydramine Hydrochloride,http://dummyimage.com/178x100.png/cc0000/ffffff,"Drainage of Lower Tooth, Open Approach, Multiple",13,true,true,false,true,false,true,true,true
+351,METFORMIN HYDROCHLORIDE,http://dummyimage.com/224x100.png/ff4444/ffffff,"Dilate of R Great Saphenous with Intralum Dev, Perc Approach",17,true,false,false,false,false,false,true,true
+352,Oxymorphone hydrochloride,http://dummyimage.com/118x100.png/5fa2dd/ffffff,Beam Radiation of Humerus using Photons >10 MeV,6,false,true,false,false,false,false,true,false
+353,Antihemophilic Factor (Recombinant),http://dummyimage.com/139x100.png/ff4444/ffffff,"Replacement of L Basilic Vein with Synth Sub, Open Approach",24,false,true,true,true,true,false,false,true
+354,erlotinib hydrochloride,http://dummyimage.com/238x100.png/cc0000/ffffff,"Revision of Ext Fix in L Femur Shaft, Extern Approach",6,false,true,true,false,false,false,true,true
+355,Ibuprofen,http://dummyimage.com/153x100.png/ff4444/ffffff,"Repair Right Atrium, Open Approach",14,true,true,true,false,false,false,false,false
+356,"Acetaminophen, Dextromethorphan HBr, Doxylamine succinate",http://dummyimage.com/140x100.png/dddddd/000000,"Dilation of 2 Cor Art with 2 Intralum Dev, Open Approach",7,true,false,true,false,false,false,true,false
+357,Water,http://dummyimage.com/176x100.png/ff4444/ffffff,"Bypass Abd Aorta to Low Ex Art w Synth Sub, Perc Endo",17,true,true,false,false,true,false,true,false
+358,Docusate sodium and Sennosides,http://dummyimage.com/207x100.png/cc0000/ffffff,"Supplement Left Femoral Artery with Autol Sub, Perc Approach",21,true,true,false,false,false,true,false,true
+359,"Hypericum, Aconitum Napellus, Lycopodium, Phosphorus, Rhus Toxicodendron",http://dummyimage.com/148x100.png/ff4444/ffffff,"Removal of Radioact Elem from R Breast, Extern Approach",21,true,false,false,true,true,false,false,true
+360,Docusate Sodium,http://dummyimage.com/205x100.png/cc0000/ffffff,"Release Right Trunk Tendon, External Approach",2,true,true,false,false,true,false,true,false
+361,"Menthol, Methyl salicylate",http://dummyimage.com/194x100.png/cc0000/ffffff,"Replace L Hip Jt, Acetab w Ceramic, Cement, Open",16,true,false,false,true,true,true,true,true
+362,Hydroxyzine Hydrochloride,http://dummyimage.com/155x100.png/5fa2dd/ffffff,"Transfer Left Hand Muscle, Percutaneous Endoscopic Approach",16,false,true,false,true,false,true,false,true
+363,Nortiptyline Hydrochloride,http://dummyimage.com/181x100.png/5fa2dd/ffffff,"Restrict of R Hypogast Vein with Extralum Dev, Open Approach",9,false,false,true,true,false,false,false,true
+364,Pseudoephedrine Hydrochloride and Triprolidine Hydrochloride,http://dummyimage.com/188x100.png/cc0000/ffffff,"Revision of Monitoring Device in Diaphragm, Via Opening",22,false,false,true,false,false,true,true,false
+365,Esomeprazole sodium,http://dummyimage.com/234x100.png/dddddd/000000,"Alteration of Upper Back with Synth Sub, Perc Endo Approach",21,false,true,false,false,true,false,false,false
+366,VENLAFAXINE HYDROCHLORIDE,http://dummyimage.com/174x100.png/cc0000/ffffff,"Fragmentation in Sigmoid Colon, Perc Endo Approach",1,true,false,true,false,true,false,true,false
+367,levothyroxine sodium,http://dummyimage.com/237x100.png/cc0000/ffffff,"Resection of Nasal Turbinate, Via Opening",22,true,false,true,false,true,false,true,true
+368,"Diphenhydramine HCl, Phenylephrine HCl",http://dummyimage.com/222x100.png/ff4444/ffffff,"Extirpation of Matter from Left Atrium, Perc Approach",15,true,false,false,false,true,true,true,true
+369,Stannous Fluoride,http://dummyimage.com/221x100.png/5fa2dd/ffffff,"Bypass R Ext Carotid to R Extracran Art, Open Approach",25,true,false,true,true,true,true,false,false
+370,Octinoxate and Zinc Oxide,http://dummyimage.com/159x100.png/dddddd/000000,"Supplement Right Basilic Vein with Autol Sub, Perc Approach",12,false,false,true,true,false,true,true,true
+371,MENTHOL,http://dummyimage.com/190x100.png/cc0000/ffffff,"Dilate L Thyroid Art, Bifurc, w 2 Intralum Dev, Open",20,false,true,true,false,true,true,false,false
+372,Nitrofurantoin Macrocrystals,http://dummyimage.com/144x100.png/5fa2dd/ffffff,"Division of Right Lower Arm Skin, External Approach",9,true,true,false,true,false,true,true,false
+373,quetiapine fumarate,http://dummyimage.com/148x100.png/5fa2dd/ffffff,"Supplement R Pulm Vein with Synth Sub, Open Approach",12,false,false,true,true,true,false,false,true
+374,Allantoin,http://dummyimage.com/122x100.png/ff4444/ffffff,"Replacement of L Knee Tendon with Autol Sub, Open Approach",23,false,false,false,false,true,true,true,true
+375,NOT APPLICABLE,http://dummyimage.com/127x100.png/5fa2dd/ffffff,"Replacement of Bi Breast with Autol Sub, Perc Approach",13,false,false,true,false,false,true,true,true
+376,Titanium Dioxide and Zinc Oxide,http://dummyimage.com/190x100.png/dddddd/000000,"Extirpation of Matter from Thor Spinal Cord, Open Approach",6,false,false,false,true,true,false,false,true
+377,Meningococcal Groups C and Y and Haemophilus b Tetanus Toxoid Conjugate Vaccine,http://dummyimage.com/250x100.png/dddddd/000000,"Alteration of R Wrist with Autol Sub, Open Approach",29,true,true,false,true,true,false,true,true
+378,"dextromethorphan hydrobromide, guaifenesin, phenylephrine hydrochloride",http://dummyimage.com/240x100.png/dddddd/000000,"Restrict Int Mamm, R Lymph w Intralum Dev, Open",26,false,false,true,true,false,true,false,true
+379,Nifedipine,http://dummyimage.com/180x100.png/ff4444/ffffff,"Dilate of L Temporal Art with 3 Intralum Dev, Perc Approach",25,true,true,false,false,false,true,true,true
+380,Sodium Fluoride,http://dummyimage.com/200x100.png/5fa2dd/ffffff,"Revision of Nonaut Sub in L Ulna, Perc Approach",11,false,true,false,true,true,true,false,true
+381,"Anthracinum, Pyrogenium, Aconitum nap., Aloe, Apis mel., Arnica, Arsenicum alb., Baptisia, Belladonna, Bryonia, Cantharis, Chelidonium majus, Crotalus horridus, Ferrum phosphoricum, Gaultheria procumbens, Hepar sulph. calc., Iodium, Lachesis, Nux vom., Phosphorus, Pulsatilla, Rhus toxicodendron, Veratrum viride, Verbascum, Echinacea",http://dummyimage.com/221x100.png/ff4444/ffffff,"Revision of Infusion Device in Testis, Endo",19,true,true,true,false,true,false,false,true
+382,"Avobenzone, Homosalate, Octisalate, and Octocrylene",http://dummyimage.com/105x100.png/cc0000/ffffff,"Excision of Right Foot, Percutaneous Approach",8,false,true,true,true,false,true,true,false
+383,ETHYL ALCOHOL,http://dummyimage.com/139x100.png/ff4444/ffffff,"Reposition Right Rib, Percutaneous Approach",3,false,false,false,true,true,true,true,false
+384,aspirin,http://dummyimage.com/168x100.png/5fa2dd/ffffff,"Bypass L Kidney Pelvis to Ileocutan w Synth Sub, Open",7,false,true,true,true,true,false,true,false
+385,Venlafaxine Hydrochloride,http://dummyimage.com/167x100.png/cc0000/ffffff,"Destruction of Sacral Nerve, Open Approach",22,false,false,true,false,false,true,true,false
+386,Guanfacine Hydrochloride,http://dummyimage.com/120x100.png/ff4444/ffffff,"Inspection of Right Upper Extremity, Perc Endo Approach",23,true,true,true,false,true,true,false,false
+387,Doxycycline hyclate,http://dummyimage.com/109x100.png/dddddd/000000,"Reposition Cervical Plexus, Percutaneous Approach",18,false,false,true,false,false,true,false,false
+388,Meloxicam,http://dummyimage.com/182x100.png/5fa2dd/ffffff,"Removal of Int Fix from Sternum, Extern Approach",9,false,true,true,false,false,true,false,true
+389,Simethicone,http://dummyimage.com/111x100.png/ff4444/ffffff,Stereotactic Gamma Beam Radiosurgery of Adrenal Glands,25,true,false,true,true,true,true,false,true
+390,ALUMINUM CHLOROHYDRATE,http://dummyimage.com/156x100.png/cc0000/ffffff,"Transfer Facial Nerve to Trochlear Nerve, Open Approach",1,false,false,true,true,false,true,true,true
+391,Aluminum Zirconium Tetrachlorohydrex Gly,http://dummyimage.com/127x100.png/cc0000/ffffff,"Excision of Head and Neck Tendon, Open Approach",17,false,false,false,false,false,true,false,false
+392,Ezetimibe,http://dummyimage.com/140x100.png/5fa2dd/ffffff,"Insertion of Int Fix into L Acetabulum, Perc Endo Approach",20,false,false,true,true,true,false,true,false
+393,"Octinoxate, Octisalate, Avobenzone",http://dummyimage.com/248x100.png/ff4444/ffffff,"Dilate L Com Carotid w 4+ Intralum Dev, Perc Endo",9,true,false,false,false,true,false,false,false
+394,Flecainide,http://dummyimage.com/249x100.png/cc0000/ffffff,Beam Radiation of Bone Marrow using Heavy Particles,8,true,true,true,true,true,false,true,false
+395,Ceftriaxone Sodium,http://dummyimage.com/236x100.png/ff4444/ffffff,"Drainage of R Hip Bursa/Lig with Drain Dev, Perc Approach",29,false,true,true,false,true,false,true,false
+396,Terbinafine Hydrochloride,http://dummyimage.com/190x100.png/ff4444/ffffff,"Revise of Synth Sub in R Acromioclav Jt, Perc Endo Approach",24,true,true,true,false,true,true,true,true
+397,LANOLIN,http://dummyimage.com/176x100.png/cc0000/ffffff,"Supplement Lumsac Jt with Nonaut Sub, Perc Endo Approach",10,true,false,true,true,false,true,true,true
+398,dexmethylphenidate hydrochloride,http://dummyimage.com/247x100.png/dddddd/000000,"Drainage of Right Patella, Open Approach, Diagnostic",20,true,true,true,false,false,false,true,false
+399,Lidocaine and Prilocaine,http://dummyimage.com/114x100.png/ff4444/ffffff,"Occlusion of Left Lower Lobe Bronchus, Open Approach",11,true,true,false,false,true,false,true,false
+400,fentanyl citrate,http://dummyimage.com/243x100.png/dddddd/000000,"Supplement L Low Leg Tendon w Autol Sub, Perc Endo",2,false,false,true,true,false,false,false,false
+401,"Codeine Phosphate, Promethazine Hydrochloride, and Phenylephrine Hydrochloride",http://dummyimage.com/131x100.png/cc0000/ffffff,"Muscles, Drainage",1,true,true,false,false,true,false,false,true
+402,Hamster Epithelium,http://dummyimage.com/213x100.png/cc0000/ffffff,"Supplement Bilateral Breast with Autol Sub, Open Approach",24,false,true,true,true,false,false,true,true
+403,Lien Plumbum,http://dummyimage.com/220x100.png/ff4444/ffffff,"Destruction of Celiac Artery, Perc Endo Approach",26,false,false,true,true,true,false,false,true
+404,Gabapentin,http://dummyimage.com/195x100.png/ff4444/ffffff,"Supplement Left Knee Joint with Nonaut Sub, Perc Approach",15,false,false,true,true,false,false,false,false
+405,ALCOHOL,http://dummyimage.com/155x100.png/cc0000/ffffff,"Reposition Right Shoulder Muscle, Perc Endo Approach",17,false,true,true,false,false,true,false,false
+406,WITCH HAZEL,http://dummyimage.com/124x100.png/ff4444/ffffff,"Supplement R Hip Bursa/Lig w Synth Sub, Perc Endo",16,false,false,false,true,false,false,true,false
+407,Famciclovir,http://dummyimage.com/126x100.png/5fa2dd/ffffff,"Excision of Right Hip Joint, Open Approach",28,true,true,true,false,true,true,true,true
+408,Camphor (Natural),http://dummyimage.com/199x100.png/cc0000/ffffff,"Removal of Extraluminal Device from Lymphatic, Perc Approach",30,false,false,false,true,false,false,false,false
+409,Avena sativa and Hepar sulphuris and Pulsatilla and Zincum valerianicum,http://dummyimage.com/246x100.png/dddddd/000000,"Supplement L Epididymis with Autol Sub, Perc Endo Approach",2,true,false,true,true,false,false,true,true
+410,BETAMETHASONE CLOTRIMAZOLE,http://dummyimage.com/169x100.png/dddddd/000000,"Drain of R Femoral Region with Drain Dev, Perc Endo Approach",29,false,true,true,false,true,false,false,true
+411,Simvastatin,http://dummyimage.com/226x100.png/5fa2dd/ffffff,"Drainage of L Low Extrem with Drain Dev, Perc Approach",14,true,false,true,true,false,true,true,false
+412,Carvedilol,http://dummyimage.com/245x100.png/5fa2dd/ffffff,"Occlusion of Esophagogastric Junction, Endo",9,false,false,false,false,false,true,true,false
+413,"Avobenzone, Homosalate, Octisalate, Octocrylene, and Oxybenzone",http://dummyimage.com/100x100.png/dddddd/000000,Beam Radiation of Neck Skin using Neutron Capture,9,false,true,false,true,true,false,false,true
+414,Piperacillin and Tazobactam,http://dummyimage.com/128x100.png/dddddd/000000,"Excision of Lower Vein, Percutaneous Approach",11,true,true,true,false,false,false,false,true
+415,Bupropion Hydrochloride,http://dummyimage.com/189x100.png/dddddd/000000,"Removal of Synth Sub from C-thor Disc, Perc Approach",1,false,true,false,true,false,true,false,false
+416,OCTINOXATE,http://dummyimage.com/202x100.png/cc0000/ffffff,"Drainage of Right Metatarsal with Drain Dev, Perc Approach",15,true,true,false,false,true,false,false,false
+417,Anticoagulant Citrate Phosphate Dextrose (CPD) Solution and ADSOL Preservation Solution,http://dummyimage.com/215x100.png/ff4444/ffffff,"Excision of Right Humeral Head, Percutaneous Approach",22,true,true,false,true,true,true,false,true
+418,"Avobenzone, Octisalate, Octocrylene",http://dummyimage.com/203x100.png/5fa2dd/ffffff,"Bypass L Brach Art to Up Arm Vein w Autol Art, Open",26,true,false,false,true,true,true,false,true
+419,HYDROCORTISONE,http://dummyimage.com/106x100.png/ff4444/ffffff,"Replacement of Pharynx with Synthetic Substitute, Endo",7,false,false,true,false,false,true,true,false
+420,HYDROCODONE BITARTRATE AND ACETAMINOPHEN,http://dummyimage.com/218x100.png/5fa2dd/ffffff,"Repair Lower Back, External Approach",9,true,false,false,false,false,false,true,false
+421,Erythropoietin,http://dummyimage.com/108x100.png/dddddd/000000,"Revision of Synth Sub in Fem Perineum, Perc Approach",23,false,false,true,false,true,true,false,true
+422,AVOBENZONE and OCTISALATE,http://dummyimage.com/165x100.png/5fa2dd/ffffff,"Extirpate matter from R Thyroid Art, Bifurc, Open",11,true,true,false,true,true,false,true,false
+423,Oxcarbazepine,http://dummyimage.com/182x100.png/dddddd/000000,"Resection of Left Scapula, Open Approach",18,true,true,false,false,false,true,true,false
+424,CLOTRIMAZOLE,http://dummyimage.com/229x100.png/cc0000/ffffff,"Drainage of Right Shoulder Joint, Perc Endo Approach",25,false,true,false,true,false,true,true,true
+425,TOXICODENDRON PUBESCENS LEAF,http://dummyimage.com/140x100.png/5fa2dd/ffffff,"Replacement of Inf Mesent Art with Autol Sub, Open Approach",18,true,false,false,true,false,true,true,true
+426,ISOPROPYL ALCOHOL,http://dummyimage.com/146x100.png/ff4444/ffffff,Beam Radiation of Salivary Glands using Neutrons,2,true,false,true,false,true,true,true,false
+427,Olanzapine,http://dummyimage.com/232x100.png/cc0000/ffffff,"Extirpate of Matter from L Finger Phalanx Jt, Open Approach",29,true,false,true,true,false,true,false,true
+428,PANTHENOL,http://dummyimage.com/105x100.png/cc0000/ffffff,"Supplement L Metacarpocarp Jt with Autol Sub, Open Approach",5,false,true,false,false,false,false,false,true
+429,Niacin,http://dummyimage.com/239x100.png/ff4444/ffffff,"Coord/Dexterity Treatment of Neuro Head, Neck using Orthosis",22,false,false,false,false,false,true,false,true
+430,LORAZEPAM,http://dummyimage.com/116x100.png/dddddd/000000,"Resection of Nose, External Approach",3,true,false,true,true,true,true,false,false
+431,Mirtazapine,http://dummyimage.com/118x100.png/ff4444/ffffff,"Extirpation of Matter from Left Radial Artery, Perc Approach",10,true,true,false,false,false,false,false,true
+432,Zinc Gluconate,http://dummyimage.com/206x100.png/dddddd/000000,"Drainage of Right Parietal Bone, Perc Endo Approach",7,false,false,false,false,false,false,false,true
+433,nitroglycerin,http://dummyimage.com/183x100.png/5fa2dd/ffffff,"Detachment at Right Knee Region, Open Approach",15,true,true,false,false,true,false,true,true
+434,amoxicillin,http://dummyimage.com/174x100.png/cc0000/ffffff,"Extirpation of Matter from Right Ankle Joint, Perc Approach",22,false,false,true,false,false,true,false,false
+435,"isopropyl alcohol, benzyl alcohol, picric acid, tannic acid",http://dummyimage.com/117x100.png/5fa2dd/ffffff,"Excision of Right Finger Phalanx, Perc Endo Approach",19,false,false,false,false,true,true,false,true
+436,Maple Sugar,http://dummyimage.com/187x100.png/dddddd/000000,"Bypass Cereb Vent to Blood Vess w Autol Sub, Perc",8,false,false,true,true,false,true,false,true
+437,LIDOCAINE HYDROCHLORIDE,http://dummyimage.com/163x100.png/dddddd/000000,"Introduction of Local Anesth into Resp Tract, Perc Approach",25,false,false,true,false,true,true,false,false
+438,Cefuroxime Sodium,http://dummyimage.com/248x100.png/dddddd/000000,LDR Brachytherapy of Soft Palate using Iodine 125,28,false,false,true,false,false,true,true,true
+439,Ethyl Alcohol,http://dummyimage.com/248x100.png/cc0000/ffffff,"Excision of Male Perineum, External Approach",18,false,true,false,true,false,false,false,false
+440,Aspirin,http://dummyimage.com/124x100.png/cc0000/ffffff,"Bypass L Radial Art to Low Arm Vein w Autol Vn, Open",25,true,false,false,false,false,false,false,true
+441,Diltiazem Hydrochloride,http://dummyimage.com/218x100.png/ff4444/ffffff,"Drainage of Upper Artery with Drainage Device, Perc Approach",16,true,false,true,false,true,false,false,true
+442,Citalopram,http://dummyimage.com/233x100.png/dddddd/000000,"Revision of Intbd Fus Dev in Lum Jt, Extern Approach",30,false,false,true,true,true,false,true,false
+443,aluminum zirconium trichlorohydrex gly,http://dummyimage.com/241x100.png/dddddd/000000,"Excision of Olfactory Nerve, Percutaneous Approach, Diagn",15,false,false,false,false,false,true,false,true
+444,Carvedilol,http://dummyimage.com/103x100.png/5fa2dd/ffffff,"Reposition R Metacarpophal Jt with Ext Fix, Extern Approach",18,false,false,false,false,false,false,false,false
+445,Belladonna,http://dummyimage.com/231x100.png/5fa2dd/ffffff,"Drainage of Left Zygomatic Bone, Open Approach",1,true,false,true,false,false,false,true,true
+446,Red chestnut,http://dummyimage.com/157x100.png/ff4444/ffffff,"Anatomical Regions, Lower Extremities, Detachment",14,true,true,true,false,true,false,true,false
+447,"CALENDULA OFFICINALIS FLOWERING TOP, PHYTOLACCA AMERICANA ROOT, and THUJA OCCIDENTALIS LEAFY TWIG",http://dummyimage.com/130x100.png/ff4444/ffffff,"Fluoroscopy R Low Extrem Vein w Oth Contrast, Guidance",23,false,false,true,false,true,false,false,true
+448,OCTINOXATE and TITANIUM DIOXIDE,http://dummyimage.com/122x100.png/dddddd/000000,Conditioned Play Audiometry Assessment using AV Equipment,21,false,true,false,true,false,false,true,true
+449,CAIRINA MOSCHATA HEART/LIVER AUTOLYSATE,http://dummyimage.com/173x100.png/cc0000/ffffff,"Bypass Pulm Trunk from Innom Art with No Dev, Open Approach",18,true,false,true,true,true,true,false,false
+450,"Homosalate, Octinoxate, Octisalate, Titanium Dioxide",http://dummyimage.com/203x100.png/5fa2dd/ffffff,"Excision of R Trunk Bursa/Lig, Perc Approach, Diagn",26,false,false,true,false,false,false,false,false
+451,aliskiren hemifumarate,http://dummyimage.com/233x100.png/5fa2dd/ffffff,"Drainage of R Verteb Vein with Drain Dev, Perc Approach",10,true,false,false,false,true,false,true,false
+452,doxepin hydrochloride,http://dummyimage.com/113x100.png/cc0000/ffffff,"Revision of Drain Dev in L Shoulder Jt, Perc Endo Approach",7,true,true,false,false,false,true,true,false
+453,Clotrimazole,http://dummyimage.com/150x100.png/cc0000/ffffff,"Drainage of Right Colic Artery, Perc Endo Approach, Diagn",3,false,false,true,true,false,false,false,false
+454,Ceftriaxone Sodium,http://dummyimage.com/129x100.png/cc0000/ffffff,"Release Sigmoid Colon, Percutaneous Endoscopic Approach",14,false,true,false,true,true,false,true,true
+455,simvastatin,http://dummyimage.com/170x100.png/ff4444/ffffff,"Drainage of Left Radial Artery, Perc Endo Approach, Diagn",2,false,true,false,false,true,true,false,true
+456,Antiperspirant,http://dummyimage.com/233x100.png/dddddd/000000,"Replacement of R Up Eyelid with Nonaut Sub, Open Approach",5,true,false,false,true,true,true,false,false
+457,"Aconite napellus, Argentums nitricum, Gelsemium sempervirens, Hyoscyamus niger, Ignatia amara, Lycopodium clavatum, Phosphorus",http://dummyimage.com/134x100.png/dddddd/000000,"Supplement Anal Sphincter with Synth Sub, Open Approach",13,false,false,false,false,false,true,true,true
+458,Povidone Iodine,http://dummyimage.com/145x100.png/cc0000/ffffff,"Restriction of Esophagus with Intralum Dev, Open Approach",26,false,true,true,false,false,false,true,true
+459,BUMETANIDE,http://dummyimage.com/193x100.png/5fa2dd/ffffff,"Reposition L Metatarsotars Jt with Ext Fix, Perc Approach",27,true,true,false,false,true,true,false,false
+460,"Adrenalinum, Calarea Carbonica, Calcarea Fluorica, Calcarea Iodata, Ferrum Iodatum, Fucus Vesiculosus, Iodium, Kali Iodatum, Naturm Muriaticum",http://dummyimage.com/193x100.png/dddddd/000000,"Dilate L Ext Iliac Art, Bifurc, w 4 Drug-elut, Perc",4,true,true,true,false,true,true,true,true
+461,"Echinacea angustifolia, Uva-ursi, Baptisia tinctoria, Convallaria majalis, Kali muriaticum, Pinus sylvestris, Thuja occidentalis, Bryonia alba,",http://dummyimage.com/208x100.png/dddddd/000000,"Supplement Left Zygomatic Bone with Synth Sub, Open Approach",28,false,false,false,true,false,true,false,true
+462,Cotton Linters,http://dummyimage.com/144x100.png/5fa2dd/ffffff,Nonspoken Language Assessment using Other Equipment,12,true,false,false,false,true,false,false,true
+463,Carvedilol,http://dummyimage.com/232x100.png/dddddd/000000,"Insertion of Intralum Dev into R Hand Art, Perc Approach",24,true,false,false,false,true,true,false,false
+464,Nigrospora sphaerica,http://dummyimage.com/234x100.png/5fa2dd/ffffff,"Inspection of Right Elbow Joint, External Approach",8,true,false,false,true,true,false,true,true
+465,"Arnica, Belladonna, Calcarea Phosphorica, Chamomilla, Hepar Sulph, Hypericum, Mercurius",http://dummyimage.com/147x100.png/5fa2dd/ffffff,"Repair Left External Ear, External Approach",13,true,true,false,false,true,false,false,false
+466,Carbamazepine,http://dummyimage.com/217x100.png/5fa2dd/ffffff,"Dilate of L Com Carotid with 4+ Intralum Dev, Perc Approach",5,false,false,false,true,true,true,false,true
+467,Cedar Red,http://dummyimage.com/174x100.png/cc0000/ffffff,"Supplement Left Occipital Bone with Synth Sub, Perc Approach",19,false,false,true,true,false,false,false,true
+468,"Abrotanum, Aesculus hipp., Allium sativum, Arsenicum alb., Artemisia, Baptisia, Cina, Cuprum met., Filix mas, Granatum, Ipecac, Lachesis, Lycopodium, Merc. viv, Naphthalinum, Nat. mur., Nux vom., Pulsatilla, Ratanhia, Ruta, Sabadilla, Santoninum, Silicea, Spigelia anth., Terebinthina, Teucrium marum, Thymolum, Zingiber, Juglans regia",http://dummyimage.com/204x100.png/ff4444/ffffff,"Bypass L Hypogast Vein to Low Vein w Autol Sub, Open",18,true,false,true,false,true,false,false,false
+469,Oxygen,http://dummyimage.com/171x100.png/cc0000/ffffff,"Revision of Synth Sub in R Toe Phalanx, Extern Approach",6,true,false,true,false,false,false,true,false
+470,Aluminum Zirconium Trichlorohydrex Gly,http://dummyimage.com/116x100.png/dddddd/000000,"Bypass L Great Saphenous to Low Vein w Synth Sub, Perc Endo",21,false,true,false,true,true,false,true,true
+471,Sodium Fluoride,http://dummyimage.com/182x100.png/ff4444/ffffff,"Fragmentation in Pericardial Cavity, External Approach",17,true,true,false,true,true,false,false,true
+472,Homosalate and Oxybenzone,http://dummyimage.com/145x100.png/5fa2dd/ffffff,"Restrict of R Com Carotid with Intralum Dev, Perc Approach",19,true,false,true,false,false,true,true,true
+473,Aspirin,http://dummyimage.com/107x100.png/ff4444/ffffff,"Extirpate of Matter from L Radial Art, Bifurc, Open Approach",19,false,true,false,false,true,true,true,false
+474,atracurium besylate,http://dummyimage.com/156x100.png/dddddd/000000,Magnetic Resonance Imaging (MRI) of Left Knee,14,true,true,true,true,false,false,false,false
+475,Ibuprofen,http://dummyimage.com/193x100.png/dddddd/000000,"Excision of Left Upper Arm, Perc Endo Approach, Diagn",2,false,true,true,false,false,true,false,false
+476,not applicable,http://dummyimage.com/161x100.png/5fa2dd/ffffff,"Revision of Int Fix in L Toe Phalanx Jt, Perc Endo Approach",20,false,false,true,false,false,false,true,true
+477,Zidovudine,http://dummyimage.com/159x100.png/5fa2dd/ffffff,"Replace of L Pulm Vein with Zooplastic, Perc Endo Approach",16,true,false,false,false,true,true,true,true
+478,Ursodiol,http://dummyimage.com/217x100.png/cc0000/ffffff,"Restrict L Temporal Art w Intralum Dev, Perc Endo",14,true,true,false,false,true,true,true,false
+479,Metreleptin,http://dummyimage.com/237x100.png/dddddd/000000,"Supplement R Com Carotid with Autol Sub, Perc Approach",16,false,true,false,true,false,false,true,false
+480,metformin hydrochloride,http://dummyimage.com/129x100.png/ff4444/ffffff,"Drainage of L Low Extrem with Drain Dev, Open Approach",26,true,true,false,true,true,true,true,true
+481,CICLOPIROX,http://dummyimage.com/169x100.png/dddddd/000000,"Drainage of Accessory Sinus, Percutaneous Approach",16,true,false,false,false,true,true,true,true
+482,nifedipine,http://dummyimage.com/130x100.png/5fa2dd/ffffff,"Revision of Synth Sub in Low Back, Perc Endo Approach",24,true,false,true,true,false,true,false,false
+483,Carbamazepine,http://dummyimage.com/144x100.png/ff4444/ffffff,"Supplement Sciatic Nerve with Autol Sub, Perc Approach",13,true,true,true,false,false,false,true,false
+484,chlorthalidone,http://dummyimage.com/105x100.png/cc0000/ffffff,"Destruction of Mesenteric Lymphatic, Percutaneous Approach",11,false,true,false,false,true,true,true,false
+485,niacin and lovastatin,http://dummyimage.com/238x100.png/dddddd/000000,"Drainage of L Up Arm with Drain Dev, Perc Endo Approach",5,true,false,false,true,true,true,true,false
+486,clindamycin hydrochloride,http://dummyimage.com/229x100.png/cc0000/ffffff,"Supplement Anus with Nonaut Sub, Perc Endo Approach",6,true,true,true,true,true,false,true,false
+487,clindamycin phosphate,http://dummyimage.com/243x100.png/ff4444/ffffff,"Release Nasal Turbinate, Open Approach",29,true,false,true,false,false,false,false,true
+488,Glyburide,http://dummyimage.com/101x100.png/ff4444/ffffff,"Drainage of L Great Saphenous, Perc Approach, Diagn",27,true,true,true,false,true,true,true,true
+489,Olanzapine,http://dummyimage.com/173x100.png/cc0000/ffffff,"Supplement Facial Muscle with Nonaut Sub, Open Approach",1,false,false,false,true,true,true,false,true
+490,"Octinoxate, Octocrylene, Titanium Dioxide, Zinc Oxide",http://dummyimage.com/215x100.png/cc0000/ffffff,"Dilation of L Popl Art with Intralum Dev, Perc Approach",26,true,false,false,false,true,true,true,true
+491,TRANEXAMIC ACID,http://dummyimage.com/128x100.png/ff4444/ffffff,"Bypass L Innom Vein to Up Vein w Nonaut Sub, Open",17,false,false,false,false,true,false,false,false
+492,Hypericum Bryophyllum,http://dummyimage.com/248x100.png/dddddd/000000,"Bypass Stomach to Trans Colon with Autol Sub, Open Approach",30,true,false,false,false,true,false,false,true
+493,Petrolatum,http://dummyimage.com/124x100.png/cc0000/ffffff,"Excision of Right Thumb Phalanx, Percutaneous Approach",25,false,true,false,true,true,false,true,false
+494,Cefaclor,http://dummyimage.com/218x100.png/5fa2dd/ffffff,"Repair Head, Percutaneous Endoscopic Approach",25,false,false,true,false,false,true,false,true
+495,Rhizopus nigricans,http://dummyimage.com/212x100.png/dddddd/000000,"Revision of Infusion Device in Lumsac Disc, Extern Approach",22,false,false,false,true,true,false,false,false
+496,Water,http://dummyimage.com/206x100.png/dddddd/000000,"Introduce of Analg/Hypnot/Sedat into Mouth/Phar, Via Opening",20,true,false,true,false,false,false,false,false
+497,metformin hydrochloride,http://dummyimage.com/185x100.png/ff4444/ffffff,"Excision of Left Eye, External Approach",10,false,true,false,false,true,false,false,false
+498,Diphenhydramine Hydrochloride,http://dummyimage.com/220x100.png/cc0000/ffffff,"Replacement of R Tibia with Nonaut Sub, Perc Endo Approach",28,false,false,false,true,false,false,true,false
+499,ALCOHOL,http://dummyimage.com/205x100.png/dddddd/000000,"Excision of Left Ankle Tendon, Perc Endo Approach, Diagn",3,false,true,false,true,false,false,false,false
+500,"SODIUM BICARBONATE, SODIUM CHLORIDE",http://dummyimage.com/237x100.png/5fa2dd/ffffff,"Insertion of Oth Dev into R Low Extrem, Perc Endo Approach",30,false,true,false,false,true,true,true,true
+501,Octinoxate and Titanium Dioxide,http://dummyimage.com/187x100.png/ff4444/ffffff,"Introduction of Oxazolidinones into Eye, External Approach",9,false,false,false,true,false,true,true,false
+502,"Adrenal, ATP, Bac nosode, Belladonna",http://dummyimage.com/127x100.png/ff4444/ffffff,"Bypass Cereb Vent to Cereb Cistern w Synth Sub, Perc",3,true,true,true,false,true,false,false,false
+503,Beef Bovine spp.,http://dummyimage.com/163x100.png/5fa2dd/ffffff,"Reposition R Fibula with Hybrid Ext Fix, Perc Endo Approach",20,false,false,true,true,true,true,true,true
+504,CEFTRIAXONE,http://dummyimage.com/204x100.png/dddddd/000000,"Revision of Synth Sub in R Humeral Shaft, Open Approach",1,true,false,true,true,true,true,false,true
+505,Rhizopus,http://dummyimage.com/239x100.png/dddddd/000000,"Drainage of Cervicothoracic Vertebral Disc, Perc Approach",25,true,true,true,false,false,true,true,true
+506,Water,http://dummyimage.com/165x100.png/5fa2dd/ffffff,"Occlusion L Axilla Art w Extralum Dev, Perc Endo",28,false,false,false,true,false,false,true,false
+507,Dimethicone,http://dummyimage.com/166x100.png/dddddd/000000,"Bypass R Com Iliac Art to R Renal A w Synth Sub, Perc Endo",22,false,true,false,true,true,false,false,true
+508,OXYGEN,http://dummyimage.com/201x100.png/5fa2dd/ffffff,"Restriction of Asc Colon with Extralum Dev, Perc Approach",19,false,true,true,false,true,false,false,true
+509,"Brompheniramine maleate, Dextromethorphan HBr, Phenylephrine HCl",http://dummyimage.com/153x100.png/5fa2dd/ffffff,"Repair Left External Jugular Vein, Open Approach",21,false,true,true,false,true,false,false,false
+510,Octinoxate,http://dummyimage.com/117x100.png/5fa2dd/ffffff,"Destruction of Ileum, Via Natural or Artificial Opening",28,true,false,false,false,true,false,true,false
+511,Trandolapril and Verapamil Hydrochloride,http://dummyimage.com/202x100.png/ff4444/ffffff,"Resection of Left Lens, Percutaneous Approach",8,false,false,false,true,true,true,true,true
+512,ATORVASTATIN CALCIUM,http://dummyimage.com/206x100.png/5fa2dd/ffffff,"Hepatobiliary System and Pancreas, Extirpation",2,false,false,false,true,true,true,false,false
+513,Gabapentin,http://dummyimage.com/132x100.png/5fa2dd/ffffff,"Repair Right Middle Finger, Percutaneous Endoscopic Approach",5,true,false,true,true,false,false,false,true
+514,Oxygen,http://dummyimage.com/177x100.png/dddddd/000000,"Revision of Drainage Device in Nose, Via Opening",1,true,true,true,true,false,false,true,false
+515,fexofenadine hydrochloride,http://dummyimage.com/189x100.png/5fa2dd/ffffff,"Removal of Int Fix from L Glenoid Cav, Perc Endo Approach",13,true,true,false,true,false,false,false,false
+516,galantamine hydrobromide,http://dummyimage.com/128x100.png/ff4444/ffffff,"Restriction of Rectum with Intralum Dev, Open Approach",23,true,true,false,true,true,false,true,true
+517,Salicylic Acid,http://dummyimage.com/155x100.png/dddddd/000000,CT Scan of R Femur using Oth Contrast,16,false,true,false,true,false,false,true,false
+518,Acetaminophen,http://dummyimage.com/177x100.png/5fa2dd/ffffff,"Extirpation of Matter from R Kidney Pelvis, Perc Approach",10,false,true,true,false,true,true,true,true
+519,"Titanium Dioxide, Zinc Oxide",http://dummyimage.com/100x100.png/dddddd/000000,"Reposition Left Thumb Phalanx, Percutaneous Approach",6,false,true,true,false,false,true,true,false
+520,Zolmitriptan,http://dummyimage.com/236x100.png/cc0000/ffffff,"Revision of Ext Fix in R Ulna, Open Approach",12,true,false,false,true,true,false,true,false
+521,catfish,http://dummyimage.com/131x100.png/5fa2dd/ffffff,"Reposition Right Occipital Bone, Percutaneous Approach",22,true,true,true,true,true,true,true,false
+522,LOPERAMIDE HYDROCHLORIDE,http://dummyimage.com/113x100.png/dddddd/000000,Nonimag Nucl Med Prob Up Extrem Lymph w Technetium 99m,18,false,true,true,true,true,true,false,true
+523,Clonidine Hydrochloride,http://dummyimage.com/218x100.png/5fa2dd/ffffff,"Transfer Vagus Nerve to Hypoglossal Nerve, Open Approach",20,true,false,true,true,true,true,true,true
+524,OXYGEN,http://dummyimage.com/204x100.png/ff4444/ffffff,"Removal of Infusion Device from Face, Percutaneous Approach",13,true,false,true,false,true,true,true,true
+525,OXYGEN,http://dummyimage.com/114x100.png/ff4444/ffffff,"Release Thoracic Aorta, Descending, Percutaneous Approach",12,true,false,true,false,false,true,true,false
+526,OXYGEN,http://dummyimage.com/200x100.png/5fa2dd/ffffff,CT Scan of L Finger using L Osm Contrast,3,true,false,true,true,true,false,false,false
+527,"conium maculatum flowering top, sodium chloride, ruta graveolens flowering top and polygala senega root",http://dummyimage.com/173x100.png/dddddd/000000,"Occlusion Hemorr Plexus w Extralum Dev, Perc Endo",3,false,true,true,false,true,true,true,true
+528,lidocaine and prilocaine,http://dummyimage.com/185x100.png/ff4444/ffffff,"Bypass R Fem Art to Low Ex Art with Autol Art, Open Approach",14,false,false,true,false,false,true,false,true
+529,topiramate,http://dummyimage.com/146x100.png/cc0000/ffffff,"Division of Right Metatarsal, Open Approach",16,true,false,false,false,false,false,true,false
+530,"Benzocaine, Menthol, Cetylpyridinium Chloride",http://dummyimage.com/172x100.png/ff4444/ffffff,"Resection of Right Ankle Tendon, Perc Endo Approach",4,true,false,true,false,false,false,true,false
+531,"Acetaminophen, guaifenesin, phenylephrine HCl",http://dummyimage.com/146x100.png/5fa2dd/ffffff,"Destruction of Right Lobe Liver, Percutaneous Approach",28,true,true,false,true,true,true,false,false
+532,Baclofen,http://dummyimage.com/112x100.png/5fa2dd/ffffff,"Division of Right Thorax Muscle, Perc Endo Approach",24,false,true,true,false,true,true,false,true
+533,meclizine hydrochloride,http://dummyimage.com/121x100.png/dddddd/000000,"Radiation Therapy, Urinary System, Other Radiation",27,false,false,false,true,false,true,true,true
+534,Oxybutynin Chloride,http://dummyimage.com/111x100.png/ff4444/ffffff,"Bypass Right Renal Vein to Lower Vein, Open Approach",4,true,false,false,false,false,true,false,false
+535,Menthol,http://dummyimage.com/214x100.png/ff4444/ffffff,"Introduce of Monoclonal Antibody into GU Tract, Via Opening",15,false,true,true,false,false,false,false,false
+536,Octinoxate and Titanium Dioxide,http://dummyimage.com/195x100.png/cc0000/ffffff,"Repair Endocrine System in POC with Oth Dev, Endo",27,false,false,true,false,true,true,false,false
+537,loperamide HCl,http://dummyimage.com/211x100.png/dddddd/000000,"Reposition Right Metacarpal with Ext Fix, Perc Approach",1,true,true,false,false,true,false,false,true
+538,fentanyl,http://dummyimage.com/119x100.png/dddddd/000000,"Repair Left Femoral Region, External Approach",15,false,true,false,true,false,true,true,true
+539,DOCUSATE SODIUM,http://dummyimage.com/154x100.png/ff4444/ffffff,"Replace of Mitral Valve with Autol Sub, Perc Endo Approach",2,true,false,false,true,false,false,false,false
+540,furosemide,http://dummyimage.com/217x100.png/ff4444/ffffff,Beam Radiation of Head and Neck using Neutrons,10,false,true,true,false,false,false,false,false
+541,Octinoxate and Oxybenzone,http://dummyimage.com/111x100.png/dddddd/000000,"Insertion of Stim Gen into Back Subcu/Fascia, Open Approach",25,false,true,false,true,true,false,true,false
+542,"Argentum Nitricum, Baptisia Tinctoria, Echinacea, Echinacea Purpurea, Galium Aparine, Phosphorus, Pulstilla, Sulphur, Thuma Occidentalis, Thymus Serpyllum",http://dummyimage.com/156x100.png/dddddd/000000,"Dilate of R Int Mamm Art with 4+ Intralum Dev, Perc Approach",6,false,true,false,false,true,false,false,false
+543,"Berberis Vulgaris, Glycyrrhiza Glabra, Lappa Major, Phytolacca Decandra, Stillingia Sylvatica, Trifolium Pratense, Glandula Suprarenalis Suis",http://dummyimage.com/150x100.png/dddddd/000000,"Release Perineum Bursa and Ligament, External Approach",3,false,true,true,true,true,true,true,false
+544,petrolatum,http://dummyimage.com/121x100.png/cc0000/ffffff,"Drainage of Right Choroid, Open Approach, Diagnostic",30,true,false,true,true,false,false,true,true
+545,Oxygen,http://dummyimage.com/164x100.png/ff4444/ffffff,"Control Bleeding in Left Wrist Region, Percutaneous Approach",30,true,true,true,false,false,true,false,false
+546,Dexamethasone,http://dummyimage.com/197x100.png/dddddd/000000,"Resection of Left Thorax Bursa and Ligament, Open Approach",6,false,true,false,false,true,true,true,false
+547,prednisolone sodium phosphate,http://dummyimage.com/120x100.png/dddddd/000000,"Release Large Intestine, Endo",29,true,true,true,true,true,true,true,true
+548,Amoxicillin,http://dummyimage.com/143x100.png/5fa2dd/ffffff,"Removal of Synthetic Substitute from Heart, Open Approach",2,false,true,true,false,true,true,false,false
+549,Triclosan,http://dummyimage.com/245x100.png/ff4444/ffffff,"Excision of Left Foot Muscle, Perc Endo Approach",3,false,true,true,true,false,true,true,false
+550,"Diphenhydramine HCl, Phenylephrine HCl",http://dummyimage.com/170x100.png/cc0000/ffffff,"Bypass L Vas Deferens to R Vas Def w Synth Sub, Open",26,true,true,false,false,false,false,false,false
+551,minoxidil,http://dummyimage.com/232x100.png/5fa2dd/ffffff,"Occlusion of Bladder Neck, Percutaneous Approach",21,true,false,true,true,false,true,false,true
+552,nisoldipine,http://dummyimage.com/125x100.png/5fa2dd/ffffff,"Occlusion of Left Innominate Vein, Open Approach",23,true,false,false,false,true,true,true,true
+553,Octinoxate and Oxybenzone,http://dummyimage.com/166x100.png/cc0000/ffffff,"Insertion of Infusion Device into L Hand Art, Perc Approach",22,false,false,false,true,true,true,true,true
+554,Vancomycin Hydrochloride,http://dummyimage.com/113x100.png/5fa2dd/ffffff,"Drainage of Left Epididymis, Percutaneous Approach",7,false,true,true,true,false,false,true,true
+555,"Avobenzone, Octinoxate, Octisalate, Oxybenzone",http://dummyimage.com/192x100.png/dddddd/000000,"Transfuse Autol Hemat Stem Cell in Central Vein, Perc",27,true,false,true,true,true,true,true,true
+556,Sodium Fluoride,http://dummyimage.com/227x100.png/5fa2dd/ffffff,"Supplement Esophagast Junct with Synth Sub, Via Opening",21,true,false,false,false,false,true,true,true
+557,Miconazole nitrate,http://dummyimage.com/103x100.png/5fa2dd/ffffff,"Dilation of L Ext Iliac Art with 3 Drug-elut, Perc Approach",28,true,false,false,false,false,false,false,true
+558,ALCOHOL,http://dummyimage.com/166x100.png/5fa2dd/ffffff,"Revision of Autol Sub in Low Vein, Perc Endo Approach",21,true,false,true,true,true,true,true,false
+559,CAPSAICIN,http://dummyimage.com/240x100.png/ff4444/ffffff,"Bypass R Basilic Vein to Up Vein w Synth Sub, Perc Endo",13,false,true,false,false,false,true,true,false
+560,CHLOROXYLENOL,http://dummyimage.com/223x100.png/5fa2dd/ffffff,"Insert of Int Fix into R Occipital Bone, Perc Endo Approach",14,true,false,false,false,true,true,true,false
+561,GLYCERIN,http://dummyimage.com/183x100.png/ff4444/ffffff,"Drainage of Left Buttock with Drain Dev, Perc Endo Approach",8,false,false,true,true,true,true,false,true
+562,haloperidol,http://dummyimage.com/189x100.png/ff4444/ffffff,"Drain Oral Cav & Throat w Drain Dev, Perc Endo",26,true,false,true,true,true,false,true,false
+563,"Acetominophen, Phenylephrine Hydrochloride and Pheniramine Maleate",http://dummyimage.com/159x100.png/ff4444/ffffff,"Excision of Esophagus, Percutaneous Approach, Diagnostic",11,false,true,false,true,false,false,true,false
+564,Loratadine and Pseudoephedrine Sulfate,http://dummyimage.com/167x100.png/dddddd/000000,"Drainage of Ascending Colon, Open Approach",6,false,true,true,true,false,true,true,true
+565,Avobenzone and Octinoxate,http://dummyimage.com/191x100.png/ff4444/ffffff,"Excision of Adenoids, External Approach",4,false,true,true,false,true,true,true,true
+566,Black Willow,http://dummyimage.com/165x100.png/ff4444/ffffff,"Extirpation of Matter from Gastric Artery, Open Approach",30,false,true,true,true,true,false,false,false
+567,ketoconazole,http://dummyimage.com/248x100.png/5fa2dd/ffffff,"Excision of Thalamus, Open Approach, Diagnostic",11,true,true,true,true,true,false,true,false
+568,NATRUM PHOSPHORICUM,http://dummyimage.com/199x100.png/5fa2dd/ffffff,"Fragmentation in Common Bile Duct, Perc Endo Approach",13,false,true,false,true,false,false,false,false
+569,"Avobenzone, Octisalate, Octocrylene, and Oxybenzone",http://dummyimage.com/154x100.png/5fa2dd/ffffff,"Insertion of Spacer into Lumbosacral Joint, Open Approach",8,true,true,true,false,false,false,false,true
+570,Sudan Grass,http://dummyimage.com/170x100.png/dddddd/000000,"Repair Left Toe Phalangeal Joint, External Approach",30,false,false,false,false,true,false,true,true
+571,Tolnaftate,http://dummyimage.com/225x100.png/5fa2dd/ffffff,"Change Other Device in Liver, External Approach",1,false,false,false,true,true,false,true,false
+572,"Candida albicans,",http://dummyimage.com/207x100.png/ff4444/ffffff,Fluoroscopy of L Int Mamm Graft using Oth Contrast,25,true,false,false,false,true,true,false,false
+573,Aspirin,http://dummyimage.com/210x100.png/dddddd/000000,"Release Splenic Artery, Percutaneous Approach",18,true,false,false,true,true,false,true,true
+574,ethyl alcohol,http://dummyimage.com/178x100.png/dddddd/000000,"Revision of Extraluminal Device in Kidney, External Approach",5,true,true,true,true,true,true,false,false
+575,methscopolamine bromide,http://dummyimage.com/195x100.png/ff4444/ffffff,"Bypass Right Vas Deferens to R Vas Def, Open Approach",7,false,false,false,false,true,true,false,true
+576,"Acetaminophen, Aspirin, Caffeine",http://dummyimage.com/229x100.png/cc0000/ffffff,"Destruction of Right Tympanic Membrane, Perc Approach",8,false,false,false,true,true,false,true,false
+577,CALENDULA OFFICINALIS FLOWERING TOP,http://dummyimage.com/239x100.png/5fa2dd/ffffff,"Neuromotor Develop Assess Neuro Head, Neck w Oth Equip",14,false,false,false,false,false,true,true,false
+578,Equisetum Viscum,http://dummyimage.com/158x100.png/ff4444/ffffff,"Release Stomach, Via Natural or Artificial Opening",5,false,true,true,false,true,false,true,true
+579,Etodolac,http://dummyimage.com/243x100.png/dddddd/000000,"Supplement Right Carpal with Nonaut Sub, Open Approach",25,true,false,false,true,true,true,false,true
+580,"OCTINOXATE, TITANIUM DIOXIDE",http://dummyimage.com/143x100.png/dddddd/000000,"Bypass Middle Esophagus to Cutaneous with Nonaut Sub, Endo",20,false,false,true,true,false,false,false,true
+581,Labetalol hydrochloride,http://dummyimage.com/225x100.png/cc0000/ffffff,"Destruction of Brachial Plexus, Open Approach",17,false,false,false,false,true,false,false,true
+582,"octinoxate, oxybenzone, petrolatum",http://dummyimage.com/104x100.png/cc0000/ffffff,"Alteration of Face with Autol Sub, Perc Approach",5,true,true,true,false,true,false,true,false
+583,Petrolatum,http://dummyimage.com/248x100.png/cc0000/ffffff,"Bypass L Popl Art to Low Ex Art w Autol Art, Open",29,false,true,false,true,false,false,false,false
+584,Acetaminophen,http://dummyimage.com/111x100.png/dddddd/000000,"Supplement R Temporal Bone w Synth Sub, Perc Endo",23,false,true,false,false,false,true,true,true
+585,Insulin human,http://dummyimage.com/191x100.png/5fa2dd/ffffff,"Supplement Left Upper Eyelid with Autol Sub, Open Approach",13,false,false,false,true,true,false,false,true
+586,fluconazole,http://dummyimage.com/178x100.png/5fa2dd/ffffff,"Insert Mult Array Stim Gen in Chest Subcu/Fascia, Open",28,false,false,true,false,false,true,false,true
+587,Quetiapine fumarate,http://dummyimage.com/206x100.png/5fa2dd/ffffff,"Repair Esophagogastric Junction, Perc Endo Approach",28,false,true,false,true,true,true,true,true
+588,Carbamide Peroxide,http://dummyimage.com/159x100.png/5fa2dd/ffffff,"Replace Post Neck Subcu/Fascia w Autol Sub, Perc",12,true,false,false,true,true,true,false,true
+589,Olanzapine,http://dummyimage.com/130x100.png/5fa2dd/ffffff,"Removal of Autol Sub from Periph Nrv, Perc Endo Approach",16,false,false,false,false,false,true,false,false
+590,Salicylic Acid,http://dummyimage.com/199x100.png/dddddd/000000,"Repair Thorax Lymphatic, Percutaneous Endoscopic Approach",5,true,false,false,false,false,true,true,true
+591,TITANIUM DIOXIDE,http://dummyimage.com/180x100.png/dddddd/000000,"Revision of Drain Dev in R Acromioclav Jt, Perc Approach",26,true,false,false,true,false,true,true,false
+592,DIVALPROEX SODIUM,http://dummyimage.com/192x100.png/cc0000/ffffff,"Dilation of L Fem Art with 4 Drug-elut, Open Approach",29,true,false,true,true,true,true,false,true
+593,tolmetin sodium,http://dummyimage.com/126x100.png/5fa2dd/ffffff,LDR Brachytherapy of Kidney using Palladium 103,10,false,false,false,false,false,false,false,false
+594,Zinc Oxide,http://dummyimage.com/192x100.png/cc0000/ffffff,"Destruction of Right Metatarsal, Percutaneous Approach",10,true,false,true,true,false,true,false,true
+595,dextroamphetamine sulfate,http://dummyimage.com/124x100.png/cc0000/ffffff,"Occlusion of R Neck Lymph with Intralum Dev, Perc Approach",26,false,true,false,true,false,false,true,true
+596,SIMETHICONE,http://dummyimage.com/131x100.png/dddddd/000000,"Drainage of Left Inguinal Region, Perc Endo Approach",7,false,true,true,true,true,true,false,true
+597,Amoxicillin,http://dummyimage.com/180x100.png/ff4444/ffffff,"Repair Bilateral Adrenal Glands, Perc Endo Approach",30,true,false,false,false,false,true,true,true
+598,Cactus Crataegus,http://dummyimage.com/170x100.png/ff4444/ffffff,"Supplement Right Mandible with Autol Sub, Perc Endo Approach",7,true,false,true,true,true,false,false,true
+599,Naphazoline Hydrochloride,http://dummyimage.com/210x100.png/cc0000/ffffff,Caregiver Training in Communication Skills,1,false,false,false,true,false,false,true,true
+600,Calcium Acetate,http://dummyimage.com/228x100.png/5fa2dd/ffffff,"Occlusion of Right Renal Artery, Percutaneous Approach",23,false,false,true,true,false,true,false,false
+601,Human Immunoglobulin G,http://dummyimage.com/201x100.png/cc0000/ffffff,"Drainage of Upper Tooth with Drain Dev, Open Approach, Mult",2,true,false,true,false,false,true,false,true
+602,amlodipine besylate,http://dummyimage.com/129x100.png/5fa2dd/ffffff,"Alteration of Lower Back with Synth Sub, Open Approach",25,false,false,true,false,false,false,false,true
+603,"OCTINOXATE, TITANIUM DIOXIDE, and ZINC OXIDE",http://dummyimage.com/151x100.png/ff4444/ffffff,"Removal of Monitoring Electrode from POC, Open Approach",13,false,false,true,true,true,true,true,true
+604,"Chamomilla, Coffea cruda, Avena sativa, Nux Vomica, Passiflora incarnata,",http://dummyimage.com/192x100.png/ff4444/ffffff,"Revision of Synth Sub in Nasal Bone, Perc Approach",24,true,true,false,true,true,true,true,true
+605,Morphine Sulfate,http://dummyimage.com/108x100.png/cc0000/ffffff,"Supplement Nasal Turbinate with Synth Sub, Perc Approach",23,false,false,false,true,false,false,true,true
+606,Azathioprine,http://dummyimage.com/128x100.png/5fa2dd/ffffff,"Dilation of Uterus with Intralum Dev, Perc Endo Approach",21,false,false,false,false,false,true,false,false
+607,GLYCERIN,http://dummyimage.com/242x100.png/5fa2dd/ffffff,"Replace Perineum Subcu/Fascia w Synth Sub, Perc",12,true,false,true,false,true,true,true,true
+608,Oxacillin,http://dummyimage.com/136x100.png/5fa2dd/ffffff,"Dilation of Left Large Intestine, Perc Endo Approach",11,false,true,false,false,true,true,false,false
+609,"Alfalfa, Ambra Grisea, Anacardium Orientale, Argentum Nitricum, Aurum Metalicum, Avena Sativa, Caladium Seguinum, Calcarea Carbonica, Cocculus Indicus, Gelsemium Sempervirens, Ignatia Amara, Kali Phosphoricum, Lycopodium Clavatum, Natrum Muriaticum, Nux Vomica, Phosphoricum Acidum, Phosphorus, Selenium Metallicum, Sepia, Silicea, Sulphur",http://dummyimage.com/108x100.png/dddddd/000000,"Insert Singl Array Stim Gen in Chest Subcu/Fascia, Perc",24,true,true,true,false,false,false,false,false
+610,Omeprazole,http://dummyimage.com/120x100.png/5fa2dd/ffffff,"Destruction of Left Colic Artery, Percutaneous Approach",23,false,true,true,false,true,false,true,false
+611,"Naproxen sodium, Pseudoephedrine HCl",http://dummyimage.com/118x100.png/ff4444/ffffff,"Excision of Trachea, Endo, Diagn",20,true,true,false,false,true,false,false,true
+612,"Echinacea (Angustifolia), Hydrastis canadensis, Lomatium dissectum, Myrrha, Nasturtium aquaticum, Tabebuia impetginosa,",http://dummyimage.com/162x100.png/5fa2dd/ffffff,"Destruction of Left Lower Femur, Open Approach",8,true,true,false,true,false,false,true,true
+613,Amitriptyline Hydrochloride,http://dummyimage.com/139x100.png/5fa2dd/ffffff,"Reposition Left Sternoclavicular Joint, External Approach",3,false,false,true,false,false,false,false,false
+614,Lamivudine and Zidovudine,http://dummyimage.com/212x100.png/5fa2dd/ffffff,"Dilation of Left Foot Artery with 3 Drug-elut, Open Approach",7,false,true,true,true,true,false,true,false
+615,"BRYONIA ALBA ROOT, EUPHRASIA STRICTA, CALCIUM SULFIDE, SODIUM CHLORIDE, PHOSPHORUS, ANEMONE PATENS, RUMEX CRISPUS ROOT, and SILICON DIOXIDE",http://dummyimage.com/222x100.png/cc0000/ffffff,Plaque Radiation of Neck Skin,14,true,false,true,true,false,true,false,false
+616,Benzoin Resin,http://dummyimage.com/165x100.png/cc0000/ffffff,"Inspection of Lumbosacral Disc, Percutaneous Approach",16,false,false,false,false,true,false,false,true
+617,Eplerenone,http://dummyimage.com/225x100.png/dddddd/000000,"Bypass Innominate Artery to Upper Arm Vein, Open Approach",24,false,false,true,false,false,false,false,false
+618,TITANIUM DIOXIDE,http://dummyimage.com/194x100.png/cc0000/ffffff,"Reattachment of Pancreas, Percutaneous Endoscopic Approach",18,true,false,false,true,true,true,false,false
+619,Octinoxate and Oxybenzone,http://dummyimage.com/234x100.png/ff4444/ffffff,"Excision of R Trunk Bursa/Lig, Perc Endo Approach, Diagn",12,true,true,true,true,false,true,true,true
+620,carvedilol,http://dummyimage.com/156x100.png/ff4444/ffffff,"Dilation of R Com Iliac Art with 3 Drug-elut, Perc Approach",24,false,true,false,true,false,true,false,false
+621,Topical Analgesic,http://dummyimage.com/124x100.png/5fa2dd/ffffff,"Insert of Monitor Dev into R Pulm Vein, Perc Endo Approach",18,true,false,false,false,true,true,true,true
+622,Prednisolone Sodium Phosphate,http://dummyimage.com/143x100.png/cc0000/ffffff,"Restriction of Left Hypogastric Vein, Open Approach",29,false,false,true,false,true,true,true,false
+623,"Lidocaine, Menthol",http://dummyimage.com/113x100.png/ff4444/ffffff,"Drainage of L Finger Phalanx with Drain Dev, Perc Approach",18,true,true,false,false,false,true,false,true
+624,Bumetanide,http://dummyimage.com/237x100.png/5fa2dd/ffffff,"Release Lower Gingiva, Open Approach",8,false,false,true,true,true,true,true,true
+625,WITCH HAZEL,http://dummyimage.com/165x100.png/dddddd/000000,"Inspection of Upper Bursa and Ligament, Open Approach",21,false,true,false,true,true,false,true,false
+626,Dexamethasone,http://dummyimage.com/223x100.png/5fa2dd/ffffff,"Revision of Autol Sub in L Wrist Jt, Perc Endo Approach",28,true,true,true,false,false,false,true,true
+627,tamsulosin hydrochloride,http://dummyimage.com/112x100.png/ff4444/ffffff,"Supplement L Thorax Bursa/Lig with Nonaut Sub, Open Approach",7,false,false,true,false,false,false,true,false
+628,ASIAN GINSENG,http://dummyimage.com/154x100.png/dddddd/000000,"Excision of Right Neck Muscle, Percutaneous Approach",22,true,false,false,true,false,true,false,false
+629,buprenorphine and naloxone,http://dummyimage.com/236x100.png/ff4444/ffffff,"Insertion of Cardiac Lead into Right Atrium, Perc Approach",8,false,false,true,true,false,true,false,false
+630,Lactulose,http://dummyimage.com/201x100.png/cc0000/ffffff,Plain Radiography of Bi Up Extrem Vein using L Osm Contrast,27,true,false,false,false,false,true,false,false
+631,Fludeoxyglucose F 18,http://dummyimage.com/238x100.png/5fa2dd/ffffff,Plain Radiography of Cervical Disc(s) using H Osm Contrast,30,false,true,false,false,true,true,false,true
+632,BuPROPion Hydrochloride,http://dummyimage.com/106x100.png/cc0000/ffffff,"Supplement R Ext Iliac Art with Autol Sub, Open Approach",15,true,true,false,false,false,true,true,false
+633,"Anacardium orientale, Antimon. crud., Arg. nit., Berber. vulg., Bryonia, Chelidonium majus, Digitalis, Graphites, Humulus, Iris versicolor, Kali carb., Lycopodium, Nat. carb. , Nat. sulphuricum, Nux vom., Pulsatilla, Rhus toxicodendron, Scutellaria lateriflora, Sepia, Stramonium, Chamomilla, Passiflora, Valeriana",http://dummyimage.com/171x100.png/ff4444/ffffff,"Resection of Right Epididymis, Open Approach",19,false,false,true,true,false,true,false,false
+634,"Homosalate, Octinoxate, Octisalate, and Oxybenzone",http://dummyimage.com/151x100.png/5fa2dd/ffffff,HDR Brachytherapy of Abd Lymph using Oth Isotope,12,true,true,false,true,true,false,true,true
+635,Cocklebur,http://dummyimage.com/224x100.png/ff4444/ffffff,"Reattachment of Face, Open Approach",18,true,false,false,false,false,false,true,true
+636,Naproxen Sodium,http://dummyimage.com/153x100.png/dddddd/000000,"Excision of L Hand Bursa/Lig, Perc Endo Approach, Diagn",4,true,true,false,false,true,true,false,true
+637,Fig,http://dummyimage.com/138x100.png/ff4444/ffffff,"Fusion 2-7 T Jt w Synth Sub, Ant Appr A Col, Perc",9,false,true,false,true,false,false,true,false
+638,Menthol and Camphor (Synthetic),http://dummyimage.com/172x100.png/cc0000/ffffff,"Bypass R Axilla Art to R Extracran Art w Autol Art, Open",6,true,true,false,true,false,true,true,false
+639,Carbamide Peroxide,http://dummyimage.com/147x100.png/cc0000/ffffff,"Insertion of Intraluminal Device into Hepatobil Duct, Endo",2,false,false,true,true,false,true,true,true
+640,Montelukast Sodium,http://dummyimage.com/235x100.png/5fa2dd/ffffff,"Bypass Jejunum to Cecum, Percutaneous Endoscopic Approach",13,true,true,false,false,false,false,true,false
+641,OXYGEN,http://dummyimage.com/206x100.png/dddddd/000000,"Insertion of Int Fix into R Clavicle, Perc Endo Approach",2,false,false,true,false,true,true,false,false
+642,Ibuprofen,http://dummyimage.com/208x100.png/ff4444/ffffff,"Alteration of R Up Extrem with Nonaut Sub, Open Approach",23,true,false,true,false,false,false,true,true
+643,Omeprazole,http://dummyimage.com/186x100.png/ff4444/ffffff,"Bypass R Subclav Art to R Up Arm Art, Open Approach",30,true,false,true,true,false,false,true,false
+644,"ACETAMINOPHEN, DEXTROMETHORPHAN HYDROBROMIDE, GUAIFENESIN, and PHENYLEPHRINE HYDROCHLORIDE",http://dummyimage.com/155x100.png/cc0000/ffffff,"Extirpation of Matter from Left Foot Vein, Open Approach",23,false,false,true,true,false,false,true,false
+645,"Dextromethorphan Hydrobromide, Guaifenesin, Phenylephrine Hydrochloride",http://dummyimage.com/114x100.png/ff4444/ffffff,"Excision of Right Inguinal Lymphatic, Perc Approach, Diagn",19,false,false,true,true,false,true,false,true
+646,insulin glargine,http://dummyimage.com/153x100.png/ff4444/ffffff,"Bypass Superior Vena Cava to R Pulm Art, Perc Endo Approach",9,true,false,false,false,true,false,false,true
+647,"Acetaminophen, Aspirin, Caffeine",http://dummyimage.com/222x100.png/ff4444/ffffff,"Reposition Right Sphenoid Bone, Percutaneous Approach",22,true,true,false,false,false,false,false,true
+648,Aspergillus niger,http://dummyimage.com/238x100.png/5fa2dd/ffffff,"Destruction of Upper Esophagus, Via Opening",30,true,true,true,false,false,false,false,true
+649,Nystatin,http://dummyimage.com/128x100.png/ff4444/ffffff,Exercise Trmt Musculosk Low Back/LE w Assist Equip,16,true,false,false,true,true,false,true,false
+650,Indomethacin,http://dummyimage.com/113x100.png/ff4444/ffffff,"Repair Right Frontal Sinus, Percutaneous Endoscopic Approach",11,false,true,true,false,true,true,false,false
+651,Methocarbamol,http://dummyimage.com/183x100.png/5fa2dd/ffffff,Fluoroscopy of Left Ribs,28,true,false,false,true,true,false,false,false
+652,Ethyl Alcohol,http://dummyimage.com/233x100.png/ff4444/ffffff,"Chiropractic Manipulation Thoracic Region, Extra-Articular",16,false,false,true,false,true,false,false,false
+653,RANITIDINE HYDROCHLORIDE,http://dummyimage.com/113x100.png/cc0000/ffffff,"Supplement R Pulm Vein with Autol Sub, Open Approach",28,false,true,true,false,false,false,false,false
+654,Salicylic Acid,http://dummyimage.com/231x100.png/cc0000/ffffff,"Supplement Cereb Meninges w Nonaut Sub, Perc Endo",29,false,true,true,false,true,true,false,true
+655,Diclofenac Epolamine,http://dummyimage.com/248x100.png/ff4444/ffffff,"Replacement of Bi Ext Ear with Synth Sub, Extern Approach",19,true,false,false,true,false,true,false,true
+656,Nicotine Polacrilex,http://dummyimage.com/237x100.png/ff4444/ffffff,"Revision of Int Fix in R Elbow Jt, Extern Approach",7,false,true,true,false,false,false,true,true
+657,Gabapentin,http://dummyimage.com/244x100.png/ff4444/ffffff,"Fusion 2-4 L Jt w Nonaut Sub, Post Appr A Col, Open",7,true,true,false,false,false,false,false,true
+658,Lamotrigine,http://dummyimage.com/124x100.png/5fa2dd/ffffff,"Drainage of L Wrist Jt with Drain Dev, Perc Endo Approach",21,false,true,true,true,true,false,true,false
+659,Amoxicillin,http://dummyimage.com/163x100.png/cc0000/ffffff,"Extirpation of Matter from Bilateral Breast, Open Approach",7,false,true,false,false,true,false,true,false
+660,"Arnica, Bellis, Chamomilla, Mag phos, Symphytum, Acacia gum, lactose, magnesium stearate, corn starch, sucrose",http://dummyimage.com/128x100.png/5fa2dd/ffffff,"Bypass L Popl Art to Foot Art with Autol Art, Open Approach",1,true,true,false,true,true,true,false,false
+661,Imipramine Hydrochloride,http://dummyimage.com/125x100.png/cc0000/ffffff,Visual Motor Integration Assessment using Computer,4,false,true,true,false,false,false,false,false
+662,peginterferon alfa-2b,http://dummyimage.com/153x100.png/5fa2dd/ffffff,"Bypass Innom Art to L Up Leg Art w Autol Art, Open",28,true,true,false,false,false,false,false,false
+663,Tranexamic Acid,http://dummyimage.com/124x100.png/ff4444/ffffff,"Revision of Other Device in Respiratory Tract, Perc Approach",22,true,true,true,true,true,true,true,false
+664,diltiazem hydrochloride,http://dummyimage.com/118x100.png/cc0000/ffffff,"Extirpation of Matter from Gallbladder, Perc Endo Approach",1,false,false,false,false,false,true,false,true
+665,carfilzomib,http://dummyimage.com/191x100.png/cc0000/ffffff,"Excision of Left Elbow Region, Open Approach",19,false,true,true,true,false,false,true,true
+666,Prednisone,http://dummyimage.com/215x100.png/dddddd/000000,"Supplement Left Middle Ear with Synth Sub, Open Approach",14,true,true,false,false,true,true,true,false
+667,Imipramine Hydrochloride,http://dummyimage.com/204x100.png/ff4444/ffffff,"Remove Autol Sub from Epididymis/Sperm Cord, Perc Endo",27,true,true,true,false,true,true,false,true
+668,methylphenidate hydrochloride,http://dummyimage.com/188x100.png/dddddd/000000,"Drainage of Vagina with Drainage Device, Endo",24,true,false,false,false,true,false,false,false
+669,Hydrochlorothiazide,http://dummyimage.com/119x100.png/5fa2dd/ffffff,"Destruction of Right Tunica Vaginalis, Open Approach",12,true,false,true,false,true,false,false,false
+670,ifosfamide,http://dummyimage.com/160x100.png/cc0000/ffffff,Removal of Bandage on Left Hand,19,false,false,true,true,false,false,false,false
+671,Iohexol,http://dummyimage.com/174x100.png/5fa2dd/ffffff,"Drainage of Right Hand Vein, Percutaneous Approach, Diagn",20,false,false,false,false,false,false,true,false
+672,Kali aceticum comp 6 Special Order,http://dummyimage.com/102x100.png/5fa2dd/ffffff,"Introduction of Radioact Subst into Resp Tract, Via Opening",1,false,true,true,false,false,true,true,false
+673,Atenolol,http://dummyimage.com/156x100.png/ff4444/ffffff,LDR Brachytherapy of Sinuses using Palladium 103,6,false,true,false,false,true,false,false,true
+674,cetirizine hydrochloride,http://dummyimage.com/171x100.png/cc0000/ffffff,"Bypass R Ventricle to Pulm Trunk w Autol Art, Perc Endo",10,false,false,false,false,true,false,false,false
+675,Nystatin,http://dummyimage.com/125x100.png/ff4444/ffffff,"Bypass Upper Esophagus to Ileum, Open Approach",4,false,true,false,true,true,true,false,false
+676,Simvastatin,http://dummyimage.com/199x100.png/dddddd/000000,"Insertion of Intralum Dev into L Subclav Art, Perc Approach",10,false,true,false,false,true,false,false,true
+677,Ranitidine,http://dummyimage.com/223x100.png/cc0000/ffffff,"Extraction of R Knee Bursa/Lig, Perc Endo Approach",3,false,false,false,false,true,false,false,false
+678,benztropine mesylate,http://dummyimage.com/101x100.png/5fa2dd/ffffff,"Introduce of Electrol/Water Bal into Fem Reprod, Via Opening",20,true,false,false,true,true,true,false,false
+679,"OCTINOXATE, TITANIUM DIOXIDE, and ZINC OXIDE",http://dummyimage.com/217x100.png/dddddd/000000,"Drainage of Left Renal Vein with Drain Dev, Open Approach",20,true,false,false,false,false,false,false,true
+680,Clindamycin Hydrochloride,http://dummyimage.com/236x100.png/cc0000/ffffff,"Excision of Right Elbow Region, Percutaneous Approach, Diagn",1,true,true,false,true,false,false,true,true
+681,Penicillin V Potassium,http://dummyimage.com/215x100.png/dddddd/000000,"Replacement of R Lacrml Duct with Nonaut Sub, Open Approach",28,true,false,false,true,false,true,false,true
+682,SODIUM MONOFLUOROPHOSPHATE,http://dummyimage.com/135x100.png/cc0000/ffffff,Plain Radiography of Inferior Vena Cava using Other Contrast,13,false,false,true,false,true,true,true,true
+683,Benzalkonium chloride,http://dummyimage.com/167x100.png/cc0000/ffffff,"Bypass Cecum to Cecum with Nonaut Sub, Open Approach",29,false,false,false,false,false,true,false,false
+684,SODIUM MONOFLUOROPHOSPHATE,http://dummyimage.com/195x100.png/ff4444/ffffff,"Occlusion of L Int Carotid with Extralum Dev, Open Approach",4,false,false,true,false,false,true,false,false
+685,Simvastatin,http://dummyimage.com/146x100.png/cc0000/ffffff,"Excision of Left Lung, Open Approach",25,true,true,false,true,true,false,false,false
+686,LEVOTHYROXINE SODIUM,http://dummyimage.com/117x100.png/dddddd/000000,"Revision of Int Fix in L Sternoclav Jt, Perc Endo Approach",7,false,true,false,false,true,false,true,false
+687,nitric oxide,http://dummyimage.com/201x100.png/cc0000/ffffff,"Bypass Innom Art to L Extracran Art w Autol Vn, Open",18,false,true,true,true,true,true,true,true
+688,Nadolol,http://dummyimage.com/201x100.png/dddddd/000000,Coord/Dexterity Trmt Neuro Low Back/LE w Assist Equip,21,false,true,true,true,false,false,false,true
+689,levonorgestrel/ethinyl estradiol and ethinyl estradiol,http://dummyimage.com/157x100.png/ff4444/ffffff,"Release Right Lower Arm and Wrist Muscle, Perc Approach",5,true,false,true,true,true,true,false,false
+690,desirudin,http://dummyimage.com/160x100.png/dddddd/000000,"Dilate R Com Iliac Art w Intralum Dev, Perc Endo",11,true,false,false,true,false,true,false,false
+691,NALTREXONE HYDROCHLORIDE,http://dummyimage.com/142x100.png/cc0000/ffffff,"Insert Intralum Dev in R Ant Tib Art, Perc Endo",16,false,true,true,true,true,true,true,false
+692,Melissa Chamomilla,http://dummyimage.com/246x100.png/dddddd/000000,Removal of Packing Material on Left Lower Extremity,3,true,true,true,true,true,false,true,true
+693,"Methyl Salicylate, Capsaicin, Menthol and Lidocaine Hydrochloride",http://dummyimage.com/210x100.png/ff4444/ffffff,"Resection of Right Humeral Shaft, Open Approach",3,true,false,true,true,false,true,false,false
+694,Povidone-Iodine Sponge,http://dummyimage.com/114x100.png/cc0000/ffffff,ROM & Jt Mobility Trmt Integu Low Back/LE w Assist Equip,3,false,false,false,true,true,true,true,false
+695,Dextrose Monohydrate,http://dummyimage.com/235x100.png/dddddd/000000,"Dilate Inf Mesent Art, Bifurc, w 3 Drug-elut, Open",4,true,false,true,true,false,true,false,false
+696,Dextromethorphan,http://dummyimage.com/101x100.png/5fa2dd/ffffff,"Dilate R Verteb Art, Bifurc, w 4+ Intralum Dev, Perc Endo",21,false,true,true,false,true,true,false,false
+697,Famotidine,http://dummyimage.com/248x100.png/5fa2dd/ffffff,Ultrasonography of Prostate and Seminal Vesicles,28,true,false,true,true,true,false,true,true
+698,ASPERGILLUS FUMIGATUS,http://dummyimage.com/204x100.png/ff4444/ffffff,"Measurement of Respiratory Rate, Via Opening",28,false,false,true,true,true,true,false,true
+699,"Adonis vernalis, Strophanthus hispidus, ATP, Cactus grandiflorus, Convallaria majalis, Cor suis,",http://dummyimage.com/249x100.png/dddddd/000000,"Insertion of Other Device into Left Lower Arm, Perc Approach",14,true,true,true,false,true,false,true,true
+700,AGARICUS PHALLOIDES,http://dummyimage.com/233x100.png/dddddd/000000,Stereotactic Gamma Beam Radiosurgery of Neck Lymphatics,15,true,true,true,false,true,true,true,false
+701,Anticoagulant Citrate Phosphate Dextrose (CPD) AND AS-5 Red Cell Preservative,http://dummyimage.com/199x100.png/5fa2dd/ffffff,"Insertion of Int Fix into R Glenoid Cav, Open Approach",12,false,true,true,true,true,true,true,false
+702,"Octinoxate ,Meradimate",http://dummyimage.com/111x100.png/5fa2dd/ffffff,"Replacement of Sup Vena Cava with Synth Sub, Open Approach",10,false,true,false,false,true,true,false,false
+703,TITANIUM DIOXIDE,http://dummyimage.com/246x100.png/dddddd/000000,"Bypass Low Esophag to Stomach with Autol Sub, Open Approach",8,false,false,false,false,false,true,true,false
+704,"Fucus vesiculosus, Capsicum annuum, Nicotinamidum, Spongia Tosta, Arginine, Croton oil, Ornithine Pituitary, Thyroidinum, Tyrosine, Calcarea carbonica, Graphites, Kali carbonicum",http://dummyimage.com/107x100.png/ff4444/ffffff,"Supplement L Abd Muscle with Nonaut Sub, Perc Endo Approach",13,true,false,true,false,true,true,false,false
+705,Aluminum Sesquichlorohydrate,http://dummyimage.com/103x100.png/cc0000/ffffff,"Extirpate matter from R Ext Auditory Canal, Extern",22,true,false,false,false,false,true,false,false
+706,"Acetaminophen, Dextromethorphan HBr, Doxylamine succinate",http://dummyimage.com/163x100.png/5fa2dd/ffffff,"Replacement of Azygos Vein with Autol Sub, Open Approach",9,false,false,true,true,true,false,false,true
+707,ACETYLCYSTEINE,http://dummyimage.com/192x100.png/ff4444/ffffff,"Occlusion of Cecum with Extraluminal Device, Open Approach",25,true,true,true,false,true,false,true,false
+708,Sodium Fluoride,http://dummyimage.com/141x100.png/5fa2dd/ffffff,"Supplement R Fem Art with Autol Sub, Perc Approach",1,false,true,false,false,true,false,false,false
+709,AZITHROMYCIN,http://dummyimage.com/139x100.png/5fa2dd/ffffff,Fluoroscopy of R Tracheobronc Tree using Oth Contrast,6,false,true,true,false,false,false,true,true
+710,sildenafil citrate,http://dummyimage.com/191x100.png/5fa2dd/ffffff,"Dilate Intracran Art, Bifurc, w 2 Intralum Dev, Open",29,false,false,true,false,false,true,false,false
+711,NITROGEN,http://dummyimage.com/188x100.png/dddddd/000000,"Insert Endobronch Valve in Lingula Bronc, Perc Endo",15,true,false,false,true,true,true,false,false
+712,FOSINOPRIL Sodium,http://dummyimage.com/228x100.png/ff4444/ffffff,"Removal of Nonaut Sub from L Scapula, Perc Approach",4,false,true,false,false,true,true,false,false
+713,methadone hydrochloride,http://dummyimage.com/122x100.png/cc0000/ffffff,"Extirpate of Matter from R Lacrimal Bone, Perc Endo Approach",6,false,true,true,false,false,false,false,true
+714,Miconazole Nitrate,http://dummyimage.com/128x100.png/5fa2dd/ffffff,"Drainage of Left Abdomen Tendon, Perc Approach, Diagn",29,true,false,true,false,true,true,true,false
+715,"Avobenzone, Homosalate, Octinoxate , Octisalate , Octocrylene , Oxybenzone",http://dummyimage.com/163x100.png/ff4444/ffffff,"Introduction of Nutritional into Bil/Panc Tract, Via Opening",28,true,false,false,false,false,false,false,false
+716,White Ash,http://dummyimage.com/204x100.png/cc0000/ffffff,"Division of Lumbosacral Plexus, Percutaneous Approach",18,false,false,true,false,false,false,true,true
+717,Metformin Hydrochloride,http://dummyimage.com/151x100.png/ff4444/ffffff,"Alteration of Left Buttock, Open Approach",26,true,true,true,true,false,true,false,true
+718,Escitalopram Oxalate,http://dummyimage.com/250x100.png/dddddd/000000,"Excision of Left Elbow Region, Percutaneous Approach, Diagn",29,true,false,true,false,false,true,true,true
+719,Sodium monofluorophosphate,http://dummyimage.com/127x100.png/cc0000/ffffff,"Excision of Right Thorax Muscle, Perc Approach, Diagn",19,true,true,false,false,false,false,false,false
+720,"Apis Melifica, Berberis vulgaris, Nelleborus niger, Juniperus communis, Prunus spinosa, Strophanthus hispidus, Taraxacum offidcinale, Uva-Ursi,",http://dummyimage.com/189x100.png/dddddd/000000,"Revise Feeding Dev in Low Intest Tract, Perc Endo",6,false,true,true,true,true,false,false,false
+721,"Octinoxate, Octisalate",http://dummyimage.com/149x100.png/5fa2dd/ffffff,"Removal of Drainage Device from Testis, Via Opening",14,true,false,true,false,false,false,false,false
+722,Octisalate and Octinoxate,http://dummyimage.com/111x100.png/5fa2dd/ffffff,"Excision of Inferior Mesenteric Vein, Percutaneous Approach",30,false,false,false,false,false,false,true,true
+723,Milrinone Lactate,http://dummyimage.com/242x100.png/ff4444/ffffff,"Bypass Bi Ureter to Cutan with Autol Sub, Open Approach",24,true,true,false,true,false,false,false,false
+724,"Octinoxate, Octisalate, Oxybenzone",http://dummyimage.com/126x100.png/5fa2dd/ffffff,"Supplement Aortic Valve with Zooplastic, Perc Approach",1,false,true,false,true,true,false,true,false
+725,Chlorpromazine Hydrochloride,http://dummyimage.com/210x100.png/dddddd/000000,"Insertion of Ext Fix into L Mandible, Perc Endo Approach",23,false,false,false,false,false,true,false,false
+726,MORPHINE SULFATE,http://dummyimage.com/164x100.png/cc0000/ffffff,"Drainage of Left Knee Joint, Open Approach",1,true,true,true,false,true,false,true,true
+727,DICYCLOMINE HYDROCHLORIDE,http://dummyimage.com/144x100.png/5fa2dd/ffffff,"Insertion of Infusion Device into Ileum, Perc Approach",10,false,false,true,true,true,false,false,true
+728,ALCOHOL,http://dummyimage.com/162x100.png/cc0000/ffffff,"Removal of Intralum Dev from Up Art, Perc Endo Approach",9,true,true,true,false,false,false,true,false
+729,Cetirizine Hydrochloride,http://dummyimage.com/211x100.png/cc0000/ffffff,Tomo Nucl Med Imag of Cerebrospinal Fluid using Indium 111,27,false,false,true,false,false,false,true,true
+730,HYDROCODONE BITARTRATE AND ACETAMINOPHEN,http://dummyimage.com/133x100.png/cc0000/ffffff,"Dilation of Aortic Valve, Open Approach",20,true,false,true,true,true,false,true,false
+731,Zinc Oxide,http://dummyimage.com/243x100.png/cc0000/ffffff,Muscle Performance Assessment of Genitourinary System,7,false,false,false,true,false,false,false,false
+732,"Zinc Oxide, Calamine",http://dummyimage.com/158x100.png/ff4444/ffffff,"Drainage of Right Kidney Pelvis, Perc Approach, Diagn",1,false,true,true,false,false,true,true,true
+733,Titanium Dioxide,http://dummyimage.com/190x100.png/5fa2dd/ffffff,"Insertion of Infusion Dev into Low Back, Perc Endo Approach",24,true,true,false,true,true,true,false,true
+734,Atenolol,http://dummyimage.com/127x100.png/5fa2dd/ffffff,Plain Radiography of Other Lower Arteries using Oth Contrast,15,true,true,false,true,false,false,false,false
+735,"neomycin sulfate, polymyxin b sulfate and dexamethasone",http://dummyimage.com/135x100.png/5fa2dd/ffffff,"Division of Right Parietal Bone, Open Approach",19,false,true,true,true,false,false,false,true
+736,Sodium Fluoride,http://dummyimage.com/150x100.png/ff4444/ffffff,"Dilation of Bilateral Ureters with Intraluminal Device, Endo",20,false,false,false,true,false,true,false,false
+737,"Acetaminophen, Diphenhydramine HCL and Phenylephrine HCL",http://dummyimage.com/113x100.png/5fa2dd/ffffff,"Revision of Autol Sub in Low Intest Tract, Endo",18,true,false,true,false,true,true,true,false
+738,Oxymetazoline HCl,http://dummyimage.com/203x100.png/cc0000/ffffff,"Destruction of Left Subclavian Vein, Open Approach",27,false,false,true,true,true,true,false,false
+739,levofloxacin,http://dummyimage.com/125x100.png/5fa2dd/ffffff,"Introduction of Radioactive Substance into Male Reprod, Endo",3,true,false,false,true,false,false,false,true
+740,Bayberry,http://dummyimage.com/151x100.png/ff4444/ffffff,"Dilate of Innom Art, Bifurc, with 2 Drug-elut, Open Approach",5,true,true,false,false,true,true,false,true
+741,Cevimeline,http://dummyimage.com/211x100.png/5fa2dd/ffffff,"Destruction of Left Hip Muscle, Perc Endo Approach",6,false,false,true,false,true,false,false,false
+742,carvedilol,http://dummyimage.com/169x100.png/cc0000/ffffff,"Dilate of Innom Art, Bifurc, with 4 Drug-elut, Open Approach",13,false,true,false,false,false,false,true,true
+743,Phenylephrine,http://dummyimage.com/188x100.png/dddddd/000000,"Revision of Intralum Dev in Fallopian Tube, Extern Approach",15,false,false,true,false,true,true,false,true
+744,amlodipine valsartan and hydrochlorothiazide,http://dummyimage.com/156x100.png/ff4444/ffffff,"Revision of Synthetic Substitute in Trachea, Via Opening",16,true,true,true,true,false,false,true,false
+745,Sodium Chloride,http://dummyimage.com/209x100.png/5fa2dd/ffffff,"Drainage of Large Intestine with Drainage Device, Endo",13,true,false,false,false,true,false,true,false
+746,Lidocaine,http://dummyimage.com/177x100.png/dddddd/000000,Beam Radiation of Kidney using Electrons,24,true,true,false,true,false,true,true,false
+747,GLIPIZIDE,http://dummyimage.com/209x100.png/5fa2dd/ffffff,"Supplement R Verteb Art with Synth Sub, Perc Endo Approach",5,false,true,false,false,true,false,false,true
+748,oxcarbazepine,http://dummyimage.com/149x100.png/cc0000/ffffff,"Dilate L Peroneal Art w Intralum Dev, Perc Endo",9,false,false,false,false,false,true,false,true
+749,Acetaminophen,http://dummyimage.com/216x100.png/5fa2dd/ffffff,"Fluoroscopy of R Pelvic Vein using H Osm Contrast, Guidance",19,true,true,false,false,true,false,true,true
+750,flumazenil,http://dummyimage.com/183x100.png/ff4444/ffffff,"Restrict R Up Extrem Lymph w Extralum Dev, Open",13,false,true,true,false,true,true,true,true
+751,Ferrous Fumarate and Polysacchride Iron Vitamin Mineral Complex Supplement,http://dummyimage.com/249x100.png/ff4444/ffffff,"Destruction of Cul-de-sac, Percutaneous Endoscopic Approach",23,true,false,true,true,false,false,true,true
+752,"Cinnamic Acid, Phloridzinum, ATP, Argentum Nitricum, Beet Sugar, D-Ribose, Fructose, Dextrose, Grape Sugar (Syrup), Lycopodium Clavatum,",http://dummyimage.com/250x100.png/5fa2dd/ffffff,"Excision of Intracranial Vein, Open Approach",30,true,true,true,false,false,true,true,true
+753,GLYCERIN,http://dummyimage.com/133x100.png/cc0000/ffffff,Plain Radiography of Whole Skeleton,21,true,true,false,true,true,false,true,true
+754,"Aconitum nap., Arg. nit., Arsenicum alb., Baptisia, Bryonia, Carbo veg., Chamomilla, Cinchona, Collinsonia, Colocynthis, Elaterium, Gelsemium, Ipecac., Iris versicolor, Lycopodium, Mag. carb., Phosphorus, Podoph. pelt., Rheum, Sulphur, Tabacum, Vaccinium, Aesculus hipp. Juglans regia, Valeriana",http://dummyimage.com/121x100.png/ff4444/ffffff,"Reposition R Humeral Shaft w Monopln Ext Fix, Open",27,true,true,true,false,false,true,true,true
+755,tiagabine hydrochloride,http://dummyimage.com/237x100.png/ff4444/ffffff,"Drainage of Adenoids, Percutaneous Approach",8,true,false,true,false,false,false,false,true
+756,"Avobenzone, Homosalate, Octisalate, Octocrylene and Oxybenzone",http://dummyimage.com/120x100.png/dddddd/000000,"Bypass 4+ Cor Art from L Int Mammary, Perc Endo Approach",14,false,false,true,false,true,true,false,true
+757,Penicillium chrysogenum var. chrysogenum and Penicillium glabrum,http://dummyimage.com/154x100.png/cc0000/ffffff,"Extirpate of Matter from L Int Iliac Art, Perc Endo Approach",11,true,true,true,true,true,true,true,true
+758,"Acetaminophen, Dextromethorphan Hydrobromide, Guaifenesin, Phenylephrine Hydrochloride, and doxylamine succinate",http://dummyimage.com/218x100.png/ff4444/ffffff,"Fusion Occip Jt w Nano Intbd Dev, Open, New Tech 2",22,true,false,true,true,false,false,false,false
+759,Hydrocortisone Acetate,http://dummyimage.com/144x100.png/dddddd/000000,Ultrasonography of Right Upper Extremity Veins,30,true,false,true,true,false,false,false,true
+760,CARBAMIDE PEROXIDE,http://dummyimage.com/246x100.png/dddddd/000000,"Occlusion L Subclav Vein w Extralum Dev, Perc Endo",16,false,false,false,true,false,false,false,true
+761,TRICLOSAN,http://dummyimage.com/161x100.png/5fa2dd/ffffff,"Reposition Right Patella, Percutaneous Endoscopic Approach",15,true,true,true,false,false,true,false,true
+762,metoprolol tartrate,http://dummyimage.com/169x100.png/5fa2dd/ffffff,"Occlusion of R Hand Art with Intralum Dev, Perc Approach",9,false,true,false,false,true,false,false,false
+763,"Bismuthum metallicum, Bryonia, Cimicifuga, Gossypium herbaceum, Ipecac., Kreosotum, Lycopodium, Mag. carb., Nux vom., Pulsatilla, Sepia, Symphoricarpus racemosus, Tabacum, Zingiber, Chamomilla, Hydrastis, Iris versicolor",http://dummyimage.com/103x100.png/5fa2dd/ffffff,"Control Bleeding in Pelvic Cavity, Perc Endo Approach",18,false,false,true,false,true,true,true,false
+764,Diphenhydramine Hydrochloride,http://dummyimage.com/108x100.png/5fa2dd/ffffff,Removal of Packing Material on Right Upper Extremity,25,true,true,true,true,true,false,true,false
+765,DIVALPROEX SODIUM,http://dummyimage.com/156x100.png/dddddd/000000,"Removal of Nonaut Sub from Hepatobil Duct, Perc Approach",10,true,true,true,true,false,false,true,true
+766,Atenolol,http://dummyimage.com/105x100.png/5fa2dd/ffffff,"Drainage of Right Internal Iliac Artery, Perc Approach",8,true,true,false,false,false,false,false,true
+767,Hydrocortisone,http://dummyimage.com/155x100.png/ff4444/ffffff,"Drainage of Right Hip Tendon with Drain Dev, Open Approach",18,false,true,true,false,false,true,true,true
+768,ARBUTIN GLYCERIN,http://dummyimage.com/181x100.png/dddddd/000000,"Restriction of Right Ureter, Perc Endo Approach",1,true,false,false,false,false,false,true,false
+769,ESLICARBAZEPINE ACETATE,http://dummyimage.com/150x100.png/cc0000/ffffff,"Excision of Left Foot Artery, Open Approach, Diagnostic",7,true,false,true,true,true,false,true,false
+770,Folic Acid,http://dummyimage.com/207x100.png/cc0000/ffffff,"Bypass L Int Iliac Art to Low Ex Art w Synth Sub, Open",9,true,false,true,true,false,false,false,true
+771,AMITRIPTYLINE HYDROCHLORIDE,http://dummyimage.com/105x100.png/dddddd/000000,"Reposition Accessory Pancreatic Duct, Open Approach",2,false,true,false,true,true,true,false,true
+772,Zolmitriptan,http://dummyimage.com/197x100.png/5fa2dd/ffffff,Coord/Dexterity Trmt Musculosk Low Back/LE w Prosthesis,6,true,false,false,false,true,false,true,true
+773,Cefadroxil,http://dummyimage.com/228x100.png/dddddd/000000,"Restriction of Heart, Percutaneous Approach",5,false,false,true,true,false,true,false,true
+774,dimethicone,http://dummyimage.com/163x100.png/cc0000/ffffff,"Replacement of Pulm Trunk with Zooplastic, Open Approach",8,true,false,true,false,true,false,false,true
+775,"homosalate, octinoxate, oxybenzone",http://dummyimage.com/213x100.png/dddddd/000000,"Revision of Infusion Device in L Ankle Jt, Perc Approach",30,true,true,false,true,true,true,true,false
+776,penicillin G potassium,http://dummyimage.com/127x100.png/5fa2dd/ffffff,"Occlusion of Right Face Vein, Percutaneous Approach",2,false,false,false,false,true,false,false,true
+777,Aspirin,http://dummyimage.com/130x100.png/ff4444/ffffff,"Repair Portal Vein, Open Approach",20,true,false,true,true,true,true,true,false
+778,Levothyroxine sodium,http://dummyimage.com/210x100.png/ff4444/ffffff,"Reposition Right Axillary Artery, Percutaneous Approach",15,true,true,true,false,true,true,true,false
+779,Salicyllic Acid,http://dummyimage.com/118x100.png/dddddd/000000,"Inspection of Cervicothoracic Vertebral Disc, Perc Approach",16,false,true,true,true,true,true,true,false
+780,SODIUM NITROPRUSSIDE,http://dummyimage.com/116x100.png/ff4444/ffffff,"Introduction of Destructive Agent into GU Tract, Via Opening",7,true,false,true,false,false,true,false,false
+781,Topiramate,http://dummyimage.com/132x100.png/cc0000/ffffff,"Occlusion L Low Extrem Lymph w Extralum Dev, Open",25,true,true,true,false,false,true,true,false
+782,Acetaminophen,http://dummyimage.com/130x100.png/ff4444/ffffff,"Replace L Thorax Tendon w Autol Sub, Perc Endo",30,false,false,false,true,true,true,true,false
+783,TRICLOSAN,http://dummyimage.com/234x100.png/dddddd/000000,"Restrict of R Int Iliac Art with Intralum Dev, Perc Approach",23,true,false,true,false,true,true,true,true
+784,Didanosine,http://dummyimage.com/182x100.png/5fa2dd/ffffff,"Restrict L Up Extrem Lymph w Intralum Dev, Open",13,false,true,false,true,true,true,false,false
+785,Amlodipine Besylate and Benazepril Hydrochloride,http://dummyimage.com/148x100.png/ff4444/ffffff,Fluoroscopy of Bilateral Pulmonary Veins using Oth Contrast,1,false,false,true,true,true,false,true,true
+786,Isopropyl alcohol and iodine,http://dummyimage.com/193x100.png/ff4444/ffffff,"Occlusion L Less Saphenous w Extralum Dev, Perc Endo",20,true,true,true,true,false,false,false,true
+787,"Titanium Dioxide, OCTINOXATE, Zinc Oxide",http://dummyimage.com/228x100.png/cc0000/ffffff,"Dilate L Brach Art w Drug-elut Intra, Perc Endo",15,false,false,true,true,true,false,true,false
+788,Calcium carbonate,http://dummyimage.com/199x100.png/cc0000/ffffff,Bedside Swallowing and Oral Function Assessment,12,true,true,false,false,false,false,false,false
+789,Titanium Dioxide and Zinc Oxide,http://dummyimage.com/198x100.png/dddddd/000000,"Supplement L Trunk Bursa/Lig w Nonaut Sub, Perc Endo",28,false,true,true,true,true,true,false,true
+790,Hydroxyzine Hydrochloride,http://dummyimage.com/180x100.png/dddddd/000000,"Revise of Nonaut Sub in R Finger Phalanx, Perc Endo Approach",27,false,false,false,true,false,false,false,false
+791,Nitrogen,http://dummyimage.com/229x100.png/ff4444/ffffff,"Dilate L Ext Carotid, Bifurc, w Intralum Dev, Open",23,true,false,true,false,true,false,true,true
+792,Amlodipine Besylate,http://dummyimage.com/113x100.png/dddddd/000000,"Excision of Left Kidney, Via Opening, Diagn",19,false,false,true,true,true,true,true,false
+793,Oxygen,http://dummyimage.com/238x100.png/ff4444/ffffff,"Fusion of L Sternoclav Jt with Synth Sub, Perc Approach",5,false,false,true,false,false,false,false,false
+794,tolmetin sodium,http://dummyimage.com/199x100.png/ff4444/ffffff,"Supplement Tricusp Valve fr R AV Vlv w Zooplastic, Perc Endo",30,true,true,false,true,false,true,false,true
+795,leuprolide acetate,http://dummyimage.com/193x100.png/5fa2dd/ffffff,"Fusion of Sacrococcygeal Joint, Percutaneous Approach",8,false,false,true,true,false,false,true,true
+796,VECURONIUM BROMIDE,http://dummyimage.com/246x100.png/cc0000/ffffff,"Fusion of R Metacarpophal Jt with Nonaut Sub, Perc Approach",13,false,true,false,false,true,false,true,true
+797,Loratadine,http://dummyimage.com/101x100.png/cc0000/ffffff,"Dilation of Esophagus with Intraluminal Device, Via Opening",15,false,true,false,true,false,false,true,false
+798,Aluminum Zirconium Trichlorohydrex Gly,http://dummyimage.com/153x100.png/5fa2dd/ffffff,"Insertion of Intralum Dev into R Com Carotid, Open Approach",5,false,true,true,false,false,false,true,false
+799,SODIUM FLUORIDE,http://dummyimage.com/121x100.png/cc0000/ffffff,"Drainage of Left Ovary with Drainage Device, Perc Approach",28,false,false,false,false,true,false,false,true
+800,Metformin Hydrochloride,http://dummyimage.com/116x100.png/dddddd/000000,"Hepatobiliary System and Pancreas, Supplement",28,false,false,true,false,true,true,true,false
+801,"OCTINOXATE, ZINC OXIDE",http://dummyimage.com/160x100.png/5fa2dd/ffffff,"Replace R Low Arm Subcu/Fascia w Autol Sub, Open",21,false,true,false,true,true,false,false,true
+802,ENTACAPONE,http://dummyimage.com/250x100.png/5fa2dd/ffffff,"Insert of Infusion Dev into Azygos Vein, Perc Endo Approach",26,true,true,false,true,true,false,false,true
+803,isosorbide dinitrate,http://dummyimage.com/189x100.png/dddddd/000000,"Excision of Right Carpal, Open Approach, Diagnostic",24,false,true,true,true,true,true,true,true
+804,Dimethicone,http://dummyimage.com/117x100.png/ff4444/ffffff,"Insert of Infusion Dev into L Renal Art, Perc Endo Approach",2,false,true,false,true,false,true,true,true
+805,topiramate,http://dummyimage.com/221x100.png/cc0000/ffffff,"Drainage of Cervix with Drainage Device, Perc Endo Approach",19,false,false,false,false,false,false,true,false
+806,Calcipotriene,http://dummyimage.com/117x100.png/cc0000/ffffff,"Replace Perineum Subcu/Fascia w Nonaut Sub, Open",16,false,true,true,false,true,true,false,false
+807,OLANZAPINE,http://dummyimage.com/142x100.png/5fa2dd/ffffff,Stereotactic Other Photon Radiosurgery of Eye,25,false,true,true,false,true,true,false,false
+808,"Avobenzone, Homosalate, Octisalate, and Octocrylene",http://dummyimage.com/247x100.png/5fa2dd/ffffff,"Drainage of Intracranial Vein, Percutaneous Approach, Diagn",20,false,false,false,true,true,true,true,false
+809,alpha-1-proteinase inhibitor human,http://dummyimage.com/139x100.png/cc0000/ffffff,"Dilate L Fem Art, Bifurc, w Drug-elut Intra, Open",3,false,false,false,true,false,true,false,true
+810,Diphenhydramine HCl,http://dummyimage.com/101x100.png/cc0000/ffffff,"Dilate 1 Cor Art, Bifurc, w Intralum Dev, Perc",11,false,true,false,true,false,false,true,true
+811,Olanzapine and Fluoxetine,http://dummyimage.com/150x100.png/ff4444/ffffff,"Insertion of Intralum Dev into R Post Tib Art, Perc Approach",11,false,false,false,true,false,true,true,false
+812,Betaxolol,http://dummyimage.com/135x100.png/ff4444/ffffff,"Excision of Right Eustachian Tube, Perc Endo Approach, Diagn",10,true,false,false,true,false,false,false,true
+813,PANTHENOL,http://dummyimage.com/212x100.png/ff4444/ffffff,"Inspection of Left Ear, External Approach",26,false,true,false,true,false,false,true,false
+814,OCTINOXATE and TITANIUM DIOXIDE,http://dummyimage.com/182x100.png/ff4444/ffffff,"Drainage of Right Shoulder Muscle, Perc Approach, Diagn",13,false,true,false,true,true,true,true,false
+815,"phenylephrine hcl, brompheniramine maleate",http://dummyimage.com/105x100.png/dddddd/000000,Beam Radiation of Right Breast using Neutron Capture,8,false,false,true,false,true,true,false,false
+816,propranolol hydrochloride,http://dummyimage.com/148x100.png/dddddd/000000,"Removal of Monitor Dev from Azygos Vein, Extern Approach",18,true,false,true,true,false,false,false,false
+817,"Loratadine, Pseudoephedrine",http://dummyimage.com/101x100.png/cc0000/ffffff,"Reposition Left Metatarsal with Ext Fix, Perc Endo Approach",17,true,true,false,false,false,false,false,false
+818,Selan Plus Zinc,http://dummyimage.com/139x100.png/cc0000/ffffff,"Replacement of Right Breast using GAP Flap, Open Approach",3,true,false,true,false,true,true,true,false
+819,"Acetylcholine Chloride, Dopamine, Gaba, Octopamine, Serotonin, Taurine, Adenosinum Cyclophosphoricum, Cerebrum, Diencephalon, Pineal Gland, Thalamus Opticus",http://dummyimage.com/151x100.png/ff4444/ffffff,"Excision of Left Thorax Bursa and Ligament, Open Approach",2,false,false,false,true,false,true,false,true
+820,"Echinacea (Angustifolia), Hydrastis canadensis, Lomatium dissectum, Aconitum napellus, Arsenicum album, Belladonna, Eupatorium perfoliatum, Gelsemium sempervirens,",http://dummyimage.com/228x100.png/ff4444/ffffff,"Bypass R Subclav Art to L Low Arm Art w Nonaut Sub, Open",14,false,true,true,false,false,true,false,true
+821,ZINC OXIDE,http://dummyimage.com/184x100.png/ff4444/ffffff,"Destruction of Right Ethmoid Bone, Open Approach",26,true,true,false,true,false,false,false,false
+822,"AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE, OXYBENZONE",http://dummyimage.com/222x100.png/5fa2dd/ffffff,Tomo Nucl Med Imag of Chest & Abd using Iodine 131,24,false,true,true,true,true,false,true,true
+823,MECLIZINE HYDROCHLORIDE,http://dummyimage.com/175x100.png/5fa2dd/ffffff,"Drainage of Left Hand with Drain Dev, Perc Endo Approach",19,false,false,false,true,true,true,false,false
+824,FERRUM PHOSPHORICUM,http://dummyimage.com/195x100.png/ff4444/ffffff,"Removal of Synth Sub from R Glenoid Cav, Open Approach",16,false,true,true,false,true,true,true,false
+825,Hydralazine Hydrochloride,http://dummyimage.com/215x100.png/cc0000/ffffff,"Supplement L Toe Phalanx Jt with Autol Sub, Open Approach",9,true,true,false,false,false,true,true,true
+826,Aluminum Zirconium Pentachlorohydrex Gly,http://dummyimage.com/190x100.png/ff4444/ffffff,"Removal of Synth Sub from Toe Nail, Extern Approach",5,true,false,true,true,true,false,true,false
+827,IBUPROFEN,http://dummyimage.com/155x100.png/5fa2dd/ffffff,"Dilation of R Axilla Art, Bifurc, Perc Endo Approach",30,false,true,false,true,true,false,false,false
+828,TRICLOSAN,http://dummyimage.com/166x100.png/5fa2dd/ffffff,"Revision of Infusion Device in GU Tract, Open Approach",30,true,false,false,false,false,true,true,false
+829,"Octinoxate, Octisalate, Oxybenzone",http://dummyimage.com/118x100.png/5fa2dd/ffffff,"Reposition Left Palatine Bone with Int Fix, Open Approach",3,true,true,true,true,false,false,true,false
+830,Lombardy Poplar,http://dummyimage.com/222x100.png/cc0000/ffffff,"Reposition Right Pulmonary Artery, Open Approach",2,false,false,false,true,true,true,false,true
+831,TRICLOSAN,http://dummyimage.com/111x100.png/dddddd/000000,"Drainage of Back Skin with Drainage Device, Extern Approach",19,false,false,false,false,false,false,true,false
+832,Acetaminophen,http://dummyimage.com/229x100.png/ff4444/ffffff,"Resection of Right Extraocular Muscle, Open Approach",18,true,true,false,true,false,false,true,false
+833,Dimethicone,http://dummyimage.com/124x100.png/ff4444/ffffff,"Drainage of Right Kidney Pelvis, Open Approach",29,true,false,true,true,true,false,true,false
+834,"Menthol, Methyl salicylate",http://dummyimage.com/213x100.png/cc0000/ffffff,"Excision of Right Parietal Bone, Perc Endo Approach, Diagn",16,true,false,false,false,true,true,false,true
+835,sodium monofluorophosphate,http://dummyimage.com/134x100.png/dddddd/000000,"Dilate Gastric Art w 2 Intralum Dev, Perc Endo",12,true,false,false,true,true,true,false,false
+836,AMINOSALICYLIC ACID,http://dummyimage.com/100x100.png/dddddd/000000,"Revision of Ext Fix in L Tarsal, Extern Approach",13,true,true,false,true,false,false,true,true
+837,Olive Pollen,http://dummyimage.com/100x100.png/ff4444/ffffff,"Bypass Esophag to Jejunum with Synth Sub, Perc Endo Approach",16,false,false,false,false,false,false,true,true
+838,telmisartan and hydrochlorothiazide,http://dummyimage.com/149x100.png/5fa2dd/ffffff,"Repair Gallbladder, Open Approach",2,true,true,false,true,false,true,false,false
+839,"Acetaminophen, Dextromethorphan Hydrobromide, Guaifenesin, Phenylephrine Hydrochloride",http://dummyimage.com/115x100.png/dddddd/000000,"Excision of Left Upper Lobe Bronchus, Perc Endo Approach",21,true,false,false,true,true,false,false,true
+840,Cyclobenzaprine Hydrochloride,http://dummyimage.com/233x100.png/cc0000/ffffff,"Reposition Left Fibula with Int Fix, Perc Endo Approach",27,false,true,false,false,false,false,false,true
+841,Mucor plumbeus,http://dummyimage.com/110x100.png/cc0000/ffffff,"Bypass Left Common Iliac Vein to Lower Vein, Open Approach",16,false,true,true,false,false,true,true,false
+842,"Standardized Grass Pollen, Ryegrass",http://dummyimage.com/117x100.png/5fa2dd/ffffff,"Remove of Drain Dev from Prostate/Seminal Ves, Perc Approach",11,false,true,false,true,true,false,true,true
+843,Acetaminophen,http://dummyimage.com/160x100.png/cc0000/ffffff,"Fusion T-lum Jt w Synth Sub, Post Appr A Col, Perc",17,false,false,true,true,true,true,true,true
+844,PROMETHAZINE HYDROCHLORIDE,http://dummyimage.com/216x100.png/ff4444/ffffff,Fluoroscopy of Bili/Pancr Duct using L Osm Contrast,8,false,true,true,false,false,false,false,false
+845,AMOXICILLIN,http://dummyimage.com/147x100.png/dddddd/000000,"Bypass R Ant Chamber to Sclera w Nonaut Sub, Perc",24,false,true,false,true,true,false,true,false
+846,Trichophyton mentagrophytes,http://dummyimage.com/169x100.png/5fa2dd/ffffff,"Excision of Left Foot Bursa and Ligament, Open Approach",12,false,true,true,false,false,false,false,true
+847,Water,http://dummyimage.com/171x100.png/5fa2dd/ffffff,"Dilate L Popl Art, Bifurc, w 2 Drug-elut, Perc",11,false,true,true,true,false,true,false,true
+848,"Eucalyptol, Menthol, Methyl Salicylate, Thymol",http://dummyimage.com/190x100.png/ff4444/ffffff,"Drainage of Cecum, Endo, Diagn",30,true,true,false,false,false,false,false,false
+849,hydrocortisone,http://dummyimage.com/211x100.png/cc0000/ffffff,"Occlusion of Cecum with Intraluminal Device, Endo",26,true,false,true,false,true,true,false,true
+850,"OCTINOXATE, TITANIUM DIOXIDE",http://dummyimage.com/246x100.png/dddddd/000000,"Fusion 2-4 L Jt w Autol Sub, Post Appr P Col, Perc Endo",29,true,false,true,true,true,true,true,false
+851,Folic Acid,http://dummyimage.com/207x100.png/cc0000/ffffff,HDR Brachytherapy of Thymus using Iodine 125,2,true,false,true,true,true,true,false,false
+852,Povidone Iodine,http://dummyimage.com/100x100.png/cc0000/ffffff,"Resection of Left Lacrimal Gland, Open Approach",13,false,false,true,false,true,false,false,true
+853,TRANEXAMIC ACID,http://dummyimage.com/229x100.png/cc0000/ffffff,Planar Nucl Med Imag of Head & Neck using Oth Radionuclide,11,true,true,true,false,true,true,true,false
+854,ALCOHOL,http://dummyimage.com/168x100.png/cc0000/ffffff,"Bypass 4+ Cor Art from Thor Art, Open Approach",4,true,false,true,true,false,true,true,true
+855,Clorazepate dipotassium,http://dummyimage.com/211x100.png/cc0000/ffffff,"Removal of Spacer from Left Elbow Joint, Open Approach",15,true,false,true,false,true,false,true,false
+856,Lidocaine,http://dummyimage.com/198x100.png/dddddd/000000,"Removal of Synthetic Substitute from L Carpal, Open Approach",1,false,false,true,false,true,false,true,false
+857,ATORVASTATIN CALCIUM,http://dummyimage.com/233x100.png/cc0000/ffffff,"Revise Autol Sub in L Temporomandib Jt, Perc Endo",13,false,false,false,false,false,false,true,false
+858,Acetazolamide,http://dummyimage.com/170x100.png/5fa2dd/ffffff,"Transfer Radial Nerve to Ulnar Nerve, Perc Endo Approach",7,false,true,true,false,true,true,true,false
+859,PETROLATUM,http://dummyimage.com/123x100.png/dddddd/000000,"Removal of Autol Sub from R Ankle Jt, Perc Endo Approach",1,true,true,false,true,false,true,true,false
+860,"Pulsatilla , Staphagria , Psorinum , Graphites",http://dummyimage.com/247x100.png/5fa2dd/ffffff,"Bypass Sigmoid Colon to Sigmoid Colon with Nonaut Sub, Endo",4,false,true,true,true,true,true,true,false
+861,Albuterol Sulfate,http://dummyimage.com/213x100.png/5fa2dd/ffffff,"Bypass L Int Carotid to L Extracran Art, Open Approach",3,true,true,true,false,true,true,true,true
+862,Ethyl Alcohol,http://dummyimage.com/227x100.png/5fa2dd/ffffff,"Occlusion of Face Artery with Extralum Dev, Perc Approach",11,false,false,false,false,true,false,true,false
+863,Losartan Potassium,http://dummyimage.com/220x100.png/ff4444/ffffff,"Removal of Autol Sub from L Up Femur, Perc Endo Approach",26,true,false,true,false,true,true,false,true
+864,Robitussin,http://dummyimage.com/172x100.png/cc0000/ffffff,"Replacement of Left Mandible with Synth Sub, Perc Approach",25,true,false,true,true,false,true,false,true
+865,Propranolol Hydrochloride,http://dummyimage.com/153x100.png/dddddd/000000,"Fusion of Left Carpal Joint, Perc Endo Approach",5,true,true,false,true,false,false,false,true
+866,Hydrocodone Bitartrate and Acetaminophen,http://dummyimage.com/208x100.png/cc0000/ffffff,"Change Drainage Device in Mesentery, External Approach",22,true,true,false,true,true,false,true,false
+867,ESCITALOPRAM OXALATE,http://dummyimage.com/107x100.png/ff4444/ffffff,"Drainage of Left Femoral Region, Percutaneous Approach",26,true,false,false,true,false,false,true,true
+868,ISOPROPYL ALCOHOL,http://dummyimage.com/232x100.png/cc0000/ffffff,"Computerized Tomography (CT Scan) of Chest, Abd & Pelvis",9,false,true,true,false,true,true,false,false
+869,HYDROCODONE BITARTRATE AND IBUPROFEN,http://dummyimage.com/125x100.png/5fa2dd/ffffff,"Alteration of Chest Wall with Autol Sub, Perc Endo Approach",23,true,false,true,false,false,false,false,false
+870,Doxepin Hydrochloride,http://dummyimage.com/248x100.png/ff4444/ffffff,"Destruction of Left Atrial Appendage, Percutaneous Approach",11,true,false,false,true,false,false,false,true
+871,amantadine hydrochloride,http://dummyimage.com/163x100.png/dddddd/000000,"Irrigation of Male Reproductive using Irrigat, Via Opening",28,true,true,false,true,false,false,true,false
+872,"TITANIUM DIOXIDE, OCTINOXATE, OXYBENZONE",http://dummyimage.com/146x100.png/cc0000/ffffff,"Revision of Drainage Device in Liver, External Approach",8,true,false,false,true,false,false,false,false
+873,cyclobenzaprine hydrochloride,http://dummyimage.com/189x100.png/dddddd/000000,"Insertion of Defibrillator Lead into Cor Vein, Perc Approach",6,true,false,false,false,false,true,true,true
+874,"Dextromethorphan hbr, Guaifenesin",http://dummyimage.com/199x100.png/dddddd/000000,"Repair Face Artery, Percutaneous Endoscopic Approach",13,false,true,true,true,false,false,true,false
+875,"Dextromethorphan HBr, Guaifenesin",http://dummyimage.com/111x100.png/dddddd/000000,"Replacement of L Glenoid Cav with Autol Sub, Perc Approach",25,true,false,true,false,true,false,true,false
+876,House Dust,http://dummyimage.com/112x100.png/ff4444/ffffff,"Revision of Infusion Device in L Wrist Jt, Extern Approach",23,false,true,true,true,true,true,true,true
+877,Metoclopramide,http://dummyimage.com/224x100.png/dddddd/000000,"Drainage of Left Pleura with Drainage Device, Perc Approach",13,false,false,true,true,false,true,false,true
+878,Piroxicam,http://dummyimage.com/230x100.png/ff4444/ffffff,"Occlusion of R Uter A with Extralum Dev, Open Approach",16,false,false,false,true,true,false,true,true
+879,SODIUM MONOFLUOROPHOSPHATE,http://dummyimage.com/235x100.png/5fa2dd/ffffff,"Reattachment of Cervix, Percutaneous Endoscopic Approach",22,true,true,false,false,true,true,false,true
+880,Aluminum Chlorohydrate,http://dummyimage.com/245x100.png/dddddd/000000,Packing of Right Thumb using Packing Material,29,true,true,true,true,false,true,true,true
+881,Salicylic Acid,http://dummyimage.com/230x100.png/5fa2dd/ffffff,"Extirpation of Matter from Superior Vena Cava, Open Approach",1,false,true,true,true,true,true,true,true
+882,Lorazepam,http://dummyimage.com/247x100.png/5fa2dd/ffffff,"Gastrointestinal System, Dilation",24,true,true,true,true,false,false,false,false
+883,Aspirin,http://dummyimage.com/215x100.png/cc0000/ffffff,"Dilate L Thyroid Art, Bifurc, w 4 Drug-elut, Perc",12,true,false,true,false,false,false,true,false
+884,"Antihemophilic Factor, Human Recombinant",http://dummyimage.com/131x100.png/ff4444/ffffff,"Reposition Left Abdomen Muscle, Perc Endo Approach",7,false,false,true,true,false,false,false,false
+885,TITANIUM DIOXIDE,http://dummyimage.com/213x100.png/5fa2dd/ffffff,"Destruction of Left Tibia, Percutaneous Endoscopic Approach",12,false,false,false,true,false,false,false,false
+886,Etodolac,http://dummyimage.com/244x100.png/dddddd/000000,"Fusion >7 T Jt w Nano Intbd Dev, Open, New Tech 2",9,true,true,true,true,false,false,false,false
+887,Acetaminophen and Codeine Phosphate,http://dummyimage.com/233x100.png/cc0000/ffffff,"Remove Monitor Dev from Hepatobil Duct, Perc Endo",19,false,true,false,true,false,true,false,false
+888,Lidocaine hydrochloride,http://dummyimage.com/226x100.png/cc0000/ffffff,"Drainage of R Low Leg Tendon with Drain Dev, Open Approach",22,false,true,true,false,true,true,false,false
+889,Aluminum Zirconium Tetrachlorohydrex GLY,http://dummyimage.com/186x100.png/dddddd/000000,"Supplement Right Upper Leg with Autol Sub, Open Approach",24,false,true,true,false,false,false,false,false
+890,Hyoscyamine Sulfate,http://dummyimage.com/226x100.png/5fa2dd/ffffff,"Replace of L Toe Phalanx with Synth Sub, Perc Endo Approach",8,true,true,false,true,true,false,false,true
+891,albuterol sulfate,http://dummyimage.com/128x100.png/ff4444/ffffff,"Bypass Right Common Iliac Artery to Abd Aorta, Open Approach",25,false,false,true,true,false,false,false,false
+892,"TITANIUM DIOXIDE, OCTINOXATE",http://dummyimage.com/202x100.png/5fa2dd/ffffff,"Extirpation of Matter from Sacral Plexus, Open Approach",24,false,true,true,true,false,false,false,true
+893,Zinc Oxide and menthol,http://dummyimage.com/115x100.png/cc0000/ffffff,"Alteration of Left Upper Leg with Autol Sub, Perc Approach",22,false,false,true,false,true,true,false,false
+894,Mycophenolate Mofetil,http://dummyimage.com/211x100.png/5fa2dd/ffffff,"Extirpation of Matter from R Verteb Vein, Perc Endo Approach",1,true,false,false,false,true,true,true,true
+895,Octinoxate and Titanium Dioxide,http://dummyimage.com/216x100.png/cc0000/ffffff,"Excision of Facial Nerve, Open Approach, Diagnostic",20,true,false,true,false,false,true,false,true
+896,Dill,http://dummyimage.com/113x100.png/dddddd/000000,"Resection of Vestibular Gland, Open Approach",18,true,true,true,true,true,true,false,true
+897,Ceftriaxone Sodium,http://dummyimage.com/128x100.png/dddddd/000000,"CT Scan of Larynx using L Osm Contrast, Unenh, Enhance",20,false,true,false,false,true,true,false,true
+898,hydrocortisone,http://dummyimage.com/163x100.png/ff4444/ffffff,"Restrict L Foot Vein w Extralum Dev, Perc Endo",12,true,false,true,false,true,true,false,true
+899,JACARANDA CAROBA FLOWER,http://dummyimage.com/192x100.png/dddddd/000000,"Excision of Left Ankle Tendon, Percutaneous Approach",11,false,true,false,true,true,false,true,false
+900,Clotrimazole,http://dummyimage.com/219x100.png/cc0000/ffffff,"Repair Right Kidney Pelvis, Open Approach",6,false,true,true,true,false,true,false,false
+901,Undecylenic Acid,http://dummyimage.com/247x100.png/dddddd/000000,"Removal of Drain Dev from Tracheobronc Tree, Extern Approach",4,false,false,false,false,false,false,true,true
+902,Oxygen,http://dummyimage.com/198x100.png/dddddd/000000,"Bypass L Com Iliac Art to R Femor A w Autol Vn, Perc Endo",20,false,true,true,true,false,true,false,true
+903,PredniSONE,http://dummyimage.com/138x100.png/cc0000/ffffff,"Destruction of Right Extraocular Muscle, Open Approach",25,false,true,true,true,false,false,true,true
+904,Isopropyl alcohol,http://dummyimage.com/201x100.png/ff4444/ffffff,"Excision of Right Sphenoid Sinus, Perc Endo Approach, Diagn",7,false,true,false,true,false,true,true,true
+905,"ascorbic acid, cholecalciferol, .alpha.-tocopherol acetate, dl-, pyridoxine hydrochloride, folic acid, 5-methyltetrahydrofolic acid, cyanocobalamin, biotin, calcium formate, ferrous asparto glycinate, potassium iodide, magnesium oxide, doconexent and icosapent",http://dummyimage.com/121x100.png/dddddd/000000,"Bypass Sup Vena Cava to Pulm Vn Cnfl w Nonaut Sub, Open",12,true,false,false,false,false,false,false,false
+906,"ARNICA MONTANA - CITRULLUS COLOCYNTHIS FRUIT PULP - PSEUDOGNAPHALIUM OBTUSIFOLIUM - HYPERICUM PERFORATUM - POTASSIUM IODIDE - MAGNESIUM PHOSPHATE, DIBASIC TRIHYDRATE - TOXICODENDRON PUBESCENS LEAF -",http://dummyimage.com/249x100.png/cc0000/ffffff,"Removal of Spacer from R Acromioclav Jt, Perc Approach",22,true,true,true,true,true,false,true,false
+907,acetaminophen and codeine phosphate,http://dummyimage.com/238x100.png/ff4444/ffffff,"Excision of Right Femoral Shaft, Perc Approach, Diagn",27,false,false,false,false,false,false,false,true
+908,"Avobenzone, Octinoxate, Octisalate",http://dummyimage.com/242x100.png/cc0000/ffffff,"Removal of Synth Sub from Trachea, Perc Endo Approach",12,true,true,false,true,true,true,false,true
+909,"octinoxate, octocrylene, oxybenzone, zinc oxide",http://dummyimage.com/197x100.png/dddddd/000000,"Supplement Right Upper Eyelid with Synth Sub, Perc Approach",22,false,false,true,false,true,true,true,true
+910,ATENOLOL,http://dummyimage.com/179x100.png/ff4444/ffffff,"Repair Left Little Finger, Percutaneous Endoscopic Approach",6,false,false,false,false,false,true,true,false
+911,Fosfomycin tromethamine,http://dummyimage.com/186x100.png/5fa2dd/ffffff,"Drainage of Left Hand Muscle, Perc Endo Approach, Diagn",26,false,true,false,true,true,true,false,true
+912,Diltiazem Hydrochloride,http://dummyimage.com/131x100.png/ff4444/ffffff,"Alteration of Right Shoulder Region, Open Approach",24,true,true,true,false,false,true,false,false
+913,Nifedipine,http://dummyimage.com/101x100.png/dddddd/000000,"Supplement R Low Leg with Synth Sub, Perc Endo Approach",10,false,true,false,true,false,false,false,false
+914,spironolactone,http://dummyimage.com/196x100.png/cc0000/ffffff,"Reposition Left Fibula with Int Fix, Open Approach",9,false,false,true,true,false,false,false,false
+915,Triclosan,http://dummyimage.com/213x100.png/5fa2dd/ffffff,"Supplement L Com Carotid with Nonaut Sub, Perc Endo Approach",26,true,false,true,false,false,false,true,false
+916,Lubricant eye drops,http://dummyimage.com/134x100.png/cc0000/ffffff,"Repair Right External Ear, Percutaneous Endoscopic Approach",15,false,false,true,true,false,true,true,false
+917,Metronidazole,http://dummyimage.com/167x100.png/5fa2dd/ffffff,"Division of Thoracic Sympathetic Nerve, Open Approach",3,false,true,false,true,true,false,true,false
+918,Salicylic Acid,http://dummyimage.com/235x100.png/dddddd/000000,"Reposition Left Upper Femur, External Approach",17,true,false,true,true,true,true,false,false
+919,FAMCICLOVIR,http://dummyimage.com/116x100.png/cc0000/ffffff,"Bypass L Int Iliac Art to B Femor A w Autol Art, Open",26,false,false,false,false,false,false,false,true
+920,"famotidine, calcium carbonate and magnesium hydroxide",http://dummyimage.com/114x100.png/cc0000/ffffff,"Replacement of Cystic Duct with Synth Sub, Open Approach",1,false,true,true,true,true,true,false,true
+921,Fluocinolone Acetonide,http://dummyimage.com/129x100.png/5fa2dd/ffffff,"Drainage of Right Renal Artery, Percutaneous Approach, Diagn",25,true,true,false,false,false,false,false,false
+922,Foaming Instant Hand Sanitizer with Aloe and Vitamin E,http://dummyimage.com/119x100.png/cc0000/ffffff,Magnetic Resonance Imaging (MRI) of Uterus,1,true,true,true,true,true,true,true,false
+923,OCTINOXATE,http://dummyimage.com/168x100.png/cc0000/ffffff,"Restrict L Com Iliac Vein w Intralum Dev, Perc Endo",3,false,false,false,true,true,true,false,false
+924,Aluminum Zirconium Tetrachlorohydrex Gly,http://dummyimage.com/144x100.png/cc0000/ffffff,"Drainage of Left Hypogastric Vein, Open Approach, Diagnostic",2,false,false,false,true,true,true,false,false
+925,levonorgestrel / ethinyl estradiol,http://dummyimage.com/161x100.png/ff4444/ffffff,"Removal of Drainage Device from R Pleural Cav, Open Approach",4,false,true,true,false,false,true,false,true
+926,nifedipine,http://dummyimage.com/104x100.png/5fa2dd/ffffff,"Introduce Nonaut Somat Stem Cell in Cran Cav/Brain, Open",20,true,true,false,false,true,false,true,false
+927,Mometasone Furoate,http://dummyimage.com/132x100.png/dddddd/000000,Beam Radiation of Ureter using Electrons,8,false,false,true,false,true,true,false,false
+928,mucor racemosus,http://dummyimage.com/235x100.png/ff4444/ffffff,"Control Bleeding in Peritoneal Cavity, Perc Endo Approach",9,true,true,true,true,false,true,false,false
+929,"Belladonna , Conium maculatum, Dulcamara, Ferrum phosphoricum, Hepar sulphuris calcareum, Kali bichromicum, mercurius solubilis, Pulsatilla, Silicea, Chamonilla",http://dummyimage.com/245x100.png/ff4444/ffffff,"Excision of Right Foot, Percutaneous Approach",8,true,true,false,true,false,false,true,false
+930,Raspberry,http://dummyimage.com/133x100.png/cc0000/ffffff,Fluoroscopy of Bi Fallop Tube using H Osm Contrast,27,false,true,false,false,true,false,true,false
+931,PredniSONE,http://dummyimage.com/149x100.png/5fa2dd/ffffff,Wound Mgmt Trmt Musculosk Low Back/LE w Physical Agent,23,false,true,true,false,true,true,true,false
+932,Baclofen,http://dummyimage.com/185x100.png/dddddd/000000,"Restrict R Cephalic Vein w Intralum Dev, Perc Endo",10,false,true,false,true,true,true,true,true
+933,Metformin Hydrochloride,http://dummyimage.com/125x100.png/dddddd/000000,"Reposition Right Vertebral Vein, Open Approach",15,true,false,true,true,true,true,true,false
+934,Purified Water,http://dummyimage.com/181x100.png/cc0000/ffffff,"Replace R Ext Jugular Vein w Nonaut Sub, Perc Endo",25,true,false,false,false,false,true,false,false
+935,PREDNISOLONE,http://dummyimage.com/236x100.png/cc0000/ffffff,"Resection of Scrotum, External Approach",13,true,true,true,false,true,true,false,true
+936,Cetylpyridinium Chloride,http://dummyimage.com/153x100.png/dddddd/000000,"Reposition Left Upper Arm Muscle, Open Approach",7,true,false,false,false,true,true,true,false
+937,Aluminum Zirconium Tetrachlorohydrex GLY,http://dummyimage.com/120x100.png/5fa2dd/ffffff,"Bypass R Axilla Vein to Up Vein w Synth Sub, Open",12,false,false,false,false,false,true,true,false
+938,Lisinopril,http://dummyimage.com/246x100.png/cc0000/ffffff,"Indiv Psychotherapy for Substance Abuse Treatment, Cognitive",20,false,true,false,false,true,false,true,true
+939,Lisinopril,http://dummyimage.com/165x100.png/5fa2dd/ffffff,"Bypass R Subclav Art to Bi Low Arm Art w Autol Vn, Open",1,true,false,true,true,false,true,true,false
+940,levetiracetam,http://dummyimage.com/180x100.png/dddddd/000000,"Removal of Drainage Device from Gallbladder, Extern Approach",28,false,true,true,true,true,true,true,true
+941,dimethyl fumarate,http://dummyimage.com/160x100.png/5fa2dd/ffffff,Removal of Bandage on Right Lower Arm,9,true,false,false,true,false,false,false,true
+942,Naproxen Sodium,http://dummyimage.com/188x100.png/ff4444/ffffff,"Drainage of Bladder Neck, Open Approach",30,false,false,true,true,true,false,true,true
+943,Phenylephrine Hydrochloride,http://dummyimage.com/123x100.png/5fa2dd/ffffff,"Mouth and Throat, Destruction",14,false,false,true,true,true,false,false,true
+944,Nitrofurantoin Macrocrystals,http://dummyimage.com/136x100.png/cc0000/ffffff,"Dilation of L Temporal Art with 2 Drug-elut, Open Approach",21,true,true,false,true,true,true,true,true
+945,Loratadine,http://dummyimage.com/217x100.png/cc0000/ffffff,"Supplement L Up Arm Muscle w Autol Sub, Perc Endo",2,true,false,true,true,false,true,true,true
+946,Titanium dioxide,http://dummyimage.com/230x100.png/cc0000/ffffff,"Dilate 4+ Cor Art, Bifurc, w 3 Drug-elut, Perc",4,true,false,true,true,true,false,true,true
+947,ethyl alcohol,http://dummyimage.com/246x100.png/cc0000/ffffff,"Supplement Left Hand Vein with Autol Sub, Perc Endo Approach",15,true,true,true,false,false,false,true,false
+948,Black Willow,http://dummyimage.com/210x100.png/cc0000/ffffff,HDR Brachytherapy of Bronchus using Oth Isotope,11,true,true,true,false,false,false,true,true
+949,benzalkonium chloride,http://dummyimage.com/165x100.png/ff4444/ffffff,"Supplement Ventricular Sept w Nonaut Sub, Perc Endo",12,true,false,false,false,false,false,false,false
+950,Trazodone Hydrochloride,http://dummyimage.com/148x100.png/5fa2dd/ffffff,"Drainage of Retroperitoneum, Open Approach, Diagnostic",5,false,true,false,true,true,true,true,false
+951,Zidovudine,http://dummyimage.com/201x100.png/5fa2dd/ffffff,Plain Radiography of Oth Low Art using L Osm Contrast,1,true,true,true,true,true,true,true,false
+952,"Antimon. crud., Arsenicum alb., Aur. met., Berber. aqui., Bovista, Carbo veg., Causticum, Chelidonium majus, Dulcamara, Graphites, Hepar sulph. calc., Hydrocotyle, Kali brom., Kali iod., Ledum, Lycopodium, Nux vom., Silicea, Sulphur iod., Zinc. met., Echinacea, Juglans regia, Lappa, Taraxacum",http://dummyimage.com/144x100.png/dddddd/000000,"Replace R Hypogast Vein w Autol Sub, Perc Endo",9,true,false,false,false,true,true,false,false
+953,"Cherry Plum, Clematis, Impatiens, Rose Rose, Star of Bethlehem",http://dummyimage.com/206x100.png/ff4444/ffffff,"Resection of Left Lobe Liver, Open Approach",11,true,false,true,true,true,false,true,false
+954,sodium fluoride,http://dummyimage.com/177x100.png/ff4444/ffffff,"Revision of Drainage Device in R Up Extrem, Extern Approach",17,false,true,true,true,false,false,false,true
+955,Donepezil Hydrochloride,http://dummyimage.com/106x100.png/5fa2dd/ffffff,"Insertion of Ext Fix into L Metatarsal, Perc Approach",6,true,true,false,true,false,true,false,false
+956,topiramate,http://dummyimage.com/125x100.png/ff4444/ffffff,"Drainage of Uvula, External Approach",12,false,false,false,true,true,false,false,true
+957,DOCUSATE SODIUM,http://dummyimage.com/166x100.png/5fa2dd/ffffff,"Transplantation of R Up Lung Lobe, Syngen, Open Approach",2,false,false,false,true,true,false,true,false
+958,"Avobenzone, Octinoxate, and Octisalate",http://dummyimage.com/105x100.png/cc0000/ffffff,"Occlusion Esophagast Junct w Extralum Dev, Open",3,false,false,true,false,false,true,true,false
+959,levofloxacin,http://dummyimage.com/197x100.png/5fa2dd/ffffff,"Restrict of R Axilla Vein with Intralum Dev, Open Approach",28,true,false,false,true,true,true,false,true
+960,Burweed Marsh Elder,http://dummyimage.com/210x100.png/5fa2dd/ffffff,"Insert of Infusion Dev into L Sacroiliac Jt, Perc Approach",9,true,false,false,true,true,true,false,true
+961,Metronidazole,http://dummyimage.com/138x100.png/dddddd/000000,"Resection of Prepuce, External Approach",3,true,true,true,true,false,true,false,false
+962,"Elaps corallinus, Crotalus horridus, Bryonia, Calc. fluor., Carduus mar., Cholesterinum, Cinchona, Digitalis, Hamamelis, Hydrofluoricum acidum, Lachesis, Lycopodium, Naja, Pulsatilla, Vipera berus, Zinc. met., Aesculus hipp., Echinacea",http://dummyimage.com/116x100.png/dddddd/000000,"Excision of Dura Mater, Open Approach",8,false,true,true,true,true,false,false,true
+963,PREGABALIN,http://dummyimage.com/149x100.png/dddddd/000000,"Dilate of R Fem Art with Drug-elut Intra, Perc Endo Approach",11,true,false,false,false,true,false,false,false
+964,Zinc Oxide,http://dummyimage.com/126x100.png/5fa2dd/ffffff,"Drainage of Nasal Turbinate, Endo",14,false,true,false,true,false,true,true,true
+965,DOCUSATE SODIUM -SENNOSIDES,http://dummyimage.com/130x100.png/5fa2dd/ffffff,"Removal of Synth Sub from Thoracic Duct, Open Approach",26,true,true,false,true,true,true,true,false
+966,Nafcillin,http://dummyimage.com/181x100.png/ff4444/ffffff,"Supplement Left Zygomatic Bone with Synth Sub, Open Approach",21,false,true,true,true,true,true,false,true
+967,"Dextromethorphan HBR, Guaifenesin",http://dummyimage.com/242x100.png/5fa2dd/ffffff,"Dilate R Ext Carotid, Bifurc, w 2 Drug-elut, Open",1,false,false,false,true,false,true,true,false
+968,Bismuth Subsalicylate,http://dummyimage.com/162x100.png/5fa2dd/ffffff,"Supplement Sigmoid Colon with Synthetic Substitute, Endo",13,false,true,false,true,false,true,true,false
+969,"Cocoa butter, Phenylephrine HCl, Shark liver oil",http://dummyimage.com/133x100.png/dddddd/000000,"Supplement R Toe Phalanx Jt with Autol Sub, Perc Approach",5,true,true,true,false,false,false,false,true
+970,Walnut Black Pollen,http://dummyimage.com/168x100.png/5fa2dd/ffffff,"Bypass R Axilla Art to Bi Up Leg Art w Autol Vn, Open",10,true,true,true,false,false,true,true,false
+971,acarbose,http://dummyimage.com/217x100.png/5fa2dd/ffffff,"Introduction of Oth Therap Subst into Eye, Extern Approach",7,true,false,true,false,true,false,true,true
+972,nevirapine,http://dummyimage.com/112x100.png/ff4444/ffffff,"Insertion of Ext Fix into L Patella, Open Approach",14,false,true,true,true,false,true,false,false
+973,Pyrithione Zinc,http://dummyimage.com/224x100.png/dddddd/000000,"Bypass R Foot Vein to Low Vein with Autol Vn, Open Approach",20,false,true,true,false,false,false,true,false
+974,"OCTINOXATE, TITANIUM DIOXIDE",http://dummyimage.com/204x100.png/cc0000/ffffff,"Bypass L Fem Art to L Femor A with Autol Art, Open Approach",11,false,false,false,false,true,true,true,true
+975,"Aconitum napellus, Apis mellifera, Atropa belladonna, Solanum dulcamara top, Mercurius solubilis, Phytolacca americana root",http://dummyimage.com/228x100.png/5fa2dd/ffffff,"Occlusion R Fallopian Tube w Extralum Dev, Perc",4,false,false,false,false,true,false,false,false
+976,Dextran 75,http://dummyimage.com/114x100.png/ff4444/ffffff,"Extirpation of Matter from Scrotum, Percutaneous Approach",1,false,true,true,true,false,true,true,true
+977,"Butalbital, Acetaminophen, and Caffeine",http://dummyimage.com/131x100.png/cc0000/ffffff,"Dilate L Subclav Art, Bifurc, w Intralum Dev, Open",4,false,false,false,true,true,false,true,false
+978,pioglitazone hydrochloride,http://dummyimage.com/112x100.png/dddddd/000000,"Repair Eye in Products of Conception, Open Approach",4,false,false,true,true,false,false,true,true
+979,HYDROCODONE BITARTRATE AND ACETAMINOPHEN,http://dummyimage.com/215x100.png/5fa2dd/ffffff,Immobilization of Left Lower Arm using Splint,14,true,false,false,false,true,true,true,false
+980,MENTHOL,http://dummyimage.com/154x100.png/cc0000/ffffff,"Bypass Splenic Vein to L Renal Vein w Nonaut Sub, Open",8,false,false,false,false,false,false,true,false
+981,Nefazodone Hydrochloride,http://dummyimage.com/164x100.png/5fa2dd/ffffff,"Destruction of Right Epididymis, Percutaneous Approach",20,false,true,true,false,true,true,true,false
+982,Homosalate and Octinoxate and Octisalate and Oxybenzone and Avobenzone and Octocrylene,http://dummyimage.com/176x100.png/cc0000/ffffff,"Dilation of Right Fallopian Tube, Perc Endo Approach",24,true,true,true,false,false,false,true,true
+983,Zonisamide,http://dummyimage.com/119x100.png/ff4444/ffffff,"Dilate L Int Mamm Art, Bifurc, w Drug-elut Intra, Open",12,true,false,false,false,false,true,false,true
+984,Sennosides,http://dummyimage.com/168x100.png/5fa2dd/ffffff,"Drainage of Head and Neck Tendon, Perc Endo Approach, Diagn",15,true,true,true,false,true,true,true,true
+985,Benzalkonium Chloride,http://dummyimage.com/125x100.png/ff4444/ffffff,"Repair Right Frontal Bone, External Approach",11,false,true,true,true,false,false,true,true
+986,GOLDENSEAL and LOBARIA PULMONARIA and POTASSIUM DICHROMATE and PHOSPHORUS and MERCURIC SULFIDE and AMMONIUM CARBONATE and LEMNA MINOR and ARUM MACULATUM ROOT and MERCURIC IODIDE,http://dummyimage.com/116x100.png/5fa2dd/ffffff,"Occlusion of L Renal Art with Intralum Dev, Perc Approach",23,false,true,true,true,false,true,false,false
+987,Quetiapine fumarate,http://dummyimage.com/159x100.png/dddddd/000000,"Inspection of Left Inguinal Region, Percutaneous Approach",23,true,true,false,false,false,false,false,false
+988,Atropine Sulfate,http://dummyimage.com/219x100.png/cc0000/ffffff,"Restriction of Ascending Colon, Via Opening",6,false,false,false,false,true,true,false,true
+989,Titanium Dioxide and Octinoxate,http://dummyimage.com/133x100.png/cc0000/ffffff,"Tendons, Destruction",28,true,true,true,true,false,false,false,false
+990,calcium carbonate,http://dummyimage.com/187x100.png/dddddd/000000,"Drainage of Left Trunk Muscle, Open Approach, Diagnostic",8,true,false,false,true,false,false,true,false
+991,Treatment Set TS348982,http://dummyimage.com/179x100.png/cc0000/ffffff,"Excision of Perineum Muscle, Perc Endo Approach, Diagn",24,false,false,true,true,true,true,false,false
+992,Anticaries,http://dummyimage.com/161x100.png/ff4444/ffffff,"Revision of Autol Sub in L Femur Shaft, Extern Approach",23,false,true,false,true,true,false,true,false
+993,fluvoxamine maleate,http://dummyimage.com/126x100.png/5fa2dd/ffffff,"Measurement of Cardiac Action Currents, Perc Approach",30,false,true,false,false,false,false,true,false
+994,"Zincum Aceticum, Zincum Gluconicum",http://dummyimage.com/229x100.png/ff4444/ffffff,"Restrict of R Ext Carotid with Intralum Dev, Perc Approach",10,false,true,false,false,true,true,true,true
+995,"Acetaminophen, Chlorpheniramine maleate, Phenylephrine HCl",http://dummyimage.com/161x100.png/ff4444/ffffff,"Replacement of Larynx with Autol Sub, Endo",3,false,false,false,true,false,false,true,false
+996,"OCTINOXATE, Titanium Dioxide",http://dummyimage.com/149x100.png/dddddd/000000,"Supplement Sacral Nerve with Autol Sub, Perc Approach",16,true,true,true,false,false,false,false,true
+997,"Agnus castus, Avena sativa, Cinchona officinalis, Humulus lupulus, Hyoscyamus niger, Ignatia amara, Passiflora incarnata, Valeriana officinalis,",http://dummyimage.com/249x100.png/dddddd/000000,"Resection of Uterus, Via Natural or Artificial Opening",29,false,true,false,false,false,false,true,false
+998,Bismuth subsalicylate,http://dummyimage.com/199x100.png/dddddd/000000,Fluoroscopy of Pelvis using High Osmolar Contrast,30,false,true,true,false,true,false,true,false
+999,CHLOROXYLENOL,http://dummyimage.com/127x100.png/dddddd/000000,"Supplement Left Retina with Autol Sub, Perc Approach",2,false,false,false,true,false,false,true,false
+1000,LEVETIRACETAM,http://dummyimage.com/107x100.png/cc0000/ffffff,"Supplement Hemiazygos Vein with Autol Sub, Perc Approach",4,true,false,false,true,false,false,true,false

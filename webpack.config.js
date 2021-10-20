@@ -2,9 +2,11 @@ const path = require('path');
 
 const source = path.join(__dirname, 'client', 'src', 'index.jsx');
 const destination = path.join(__dirname, 'public');
+// const webpack = require('webpack');
+const Dotenv = require('dotenv-webpack');
 
 module.exports = {
-  entry: source,
+  entry: ['babel-polyfill', source],
   output: {
     path: destination,
     filename: 'bundle.js',
@@ -23,9 +25,15 @@ module.exports = {
       },
     ],
   },
+  resolve: {
+    alias: {
+      '@mui/styled-engine': '@mui/styled-engine-sc',
+    },
+  },
   mode: 'development',
   devtool: 'eval-source-map',
   resolve: {
     alias: { '@mui/styled-engine': '@mui/styled-engine-sc' },
   },
+  plugins: [new Dotenv()],
 };
