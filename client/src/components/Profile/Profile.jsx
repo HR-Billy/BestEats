@@ -1,6 +1,7 @@
 import axios from 'axios';
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import { Container, Grid, Paper, Avatar } from '@mui/material';
+import { Context } from '../../Context.jsx';
 import { ProfileContext } from './ProfileContext.jsx';
 import NutritionFacts from './features/NutritionFacts.jsx';
 import Status from './features/Status.jsx';
@@ -10,11 +11,11 @@ import useStyles from './styles.jsx';
 
 const Profile = () => {
   const classes = useStyles();
-  const [user, setUser] = useState([]);
+  const { userId } = useContext(Context);
   const [profilePhoto, setProfilePhoto] = useState('');
   const [feed, setFeed] = useState([]);
-  const [nutritionFacts, setNutritionFacts] = useState([]);
-  const [status, setStatus] = useState('');
+  const [products, setProducts] = useState([]);
+  const [meals, setMeals] = useState([]);
 
   const arriving = 'on its way';
   const recent = 'recent orders';
@@ -22,23 +23,26 @@ const Profile = () => {
 
   useEffect(() => {
     axios.get('profile/user/?user_id=10')
+    // axios.get(`profile/user/?user_id=${userId}`)
       .then(({ data }) => {
-        console.log(data);
+        console.log(data[0]);
+        const { results } = data[0];
+
+        setProfilePhoto(results.photo);
+        setFeed(results.feed);
+        setProducts(results.products);
+        setMeals(results.meals);
       });
-  });
+  }, []);
 
   return (
     <ProfileContext.Provider value={{
-      user,
-      setUser,
-      profilePhoto,
-      setProfilePhoto,
       feed,
       setFeed,
-      nutritionFacts,
-      setNutritionFacts,
-      status,
-      setStatus,
+      products,
+      setProducts,
+      meals,
+      setMeals,
     }}
     >
       <Container className={classes.wrapper}>

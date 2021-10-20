@@ -1,5 +1,5 @@
 module.exports = {
-  selectData: `
+  selectProfile: `
   SELECT json_build_object(
     'id', id,
     'username', username,
@@ -9,7 +9,7 @@ module.exports = {
     'member_start_date', member_start_date,
     'subscription_start_date', subscription_start_date,
     'weekly_start_date', weekly_start_date,
-    'status', (SELECT jsonb_agg( json_build_object(
+    'feed', (SELECT jsonb_agg( json_build_object(
       'status_id', id,
       'emoji', emoji,
       'text', text,

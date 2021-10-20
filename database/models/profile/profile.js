@@ -1,13 +1,12 @@
 const db = require('../..');
-const { selectData } = require('./profileQueries');
+const { selectProfile } = require('./profileQueries');
 
 module.exports = {
   selectProfileData: (username, req, res) => {
-    db.query(selectData, [username], (err, data) => {
+    db.query(selectProfile, [username], (err, data) => {
       if (err) {
         res.status(404).send(err);
       } else {
-        // console.log('here is the data', data.rows);
         res.status(200).send(data.rows);
       }
     });
