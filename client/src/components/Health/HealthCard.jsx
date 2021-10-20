@@ -10,7 +10,7 @@ export default function HealthCard({ heading, description, image }) {
   return (
     <>
       <Card
-        sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
+        sx={{ height: '100%', display: 'flex', flexDirection: 'column', bgcolor: "#BDF6FC"}}
       >
         <CardMedia
           component="img"
@@ -22,7 +22,7 @@ export default function HealthCard({ heading, description, image }) {
           alt="random"
         />
         <CardContent sx={{ flexGrow: 1 }}>
-          <Typography gutterBottom variant="h5" component="h2">
+          <Typography gutterBottom variant="h5" component="h2" color="#F24B6A">
             {heading}
           </Typography>
           <Typography>
@@ -30,8 +30,7 @@ export default function HealthCard({ heading, description, image }) {
           </Typography>
         </CardContent>
         <CardActions>
-          <Button size="small">Coming</Button>
-          <Button size="small">Soon</Button>
+          <Button size="small">Coming Soon</Button>
         </CardActions>
       </Card>
     </>

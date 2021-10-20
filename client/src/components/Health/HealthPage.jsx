@@ -10,6 +10,7 @@ import { Link } from 'react-router-dom';
 import StyleLink from '@mui/material/Link';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import HealthCard from './HealthCard.jsx';
+import myTheme from '../theme.jsx';
 
 const cards = [0, 1, 2, 3, 4, 5];
 
@@ -42,10 +43,36 @@ const cardLayout = [{
   image: 'https://images.unsplash.com/photo-1526243741027-444d633d7365?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1742&q=80',
   heading: 'Additional Resources',
   description: 'Add to your knowledge by reading these resources recommended by nutritionists.',
-}
+},
 ];
 
-const theme = createTheme();
+const theme = createTheme(
+  {
+    typography: {
+      h2: {
+        fontSize: 36,
+        marginbottom: 12,
+      },
+    },
+    palette: {
+      type: 'light',
+      primary: {
+        main: '#609e00',
+        light: '#B0C800',
+      },
+      secondary: {
+        main: '#F24B6A',
+      },
+      success: {
+        main: '#4caf50',
+        light: '#B0C800',
+      },
+      background: {
+        default: '#FFDE32',
+      },
+    },
+  },
+);
 
 export default function HealthPage() {
   return (
@@ -55,7 +82,7 @@ export default function HealthPage() {
         {/* Hero unit */}
         <Box
           sx={{
-            bgcolor: 'background.paper',
+            bgcolor: '#FFDE32',
             pt: 8,
             pb: 1,
           }}
@@ -92,7 +119,7 @@ export default function HealthPage() {
           {/* End hero unit */}
           <Grid container spacing={4}>
             {cards.map((card) => (
-              <Grid item key={card} xs={12} sm={6} md={4}>
+              <Grid item key={card} xs={12} sm={6} md={4} color="#FFDE32">
                 <HealthCard
                   image={cardLayout[card].image}
                   heading={cardLayout[card].heading}
@@ -104,14 +131,14 @@ export default function HealthPage() {
         </Container>
       </main>
       <Typography variant="body2" color="text.secondary" align="center">
-    {'Copyright © '}
-    <StyleLink color="inherit" href="/">
-      Best Eats Inc.
-    </StyleLink>
-    {' '}
-    {new Date().getFullYear()}
-    .
-  </Typography>
+        {'Copyright © '}
+        <StyleLink color="inherit" href="/">
+          Best Eats Inc.
+        </StyleLink>
+        {' '}
+        {new Date().getFullYear()}
+        .
+      </Typography>
     </ThemeProvider>
   );
 }
