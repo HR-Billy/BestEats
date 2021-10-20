@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 
 const Container = styled.div`
-  width: 250px;
+  width: 260px;
   padding-top: 15px;
 `;
 
