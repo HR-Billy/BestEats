@@ -30,4 +30,7 @@ module.exports = {
   },
   mode: 'development',
   devtool: 'eval-source-map',
+  resolve: {
+    alias: { '@mui/styled-engine': '@mui/styled-engine-sc' },
+  },
 };
