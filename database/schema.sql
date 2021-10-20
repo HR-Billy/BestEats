@@ -113,6 +113,13 @@ CREATE TABLE user_meals (
   date_received DATE NOT NULL
 );
 
+CREATE TABLE user_products (
+  id SERIAL NOT NULL,
+  meal_id INT NOT NULL REFERENCES meal(id),
+  date_ordered DATE NOT NULL,
+  date_received DATE NOT NULL
+);
+
 COPY products(id, product_name, product_price, category, calories, carbs, protein, fats, image, quantity, sale_price, promo, unit_type, unit_size, serving_size)
 FROM '/Users/timjordan/HackReactor/BestEats/database/data/products.csv'
 DELIMITER ','
@@ -142,3 +149,21 @@ COPY user_meals(id, user_id, meal_id, date_ordered, date_received)
 FROM '/Users/timjordan/HackReactor/BestEats/database/data/user_meals.csv'
 DELIMITER ','
 CSV HEADER;
+
+
+
+  id SERIAL NOT NULL PRIMARY KEY,
+  product_name VARCHAR(40) NOT NULL,
+  product_price INT NOT NULL,
+  category VARCHAR(40) NOT NULL,
+  calories INT NOT NULL,
+  carbs INT NOT NULL,
+  protein INT NOT NULL,
+  fats INT NOT NULL,
+  image VARCHAR(200) NOT NULL,
+  quantity INT NOT NULL,
+  sale_price INT NOT NULL,
+  promo VARCHAR(20),
+  unit_type VARCHAR(20),
+  unit_size INT NOT NULL,
+  serving_size INT NOT NULL
