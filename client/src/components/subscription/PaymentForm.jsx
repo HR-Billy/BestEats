@@ -1,14 +1,7 @@
 /* eslint-disable import/extensions */
 import React from 'react';
 import PropTypes from 'prop-types';
-import Typography from '@mui/material/Typography';
-import Grid from '@mui/material/Grid';
-import TextField from '@mui/material/TextField';
-import FormControlLabel from '@mui/material/FormControlLabel';
-import Checkbox from '@mui/material/Checkbox';
-import Select from '@mui/material/Select';
-import MenuItem from '@mui/material/MenuItem';
-import InputLabel from '@mui/material/InputLabel';
+import { Grid, Typography, TextField, InputLabel, Select, MenuItem, FormControlLabel, Checkbox } from '@mui/material';
 
 const PaymentForm = ({ address, payment, setPayment }) => {
   const handleChange = (e) => {
