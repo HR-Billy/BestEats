@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import OutlinedInput from '@mui/material/OutlinedInput';
@@ -44,16 +44,16 @@ const MealFilter = ({ filterMeals }) => {
   }
 
   const theme = useTheme();
-  const handleChange = async (event) => {
+  const handleChange = (event) => {
     const {
       target: { value },
     } = event;
-    await setActiveFilter(
-      // On autofill we get a the stringified value.
-      typeof value === 'string' ? value.split(',') : value,
-    );
-    filterMeals(activeFilter);
+    setActiveFilter(value);
   };
+
+  useEffect(() => {
+    filterMeals(activeFilter);
+  }, [activeFilter]);
 
   return (
     <>

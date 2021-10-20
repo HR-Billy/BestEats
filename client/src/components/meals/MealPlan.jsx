@@ -19,11 +19,19 @@ const MealPlan = () => {
   const [loggedIn, setLoggedIn] = useState(false);
 
   const filterMeals = (filters) => {
+    // Show all meals when there are no filters
     if (filters.length === 0) {
       setFilteredMeals(meals);
     }
+    // Check meals for each filter
     filters.forEach((filter) => {
-      const lowerCaseFilter = filter.toLowerCase();
+      // Change filter to be in the same format as database
+      let lowerCaseFilter = filter.toLowerCase();
+      if (lowerCaseFilter.indexOf(' ') !== -1) {
+        const index = lowerCaseFilter.indexOf(' ');
+        lowerCaseFilter = `${lowerCaseFilter.substring(0, index)}_${lowerCaseFilter.substring(index + 1)}`;
+      }
+      // Filter meals
       setFilteredMeals(filteredMeals.filter((meal) => {
         if (meal[lowerCaseFilter]) {
           return meal;
