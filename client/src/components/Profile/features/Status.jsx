@@ -7,12 +7,14 @@ const Status = () => {
   const [status, setStatus] = useState('');
   const { user, feed, setFeed } = useContext(ProfileContext);
 
-  const handleSubmit = () => {
-    axios.post('/profile/status')
-      .then(({ data }) => {
-        console.log(data);
-      });
-  };
+  // const handleSubmit = () => {
+  //   const statusObj = { text: status };
+
+  //   axios.post('/profile/status', statusObj)
+  //     .then(({ data }) => {
+  //       console.log('here is the data ', data);
+  //     });
+  // };
 
   const handleChange = (e) => {
     setStatus(e.target.value);
@@ -24,7 +26,7 @@ const Status = () => {
       </Grid>
 
       <Grid item xs={12}>
-        <Button variant="contained" onClick={handleSubmit}>post</Button>
+        <Button variant="contained" /*onClick={handleSubmit}*/ >post</Button>
       </Grid>
     </Grid>
   );
