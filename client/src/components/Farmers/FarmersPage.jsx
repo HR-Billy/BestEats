@@ -5,11 +5,11 @@ import {
   Typography,
   Box,
   Autocomplete,
+  createFilterOptions,
   TextField,
 } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import styled from 'styled-components';
-
 import FarmersMockData from './FarmersMockData.js';
 import FarmersList from './FarmersList.jsx';
 
@@ -17,6 +17,13 @@ const FarmersPage = () => {
   const theme = useTheme();
   const [numberOfProfiles, setNumberOfProfiles] = useState(4);
   const [farmer, setFarmer] = useState('');
+  const defaultFilterOptions = createFilterOptions();
+
+  const optionsLimit = 1;
+
+  const filterOptions = (options, state) => {
+    return defaultFilterOptions(options, state).slice(0, optionsLimit);
+  };
 
   const loadMoreFarmers = () => {
     setNumberOfProfiles(numberOfProfiles + 1);
@@ -54,6 +61,7 @@ const FarmersPage = () => {
       >
         <Container>
           <Autocomplete
+            filterOptions={filterOptions}
             freeSolo
             onChange={(e, nV) => {
               setFarmer(nV);

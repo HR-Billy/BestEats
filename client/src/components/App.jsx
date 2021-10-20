@@ -4,10 +4,15 @@ import { Text, NavigationBar, Login, CurrentPage, MainSet } from './styles.jsx';
 import Store from './grocery_page/Store.jsx';
 import FarmersPage from './Farmers/FarmersPage.jsx';
 import SignIn from './SignIn.jsx';
+import { useAuth0 } from '@auth0/auth0-react';
+import AuthButton from './auth/authentication-button.jsx';
+import ProtectedRoute from './auth/protected-route.jsx';
 
-const App = () => (
-  <div>
-    <Router>
+const App = () => {
+  const { user } = useAuth0();
+  console.log(user);
+  return (
+    <div>
       <NavigationBar>
         <MainSet>
           <Link to="/" style={{ textDecoration: 'none' }}>
@@ -28,10 +33,12 @@ const App = () => (
           <Link to="/subscribe" style={{ textDecoration: 'none' }}>
             <Text>Subscribe</Text>
           </Link>
+          <AuthButton />
         </MainSet>
-        <Link to="/login" style={{ textDecoration: 'none' }}>
-          <Login>Login</Login>
-        </Link>
+
+        {/* <Link to="/login" style={{ textDecoration: 'none' }}>
+            <Login>Login</Login>
+          </Link> */}
       </NavigationBar>
       <CurrentPage>
         <Route
@@ -44,14 +51,8 @@ const App = () => (
           path="/meal-plan"
           render={() => <h1>Meal Plan component goes here</h1>}
         />
-        <Route exact path="/farmers" component={FarmersPage} />
-        <Route
-          exact
-          path="/store"
-          render={() => (
-            <Store />
-          )}
-        />
+        <ProtectedRoute exact path="/farmers" component={FarmersPage} />
+        <Route exact path="/store" render={() => <Store />} />
         <Route
           exact
           path="/health"
@@ -62,16 +63,10 @@ const App = () => (
           path="/subscribe"
           render={() => <h1>Subscription component goes here</h1>}
         />
-        <Route
-          exact
-          path="/login"
-          render={() => (
-            <SignIn />
-          )}
-        />
+        <Route exact path="/login" render={() => <SignIn />} />
       </CurrentPage>
-    </Router>
-  </div>
-);
+    </div>
+  );
+};
 
 export default App;
