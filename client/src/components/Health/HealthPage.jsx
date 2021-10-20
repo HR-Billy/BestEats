@@ -67,9 +67,9 @@ const theme = createTheme(
         main: '#4caf50',
         light: '#B0C800',
       },
-      background: {
-        default: '#FFDE32',
-      },
+      //background: {
+      //  default: '#FFDE32',
+      //},
     },
   },
 );
