@@ -9,18 +9,16 @@ const ListContainer = styled.div`
   background-color: coral;
 `;
 
-const FarmersList = ({ farmers, index }) => {
-  return (
-    <ListContainer>
-      <Grid container>
-        {farmers.slice(0, index).map((farmer) => (
-          <Grid item>
-            <FarmerCard farmer={farmer} />
-          </Grid>
-        ))}
-      </Grid>
-    </ListContainer>
-  );
-};
+const FarmersList = ({ farmers, index }) => (
+  <ListContainer>
+    <Grid container>
+      {farmers.slice(0, index).map((farmer) => (
+        <Grid item>
+          <FarmerCard farmer={farmer} />
+        </Grid>
+      ))}
+    </Grid>
+  </ListContainer>
+);
 
 export default FarmersList;
