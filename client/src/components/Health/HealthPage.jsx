@@ -30,7 +30,7 @@ const cardLayout = [{
 },
 {
   image: 'https://images.unsplash.com/photo-1623052946180-6b90ca971fe7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1740&q=80',
-  heading: 'Eat Healthier',
+  heading: 'Eating Healthier',
   description: 'Explore new ways to enjoy your meals.',
 },
 {
@@ -41,7 +41,7 @@ const cardLayout = [{
 {
   image: 'https://images.unsplash.com/photo-1526243741027-444d633d7365?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1742&q=80',
   heading: 'Additional Resources',
-  description: 'Additional resources recommended by nutritionists.',
+  description: 'Add to your knowledge by reading these resources recommended by nutritionists.',
 }
 ];
 
