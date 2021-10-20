@@ -20,12 +20,12 @@ const Profile = () => {
   const recent = 'recent orders';
   const suggested = 'suggested meals';
 
-  // useEffect(() => {
-  //   axios.get('profile/user/?username=fakeuser')
-  //     .then(({ data }) => {
-  //       console.log(data);
-  //     });
-  // });
+  useEffect(() => {
+    axios.get('profile/user/?username=fakeuser')
+      .then(({ data }) => {
+        console.log(data);
+      });
+  });
 
   return (
     <ProfileContext.Provider value={{
