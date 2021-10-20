@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
 import { Context } from '../Context.jsx';
 import Store from './grocery_page/Store.jsx';
 import FarmersPage from './Farmers/FarmersPage.jsx';
+import HealthPage from './Health/HealthPage.jsx';
 import Subscribe from './subscription/Subscribe.jsx';
 import SignIn from './SignIn.jsx';
 import { useAuth0 } from '@auth0/auth0-react';
@@ -54,11 +55,7 @@ const App = () => {
         />
         <ProtectedRoute exact path="/farmers" component={FarmersPage} />
         <Route exact path="/store" render={() => <Store />} />
-        <Route
-          exact
-          path="/health"
-          render={() => <h1>Health section component goes here</h1>}
-        />
+        <Route exact path="/health" component={HealthPage} />
         <Route
           exact
           path="/subscribe"
