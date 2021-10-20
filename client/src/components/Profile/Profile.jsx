@@ -15,7 +15,7 @@ const Profile = () => {
   const [profilePhoto, setProfilePhoto] = useState('');
   const [feed, setFeed] = useState([]);
   const [products, setProducts] = useState([]);
-  const [meals, setMeals] = useState([]);
+  const [yourMeals, setYourMeals] = useState([]);
 
   const arriving = 'on its way';
   const recent = 'recent orders';
@@ -31,7 +31,7 @@ const Profile = () => {
         setProfilePhoto(results.photo);
         setFeed(results.feed);
         setProducts(results.products);
-        setMeals(results.meals);
+        yourMeals(results.meals);
       });
   }, []);
 
@@ -40,9 +40,7 @@ const Profile = () => {
       feed,
       setFeed,
       products,
-      setProducts,
-      meals,
-      setMeals,
+      yourMeals,
     }}
     >
       <Container className={classes.wrapper}>
