@@ -3,8 +3,6 @@ const path = require('path');
 const runProfileRte = require('./controllers/profile');
 const runSubscribeRte = require('./controllers/subscribe');
 
-
-
 const app = express();
 const port = 3000;
 

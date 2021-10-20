@@ -160,17 +160,14 @@ const Subscribe = () => {
     let savedCardName;
     let savedCardNumber;
     let savedExpDate;
-    let savedCvv;
     if (payment.saveCard) {
       savedCardName = payment.cardName;
       savedCardNumber = payment.cardNumber;
       savedExpDate = `${payment.exMonth}-${payment.exYear}`;
-      savedCvv = payment.cvv;
     } else {
       savedCardName = null;
       savedCardNumber = null;
       savedExpDate = null;
-      savedCvv = null;
     }
 
     let subscriptionId;
@@ -191,7 +188,10 @@ const Subscribe = () => {
         subscriptionId = 1;
     }
 
+    // placeholder: will update with userId from authentication
+    const userId = Math.round((Math.random() * 500) + 1);
     const userInfo = {
+      id: userId,
       first_name: address.firstName,
       last_name: address.lastName,
       address1: address.address1,
@@ -218,7 +218,7 @@ const Subscribe = () => {
     };
 
     // console.log(userInfo);
-    axios.post('/api/users', userInfo)
+    axios.patch('/subscribe', userInfo)
       .then((res) => {
         console.log(res);
       })
