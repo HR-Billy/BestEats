@@ -19,7 +19,7 @@ const PaymentForm = ({ address, payment, setPayment }) => {
     if (!address.saveAddress) {
       return (
         <>
-          <Typography variant="h6" gutterBottom>
+          <Typography variant="h6" gutterBottom spacing={3}>
             Billing Address
           </Typography>
           <Grid container spacing={3}>
@@ -144,8 +144,8 @@ const PaymentForm = ({ address, payment, setPayment }) => {
     <>
       <Grid container sx={{ width: 500 }}>
         {renderBillingAddress()}
-        <Grid container sx={{ width: 500, mb: 20 }}>
-          <Typography variant="h6" gutterBottom>
+        <Grid container sx={{ width: 500, mt: 6 }}>
+          <Typography variant="h6" gutterBottom spacing={3}>
             Payment method
           </Typography>
           <Grid container spacing={3}>
@@ -175,46 +175,42 @@ const PaymentForm = ({ address, payment, setPayment }) => {
                 onChange={handleChange}
               />
             </Grid>
-            <InputLabel id="expDate" name="expDate" label="Expiry date">Expiry Date</InputLabel>
-            <Select
-              item
-              xs={6}
-              md={3}
-              required
-              id="exMonth"
-              label="Select a month"
-              name="exMonth"
-              value={payment.exMonth}
-              onChange={handleChange}
-            >
-              <MenuItem value="0">Enter month</MenuItem>
-              <MenuItem value="01">January</MenuItem>
-              <MenuItem value="02">February</MenuItem>
-              <MenuItem value="03">March</MenuItem>
-              <MenuItem value="04">April</MenuItem>
-              <MenuItem value="05">May</MenuItem>
-              <MenuItem value="06">June</MenuItem>
-              <MenuItem value="07">July</MenuItem>
-              <MenuItem value="08">August</MenuItem>
-              <MenuItem value="09">September</MenuItem>
-              <MenuItem value="10">October</MenuItem>
-              <MenuItem value="11">November</MenuItem>
-              <MenuItem value="12">December</MenuItem>
-            </Select>
-            <Select
-              item
-              xs={6}
-              md={3}
-              required
-              id="exYear"
-              label="Select a year"
-              name="exYear"
-              value={payment.exYear}
-              onChange={handleChange}
-            >
-              <MenuItem value="0">Enter year</MenuItem>
-              {generateYears()}
-            </Select>
+            <Grid item xs={12} md={6}>
+              <InputLabel id="expDate" sx={{ mt: 2, mb: 1 }}>Expiry Date</InputLabel>
+              <Select
+                required
+                id="exMonth"
+                name="exMonth"
+                value={payment.exMonth}
+                onChange={handleChange}
+                sx={{ width: '48%' }}
+              >
+                <MenuItem value="0">Month</MenuItem>
+                <MenuItem value="01">January</MenuItem>
+                <MenuItem value="02">February</MenuItem>
+                <MenuItem value="03">March</MenuItem>
+                <MenuItem value="04">April</MenuItem>
+                <MenuItem value="05">May</MenuItem>
+                <MenuItem value="06">June</MenuItem>
+                <MenuItem value="07">July</MenuItem>
+                <MenuItem value="08">August</MenuItem>
+                <MenuItem value="09">September</MenuItem>
+                <MenuItem value="10">October</MenuItem>
+                <MenuItem value="11">November</MenuItem>
+                <MenuItem value="12">December</MenuItem>
+              </Select>
+              <Select
+                required
+                id="exYear"
+                name="exYear"
+                value={payment.exYear}
+                onChange={handleChange}
+                sx={{ width: '44%', ml: 1 }}
+              >
+                <MenuItem value="0">Year</MenuItem>
+                {generateYears()}
+              </Select>
+            </Grid>
             <Grid item xs={12} md={6}>
               <TextField
                 required
@@ -252,7 +248,7 @@ PaymentForm.propTypes = {
     address2: PropTypes.string,
     city: PropTypes.string.isRequired,
     state: PropTypes.string.isRequired,
-    zip: PropTypes.number.isRequired,
+    zip: PropTypes.string.isRequired,
     country: PropTypes.string.isRequired,
     saveAddress: PropTypes.bool.isRequired,
   }).isRequired,
@@ -263,13 +259,13 @@ PaymentForm.propTypes = {
     billing_address2: PropTypes.string,
     billing_city: PropTypes.string.isRequired,
     billing_state: PropTypes.string.isRequired,
-    billing_zip: PropTypes.number.isRequired,
+    billing_zip: PropTypes.string.isRequired,
     billing_country: PropTypes.string.isRequired,
     cardName: PropTypes.string.isRequired,
-    cardNumber: PropTypes.number.isRequired,
-    exMonth: PropTypes.number.isRequired,
-    exYear: PropTypes.number.isRequired,
-    cvv: PropTypes.number.isRequired,
+    cardNumber: PropTypes.string.isRequired,
+    exMonth: PropTypes.string.isRequired,
+    exYear: PropTypes.string.isRequired,
+    cvv: PropTypes.string.isRequired,
     saveCard: PropTypes.bool.isRequired,
   }).isRequired,
 };

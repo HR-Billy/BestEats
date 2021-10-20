@@ -15,7 +15,7 @@ const AddressForm = ({ address, setAddress }) => {
   return (
     <>
       <Grid container sx={{ width: 500 }}>
-        <Typography variant="h6" gutterBottom>
+        <Typography variant="h6" gutterBottom spacing={3}>
           Shipping address
         </Typography>
         <Grid container spacing={3}>

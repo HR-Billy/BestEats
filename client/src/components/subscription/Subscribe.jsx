@@ -61,8 +61,8 @@ const Subscribe = () => {
     billing_country: '',
     cardName: '',
     cardNumber: '',
-    exMonth: '',
-    exYear: '',
+    exMonth: '0',
+    exYear: '0',
     cvv: '',
     saveCard: false,
   });
@@ -227,7 +227,6 @@ const Subscribe = () => {
           <>
             {activeStep === steps.length ? (
               <>
-
                 {saveUserInfo()}
                 <Typography variant="h5" gutterBottom>
                   Thank you for subscribing!
@@ -243,7 +242,6 @@ const Subscribe = () => {
                     </Button>
                   </Link>
                 </Box>
-
               </>
             ) : (
               <>
