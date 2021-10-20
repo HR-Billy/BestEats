@@ -8,7 +8,7 @@ const FallGallery = () => (
   <>
     <Grid container>
       <Grid item>
-        <ImageList sx={{ width: 700 }} cols={3} rowHeight={164}>
+        <ImageList sx={{ width: 700 }} cols={3} rowHeight={164} gap={0}>
           {images.map((item) => (
             <ImageListItem key={item.img}>
               <img
@@ -21,10 +21,10 @@ const FallGallery = () => (
           ))}
         </ImageList>
       </Grid>
-      <Grid item style={{marginTop: 140, marginLeft: 140}}>
+      <Grid item style={{marginTop: 140, marginLeft: 200}}>
         <Typography color="inherit" align="center" variant="h2" marked="center">We love Fall too.</Typography>
-        <Typography color="inherit" align="center" variant="h4" marked="center">Check out our seasonal items.</Typography>
-        <Button style={{ margin: '0 auto', display: 'flex' }}>Go to Fall items</Button>
+        {/* <Typography color="inherit" align="center" variant="h4" marked="center">Check out our seasonal items.</Typography> */}
+        <Button style={{ margin: '0 auto', display: 'flex' }}>Go to seasonal items</Button>
       </Grid>
     </Grid>
 

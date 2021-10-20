@@ -26,7 +26,7 @@ const Login = styled.button`
   margin-top: 3px;
   font-size: 1.6em;
   &:hover {
-    background-color: green;
+    background-color: #F24B6A;
   }
 `;
 

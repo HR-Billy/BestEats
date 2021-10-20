@@ -83,7 +83,15 @@ const App = () => (
             </Link>
           </MainSet>
           <Link to="/login" style={{ textDecoration: 'none' }}>
-            <Login>LOGIN</Login>
+            <Button
+              color="secondary"
+              align="center"
+              size="large"
+              sx={{ mb: 3, mt: 2, ml: 2 }}
+            >
+              LOGIN
+
+            </Button>
           </Link>
         </NavigationBar>
         <CurrentPage>

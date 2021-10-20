@@ -4,6 +4,7 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import { Typography } from '@mui/material';
+import EmojiPeopleIcon from '@mui/icons-material/EmojiPeople';
 
 const item = {
   display: 'flex',
@@ -16,7 +17,7 @@ function Tiles() {
   return (
     <Box
       component="section"
-      sx={{ display: 'flex', overflow: 'hidden', bgcolor: 'primary.light' }}
+      sx={{ display: 'flex', overflow: 'hidden', bgcolor: 'white' }}
       // sx={{ display: 'flex', overflow: 'hidden', bgcolor: 'white' }}
     >
       <Container sx={{
@@ -35,8 +36,9 @@ function Tiles() {
             <Box sx={item}>
               <Box
                 component="img"
-                src="/static/themes/onepirate/productValues3.svg"
-                alt="clock"
+                // src="/static/themes/onepirate/productValues3.svg"
+                src={EmojiPeopleIcon}
+                alt="handshake"
                 sx={{ height: 55 }}
               />
               <Typography variant="h6" sx={{ my: 5 }}>
@@ -53,7 +55,7 @@ function Tiles() {
               <Box
                 component="img"
                 src="/static/themes/onepirate/productValues1.svg"
-                alt="suitcase"
+                alt="heart"
                 sx={{ height: 55 }}
               />
               <Typography variant="h6" sx={{ my: 5 }}>
@@ -70,7 +72,7 @@ function Tiles() {
               <Box
                 component="img"
                 src="/static/themes/onepirate/productValues2.svg"
-                alt="graph"
+                alt="exercise"
                 sx={{ height: 55 }}
               />
               <Typography variant="h6" sx={{ my: 5 }}>
