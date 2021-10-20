@@ -32,7 +32,7 @@ const Review = ({ mealPlan, address, payment }) => {
   const payInfo = [
     { name: 'Card holder', detail: payment.cardName },
     { name: 'Card number', detail: payment.cardNumber },
-    { name: 'Expiry date', detail: `${payment.exMonth}-${payment.exYear}` },
+    { name: 'Expiry date', detail: `${payment.exMonth}/${payment.exYear}` },
   ];
   return (
     <>

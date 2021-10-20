@@ -3,10 +3,10 @@ const db = require('../..');
 const { insertSubData } = require('./subscribeQueries');
 
 module.exports = {
-  patchSubscribeData: (userInfo, req, res) => {
+  patchSubscribeData: (req, res) => {
     const subscribeQuery = {
       text: insertSubData,
-      values: Object.values(userInfo),
+      values: Object.values(req.body),
     };
     db.query(subscribeQuery, (err, data) => {
       if (err) {

@@ -163,7 +163,7 @@ const Subscribe = () => {
     if (payment.saveCard) {
       savedCardName = payment.cardName;
       savedCardNumber = payment.cardNumber;
-      savedExpDate = `${payment.exMonth}-${payment.exYear}`;
+      savedExpDate = `${payment.exYear}-${payment.exMonth}-01`;
     } else {
       savedCardName = null;
       savedCardNumber = null;
@@ -211,14 +211,14 @@ const Subscribe = () => {
       card_exp_date: savedExpDate,
       billing_address1: payment.billing_address1,
       billing_address2: payment.billing_address2,
-      billing_city: payment.city,
-      billing_state: payment.state,
-      billing_postal_code: payment.zip,
-      billing_country: payment.country,
+      billing_city: payment.billing_city,
+      billing_state: payment.billing_state,
+      billing_postal_code: payment.billing_zip,
+      billing_country: payment.billing_country,
     };
 
-    // console.log(userInfo);
-    axios.patch('/subscribe', userInfo)
+    console.log(userInfo);
+    axios.patch('/subscribe/update', userInfo)
       .then((res) => {
         console.log(res);
       })
