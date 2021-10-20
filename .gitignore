@@ -7,3 +7,6 @@ config.js
 coverage
 onepirate
 package-lock.json
+
+#csv files
+database/data
