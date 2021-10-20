@@ -5,9 +5,9 @@ CREATE DATABASE best_eats;
 
 CREATE TABLE products (
   id SERIAL NOT NULL PRIMARY KEY,
-  product_name VARCHAR(20) NOT NULL,
+  product_name VARCHAR(40) NOT NULL,
   product_price INT NOT NULL,
-  category VARCHAR(20) NOT NULL,
+  category VARCHAR(40) NOT NULL,
   calories INT NOT NULL,
   carbs INT NOT NULL,
   protein INT NOT NULL,
@@ -23,9 +23,9 @@ CREATE TABLE products (
 
 CREATE TABLE meal (
   id SERIAL NOT NULL PRIMARY KEY,
-  meal_name VARCHAR(20),
+  meal_name VARCHAR(1000),
   photo	TEXT NOT NULL,
-  description	VARCHAR(50) NOT NULL,
+  description	VARCHAR(200) NOT NULL,
   time INT NOT NULL,
   low_calorie BOOLEAN DEFAULT false,
   vegetarian BOOLEAN DEFAULT false,
@@ -43,11 +43,11 @@ CREATE TABLE meal_product (
   product_id INT NOT NULL REFERENCES products(id)
 );
 
-CREATE TABLE subscriptions (
-  id SERIAL NOT NULL PRIMARY KEY,
-  meals_per_week SMALLINT NOT NULL,
-  price REAL NOT NULL
-);
+-- CREATE TABLE subscriptions (
+--   id SERIAL NOT NULL PRIMARY KEY,
+--   meals_per_week SMALLINT NOT NULL,
+--   price REAL NOT NULL
+-- );
 
 CREATE TABLE users (
   id SERIAL NOT NULL PRIMARY KEY,
@@ -60,9 +60,9 @@ CREATE TABLE users (
   address1 VARCHAR(50) ,
   address2 VARCHAR(50),
   city VARCHAR(36),
-  state VARCHAR(2),
+  state VARCHAR(4),
   postal_code INT,
-  country VARCHAR(20),
+  country VARCHAR(40),
   subscribed BOOLEAN DEFAULT false,
   member_start_date DATE NOT NULL,
   member_end_date DATE,
@@ -70,7 +70,9 @@ CREATE TABLE users (
   subscription_end_date DATE,
   weekly_start_date DATE,
   allow_meals BOOLEAN DEFAULT false,
-  subscription_id INT REFERENCES subscriptions(id)
+  -- subscription_id INT REFERENCES subscriptions(id)
+  meals_per_week SMALLINT DEFAULT 0,
+  price REAL DEFAULT 0
 );
 
 CREATE TABLE farmers (
@@ -97,15 +99,10 @@ CREATE TABLE billing (
 
 CREATE TABLE status (
   id SERIAL NOT NULL PRIMARY KEY,
-  text VARCHAR(100) NOT NULL,
-  emoji VARCHAR(10) NOT NULL,
-  created_at TIMESTAMP
-);
-
-CREATE TABLE user_status (
-  id SERIAL PRIMARY KEY NOT NULL,
+  text VARCHAR(400) NOT NULL,
+  emoji VARCHAR(20) NOT NULL,
   user_id INT NOT NULL REFERENCES users(id),
-  status_id INT NOT NULL REFERENCES status(id)
+  created_at TIMESTAMP
 );
 
 CREATE TABLE user_meals (
@@ -115,3 +112,33 @@ CREATE TABLE user_meals (
   date_ordered DATE NOT NULL,
   date_received DATE NOT NULL
 );
+
+COPY products(id, product_name, product_price, category, calories, carbs, protein, fats, image, quantity, sale_price, promo, unit_type, unit_size, serving_size)
+FROM '/Users/timjordan/HackReactor/BestEats/database/data/products.csv'
+DELIMITER ','
+CSV HEADER;
+
+COPY meal(id, meal_name, photo, description, time, low_calorie, vegetarian, pescatarian, vegan, halal, spicy, easy_prep, easy_cleanup)
+FROM '/Users/timjordan/HackReactor/BestEats/database/data/meals.csv'
+DELIMITER ','
+CSV HEADER;
+
+-- COPY subscriptions(id, meals_per_week, price)
+-- FROM '/Users/timjordan/HackReactor/BestEats/database/data/subscriptions.csv'
+-- DELIMITER ','
+-- CSV HEADER;
+
+COPY users(id,username, hash_password, first_name, last_name, email, phone, address1, address2, city, state, postal_code, country, subscribed, member_start_date, member_end_date, subscription_start_date, subscription_end_date, weekly_start_date, meals_per_week, price)
+FROM '/Users/timjordan/HackReactor/BestEats/database/data/users.csv'
+DELIMITER ','
+CSV HEADER;
+
+COPY status(id, text, emoji, user_id, created_at)
+FROM '/Users/timjordan/HackReactor/BestEats/database/data/status.csv'
+DELIMITER ','
+CSV HEADER;
+
+COPY user_meals(id, user_id, meal_id, date_ordered, date_received)
+FROM '/Users/timjordan/HackReactor/BestEats/database/data/user_meals.csv'
+DELIMITER ','
+CSV HEADER;
