@@ -1,19 +1,21 @@
-const model = require('../../database/models/profile/profile.js');
+const express = require('express');
 
-const router = (req, res) => {
-  const { username } = req.query;
-  console.log(username);
+const router = express.Router();
+const model = require('../../database/models/profile/profile');
 
-  switch (req.method) {
-    case 'POST':
-      model.insertStatus(username, req, res);
-      break;
-    case 'PATCH':
-      model.updateProfilePic(username, req, res);
-      break;
-    default:
-      model.selectProfileData(req, res);
-  }
-};
+router
+  .route('/user')
+  .get((req, res) => {
+    const { username } = req.query;
+    console.log(username);
+
+    model.selectProfileData(username, req, res);
+  })
+  .post((req, res) => {
+    model.insertStatus(req, res);
+  })
+  .patch((req, res) => {
+    model.selectProfileData(req, res);
+  });
 
 module.exports = router;

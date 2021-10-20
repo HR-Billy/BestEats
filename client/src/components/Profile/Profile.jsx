@@ -1,3 +1,4 @@
+import axios from 'axios';
 import React, { useState, useEffect } from 'react';
 import { Container, Grid, Paper } from '@mui/material';
 import { ProfileContext } from './ProfileContext.jsx';
@@ -12,7 +13,13 @@ import useStyles from './styles.jsx';
 const Profile = () => {
   const classes = useStyles();
   const [user, setUser] = useState([]);
-  const[hasSubsctiption, setHasSubsctiption] = useState([]);
+
+  // useEffect(() => {
+  //   axios.get('profile/user/?username=fakeuser')
+  //     .then(({ data }) => {
+  //       console.log(data);
+  //     });
+  // });
 
   return (
     <ProfileContext.Provider value={{ user, setUser }}>
