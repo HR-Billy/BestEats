@@ -1,3 +1,4 @@
+/* eslint-disable import/extensions */
 import { createTheme } from '@mui/material/styles';
 
 const myTheme = createTheme({

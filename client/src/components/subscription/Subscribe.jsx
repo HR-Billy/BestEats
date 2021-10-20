@@ -1,7 +1,10 @@
 /* eslint-disable import/extensions */
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { ThemeProvider, CssBaseline, Typography, Grid, Box, Container, Paper, Stepper, Step, StepLabel, Button } from '@mui/material';
+import {
+  ThemeProvider, CssBaseline, Typography, Grid, Box, Container,
+  Paper, Stepper, Step, StepLabel, Button,
+} from '@mui/material';
 import StyleLink from '@mui/material/Link';
 import { Link } from 'react-router-dom';
 import SelectPlan from './SelectPlan.jsx';
@@ -169,24 +172,51 @@ const Subscribe = () => {
       savedExpDate = null;
       savedCvv = null;
     }
+
+    let subscriptionId;
+    switch (mealPlan.mealQty) {
+      case 3:
+        subscriptionId = 1;
+        break;
+      case 4:
+        subscriptionId = 2;
+        break;
+      case 5:
+        subscriptionId = 3;
+        break;
+      case 6:
+        subscriptionId = 4;
+        break;
+      default:
+        subscriptionId = 1;
+    }
+
     const userInfo = {
-      subscription_date: new Date(),
-      meals_per_week: mealPlan.mealQty,
       first_name: address.firstName,
       last_name: address.lastName,
-      // email: address.email,
-      // phone: address.phone,
       address1: address.address1,
       address2: address.address2,
       city: address.city,
       state: address.state,
-      zip: address.zip,
+      postal_code: address.zip,
       country: address.country,
+      subscribed: true,
+      subscription_start_date: new Date(),
+      weekly_start_date: new Date(),
+      allow_meals: true,
+      subscription_id: subscriptionId,
+      meals_per_week: mealPlan.mealQty,
       cardholder_name: savedCardName,
-      cc_number: savedCardNumber,
-      cc_exp: savedExpDate,
-      cvv: savedCvv,
+      card_number: savedCardNumber,
+      card_exp_date: savedExpDate,
+      billing_address1: payment.billing_address1,
+      billing_address2: payment.billing_address2,
+      billing_city: payment.city,
+      billing_state: payment.state,
+      billing_postal_code: payment.zip,
+      billing_country: payment.country,
     };
+
     // console.log(userInfo);
     axios.post('/api/users', userInfo)
       .then((res) => {

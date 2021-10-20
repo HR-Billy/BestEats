@@ -1,7 +1,9 @@
 /* eslint-disable import/extensions */
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Grid, Typography, TextField, FormControlLabel, Checkbox } from '@mui/material';
+import {
+  Grid, Typography, TextField, FormControlLabel, Checkbox,
+} from '@mui/material';
 
 const AddressForm = ({ address, setAddress }) => {
   const handleChange = (e) => {
