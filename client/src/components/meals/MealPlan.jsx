@@ -6,6 +6,7 @@ import Grid from '@mui/material/Grid';
 import mockupMeals from './mockupMeals.jsx';
 import MealCard from './MealCard.jsx';
 import MealFilter from './MealFilter.jsx';
+import Cart from './MealCart.jsx';
 import {
   MealCards,
   SubscribeBar,
@@ -50,6 +51,7 @@ const MealPlan = () => {
             <MealCard key={meal.name} meal={meal} />
           ))}
         </Grid>
+        <Cart />
       </MealCards>
       {!loggedIn
         && (
