@@ -2,6 +2,7 @@ const express = require('express');
 const path = require('path');
 const runProfileRte = require('./controllers/profile');
 const runGroceryRte = require('./controllers/grocery');
+require('dotenv').config();
 
 const app = express();
 const port = 3000;
