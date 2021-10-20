@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Grid, Card, Typography } from '@mui/material';
+import { ProfileContext } from '../ProfileContext.jsx';
 import useStyles from '../styles.jsx';
 
 const Feed = () => {
   const classes = useStyles();
+  const { feed } = useContext(ProfileContext);
 
   return (
     <Grid container>

@@ -1,18 +1,24 @@
 import axios from 'axios';
 import React, { useState, useEffect } from 'react';
-import { Container, Grid, Paper } from '@mui/material';
+import { Container, Grid, Paper, Avatar } from '@mui/material';
 import { ProfileContext } from './ProfileContext.jsx';
-import ProfilePic from './features/ProfilePic.jsx';
 import NutritionFacts from './features/NutritionFacts.jsx';
 import Status from './features/Status.jsx';
 import Feed from './features/Feed.jsx';
-import Subscribe from './features/Subscribe.jsx';
 import Orders from './features/Orders.jsx';
 import useStyles from './styles.jsx';
 
 const Profile = () => {
   const classes = useStyles();
   const [user, setUser] = useState([]);
+  const [profilePhoto, setProfilePhoto] = useState('');
+  const [feed, setFeed] = useState([]);
+  const [nutritionFacts, setNutritionFacts] = useState([]);
+  const [status, setStatus] = useState('');
+
+  const arriving = 'on its way';
+  const recent = 'recent orders';
+  const suggested = 'suggested meals';
 
   // useEffect(() => {
   //   axios.get('profile/user/?username=fakeuser')
@@ -22,7 +28,19 @@ const Profile = () => {
   // });
 
   return (
-    <ProfileContext.Provider value={{ user, setUser }}>
+    <ProfileContext.Provider value={{
+      user,
+      setUser,
+      profilePhoto,
+      setProfilePhoto,
+      feed,
+      setFeed,
+      nutritionFacts,
+      setNutritionFacts,
+      status,
+      setStatus,
+    }}
+    >
       <Container className={classes.wrapper}>
         <Grid container spacing={3}>
 
@@ -30,7 +48,7 @@ const Profile = () => {
             <Grid container spacing={1.5}>
               <Grid item xs={12}>
                 <Paper className={classes.picContainer}>
-                  <ProfilePic />
+                  <Avatar className={classes.profilePhoto} alt="profile picture" src={profilePhoto} />
                 </Paper>
               </Grid>
               <Grid item xs={12}>
@@ -58,24 +76,19 @@ const Profile = () => {
 
           <Grid item xs={5}>
             <Grid container spacing={3}>
-              {/* <Grid item xs={12}>
-                <Paper className={classes.subscribe}>
-                  <Subscribe />
-                </Paper>
-              </Grid> */}
               <Grid item xs={12}>
                 <Paper className={classes.orderContainer}>
-                  <Orders text={'on its way'} />
+                  <Orders text={arriving} />
                 </Paper>
               </Grid>
               <Grid item xs={12}>
                 <Paper className={classes.orderContainer}>
-                  <Orders text={'recent orders'} />
+                  <Orders text={recent} />
                 </Paper>
               </Grid>
               <Grid item xs={12}>
                 <Paper className={classes.orderContainer}>
-                  <Orders text={'suggested meals'} />
+                  <Orders text={suggested} />
                 </Paper>
               </Grid>
             </Grid>

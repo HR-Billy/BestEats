@@ -1,17 +1,19 @@
 import React from 'react';
 import { Grid, TextField, Button } from '@mui/material';
 
-const Status = () => (
-  <Grid container spacing={1}>
-    <Grid item xs={12}>
-      <TextField fullWidth label="update" value="Your journey..." />
-    </Grid>
+const Status = () => {
+  return (
+    <Grid container spacing={1}>
+      <Grid item xs={12}>
+        <TextField fullWidth label="update" value="Your journey..." />
+      </Grid>
 
-    <Grid item xs={12}>
-      <Button variant="contained">post</Button>
+      <Grid item xs={12}>
+        <Button variant="contained">post</Button>
+      </Grid>
     </Grid>
-  </Grid>
-);
+  );
+};
 
 export default Status;
 
