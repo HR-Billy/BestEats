@@ -1,6 +1,10 @@
 const express = require('express');
 const path = require('path');
+<<<<<<< HEAD
 const runProfileRte = require('./controllers/profile');
+=======
+require('dotenv').config();
+>>>>>>> authentication
 
 const app = express();
 const port = 3000;

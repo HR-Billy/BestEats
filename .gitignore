@@ -6,6 +6,4 @@ bundle.js
 config.js
 coverage
 package-lock.json
-
-#csv files
-database/data
+.env
