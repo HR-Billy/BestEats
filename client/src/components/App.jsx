@@ -1,9 +1,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
 import { Text, NavigationBar, Login, CurrentPage, MainSet } from './styles.jsx';
-
+import Store from './grocery_page/Store.jsx';
 import FarmersPage from './Farmers/FarmersPage.jsx';
 import HealthPage from './Health/HealthPage.jsx';
+import Subscribe from './subscription/Subscribe.jsx';
 import SignIn from './SignIn.jsx';
 
 const App = () => (
@@ -49,13 +50,17 @@ const App = () => (
         <Route
           exact
           path="/store"
-          render={() => <h1>Grocery store component goes here</h1>}
+          render={() => (
+            <Store />
+          )}
         />
         <Route exact path="/health" component={HealthPage} />
         <Route
           exact
           path="/subscribe"
-          render={() => <h1>Subscription component goes here</h1>}
+          render={() => (
+            <Subscribe />
+          )}
         />
         <Route
           exact
