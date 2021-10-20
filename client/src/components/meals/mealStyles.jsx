@@ -6,7 +6,7 @@ const Filter = styled.div`
 `;
 
 const MealCards = styled.div`
-  width: 1000px;
+  width: 1400px;
   margin: auto;
 `;
 
@@ -38,6 +38,16 @@ const SubscribeButton = styled.button`
   margin-top: auto;
 `;
 
+const StyledCart = styled.div`
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: red;
+  height: 100%;
+  width: 15%;
+  margin-top: 55px;
+`;
+
 export {
   Filter,
   MealCards,
@@ -45,4 +55,5 @@ export {
   MealImage,
   SubscribeBar,
   SubscribeButton,
+  StyledCart,
 };
