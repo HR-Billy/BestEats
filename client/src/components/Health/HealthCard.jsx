@@ -30,8 +30,8 @@ export default function HealthCard({ heading, description, image }) {
           </Typography>
         </CardContent>
         <CardActions>
-          <Button size="small">View</Button>
-          <Button size="small">Edit</Button>
+          <Button size="small">Coming</Button>
+          <Button size="small">Soon</Button>
         </CardActions>
       </Card>
     </>
