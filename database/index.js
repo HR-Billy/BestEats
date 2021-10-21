@@ -3,9 +3,11 @@ const { USERNAME, PASSWORD } = require('../config.js');
 
 const client = new Client({
   user: USERNAME,
-  database: 'best_eats',
+  database: 'besteats',
+  // database: 'best_eats',
   password: PASSWORD,
-  host: 'localhost',
+  host: '34.203.40.177',
+  // host: 'localhost',
   port: 5432,
 });
 

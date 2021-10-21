@@ -31,7 +31,6 @@ const Subscribe = () => {
   const userId = Math.round((Math.random() * 500) + 1);
   console.log(userId);
 
-
   const steps = ['Select Plan', 'Shipping', 'Payment', 'Select Your Meals'];
 
   const [activeStep, setActiveStep] = useState(0);
