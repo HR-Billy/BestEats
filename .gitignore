@@ -5,6 +5,7 @@ node_modules
 bundle.js
 config.js
 coverage
+onepirate
 package-lock.json
 
 #csv files

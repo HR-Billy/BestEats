@@ -4,7 +4,7 @@ const source = path.join(__dirname, 'client', 'src', 'index.jsx');
 const destination = path.join(__dirname, 'public');
 
 module.exports = {
-  entry: source,
+  entry: ['babel-polyfill', source],
   output: {
     path: destination,
     filename: 'bundle.js',
@@ -21,7 +21,20 @@ module.exports = {
           },
         },
       },
+      {
+        test: /\.(gif|svg|jpg|png)$/,
+        loader: 'file-loader',
+      },
+      {
+        test: /\.css$/i,
+        use: ['css-loader'],
+      },
     ],
+  },
+  resolve: {
+    alias: {
+      '@mui/styled-engine': '@mui/styled-engine-sc',
+    },
   },
   mode: 'development',
   devtool: 'eval-source-map',
