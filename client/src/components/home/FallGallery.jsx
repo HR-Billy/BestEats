@@ -2,6 +2,7 @@ import React from 'react';
 import {
   Button, Box, Grid, ImageList, ImageListItem, Typography,
 } from '@mui/material';
+import { Link } from 'react-router-dom';
 import images from './images.js';
 
 const FallGallery = () => (
@@ -23,8 +24,10 @@ const FallGallery = () => (
       </Grid>
       <Grid item style={{marginTop: 140, marginLeft: 140}}>
         <Typography color="inherit" align="center" variant="h2" marked="center">We love Fall too.</Typography>
-        <Typography color="inherit" align="center" variant="h4" marked="center">Check out our seasonal items.</Typography>
-        <Button style={{ margin: '0 auto', display: 'flex' }}>Go to Fall items</Button>
+        {/* <Typography color="inherit" align="center" variant="h4" marked="center">Check out our seasonal items.</Typography> */}
+        <Link to="/store" style={{ textDecoration: 'none' }}>
+          <Button style={{ margin: '0 auto', display: 'flex' }}>Go to Fall items</Button>
+        </Link>
       </Grid>
     </Grid>
 

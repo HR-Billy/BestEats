@@ -1,11 +1,11 @@
 const { Client } = require('pg');
-const { USERNAME, PASSWORD } = require('../config.js');
+const { USERNAME, PASSWORD, HOST } = require('../config.js');
 
 const client = new Client({
   user: USERNAME,
   database: 'best_eats',
   password: PASSWORD,
-  host: 'localhost',
+  host: HOST,
   port: 5432,
 });
 
