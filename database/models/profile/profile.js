@@ -1,9 +1,9 @@
 const db = require('../..');
-const { selectProfile } = require('./profileQueries');
+const { profileData, status } = require('./profileQueries');
 
 module.exports = {
   selectProfileData: (username, req, res) => {
-    db.query(selectProfile, [username], (err, data) => {
+    db.query(profileData, [username], (err, data) => {
       if (err) {
         res.status(404).send(err);
       } else {
@@ -14,7 +14,16 @@ module.exports = {
   updateProfilePic: (req, res) => {
     // db.query(updatePic)
   },
-  insertStatus: () => {
-    console.log('inserting user status');
+  insertStatus: (obj, res, req) => {
+    const { text } = obj;
+    console.log(text);
+
+    db.query(status, [text], (err, data) => {
+      if (err) {
+        res.status.send(err);
+      } else {
+        res.status(201).send(data);
+      }
+    });
   },
 };

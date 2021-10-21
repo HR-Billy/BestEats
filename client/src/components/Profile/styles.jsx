@@ -2,7 +2,7 @@ import { makeStyles } from '@mui/styles';
 
 const useStyles = makeStyles({
   wrapper: {
-    paddingTop: '1%',
+    paddingTop: '5%',
   },
   picContainer: {
     minHeight: '20vh',
@@ -25,9 +25,6 @@ const useStyles = makeStyles({
   messageContainer: {
     minHeight: '10vh',
   },
-  // subscribe: {
-  //   minHeight: '5vh',
-  // },
   orderContainer: {
     minHeight: '28.2vh',
     paddingLeft: '2%',

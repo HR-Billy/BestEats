@@ -31,7 +31,7 @@ const Profile = () => {
         setProfilePhoto(results.photo);
         setFeed(results.feed);
         setProducts(results.products);
-        yourMeals(results.meals);
+        setYourMeals(results.meals);
       });
   }, []);
 

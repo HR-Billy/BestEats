@@ -136,6 +136,11 @@ const App = () => {
                   <SignIn />
                 )}
               />
+              <Route
+                exact
+                path="/profile"
+                render={() => <Profile />}
+              />
             </CurrentPage>
           </Router>
 

@@ -1,5 +1,5 @@
 module.exports = {
-  selectProfile: `
+  profileData: `
   SELECT json_build_object(
     'id', id,
     'username', username,
@@ -51,5 +51,7 @@ module.exports = {
   ) as results
   FROM users
   WHERE id = $1;
+  `,
+  status: `
   `,
 };
