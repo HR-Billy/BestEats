@@ -100,7 +100,7 @@ const App = () => {
                 </Link>
               </MainSet>
               <Link to="/login" style={{ textDecoration: 'none' }}>
-                <Button variant="contained" sx={{ mt: 3, mx: 2 }}>LOGIN</Button>
+                <Button variant="contained" sx={{ mt: 3, mx: 3 }}>LOGIN</Button>
               </Link>
             </NavigationBar>
             <CurrentPage>

@@ -32,9 +32,9 @@ const NavigationBar = styled.div`
   padding: 5px;
   position: fixed;
   top: 0;
-  width: 100%;
+  width: calc(100% + 10px);
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-  zIndex: 9999;
+  z-index: 9999;
 `;
 
 const CurrentPage = styled.div`
@@ -43,7 +43,7 @@ const CurrentPage = styled.div`
 
 const MainSet = styled.div`
   display: flex;
-  gap: 100px;
+  gap: 80px;
 `;
 
 export { Text, NavigationBar, Login, CurrentPage, MainSet };
