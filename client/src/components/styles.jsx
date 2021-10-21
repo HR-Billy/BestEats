@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const NavigationBar = styled.div`
-  background-color: #c4c4c4;
+  background-color: white;
   display: flex;
   align-content: center;
   justify-content: space-between;
@@ -10,6 +10,7 @@ const NavigationBar = styled.div`
   position: fixed;
   top: 0;
   width: 100%;
+  zIndex: 9999;
 `;
 
 const Text = styled.span`
@@ -20,7 +21,9 @@ const Text = styled.span`
 
 const Login = styled.button`
   display: flex;
-  margin-right: 50px;
+  align-content: center;
+  margin-right: 5px;
+  margin-top: 3px;
   font-size: 1.6em;
   &:hover {
     background-color: green;
