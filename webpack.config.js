@@ -21,6 +21,14 @@ module.exports = {
           },
         },
       },
+      {
+        test: /\.(gif|svg|jpg|png)$/,
+        loader: 'file-loader',
+      },
+      {
+        test: /\.css$/i,
+        use: ['css-loader'],
+      },
     ],
   },
   mode: 'development',
