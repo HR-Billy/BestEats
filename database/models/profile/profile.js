@@ -14,12 +14,12 @@ module.exports = {
   updateProfilePic: (req, res) => {
     // db.query(updatePic)
   },
-  insertStatus: (obj, res, req) => {
-    const { text } = obj;
+  insertStatus: (req, res) => {
+    const { id, text } = req.body;
 
-    db.query(status, [text], (err, data) => {
+    db.query(status, [id, text], (err, data) => {
       if (err) {
-        res.status.send(err);
+        res.status(404).send(err);
       } else {
         res.status(201).send(data);
       }

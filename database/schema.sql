@@ -100,7 +100,7 @@ CREATE TABLE billing (
 CREATE TABLE status (
   id SERIAL NOT NULL PRIMARY KEY,
   text VARCHAR(400) NOT NULL,
-  emoji VARCHAR(20) NOT NULL,
+  emoji VARCHAR(20),
   user_id INT NOT NULL REFERENCES users(id),
   created_at TIMESTAMP
 );
