@@ -1,7 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Grid, Typography } from '@mui/material';
-import { Meal, MealImage, NameText, DescriptionText, PropertiesText } from './mealStyles.jsx';
+import {
+  Meal,
+  MealImage,
+  NameText,
+  DescriptionText,
+  PropertiesText,
+} from './mealStyles.jsx';
 
 const MealCard = ({ meal, click }) => (
   <Grid item xs={4} sm={4} md={4} lg={4} xl={4}>

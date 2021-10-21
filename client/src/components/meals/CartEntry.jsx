@@ -3,7 +3,12 @@ import PropTypes from 'prop-types';
 import { Button } from '@mui/material';
 import { QuantityInput } from './mealStyles.jsx';
 
-const CartEntry = ({ item, quantity, changeHandler, remove }) => (
+const CartEntry = ({
+  item,
+  quantity,
+  changeHandler,
+  remove,
+}) => (
   <>
     <span>{item}</span>
     <QuantityInput type="number" name={item} value={quantity} onChange={changeHandler} min={1} />
