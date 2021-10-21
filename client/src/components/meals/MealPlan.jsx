@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
 // import Container from '@mui/material/Container';
-import Grid from '@mui/material/Grid';
-
+import { Grid, Button, Typography } from '@mui/material';
 import mockupMeals from './mockupMeals.jsx';
 import MealCard from './MealCard.jsx';
 import MealFilter from './MealFilter.jsx';
@@ -10,15 +10,22 @@ import MealCart from './MealCart.jsx';
 import {
   MealCards,
   SubscribeBar,
-  SubscribeButton,
 } from './mealStyles.jsx';
 
 const MealPlan = () => {
-  const [meals, setMeals] = useState(mockupMeals);
+  const [meals, setMeals] = useState([]);
   const [filteredMeals, setFilteredMeals] = useState(meals);
   const [cart, setCart] = useState({});
   // Login Placeholder
   const [loggedIn, setLoggedIn] = useState(true);
+
+  const getMeals = () => {
+    axios.get('/meal-plan/meals')
+      .then((response) => {
+        setMeals(response.data);
+        setFilteredMeals(response.data);
+      });
+  };
 
   const filterMeals = (filters) => {
     // Show all meals when there are no filters
@@ -52,16 +59,23 @@ const MealPlan = () => {
     null
   );
 
+  useEffect(getMeals, []);
+
   return (
     <>
+      {!loggedIn && (
+        <Typography variant="h1" align="center">
+          Be Sure to Subscibe!
+        </Typography>
+      )}
       <MealFilter filterMeals={filterMeals} />
       <MealCards>
         <Grid spacing={3} container justify="center">
           {filteredMeals.map((meal) => (
             !loggedIn ? (
-              <MealCard key={meal.name} meal={meal} click={fillerFunction} />
+              <MealCard key={meal.meal_name} meal={meal} click={fillerFunction} />
             ) : (
-              <MealCard key={meal.name} meal={meal} click={addToCart} />
+              <MealCard key={meal.meal_name} meal={meal} click={addToCart} />
             )
           ))}
         </Grid>
@@ -69,11 +83,11 @@ const MealPlan = () => {
       </MealCards>
       {!loggedIn
         && (
-        <SubscribeBar>
-          <Link to="/subscribe">
-            <SubscribeButton type="button"> Subscribe </SubscribeButton>
-          </Link>
-        </SubscribeBar>
+          <SubscribeBar>
+            <Link to="/subscribe" style={{ textDecoration: 'none' }}>
+              <Button variant="contained" align="center"> Subscribe </Button>
+            </Link>
+          </SubscribeBar>
         )}
     </>
   );

@@ -44,7 +44,7 @@ const mockupMeals = [
   {
     name: 'Zucchini & Tomato Flatbreads',
     photo: 'https://st.depositphotos.com/1020804/1448/i/950/depositphotos_14480443-stock-photo-beef-steak.jpg',
-    description: 'with Lemon Ricotta, Fresh Herbs, Honey & Chili Flakes',
+    description: 'Low Calorie · Low Carbs',
     time: 35,
     low_calorie: true,
     vegetarian: true,

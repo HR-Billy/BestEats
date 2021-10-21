@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 
 const router = express.Router();
-const model = require('../../database/models/profile/profile');
+const model = require('../../database/models/mealPlan/meals');
 
 router.route('/')
   .get((req, res) => {
@@ -11,6 +11,11 @@ router.route('/')
         res.status(500).send(err);
       }
     });
+  });
+
+router.route('/meals')
+  .get((req, res) => {
+    model.getMealData(req, res);
   });
 
 module.exports = router;

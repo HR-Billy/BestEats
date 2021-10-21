@@ -31,7 +31,7 @@ const Login = styled.button`
 `;
 
 const CurrentPage = styled.div`
-  margin-top: 55px;
+  margin-top: 100px;
 `;
 
 const MainSet = styled.div`
@@ -39,4 +39,10 @@ const MainSet = styled.div`
   gap: 100px;
 `;
 
-export { Text, NavigationBar, Login, CurrentPage, MainSet };
+export {
+  Text,
+  NavigationBar,
+  Login,
+  CurrentPage,
+  MainSet,
+};

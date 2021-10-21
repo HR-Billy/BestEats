@@ -28,28 +28,42 @@ const SubscribeBar = styled.div`
   bottom: 0;
   margin-left: -10px;
   width: 101%;
-  height: 30px;
+  height: 40px;
   display: flex;
   justify-content: center;
-`;
-
-const SubscribeButton = styled.button`
-  color: green;
-  margin-top: auto;
 `;
 
 const StyledCart = styled.div`
   position: fixed;
   top: 0;
   right: 0;
-  background-color: red;
+  background-color: white;
   height: 100%;
-  width: 15%;
-  margin-top: 55px;
+  width: 18%;
+  margin-top: 90px;
 `;
 
 const QuantityInput = styled.input`
   width: 50px;
+`;
+
+const NameText = styled.h4`
+  font-size: 1.2em;
+  margin-top: -1%;
+  margin-left: 1%;
+  margin-bottom: 0;
+`;
+
+const DescriptionText = styled.p`
+  font-size: .9em;
+  margin-top: 0;
+  margin-left: 1%
+`;
+
+const PropertiesText = styled.p`
+  font-size: .9em;
+  margin-bottom: 0;
+  margin-left: 1%;
 `;
 
 export {
@@ -58,7 +72,9 @@ export {
   Meal,
   MealImage,
   SubscribeBar,
-  SubscribeButton,
   StyledCart,
   QuantityInput,
+  NameText,
+  DescriptionText,
+  PropertiesText,
 };

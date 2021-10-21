@@ -23,9 +23,10 @@ CREATE TABLE products (
 
 CREATE TABLE meal (
   id SERIAL NOT NULL PRIMARY KEY,
-  meal_name VARCHAR(1000),
-  photo	TEXT NOT NULL,
-  description	VARCHAR(200) NOT NULL,
+  meal_name VARCHAR(100) NOT NULL,
+  photo TEXT NOT NULL,
+  description VARCHAR(200) NOT NULL,
+  highlights VARCHAR(80),
   time INT NOT NULL,
   low_calorie BOOLEAN DEFAULT false,
   vegetarian BOOLEAN DEFAULT false,
@@ -35,6 +36,9 @@ CREATE TABLE meal (
   spicy BOOLEAN DEFAULT false,
   easy_prep BOOLEAN DEFAULT false,
   easy_cleanup BOOLEAN DEFAULT false
+  calories INT NOT NULL,
+  fat INT NOT NULL,
+  carbs INT NOT NULL
 );
 
 CREATE TABLE meal_product (
