@@ -53,5 +53,7 @@ module.exports = {
   WHERE id = $1;
   `,
   status: `
+  INSERT INTO status(text, emoji, user_id, created_at)
+  VALUES ($1, $2, $3, current_timestamp);
   `,
 };

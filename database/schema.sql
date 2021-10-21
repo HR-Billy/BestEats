@@ -131,6 +131,11 @@ FROM '/Users/timjordan/HackReactor/BestEats/database/data/meals.csv'
 DELIMITER ','
 CSV HEADER;
 
+COPY meal_product(id, meal_id, product_id)
+FROM '/Users/timjordan/HackReactor/BestEats/database/data/meal_product.csv'
+DELIMITER ','
+CSV HEADER;
+
 -- COPY subscriptions(id, meals_per_week, price)
 -- FROM '/Users/timjordan/HackReactor/BestEats/database/data/subscriptions.csv'
 -- DELIMITER ','
@@ -155,3 +160,11 @@ COPY user_products(id, user_id, product_id, date_ordered, date_received)
 FROM '/Users/timjordan/HackReactor/BestEats/database/data/user_products.csv'
 DELIMITER ','
 CSV HEADER;
+
+SELECT setval('products_id_seq', (SELECT max(id) FROM products));
+SELECT setval('meal_id_seq', (SELECT max(id) FROM meal));
+SELECT setval('meal_product_id_seq', (SELECT max(id) FROM meal_product));
+SELECT setval('users_id_seq', (SELECT max(id) FROM users));
+SELECT setval('status_id_seq', (SELECT max(id) FROM status));
+SELECT setval('user_meals_id_seq', (SELECT max(id) FROM user_meals));
+SELECT setval('user_products_id_seq', (SELECT max(id) FROM user_products));
