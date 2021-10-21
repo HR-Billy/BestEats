@@ -23,6 +23,11 @@ const myTheme = createTheme({
     h4: {
       fontWeight: 300,
     },
+    h5: {
+      // fontFamily: "'Kalam', sans-serif",
+      fontSize: 20,
+      fontColor: 'white',
+    },
     h6: {
       fontFamily: "'Kalam', sans-serif",
       fontSize: 22,

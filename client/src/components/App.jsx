@@ -22,7 +22,7 @@ import mytheme from './theme.jsx';
 
 const App = () => {
   const [loggedIn, setLoggedIn] = useState(false);
-  const [userId, setUserId] = useState(Math.round((Math.random() * 500) + 1));
+  const [userId, setUserId] = ('');
 
   return (
     <Context.Provider value={{
@@ -100,7 +100,7 @@ const App = () => {
                 </Link>
               </MainSet>
               <Link to="/login" style={{ textDecoration: 'none' }}>
-                <Button>LOGIN</Button>
+                <Button variant="contained" sx={{ mt: 3, mx: 2 }}>LOGIN</Button>
               </Link>
             </NavigationBar>
             <CurrentPage>

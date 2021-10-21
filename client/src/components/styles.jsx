@@ -5,19 +5,6 @@ font-family: 'Rampart One', cursive;
 font-family: 'Source Sans Pro', sans-serif;
 font-family: 'Work Sans', sans-serif; */
 
-const NavigationBar = styled.div`
-  background-color: white;
-  display: flex;
-  align-content: center;
-  justify-content: space-between;
-  margin-left: -10px;
-  padding: 5px;
-  position: fixed;
-  top: 0;
-  width: 100vw;
-  zIndex: 9999;
-`;
-
 const Text = styled.span`
   color: black;
   font-size: 1.6em;
@@ -34,6 +21,20 @@ const Login = styled.button`
   &:hover {
     background-color: green;
   }
+`;
+
+const NavigationBar = styled.div`
+  background-color: white;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  margin-left: -10px;
+  padding: 5px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  zIndex: 9999;
 `;
 
 const CurrentPage = styled.div`

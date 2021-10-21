@@ -26,12 +26,11 @@ const Copyright = () => (
 );
 
 const Subscribe = () => {
-  const userId = useContext(Context.userId);
-  console.log(userId);
-
   // this component assumes the user is already logged in;
   // below is just a placeholder which will be updated with userId from authentication
-  // const userId = Math.round((Math.random() * 500) + 1);
+  const userId = Math.round((Math.random() * 500) + 1);
+  console.log(userId);
+
 
   const steps = ['Select Plan', 'Shipping', 'Payment', 'Select Your Meals'];
 
@@ -240,7 +239,7 @@ const Subscribe = () => {
           <Typography component="h1" variant="h4" align="center">
             Subscribe
           </Typography>
-          <Stepper activeStep={activeStep} sx={{ pt: 3, pb: 5 }}>
+          <Stepper alternativeLabel activeStep={activeStep} sx={{ pt: 3, pb: 5 }}>
             {steps.map((label) => (
               <Step key={label}>
                 <StepLabel>{label}</StepLabel>
@@ -251,7 +250,7 @@ const Subscribe = () => {
             {activeStep === steps.length ? (
               <>
                 {saveUserInfo()}
-                <Typography variant="h5" gutterBottom>
+                <Typography variant="h6" gutterBottom>
                   Thank you for subscribing!
                 </Typography>
                 <Typography variant="subtitle1">

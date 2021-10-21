@@ -64,9 +64,9 @@ const SelectPlan = ({ setMealPlan }) => {
             <List disablePadding style={{ width: 250 }}>
               <ListItem sx={{ py: 0, px: 0 }}>
                 <ListItemText
-                  primary={<Typography variant="h6" sx={{ fontWeight: 600 }}>Price:</Typography>}
+                  primary={<Typography variant="h5" sx={{ fontWeight: 600 }}>Price:</Typography>}
                 />
-                <Typography variant="h6" sx={{ fontWeight: 600 }}>
+                <Typography variant="h5" sx={{ fontWeight: 600 }}>
                   $
                   {planPrice.toFixed(2)}
                 </Typography>
