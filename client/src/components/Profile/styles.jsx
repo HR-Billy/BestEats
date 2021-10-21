@@ -2,14 +2,14 @@ import { makeStyles } from '@mui/styles';
 
 const useStyles = makeStyles({
   wrapper: {
-    paddingTop: '5%',
+    paddingTop: '3%',
   },
   picContainer: {
     minHeight: '20vh',
     paddingLeft: '30%',
   },
   nutritionContainer: {
-    minHeight: '65vh',
+    minHeight: '64vh',
     paddingTop: '2%',
   },
   statusContainer: {
@@ -17,7 +17,7 @@ const useStyles = makeStyles({
     padding: '2%',
   },
   feedContainer: {
-    minHeight: '68vh',
+    minHeight: '67.5vh',
     paddingTop: '5%',
     paddingLeft: '2%',
     paddingRight: '2%',
@@ -28,7 +28,7 @@ const useStyles = makeStyles({
     minHeight: '10vh',
   },
   orderContainer: {
-    minHeight: '28.2vh',
+    minHeight: '27.8vh',
     paddingLeft: '2%',
   },
   profilePhoto: {

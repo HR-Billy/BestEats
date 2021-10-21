@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { useState, useEffect, useContext } from 'react';
-import { Container, Grid, Paper, Avatar } from '@mui/material';
+import { Container, Grid, Paper, Typography, Avatar } from '@mui/material';
 import { Context } from '../../Context.jsx';
 import { ProfileContext } from './ProfileContext.jsx';
 import NutritionFacts from './features/NutritionFacts.jsx';
@@ -12,6 +12,7 @@ import useStyles from './styles.jsx';
 const Profile = () => {
   const classes = useStyles();
   const { userId } = useContext(Context);
+  const [name, setName] = useState('');
   const [profilePhoto, setProfilePhoto] = useState('');
   const [feed, setFeed] = useState([]);
   const [products, setProducts] = useState([]);
@@ -30,6 +31,7 @@ const Profile = () => {
         console.log(data[0]);
         const { results } = data[0];
 
+        setName(results.first_name);
         setProfilePhoto(results.photo);
         setFeed(results.feed);
         setProducts(results.products);
@@ -51,7 +53,8 @@ const Profile = () => {
             <Grid container spacing={1.5}>
               <Grid item xs={12}>
                 <Paper className={classes.picContainer}>
-                  <Avatar className={classes.profilePhoto} alt="profile picture" src={profilePhoto} />
+                  <Avatar className={classes.profilePhoto} alt="profile picture" src={profilePhoto}/>
+                  {/* <Typography>Welcome {name}</Typography> */}
                 </Paper>
               </Grid>
               <Grid item xs={12}>
@@ -104,3 +107,4 @@ const Profile = () => {
 };
 
 export default Profile;
+

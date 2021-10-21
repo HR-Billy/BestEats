@@ -5,27 +5,28 @@ CREATE DATABASE best_eats;
 
 CREATE TABLE products (
   id SERIAL NOT NULL PRIMARY KEY,
-  product_name VARCHAR(40) NOT NULL,
-  product_price INT NOT NULL,
+  name VARCHAR(40) NOT NULL,
+  price VARCHAR(20) NOT NULL,
   category VARCHAR(40) NOT NULL,
   calories INT NOT NULL,
   carbs INT NOT NULL,
   protein INT NOT NULL,
   fats INT NOT NULL,
-  image VARCHAR(200) NOT NULL,
+  image VARCHAR(400) NOT NULL,
   quantity INT NOT NULL,
-  sale_price INT NOT NULL,
+  onSale BOOLEAN DEFAULT false,
   promo VARCHAR(20),
-  unit_type VARCHAR(20),
-  unit_size INT NOT NULL,
-  serving_size INT NOT NULL
+  unitType VARCHAR(20),
+  unitSize INT NOT NULL,
+  servingSize INT NOT NULL
 );
 
 CREATE TABLE meal (
   id SERIAL NOT NULL PRIMARY KEY,
-  meal_name VARCHAR(1000),
-  photo	TEXT NOT NULL,
-  description	VARCHAR(200) NOT NULL,
+  meal_name VARCHAR(100),
+  photo TEXT NOT NULL,
+  description VARCHAR(200) NOT NULL,
+  highlights VARCHAR(100),
   time INT NOT NULL,
   low_calorie BOOLEAN DEFAULT false,
   vegetarian BOOLEAN DEFAULT false,
@@ -35,6 +36,9 @@ CREATE TABLE meal (
   spicy BOOLEAN DEFAULT false,
   easy_prep BOOLEAN DEFAULT false,
   easy_cleanup BOOLEAN DEFAULT false
+  calories INT NOT NULL,
+  fat INT NOT NULL,
+  carbs INT NOT NULL
 );
 
 CREATE TABLE meal_product (
@@ -43,25 +47,27 @@ CREATE TABLE meal_product (
   product_id INT NOT NULL REFERENCES products(id)
 );
 
--- CREATE TABLE subscriptions (
---   id SERIAL NOT NULL PRIMARY KEY,
---   meals_per_week SMALLINT NOT NULL,
---   price REAL NOT NULL
--- );
+CREATE TABLE subscriptions (
+  id SERIAL NOT NULL PRIMARY KEY,
+  meals_per_week SMALLINT NOT NULL,
+  price REAL NOT NULL
+);
+
 
 CREATE TABLE users (
   id SERIAL NOT NULL PRIMARY KEY,
+  auth_id VARCHAR(50) NOT NULL UNIQUE,
   username VARCHAR(30) NOT NULL UNIQUE,
   hash_password VARCHAR(64) NOT NULL,
-  first_name VARCHAR(30),
-  last_name VARCHAR(30),
-  email VARCHAR(50) NOT NULL,
+  first_name VARCHAR(50),
+  last_name VARCHAR(50),
+  email VARCHAR(100) NOT NULL,
   phone INT,
-  address1 VARCHAR(50) ,
-  address2 VARCHAR(50),
-  city VARCHAR(36),
-  state VARCHAR(4),
-  postal_code INT,
+  address1 VARCHAR(100) ,
+  address2 VARCHAR(100),
+  city VARCHAR(100),
+  state VARCHAR(10),
+  postal_code VARCHAR(15),
   country VARCHAR(40),
   subscribed BOOLEAN DEFAULT false,
   member_start_date DATE NOT NULL,
@@ -70,9 +76,18 @@ CREATE TABLE users (
   subscription_end_date DATE,
   weekly_start_date DATE,
   allow_meals BOOLEAN DEFAULT false,
-  -- subscription_id INT REFERENCES subscriptions(id)
+  subscription_id INT REFERENCES subscriptions(id),
   meals_per_week SMALLINT DEFAULT 0,
-  price REAL DEFAULT 0
+  cardholder_name    VARCHAR(100),
+  card_number VARCHAR(64),
+  card_exp_date DATE,
+  billing_address1 VARCHAR(100) NOT NULL,
+  billing_address2 VARCHAR(100),
+  billing_city VARCHAR(100),
+  billing_state VARCHAR(10),
+  billing_postal_code VARCHAR(15),
+  billing_country VARCHAR(40),
+  profile_pic VARCHAR(300)
 );
 
 CREATE TABLE farmers (

@@ -17,7 +17,7 @@ module.exports = {
   insertStatus: (req, res) => {
     const { id, text } = req.body;
 
-    db.query(status, [id, text], (err) => {
+    db.query(status, [id, text], (err, data) => {
       if (err) {
         res.status(404).send(err);
       } else {
