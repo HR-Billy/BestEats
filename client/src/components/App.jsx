@@ -19,6 +19,10 @@ import SignIn from './SignIn.jsx';
 import MealPlan from './meals/MealPlan.jsx';
 import Profile from './Profile/Profile.jsx';
 import mytheme from './theme.jsx';
+import { useAuth0 } from '@auth0/auth0-react';
+import AuthButton from './auth/authentication-button.jsx';
+import ProtectedRoute from './auth/protected-route.jsx';
+
 
 const App = () => {
   const [loggedIn, setLoggedIn] = useState(false);
@@ -141,8 +145,5 @@ const App = () => {
         </ThemeProvider>
       </div>
     </Context.Provider>
-
-  );
-};
 
 export default App;
