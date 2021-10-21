@@ -39,10 +39,10 @@ CREATE TABLE users (
   billing_state VARCHAR(10),
   billing_postal_code VARCHAR(15),
   billing_country VARCHAR(40),
-  profile_pic VARCHAR(200)
+  profile_pic VARCHAR(2048)
 );
 COPY users
-FROM '/Users/katherineyu/bootcamp/BestEats/database/data/userswithbilling.csv'
+FROM '/Users/katherineyu/bootcamp/BestEats/database/CSV Data/userswithbillingprofile.csv'
 DELIMITER ','
 CSV HEADER;
 
