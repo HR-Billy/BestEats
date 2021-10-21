@@ -6,6 +6,22 @@ import useStyles from '../styles.jsx';
 const Feed = () => {
   const classes = useStyles();
   const { feed } = useContext(ProfileContext);
+  let userFeed;
+
+  if (feed) {
+    userFeed = feed.map((status) => {
+      console.log(status);
+      const { status_id, text, emoji } = status;
+
+      return (
+        <Grid item xs={12} key={status_id}>
+          <Card className={classes.messageContainer}>
+            <Typography>{text}</Typography>
+          </Card>
+        </Grid>
+      );
+    });
+  }
 
   return (
     <Grid container>
@@ -13,11 +29,7 @@ const Feed = () => {
         <Typography>Feed</Typography>
       </Grid>
 
-      <Grid item xs={12}>
-        <Card className={classes.messageContainer}>
-          <Typography>Message</Typography>
-        </Card>
-      </Grid>
+      {userFeed}
 
     </Grid>
   );
