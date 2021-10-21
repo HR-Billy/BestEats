@@ -8,6 +8,7 @@ CREATE TABLE subscriptions (
 DROP TABLE IF EXISTS users;
 CREATE TABLE users (
   id SERIAL NOT NULL PRIMARY KEY,
+  auth_id VARCHAR(50) NOT NULL UNIQUE,
   username VARCHAR(30) NOT NULL UNIQUE,
   hash_password VARCHAR(64) NOT NULL,
   first_name VARCHAR(50),
@@ -37,7 +38,8 @@ CREATE TABLE users (
   billing_city VARCHAR(100),
   billing_state VARCHAR(10),
   billing_postal_code VARCHAR(15),
-  billing_country VARCHAR(40)
+  billing_country VARCHAR(40),
+  profile_pic VARCHAR(200)
 );
 COPY users
 FROM '/Users/katherineyu/bootcamp/BestEats/database/data/userswithbilling.csv'
