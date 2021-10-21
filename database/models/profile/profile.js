@@ -16,7 +16,6 @@ module.exports = {
   },
   insertStatus: (obj, res, req) => {
     const { text } = obj;
-    console.log(text);
 
     db.query(status, [text], (err, data) => {
       if (err) {
