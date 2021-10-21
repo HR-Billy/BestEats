@@ -31,7 +31,7 @@ const Login = styled.button`
 `;
 
 const CurrentPage = styled.div`
-  margin-top: 50px;
+  margin-top: 55px;
 `;
 
 const MainSet = styled.div`

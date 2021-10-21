@@ -16,7 +16,8 @@ import FarmersPage from './Farmers/FarmersPage.jsx';
 import HealthPage from './Health/HealthPage.jsx';
 import Subscribe from './subscription/Subscribe.jsx';
 import SignIn from './SignIn.jsx';
-import Profile from './profile/Profile.jsx';
+import MealPlan from './meals/MealPlan.jsx';
+import Profile from './Profile/Profile.jsx';
 import mytheme from './theme.jsx';
 
 const App = () => {
@@ -112,7 +113,7 @@ const App = () => {
               <Route
                 exact
                 path="/meal-plan"
-                render={() => <h1>Meal Plan component goes here</h1>}
+                render={() => <MealPlan />}
               />
               <Route exact path="/farmers" component={FarmersPage} />
               <Route
