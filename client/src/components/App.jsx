@@ -13,6 +13,7 @@ import Home from './home/Home.jsx';
 import { Context } from '../Context.jsx';
 import Store from './grocery_page/Store.jsx';
 import FarmersPage from './Farmers/FarmersPage.jsx';
+import HealthPage from './Health/HealthPage.jsx';
 import Subscribe from './subscription/Subscribe.jsx';
 import SignIn from './SignIn.jsx';
 import Profile from './profile/Profile.jsx';
@@ -119,11 +120,7 @@ const App = () => {
                 path="/store"
                 render={() => <h1>Grocery store component goes here</h1>}
               />
-              <Route
-                exact
-                path="/health"
-                render={() => <h1>Health section component goes here</h1>}
-              />
+              <Route exact path="/health" component={HealthPage} />
               <Route
                 exact
                 path="/subscribe"
