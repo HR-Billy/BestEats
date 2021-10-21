@@ -23,6 +23,7 @@ import mytheme from './theme.jsx';
 const App = () => {
   const [loggedIn, setLoggedIn] = useState(false);
   const [userId, setUserId] = ('');
+
   return (
     <Context.Provider value={{
       loggedIn,
@@ -99,7 +100,7 @@ const App = () => {
                 </Link>
               </MainSet>
               <Link to="/login" style={{ textDecoration: 'none' }}>
-                <Login>LOGIN</Login>
+                <Button variant="contained" sx={{ mt: 3, mx: 3 }}>LOGIN</Button>
               </Link>
             </NavigationBar>
             <CurrentPage>
@@ -125,7 +126,7 @@ const App = () => {
               <Route
                 exact
                 path="/subscribe"
-                render={() => <h1>Subscription component goes here</h1>}
+                render={() => <Subscribe />}
               />
               <Route
                 exact
