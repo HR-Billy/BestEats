@@ -1,7 +1,9 @@
 /* eslint-disable import/extensions */
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { Grid, Typography, FormControl, InputLabel, Select, MenuItem, List, ListItem, ListItemText } from '@mui/material';
+import {
+  Grid, Typography, FormControl, InputLabel, Select, MenuItem, List, ListItem, ListItemText,
+} from '@mui/material';
 
 const SelectPlan = ({ setMealPlan }) => {
   const [mealQty, setMealQty] = useState(3);
@@ -38,8 +40,8 @@ const SelectPlan = ({ setMealPlan }) => {
 
   return (
     <>
-      <Grid container sx={{ height: '60vh' }}>
-        <Typography variant="h6" gutterBottom>
+      <Grid container>
+        <Typography variant="h6" sx={{ mb: 5, width: 1 }}>
           Select Your Meal Plan
         </Typography>
         <Grid container spacing={3}>
@@ -62,9 +64,9 @@ const SelectPlan = ({ setMealPlan }) => {
             <List disablePadding style={{ width: 250 }}>
               <ListItem sx={{ py: 0, px: 0 }}>
                 <ListItemText
-                  primary={<Typography variant="h6" sx={{ fontWeight: 600 }}>Price:</Typography>}
+                  primary={<Typography variant="h5" sx={{ fontWeight: 600 }}>Price:</Typography>}
                 />
-                <Typography variant="h6" sx={{ fontWeight: 600 }}>
+                <Typography variant="h5" sx={{ fontWeight: 600 }}>
                   $
                   {planPrice.toFixed(2)}
                 </Typography>
@@ -118,7 +120,7 @@ const SelectPlan = ({ setMealPlan }) => {
           />
         </Grid>
       </Grid>
-      </>
+    </>
   );
 };
 

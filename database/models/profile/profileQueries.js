@@ -4,6 +4,30 @@ module.exports = {
     'id', id,
     'username', username,
     'first_name', first_name,
+    'member_start_date', member_start_date,
+    'subscription_start_date', subscription_start_date,
+    'weekly_start_date', weekly_start_date,
+    'photo', profile_pic,
+    'subscribed', subscribed,
+    'feed', (SELECT jsonb_agg( json_build_object(
+      'status_id', id,
+      'emoji', 'insert emoji',
+      'text', text,
+      'created_at', created_at
+      ))
+      FROM status
+      WHERE user_id = $1),
+    'ordered meals', 'insert meals',
+    'products', 'insert product query'
+  ) as results
+  FROM users
+  WHERE id = $1;
+  `,
+  profileData1: `
+  SELECT json_build_object(
+    'id', id,
+    'username', username,
+    'first_name', first_name,
     'photo', 'add a photo column',
     'subscribed', subscribed,
     'member_start_date', member_start_date,

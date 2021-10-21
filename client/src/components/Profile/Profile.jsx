@@ -25,7 +25,7 @@ const Profile = () => {
   const suggested = 'suggested meals';
 
   useEffect(() => {
-    axios.get('profile/user/?user_id=10')
+    axios.get('profile/user/?user_id=1')
     // axios.get(`profile/user/?user_id=${userId}`)
       .then(({ data }) => {
         console.log(data[0]);
@@ -34,8 +34,8 @@ const Profile = () => {
         setName(results.first_name);
         setProfilePhoto(results.photo);
         setFeed(results.feed);
-        setProducts(results.products);
-        setRecentMeals(results.meals);
+        // setProducts(results.products);
+        // setRecentMeals(results.meals);
       });
   }, []);
 

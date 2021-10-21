@@ -1,5 +1,5 @@
 const db = require('../..');
-const { profileData, status } = require('./profileQueries');
+const { profileData, status, fakeStatus } = require('./profileQueries');
 
 module.exports = {
   selectProfileData: (username, req, res) => {
