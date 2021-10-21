@@ -10,12 +10,12 @@ const Feed = () => {
   let userFeed;
 
   if (feed) {
-    userFeed = feed.map((status) => {
-      const { status_id, text, emoji, created_at} = status;
+    userFeed = feed.map((status, index) => {
+      const { text, emoji, created_at} = status;
       const time = moment(created_at).calendar();
 
       return (
-        <Grid item xs={12} key={status_id}>
+        <Grid item xs={12} key={index}>
           <Card className={classes.messageContainer}>
             <Typography>{text}</Typography>
             <Typography>{time}</Typography>
@@ -27,12 +27,7 @@ const Feed = () => {
 
   return (
     <Grid container spacing={1}>
-      <Grid item xs={12}>
-        <Typography>Feed</Typography>
-      </Grid>
-
       {userFeed}
-
     </Grid>
   );
 };

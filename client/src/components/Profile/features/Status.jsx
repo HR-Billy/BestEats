@@ -27,6 +27,7 @@ const Status = () => {
     axios.post('/profile/status', status)
       .then(({ data }) => {
         console.log('here is the data ', data);
+        setFeed([data, ...feed]);
       });
     setStatus({ id: 10, text: '' });
   };
