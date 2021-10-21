@@ -1,8 +1,7 @@
 const express = require('express');
 const path = require('path');
 const runProfileRte = require('./controllers/profile');
-const runSubscribeRte = require('./controllers/subscribe');
-const runSignUpRte = require('./controllers/signup');
+const runMembershipRte = require('./controllers/membership');
 require('dotenv').config();
 
 const app = express();
@@ -18,8 +17,8 @@ app.use('/home', FIX_ME);
 app.use('/meal-plan', FIX_ME);
 app.use('/farmers', FIX_ME);
 app.use('/health', FIX_ME);
-app.use('/subscribe', runSubscribeRte);
-app.use('/signup', runSignUpRte);
+app.use('/subscribe', runMembershipRte);
+app.use('/login', FIX_ME); // we can delete this route
 app.use('/profile', runProfileRte);
 
 app.get('/*', (req, res) => {

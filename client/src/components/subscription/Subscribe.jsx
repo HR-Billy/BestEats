@@ -223,7 +223,7 @@ const Subscribe = () => {
     };
 
     console.log(userInfo);
-    axios.patch('/subscribe/update', userInfo)
+    axios.patch('/member/subscribe', userInfo)
       .then((res) => {
         console.log(res);
       })

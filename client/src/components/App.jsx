@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
 import axios from 'axios';
 import { ThemeProvider } from '@mui/material/styles';
@@ -42,6 +42,7 @@ import ProtectedRoute from './auth/protected-route.jsx';
 
 const App = () => {
   const { user, isAuthenticated } = useAuth0();
+  const [subscribed, setSubscribed] = useState(false);
   console.log(user);
 
   const addUser = () => {
@@ -52,14 +53,12 @@ const App = () => {
       member_start_date: user.updated_at,
       profile_pic: user.picture,
     };
-    axios.post('/signup/new', newUser)
+    axios.post('/member/new', newUser)
       .then((res) => {
         console.log(res);
       })
       .catch(console.log);
   };
-
-  const [subscribed, setSubscribed] = useState(false);
 
   const renderSubscribe = () => {
     if (!subscribed) {
@@ -79,8 +78,15 @@ const App = () => {
   };
 
   useEffect(() => {
-    axios.get('user');
-  });
+    if (isAuthenticated) {
+      console.log(user.sub);
+      axios.get('/member/substatus', user.sub)
+        .then((res) => {
+          setSubscribed(res);
+        })
+        .catch(console.log);
+    }
+  }, [isAuthenticated]);
 
   return (
     <Context.Provider value={{

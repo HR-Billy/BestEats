@@ -1,5 +1,14 @@
 module.exports = {
-  insertSubData: `UPDATE users
+  insertNewUser:
+    `INSERT INTO users (auth_id, username, email, member_start_date, profile_pic)
+    VALUES ($1, $2, $3, $4, $5)`,
+
+  getSubscribed: `
+  SELECT subscribed FROM users WHERE auth_id = $1;
+  `,
+
+  updateSubData:
+    `UPDATE users
     SET (
       first_name,
       last_name,
