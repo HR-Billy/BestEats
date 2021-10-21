@@ -1,7 +1,9 @@
 /* eslint-disable import/extensions */
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { Grid, Typography, FormControl, InputLabel, Select, MenuItem, List, ListItem, ListItemText } from '@mui/material';
+import {
+  Grid, Typography, FormControl, InputLabel, Select, MenuItem, List, ListItem, ListItemText,
+} from '@mui/material';
 
 const SelectPlan = ({ setMealPlan }) => {
   const [mealQty, setMealQty] = useState(3);
@@ -118,7 +120,7 @@ const SelectPlan = ({ setMealPlan }) => {
           />
         </Grid>
       </Grid>
-      </>
+    </>
   );
 };
 
