@@ -22,8 +22,8 @@ const Status = () => {
     setStatus(e.target.value);
   };
   return (
-      <form onSubmit={handleSubmit}>
-    <Grid container spacing={1}>
+    <form onSubmit={handleSubmit}>
+      <Grid container spacing={1}>
         <Grid item xs={12}>
           <TextField fullWidth label="Update status" value={status} onChange={handleChange} />
         </Grid>
@@ -31,8 +31,8 @@ const Status = () => {
         <Grid item xs={12} onSubmit={handleSubmit}>
           <Button variant="contained" type="submit">post</Button>
         </Grid>
-    </Grid>
-      </form>
+      </Grid>
+    </form>
   );
 };
 
