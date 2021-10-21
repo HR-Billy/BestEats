@@ -14,10 +14,26 @@ module.exports = {
       'emoji', 'insert emoji',
       'text', text,
       'created_at', created_at
-      ))
+      ) ORDER BY created_at DESC)
       FROM status
       WHERE user_id = $1),
-    'ordered meals', 'insert meals',
+    'suggested_meals', 'insert suggested meals query',
+    'arriving_meals', (SELECT jsonb_agg( json_build_object(
+    'meal_id', meal.id,
+    'meal_name', meal.meal_name,
+    'meal_photo', meal.photo
+    ) ORDER BY date_received DESC)
+  FROM user_meal
+  INNER JOIN meal ON meal.id = user_meal.meal_id
+  WHERE user_id = $1 AND date_received IS NULL),
+    'recent_meals', (SELECT jsonb_agg( json_build_object(
+    'meal_id', meal.id,
+    'meal_name', meal.meal_name,
+    'meal_photo', meal.photo
+    ) ORDER BY date_ordered DESC)
+  FROM user_meal
+  INNER JOIN meal ON meal.id = user_meal.meal_id
+  WHERE user_id = $1 AND date_received IS NOT NULL),
     'products', 'insert product query'
   ) as results
   FROM users

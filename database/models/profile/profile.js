@@ -1,5 +1,5 @@
 const db = require('../..');
-const { profileData, status, fakeStatus } = require('./profileQueries');
+const { profileData, status } = require('./profileQueries');
 
 module.exports = {
   selectProfileData: (username, req, res) => {
@@ -16,8 +16,9 @@ module.exports = {
   },
   insertStatus: (req, res) => {
     const { id, text } = req.body;
+    console.log(req.body);
 
-    db.query(status, [id, text], (err, data) => {
+    db.query(status, [id, text], (err) => {
       if (err) {
         res.status(404).send(err);
       } else {

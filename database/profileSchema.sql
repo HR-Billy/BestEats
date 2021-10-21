@@ -14,7 +14,7 @@ CREATE TABLE user_meals (
   user_id INT NOT NULL REFERENCES users(id),
   meal_id INT NOT NULL REFERENCES meal(id),
   date_ordered DATE NOT NULL,
-  date_received DATE NOT NULL
+  date_received DATE
 );
 
 CREATE TABLE user_products (
@@ -25,10 +25,22 @@ CREATE TABLE user_products (
   date_received DATE NOT NULL
 );
 
-
-
-
-
 SELECT setval('status_id_seq', (SELECT max(id) FROM status));
-SELECT setval('user_meals_id_seq', (SELECT max(id) FROM user_meals));
+SELECT setval('user_meal_id_seq', (SELECT max(id) FROM user_meal));
+
+
+
+
+
+CREATE INDEX idx_status_created_at ON status(created_at DESC);
+
+
+
+
+
+
+
+
+
+
 SELECT setval('user_products_id_seq', (SELECT max(id) FROM user_products));
