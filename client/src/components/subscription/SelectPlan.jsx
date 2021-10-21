@@ -40,8 +40,8 @@ const SelectPlan = ({ setMealPlan }) => {
 
   return (
     <>
-      <Grid container sx={{ height: '60vh' }}>
-        <Typography variant="h6" gutterBottom>
+      <Grid container>
+        <Typography variant="h6" sx={{ mb: 5, width: 1 }}>
           Select Your Meal Plan
         </Typography>
         <Grid container spacing={3}>

@@ -37,7 +37,7 @@ const Review = ({ mealPlan, address, payment }) => {
   return (
     <>
       <Grid container sx={{ width: 500 }}>
-        <Grid item sx={{ width: 1 }}>
+        <Grid item sx={{ width: 1, pr: 1 }}>
           <Typography variant="h6" gutterBottom sx={{ width: 1 }}>
             Order summary
           </Typography>
@@ -70,7 +70,7 @@ const Review = ({ mealPlan, address, payment }) => {
             <Typography gutterBottom>{streetAddress}</Typography>
             <Typography gutterBottom>{cityStateZipCountry.join(', ')}</Typography>
           </Grid>
-          <Grid item container direction="column" xs={12} sm={6}>
+          <Grid item container direction="column" xs={12} sm={6} sx={{ pl: 5 }}>
             <Typography variant="h6" gutterBottom sx={{ mt: 2 }}>
               Payment details
             </Typography>

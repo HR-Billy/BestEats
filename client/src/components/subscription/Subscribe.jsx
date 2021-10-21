@@ -234,7 +234,7 @@ const Subscribe = () => {
   return (
     <ThemeProvider theme={myTheme}>
       <CssBaseline />
-      <Container component="main" maxWidth="md" sx={{ mb: 4 }}>
+      <Container component="main" maxWidth="md" sx={{ mb: 4, mt: 10 }}>
         <Paper elevation={0} sx={{ my: { xs: 3, md: 6 }, p: { xs: 2, md: 3 } }}>
           <Typography component="h1" variant="h4" align="center">
             Subscribe
