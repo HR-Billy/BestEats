@@ -21,6 +21,8 @@ const useStyles = makeStyles({
     paddingTop: '5%',
     paddingLeft: '2%',
     paddingRight: '2%',
+    maxHeight: '58vh',
+    overflow: 'scroll',
   },
   messageContainer: {
     minHeight: '10vh',

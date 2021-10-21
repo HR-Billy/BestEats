@@ -17,11 +17,11 @@ module.exports = {
   insertStatus: (req, res) => {
     const { id, text } = req.body;
 
-    db.query(status, [id, text], (err, data) => {
+    db.query(status, [id, text], (err) => {
       if (err) {
         res.status(404).send(err);
       } else {
-        res.status(201).send(data);
+        res.status(201).send(req.body);
       }
     });
   },
