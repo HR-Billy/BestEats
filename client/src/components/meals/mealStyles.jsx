@@ -6,7 +6,7 @@ const Filter = styled.div`
 `;
 
 const MealCards = styled.div`
-  width: 1400px;
+  width: 1200px;
   margin: auto;
 `;
 
@@ -48,6 +48,10 @@ const StyledCart = styled.div`
   margin-top: 55px;
 `;
 
+const QuantityInput = styled.input`
+  width: 50px;
+`;
+
 export {
   Filter,
   MealCards,
@@ -56,4 +60,5 @@ export {
   SubscribeBar,
   SubscribeButton,
   StyledCart,
+  QuantityInput,
 };

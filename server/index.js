@@ -1,6 +1,7 @@
 const express = require('express');
 const path = require('path');
 const runProfileRte = require('./controllers/profile');
+const runMealRte = require('./controllers/meals');
 
 const app = express();
 const port = 3000;
@@ -12,7 +13,7 @@ app.use(express.static(staticUrl));
 
 const FIX_ME = () => { console.log('https://www.youtube.com/watch?v=iM_S4RczozU router helper video'); };
 app.use('/home', FIX_ME);
-app.use('/meal-plan', FIX_ME);
+app.use('/meal-plan', runMealRte);
 app.use('/farmers', FIX_ME);
 app.use('/health', FIX_ME);
 app.use('/subscribe', FIX_ME);
