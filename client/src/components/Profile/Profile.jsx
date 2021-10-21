@@ -15,7 +15,9 @@ const Profile = () => {
   const [profilePhoto, setProfilePhoto] = useState('');
   const [feed, setFeed] = useState([]);
   const [products, setProducts] = useState([]);
-  const [yourMeals, setYourMeals] = useState([]);
+  const [arrivingMeals, setArrivingMeals] = useState([]);
+  const [recentMeals, setRecentMeals] = useState([]);
+  const [suggestedMeals, setSuggestedMeals] = useState([]);
 
   const arriving = 'on its way';
   const recent = 'recent orders';
@@ -31,7 +33,7 @@ const Profile = () => {
         setProfilePhoto(results.photo);
         setFeed(results.feed);
         setProducts(results.products);
-        setYourMeals(results.meals);
+        setRecentMeals(results.meals);
       });
   }, []);
 
@@ -40,7 +42,6 @@ const Profile = () => {
       feed,
       setFeed,
       products,
-      yourMeals,
     }}
     >
       <Container className={classes.wrapper}>
@@ -80,17 +81,17 @@ const Profile = () => {
             <Grid container spacing={3}>
               <Grid item xs={12}>
                 <Paper className={classes.orderContainer}>
-                  <Orders text={arriving} />
+                  <Orders text={arriving} meals={arrivingMeals} />
                 </Paper>
               </Grid>
               <Grid item xs={12}>
                 <Paper className={classes.orderContainer}>
-                  <Orders text={recent} />
+                  <Orders text={recent} meals={recentMeals} />
                 </Paper>
               </Grid>
               <Grid item xs={12}>
                 <Paper className={classes.orderContainer}>
-                  <Orders text={suggested} />
+                  <Orders text={suggested} meals={suggestedMeals} />
                 </Paper>
               </Grid>
             </Grid>

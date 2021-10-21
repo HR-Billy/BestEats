@@ -19,7 +19,7 @@ module.exports = {
       WHERE user_id = $1),
     'meals', (SELECT jsonb_agg( json_build_object(
       'meal_id', meal.id,
-      'meal-name', meal.meal_name,
+      'meal_name', meal.meal_name,
       'meal_photo', meal.photo,
       'vegetarian', meal.vegetarian,
       'pescatarian', meal.pescatarian,
