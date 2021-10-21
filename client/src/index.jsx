@@ -10,5 +10,5 @@ ReactDOM.render(
       <App />
     </Auth0ProviderWithHistory>
   </Router>,
-  document.getElementById('app')
+  document.getElementById('app'),
 );

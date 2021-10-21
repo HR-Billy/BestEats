@@ -10,7 +10,7 @@ CREATE TABLE users (
   id SERIAL NOT NULL PRIMARY KEY,
   auth_id VARCHAR(50) NOT NULL UNIQUE,
   username VARCHAR(30) NOT NULL UNIQUE,
-  hash_password VARCHAR(64) NOT NULL,
+  -- hash_password VARCHAR(64) NOT NULL,
   first_name VARCHAR(50),
   last_name VARCHAR(50),
   email VARCHAR(100) NOT NULL,
