@@ -16,7 +16,7 @@ import FarmersPage from './Farmers/FarmersPage.jsx';
 import Subscribe from './subscription/Subscribe.jsx';
 import SignIn from './SignIn.jsx';
 import MealPlan from './meals/MealPlan.jsx';
-import Profile from './profile/Profile.jsx';
+import Profile from './Profile/Profile.jsx';
 import mytheme from './theme.jsx';
 
 const App = () => {
