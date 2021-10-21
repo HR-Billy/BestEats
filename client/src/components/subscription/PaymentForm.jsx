@@ -28,6 +28,7 @@ const PaymentForm = ({ address, payment, setPayment }) => {
                 variant="standard"
                 value={payment.billing_firstName}
                 onChange={handleChange}
+                inputProps={{ maxLength: 50 }}
               />
             </Grid>
             <Grid item xs={12} sm={6}>
@@ -40,6 +41,7 @@ const PaymentForm = ({ address, payment, setPayment }) => {
                 variant="standard"
                 value={payment.billing_lastName}
                 onChange={handleChange}
+                inputProps={{ maxLength: 50 }}
               />
             </Grid>
             <Grid item xs={12}>
@@ -52,6 +54,7 @@ const PaymentForm = ({ address, payment, setPayment }) => {
                 variant="standard"
                 value={payment.billing_address1}
                 onChange={handleChange}
+                inputProps={{ maxLength: 100 }}
               />
             </Grid>
             <Grid item xs={12}>
@@ -63,6 +66,7 @@ const PaymentForm = ({ address, payment, setPayment }) => {
                 variant="standard"
                 value={payment.billing_address2}
                 onChange={handleChange}
+                inputProps={{ maxLength: 100 }}
               />
             </Grid>
             <Grid item xs={12} sm={6}>
@@ -75,6 +79,7 @@ const PaymentForm = ({ address, payment, setPayment }) => {
                 variant="standard"
                 value={payment.billing_city}
                 onChange={handleChange}
+                inputProps={{ maxLength: 100 }}
               />
             </Grid>
             <Grid item xs={12} sm={6}>
@@ -87,6 +92,7 @@ const PaymentForm = ({ address, payment, setPayment }) => {
                 variant="standard"
                 value={payment.billing_state}
                 onChange={handleChange}
+                inputProps={{ maxLength: 10 }}
               />
             </Grid>
             <Grid item xs={12} sm={6}>
@@ -99,6 +105,7 @@ const PaymentForm = ({ address, payment, setPayment }) => {
                 variant="standard"
                 value={payment.billing_zip}
                 onChange={handleChange}
+                inputProps={{ maxLength: 15 }}
               />
             </Grid>
             <Grid item xs={12} sm={6}>
@@ -111,6 +118,7 @@ const PaymentForm = ({ address, payment, setPayment }) => {
                 variant="standard"
                 value={payment.billing_country}
                 onChange={handleChange}
+                inputProps={{ maxLength: 40 }}
               />
             </Grid>
           </Grid>
@@ -149,6 +157,7 @@ const PaymentForm = ({ address, payment, setPayment }) => {
                 variant="standard"
                 value={payment.cardName}
                 onChange={handleChange}
+                inputProps={{ maxLength: 100 }}
               />
             </Grid>
             <Grid item xs={12} md={6}>
@@ -162,6 +171,7 @@ const PaymentForm = ({ address, payment, setPayment }) => {
                 variant="standard"
                 value={payment.cardNumber}
                 onChange={handleChange}
+                inputProps={{ maxLength: 19 }}
               />
             </Grid>
             <Grid item xs={12} md={6}>
@@ -172,21 +182,21 @@ const PaymentForm = ({ address, payment, setPayment }) => {
                 name="exMonth"
                 value={payment.exMonth}
                 onChange={handleChange}
-                sx={{ width: '48%' }}
+                sx={{ width: '47%' }}
               >
                 <MenuItem value="0">Month</MenuItem>
-                <MenuItem value="01">January</MenuItem>
-                <MenuItem value="02">February</MenuItem>
-                <MenuItem value="03">March</MenuItem>
-                <MenuItem value="04">April</MenuItem>
-                <MenuItem value="05">May</MenuItem>
-                <MenuItem value="06">June</MenuItem>
-                <MenuItem value="07">July</MenuItem>
-                <MenuItem value="08">August</MenuItem>
-                <MenuItem value="09">September</MenuItem>
-                <MenuItem value="10">October</MenuItem>
-                <MenuItem value="11">November</MenuItem>
-                <MenuItem value="12">December</MenuItem>
+                <MenuItem value="01">01</MenuItem>
+                <MenuItem value="02">02</MenuItem>
+                <MenuItem value="03">03</MenuItem>
+                <MenuItem value="04">04</MenuItem>
+                <MenuItem value="05">05</MenuItem>
+                <MenuItem value="06">06</MenuItem>
+                <MenuItem value="07">07</MenuItem>
+                <MenuItem value="08">08</MenuItem>
+                <MenuItem value="09">09</MenuItem>
+                <MenuItem value="10">10</MenuItem>
+                <MenuItem value="11">11</MenuItem>
+                <MenuItem value="12">12</MenuItem>
               </Select>
               <Select
                 required
@@ -194,7 +204,7 @@ const PaymentForm = ({ address, payment, setPayment }) => {
                 name="exYear"
                 value={payment.exYear}
                 onChange={handleChange}
-                sx={{ width: '44%', ml: 1 }}
+                sx={{ width: '49%', ml: 1 }}
               >
                 <MenuItem value="0">Year</MenuItem>
                 {generateYears()}
@@ -206,12 +216,13 @@ const PaymentForm = ({ address, payment, setPayment }) => {
                 id="cvv"
                 name="cvv"
                 label="CVV"
-                helperText="Three digit number on the back of Visa/MC/Disc or 4 digit number on the front of Amex"
+                helperText="3 digit number on the back of Visa/MC/Disc or 4 digit number on the front of Amex"
                 fullWidth
                 autoComplete="cc-csc"
                 variant="standard"
                 value={payment.cvv}
                 onChange={handleChange}
+                inputProps={{ maxLength: 4 }}
               />
             </Grid>
             <Grid item xs={12}>
