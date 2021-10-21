@@ -1,5 +1,5 @@
 /* eslint-disable import/extensions */
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import axios from 'axios';
 import {
   ThemeProvider, CssBaseline, Typography, Grid, Box, Container,
@@ -26,9 +26,12 @@ const Copyright = () => (
 );
 
 const Subscribe = () => {
+  const userId = useContext(Context.userId);
+  console.log(userId);
+
   // this component assumes the user is already logged in;
   // below is just a placeholder which will be updated with userId from authentication
-  const userId = Math.round((Math.random() * 500) + 1);
+  // const userId = Math.round((Math.random() * 500) + 1);
 
   const steps = ['Select Plan', 'Shipping', 'Payment', 'Select Your Meals'];
 

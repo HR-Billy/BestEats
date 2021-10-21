@@ -3,9 +3,29 @@ import { createTheme } from '@mui/material/styles';
 
 const myTheme = createTheme({
   typography: {
+    fontFamily: "'Source Sans Pro', sans-serif",
+    fontSize: 14,
+    fontWeightLight: 300,
+    fontWeightRegular: 400,
+    fontWeightMedium: 700,
+    h1: {
+      // fontFamily: "'Permanent Marker', sans-serif",
+      // fontFamily: 'Work Sans',
+      fontFamily: "'Kalam', sans-serif",
+      fontWeight: 600,
+    },
     h2: {
-      fontSize: 36,
+      fontFamily: "'Kalam', sans-serif",
+      fontSize: 44,
+      fontWeight: 400,
       marginbottom: 12,
+    },
+    h4: {
+      fontWeight: 300,
+    },
+    h6: {
+      fontFamily: "'Kalam', sans-serif",
+      fontSize: 22,
     },
   },
   palette: {

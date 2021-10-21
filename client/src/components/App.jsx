@@ -22,7 +22,8 @@ import mytheme from './theme.jsx';
 
 const App = () => {
   const [loggedIn, setLoggedIn] = useState(false);
-  const [userId, setUserId] = ('');
+  const [userId, setUserId] = useState(Math.round((Math.random() * 500) + 1));
+
   return (
     <Context.Provider value={{
       loggedIn,
@@ -99,7 +100,7 @@ const App = () => {
                 </Link>
               </MainSet>
               <Link to="/login" style={{ textDecoration: 'none' }}>
-                <Login>LOGIN</Login>
+                <Button>LOGIN</Button>
               </Link>
             </NavigationBar>
             <CurrentPage>
@@ -125,7 +126,7 @@ const App = () => {
               <Route
                 exact
                 path="/subscribe"
-                render={() => <h1>Subscription component goes here</h1>}
+                render={() => <Subscribe />}
               />
               <Route
                 exact
