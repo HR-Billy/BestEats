@@ -145,5 +145,7 @@ const App = () => {
         </ThemeProvider>
       </div>
     </Context.Provider>
+  );
+};
 
 export default App;
