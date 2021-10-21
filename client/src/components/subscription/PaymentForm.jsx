@@ -1,7 +1,9 @@
 /* eslint-disable import/extensions */
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Grid, Typography, TextField, InputLabel, Select, MenuItem, FormControlLabel, Checkbox } from '@mui/material';
+import {
+  Grid, Typography, TextField, InputLabel, Select, MenuItem, FormControlLabel, Checkbox,
+} from '@mui/material';
 
 const PaymentForm = ({ address, payment, setPayment }) => {
   const handleChange = (e) => {
@@ -77,6 +79,7 @@ const PaymentForm = ({ address, payment, setPayment }) => {
             </Grid>
             <Grid item xs={12} sm={6}>
               <TextField
+                required
                 id="state"
                 name="billing_state"
                 label="State/Province/Region"

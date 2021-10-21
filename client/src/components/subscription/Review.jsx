@@ -1,7 +1,9 @@
 /* eslint-disable import/extensions */
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Grid, Typography, List, ListItem, ListItemText } from '@mui/material';
+import {
+  Grid, Typography, List, ListItem, ListItemText,
+} from '@mui/material';
 
 const Review = ({ mealPlan, address, payment }) => {
   const prices = [
@@ -30,12 +32,12 @@ const Review = ({ mealPlan, address, payment }) => {
   const payInfo = [
     { name: 'Card holder', detail: payment.cardName },
     { name: 'Card number', detail: payment.cardNumber },
-    { name: 'Expiry date', detail: `${payment.exMonth}-${payment.exYear}` },
+    { name: 'Expiry date', detail: `${payment.exMonth}/${payment.exYear}` },
   ];
   return (
     <>
       <Grid container sx={{ width: 500 }}>
-        <Grid item sx={{ width: 1 }}>
+        <Grid item sx={{ width: 1, pr: 1 }}>
           <Typography variant="h6" gutterBottom sx={{ width: 1 }}>
             Order summary
           </Typography>
@@ -68,7 +70,7 @@ const Review = ({ mealPlan, address, payment }) => {
             <Typography gutterBottom>{streetAddress}</Typography>
             <Typography gutterBottom>{cityStateZipCountry.join(', ')}</Typography>
           </Grid>
-          <Grid item container direction="column" xs={12} sm={6}>
+          <Grid item container direction="column" xs={12} sm={6} sx={{ pl: 5 }}>
             <Typography variant="h6" gutterBottom sx={{ mt: 2 }}>
               Payment details
             </Typography>
