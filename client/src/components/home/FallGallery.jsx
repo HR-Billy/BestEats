@@ -8,9 +8,9 @@ import images from './images.js';
 const FallGallery = () => (
   <>
     <Box sx={{ backgroundColor: 'orange' }}>
-      <Grid container>
+      <Grid container align="center" justify="center" alignItems="center">
         <Grid item>
-          <ImageList sx={{ width: 700 }} cols={3} rowHeight={164} gap={0}>
+          <ImageList sx={{ width: 700, mt: 0, mb: 0 }} cols={3} rowHeight={164} gap={0}>
             {images.map((item) => (
               <ImageListItem key={item.img}>
                 <img
@@ -23,9 +23,10 @@ const FallGallery = () => (
             ))}
           </ImageList>
         </Grid>
-        <Grid item style={{ marginTop: 140, marginLeft: 140 }}>
+        <Grid item style={{ textAlign: 'center', margin: 'auto' }}>
+          {/* <Grid item style={{ align: center }}> */}
 
-          <Typography color="inherit" align="center" variant="h2" marked="center">We love Fall too.</Typography>
+          <Typography color="white" variant="h2" marked="center">We love Fall too.</Typography>
           <Link
             to={{
               pathname: '/store',
@@ -35,7 +36,19 @@ const FallGallery = () => (
             }}
             style={{ textDecoration: 'none' }}
           >
-            <Button style={{ margin: '0 auto', display: 'flex' }}>Go to Fall items</Button>
+            {/* <Button style={{ margin: '0 auto', display: 'flex' }}>Go to Fall items</Button> */}
+            <Button
+              color="primary"
+              variant="contained"
+              size="large"
+              component="a"
+      // href="/premium-themes/onepirate/sign-up/"
+              sx={{ mt: 2, minWidth: 200 }}
+            >
+              Go to Fall items
+
+            </Button>
+
           </Link>
 
         </Grid>
