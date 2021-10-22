@@ -53,7 +53,7 @@ const App = () => {
       member_start_date: user.updated_at,
       profile_pic: user.picture,
     };
-    axios.post('/member/new', newUser)
+    axios.post('api/member/new', newUser)
       .then((res) => {
         console.log(res.data);
       })
@@ -80,7 +80,7 @@ const App = () => {
   useEffect(() => {
     if (isAuthenticated) {
       console.log(user.sub);
-      axios.get('/member/substatus', user.sub)
+      axios.get('api/member/substatus', user.sub)
         .then((res) => {
           console.log(res);
           setSubscribed(res);
