@@ -10,10 +10,18 @@ router.route('/new')
     model.postNewUser(req, res);
   });
 
+// checks if user exists
+router.route('/status')
+  .get((req, res) => {
+    console.log('checking existence on', req.body);
+    // console.log('exists?', res);
+    model.getStatus(req, res);
+  });
+
 // checks if user is subscribed
 router.route('/substatus')
   .get((req, res) => {
-    console.log('checking route');
+    console.log('checking subscription status');
     console.log('here is the body', req.body);
     model.getSubStatus(req, res);
   });

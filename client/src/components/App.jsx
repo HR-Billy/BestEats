@@ -4,7 +4,9 @@ import axios from 'axios';
 import { ThemeProvider } from '@mui/material/styles';
 import { Button, Typography } from '@mui/material';
 import { useAuth0 } from '@auth0/auth0-react';
-import { Text, NavigationBar, Login, CurrentPage, MainSet } from './styles.jsx';
+import {
+  Text, NavigationBar, Login, CurrentPage, MainSet,
+} from './styles.jsx';
 import Home from './home/Home.jsx';
 import { Context } from '../Context.jsx';
 import Store from './grocery_page/Store.jsx';
@@ -18,12 +20,11 @@ import mytheme from './theme.jsx';
 import AuthButton from './auth/authentication-button.jsx';
 import ProtectedRoute from './auth/protected-route.jsx';
 
-
 const App = () => {
   const { user, isAuthenticated } = useAuth0();
   const [subscribed, setSubscribed] = useState(false);
   // const [loggedIn, setLoggedIn] = useState(false);
-  // const [userId, setUserId] = '';
+  const [userId, setUserId] = '';
   // const { user } = useAuth0();
   // console.log(user);
 
@@ -43,6 +44,8 @@ const App = () => {
       })
       .catch(console.log);
   };
+
+  // useEffect(() => addUser(), [isAuthenticated]);
 
   const renderSubscribe = () => {
     if (!subscribed) {
@@ -64,13 +67,25 @@ const App = () => {
   useEffect(() => {
     if (isAuthenticated) {
       console.log(user.sub);
-      axios.get('api/member/substatus', user.sub)
+      // setUserId(user.sub);
+      // check if current user exists in user table
+      axios.get('api/member/status', user.sub)
         .then((res) => {
-          console.log(res);
-          setSubscribed(res);
-          renderSubscribe();
+          console.log('status', res.data);
+          // if exists, check subscription status
+          if (res.data) {
+            axios.get('api/member/substatus', user.sub)
+              .then((nextres) => {
+                console.log(nextres.data);
+                setSubscribed(nextres.data);
+                renderSubscribe();
+              })
+              .catch(console.log('error with get request'));
+          // if not, add user. keep subscribe = false.
+          } else {
+            addUser();
+          }
         })
-        .catch(console.log);
     }
   }, [isAuthenticated]);
 
@@ -80,73 +95,73 @@ const App = () => {
       setSubscribed,
       // loggedIn,
       // setLoggedIn,
-      // userId,
-      // setUserId,
+      userId,
+      setUserId,
     }}
     >
       <div>
-      <ThemeProvider theme={mytheme}>
-        <Router>
-          <NavigationBar>
-            <MainSet>
-              <Link to="/" style={{ textDecoration: 'none' }}>
-                <Typography
-                  color="black"
-                  align="center"
-                  variant="h5"
+        <ThemeProvider theme={mytheme}>
+          <Router>
+            <NavigationBar>
+              <MainSet>
+                <Link to="/" style={{ textDecoration: 'none' }}>
+                  <Typography
+                    color="black"
+                    align="center"
+                    variant="h5"
                   // sx={{ mb: 4, mt: { sx: 4, sm: 10 } }}
-                  sx={{ mb: 3, mt: 3, ml: 3 }}
-                >
-                  HOME
-                </Typography>
-              </Link>
-              <Link to="/meal-plan" style={{ textDecoration: 'none' }}>
-                <Typography
-                  color="black"
-                  align="center"
-                  variant="h5"
-                  sx={{ mb: 3, mt: 3, ml: 3 }}
-                >
-                  MEALS
-                </Typography>
-              </Link>
-              <Link to="/farmers" style={{ textDecoration: 'none' }}>
-                <Typography
-                  color="black"
-                  align="center"
-                  variant="h5"
-                  sx={{ mb: 3, mt: 3, ml: 3 }}
-                >
-                  FARMERS
-                </Typography>
-              </Link>
-              <Link to="/store" style={{ textDecoration: 'none' }}>
-                <Typography
-                  color="black"
-                  align="center"
-                  variant="h5"
-                  sx={{ mb: 3, mt: 3, ml: 3 }}
-                >
-                  STORE
-                </Typography>
-              </Link>
-              <Link to="/health" style={{ textDecoration: 'none' }}>
-                <Typography
-                  color="black"
-                  align="center"
-                  variant="h5"
-                  sx={{ mb: 3, mt: 3, ml: 3 }}
-                >
-                  LIFESTYLE
-                </Typography>
-              </Link>
-              {renderSubscribe()}
-            </MainSet>
-            <Link to="/login" style={{ textDecoration: 'none' }}>
+                    sx={{ mb: 3, mt: 3, ml: 3 }}
+                  >
+                    HOME
+                  </Typography>
+                </Link>
+                <Link to="/meal-plan" style={{ textDecoration: 'none' }}>
+                  <Typography
+                    color="black"
+                    align="center"
+                    variant="h5"
+                    sx={{ mb: 3, mt: 3, ml: 3 }}
+                  >
+                    MEALS
+                  </Typography>
+                </Link>
+                <Link to="/farmers" style={{ textDecoration: 'none' }}>
+                  <Typography
+                    color="black"
+                    align="center"
+                    variant="h5"
+                    sx={{ mb: 3, mt: 3, ml: 3 }}
+                  >
+                    FARMERS
+                  </Typography>
+                </Link>
+                <Link to="/store" style={{ textDecoration: 'none' }}>
+                  <Typography
+                    color="black"
+                    align="center"
+                    variant="h5"
+                    sx={{ mb: 3, mt: 3, ml: 3 }}
+                  >
+                    STORE
+                  </Typography>
+                </Link>
+                <Link to="/health" style={{ textDecoration: 'none' }}>
+                  <Typography
+                    color="black"
+                    align="center"
+                    variant="h5"
+                    sx={{ mb: 3, mt: 3, ml: 3 }}
+                  >
+                    LIFESTYLE
+                  </Typography>
+                </Link>
+                {renderSubscribe()}
+              </MainSet>
+              {/* <Link to="/login" style={{ textDecoration: 'none' }}>
                 <Button variant="contained" sx={{ mt: 3, mx: 3 }}>
                   LOGIN
                 </Button>
-              </Link>
+              </Link> */}
               <AuthButton />
             </NavigationBar>
             <CurrentPage>

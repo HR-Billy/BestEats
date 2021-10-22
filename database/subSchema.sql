@@ -33,7 +33,7 @@ CREATE TABLE users (
   cardholder_name	VARCHAR(100),
   card_number VARCHAR(64),
   card_exp_date DATE,
-  billing_address1 VARCHAR(100) NOT NULL,
+  billing_address1 VARCHAR(100),
   billing_address2 VARCHAR(100),
   billing_city VARCHAR(100),
   billing_state VARCHAR(10),

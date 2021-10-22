@@ -1,6 +1,7 @@
 /* eslint-disable import/extensions */
 import React, { useState, useEffect, useContext } from 'react';
 import axios from 'axios';
+import { useAuth0 } from '@auth0/auth0-react';
 import {
   ThemeProvider, CssBaseline, Typography, Grid, Box, Container,
   Paper, Stepper, Step, StepLabel, Button,
@@ -28,7 +29,9 @@ const Copyright = () => (
 const Subscribe = () => {
   // this component assumes the user is already logged in;
   // below is just a placeholder which will be updated with userId from authentication
-  const userId = Math.round((Math.random() * 500) + 1);
+  // const userId = Math.round((Math.random() * 500) + 1);
+  const { user } = useAuth0();
+  const userId = user.sub;
   console.log(userId);
 
   const steps = ['Select Plan', 'Shipping', 'Payment', 'Select Your Meals'];
@@ -196,7 +199,7 @@ const Subscribe = () => {
     }
 
     const userInfo = {
-      id: userId,
+      auth_id: userId,
       first_name: address.firstName,
       last_name: address.lastName,
       address1: address.address1,
