@@ -39,7 +39,7 @@ const NavigationBar = styled.div`
 `;
 
 const CurrentPage = styled.div`
-  margin-top: 55px;
+  margin-top: 100px;
 `;
 
 const MainSet = styled.div`
@@ -48,5 +48,9 @@ const MainSet = styled.div`
 `;
 
 export {
-  Text, NavigationBar, Login, CurrentPage, MainSet,
+  Text,
+  NavigationBar,
+  Login,
+  CurrentPage,
+  MainSet,
 };

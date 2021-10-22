@@ -13,6 +13,7 @@ import HealthPage from './Health/HealthPage.jsx';
 import Subscribe from './subscription/Subscribe.jsx';
 import SubLanding from './subscription/SubLanding.jsx';
 import MealPlan from './meals/MealPlan.jsx';
+import ThankYou from './meals/ThankYou.jsx';
 import Profile from './profile/Profile.jsx';
 import mytheme from './theme.jsx';
 import AuthButton from './auth/authentication-button.jsx';
@@ -23,7 +24,6 @@ const App = () => {
   const [userId, setUserId] = '';
   const { user, isAuthenticated } = useAuth0();
   const [subscribed, setSubscribed] = useState(false);
-  console.log(user);
 
   const renderSubscribe = () => {
     if (!subscribed) {
