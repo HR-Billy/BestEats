@@ -24,7 +24,6 @@ import ProtectedRoute from './auth/protected-route.jsx';
 const App = () => {
   const { user, isAuthenticated } = useAuth0();
   const [subscribed, setSubscribed] = useState(false);
-  console.log(user);
 
   const renderSubscribe = () => {
     if (!isAuthenticated) {
