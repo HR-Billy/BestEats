@@ -10,7 +10,7 @@ CREATE TABLE users (
   id SERIAL NOT NULL PRIMARY KEY,
   auth_id VARCHAR(50) NOT NULL UNIQUE,
   username VARCHAR(30) NOT NULL UNIQUE,
-  hash_password VARCHAR(64) NOT NULL,
+  -- hash_password VARCHAR(64) NOT NULL,
   first_name VARCHAR(50),
   last_name VARCHAR(50),
   email VARCHAR(100) NOT NULL,
@@ -33,16 +33,16 @@ CREATE TABLE users (
   cardholder_name	VARCHAR(100),
   card_number VARCHAR(64),
   card_exp_date DATE,
-  billing_address1 VARCHAR(100) NOT NULL,
+  billing_address1 VARCHAR(100),
   billing_address2 VARCHAR(100),
   billing_city VARCHAR(100),
   billing_state VARCHAR(10),
   billing_postal_code VARCHAR(15),
   billing_country VARCHAR(40),
-  profile_pic VARCHAR(200)
+  profile_pic VARCHAR(2048)
 );
 COPY users
-FROM '/Users/katherineyu/bootcamp/BestEats/database/data/userswithbilling.csv'
+FROM '/Users/katherineyu/bootcamp/BestEats/database/CSV Data/userswithbillingprofile.csv'
 DELIMITER ','
 CSV HEADER;
 

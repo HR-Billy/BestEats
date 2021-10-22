@@ -6,18 +6,25 @@ import { ProfileContext } from '../ProfileContext.jsx';
 
 const NutritionFacts = () => {
   const { nutritionFacts, mealAverages } = useContext(ProfileContext);
-  const { calories_average, fat_average, carbs_average } = mealAverages;
+  const { caloriesAverage, fatAverage, carbsAverage } = mealAverages;
 
   const createData = (name, calories, fat, carbs) => ({ name, calories, fat, carbs });
   const nutirtionRows = nutritionFacts.map((meal) => {
-    const { name, calories, fat, carbs } = meal;
+    const {
+      name, calories, fat, carbs,
+    } = meal;
 
     const info = createData(name, calories, fat, carbs);
     return info;
   });
 
   return (
-    <TableContainer component={Paper}>
+    <TableContainer
+      component={Paper}
+      sx={{
+        maxHeight: '62vh', minHeight: '61vh', backgroundColor: '#B1C701', boxShadow: '4px 4px 4px #ccc',
+      }}
+    >
       <Table>
         <TableHead>
           <TableRow>
@@ -44,9 +51,9 @@ const NutritionFacts = () => {
         <TableHead>
           <TableRow>
             <TableCell>Average</TableCell>
-            <TableCell align="right">{calories_average}</TableCell>
-            <TableCell align="right">{fat_average}</TableCell>
-            <TableCell align="right">{carbs_average}</TableCell>
+            <TableCell align="right">{caloriesAverage}</TableCell>
+            <TableCell align="right">{fatAverage}</TableCell>
+            <TableCell align="right">{carbsAverage}</TableCell>
           </TableRow>
         </TableHead>
       </Table>
