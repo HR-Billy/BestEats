@@ -3,6 +3,7 @@ import { makeStyles } from '@mui/styles';
 const useStyles = makeStyles({
   wrapper: {
     paddingTop: '3%',
+    // backgroundColor: '#F6951E',
   },
   picContainer: {
     minHeight: '20vh',
@@ -14,7 +15,7 @@ const useStyles = makeStyles({
   statusContainer: {
     minHeight: '13vh',
     padding: '2%',
-    backgroundColor: '#F6951E',
+    // backgroundColor: '#F6951E',
   },
   feedContainer: {
     minHeight: '67.5vh',
@@ -23,12 +24,12 @@ const useStyles = makeStyles({
     paddingRight: '2%',
     maxHeight: '58vh',
     overflow: 'scroll',
-    backgroundColor: '#5F9E00',
+    backgroundColor: '#B1C701',
   },
   messageContainer: {
     minHeight: '10vh',
     padding: '3%',
-    backgroundColor: '#F6951E',
+    // backgroundColor: '#F6951E',
   },
   orderContainer: {
     minHeight: '26.8vh',
@@ -36,7 +37,7 @@ const useStyles = makeStyles({
     paddingLeft: '2%',
     paddingRight: '2%',
     overflow: 'hidden',
-    backgroundColor: '#5F9E00',
+    backgroundColor: '#B1C701',
   },
   profilePhoto: {
     minHeight: '20vh',
@@ -47,7 +48,7 @@ const useStyles = makeStyles({
     minHeight: '18vh',
     maxHeight: '18vh',
     paddingTop: '15%',
-    backgroundColor: '#F6951E',
+    // backgroundColor: '#F6951E',
   },
   mealPhoto: {
     minHeight: '10vh',
