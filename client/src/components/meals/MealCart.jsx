@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import { Typography, Button } from '@mui/material';
 import CartEntry from './CartEntry.jsx';
 import { StyledCart } from './mealStyles.jsx';
@@ -53,7 +54,9 @@ const MealCart = ({ cart, setCart }) => {
                 remove={removeFromCart}
               />
             ))}
-            <Button variant="contained"> Confirm </Button>
+            <Link to="/meal-plan/thankyou" style={{ textDecoration: 'none' }}>
+              <Button variant="contained"> Confirm </Button>
+            </Link>
           </StyledCart>
         )}
     </>

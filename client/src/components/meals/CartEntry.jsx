@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Button } from '@mui/material';
-import { QuantityInput } from './mealStyles.jsx';
+import { Button, Typography } from '@mui/material';
+import { QuantityInput, QuantitySet } from './mealStyles.jsx';
 
 const CartEntry = ({
   item,
@@ -10,10 +10,12 @@ const CartEntry = ({
   remove,
 }) => (
   <>
-    <span>{item}</span>
-    <QuantityInput type="number" name={item} value={quantity} onChange={changeHandler} min={1} />
-    <Button name={item} onClick={remove}>Remove</Button>
-    <br />
+    <Typography><span>{item}</span></Typography>
+    <QuantitySet>
+      <QuantityInput type="number" name={item} value={quantity} onChange={changeHandler} min={1} />
+      <Button name={item} onClick={remove}>Remove</Button>
+      <br />
+    </QuantitySet>
   </>
 );
 

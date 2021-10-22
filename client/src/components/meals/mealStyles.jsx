@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 const Filter = styled.div`
+  z-index: -10;
   width: 800px;
   margin: auto;
 `;
@@ -8,13 +9,14 @@ const Filter = styled.div`
 const MealCards = styled.div`
   width: 1200px;
   margin: auto;
+  margin-bottom: 100px;
 `;
 
 const Meal = styled.div`
-  border: 2px solid red;
   height: auto;
   width: 100%;
   margin-right: -100px;
+  box-shadow: 0 0 3px #ccc;
 `;
 
 const MealImage = styled.img`
@@ -23,14 +25,16 @@ const MealImage = styled.img`
 `;
 
 const SubscribeBar = styled.div`
-  background-color: green;
+  background-color: white;
   position: fixed;
   bottom: 0;
   margin-left: -10px;
   width: 101%;
-  height: 40px;
+  height: 80px;
   display: flex;
   justify-content: center;
+  border-top: 2px solid #e9eae8;
+  border-bottom: 2px solid #e9eae8;
 `;
 
 const StyledCart = styled.div`
@@ -66,6 +70,29 @@ const PropertiesText = styled.p`
   margin-left: 1%;
 `;
 
+const BottomCard = styled.div`
+  border-left: 1px solid #e9eae8;
+  border-right: 1px solid #e9eae8;
+  border-bottom: 1px solid #e9eae8;
+`;
+
+const QuantitySet = styled.div`
+  display: flex;
+  justify-content: flex-end;
+`;
+
+const SubscribeButton = styled.div`
+  margin: auto;
+`;
+
+const ThankYouMessage = styled.div`
+  padding: 70px 100px 100px 100px;
+  margin: auto;
+  width: 80%;
+  height: auto;
+  background-color: #e9eae8;
+`;
+
 export {
   Filter,
   MealCards,
@@ -74,7 +101,11 @@ export {
   SubscribeBar,
   StyledCart,
   QuantityInput,
+  QuantitySet,
   NameText,
   DescriptionText,
   PropertiesText,
+  BottomCard,
+  SubscribeButton,
+  ThankYouMessage,
 };

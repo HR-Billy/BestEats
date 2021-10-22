@@ -13,9 +13,23 @@ router.route('/')
     });
   });
 
+router.route('/thankyou')
+  .get((req, res) => {
+    res.sendFile(path.join(__dirname, '../../public/index.html'), (err) => {
+      if (err) {
+        res.status(500).send(err);
+      }
+    });
+  });
+
 router.route('/meals')
   .get((req, res) => {
     model.getMealData(req, res);
+  });
+
+router.route('/user/:userId')
+  .get((req, res) => {
+    model.getUserMeals(req, res);
   });
 
 module.exports = router;

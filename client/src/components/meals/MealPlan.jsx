@@ -10,6 +10,7 @@ import MealCart from './MealCart.jsx';
 import {
   MealCards,
   SubscribeBar,
+  SubscribeButton,
 } from './mealStyles.jsx';
 
 const MealPlan = () => {
@@ -84,9 +85,11 @@ const MealPlan = () => {
       {!loggedIn
         && (
           <SubscribeBar>
-            <Link to="/subscribe" style={{ textDecoration: 'none' }}>
-              <Button variant="contained" align="center"> Subscribe </Button>
-            </Link>
+            <SubscribeButton>
+              <Link to="/subscribe" style={{ textDecoration: 'none' }}>
+                <Button variant="contained" sx={{ m: 1, width: 300, fontSize: 30 }}> Subscribe </Button>
+              </Link>
+            </SubscribeButton>
           </SubscribeBar>
         )}
     </>

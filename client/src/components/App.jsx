@@ -17,6 +17,7 @@ import HealthPage from './Health/HealthPage.jsx';
 import Subscribe from './subscription/Subscribe.jsx';
 import SignIn from './SignIn.jsx';
 import MealPlan from './meals/MealPlan.jsx';
+import ThankYou from './meals/ThankYou.jsx';
 import Profile from './Profile/Profile.jsx';
 import mytheme from './theme.jsx';
 
@@ -132,6 +133,13 @@ const App = () => {
                 path="/login"
                 render={() => (
                   <SignIn />
+                )}
+              />
+              <Route
+                exact
+                path="/meal-plan/thankyou"
+                render={() => (
+                  <ThankYou />
                 )}
               />
             </CurrentPage>

@@ -7,26 +7,29 @@ import {
   NameText,
   DescriptionText,
   PropertiesText,
+  BottomCard,
 } from './mealStyles.jsx';
 
 const MealCard = ({ meal, click }) => (
   <Grid item xs={4} sm={4} md={4} lg={4} xl={4}>
     <Meal onClick={() => { click(meal.meal_name); }}>
       <MealImage src={meal.photo} alt={meal.meal_name} />
-      <Typography><NameText>{meal.meal_name}</NameText></Typography>
-      <Typography><DescriptionText>{meal.description}</DescriptionText></Typography>
-      <Typography>
-        <PropertiesText>
-          <b>
-            {meal.time}
-            min
-          </b>
-          &nbsp;
-          {meal.highlights !== null && '|'}
-          &nbsp;
-          {meal.highlights}
-        </PropertiesText>
-      </Typography>
+      <BottomCard>
+        <Typography><NameText>{meal.meal_name}</NameText></Typography>
+        <Typography><DescriptionText>{meal.description}</DescriptionText></Typography>
+        <Typography>
+          <PropertiesText>
+            <b>
+              {meal.time}
+              min
+            </b>
+            &nbsp;
+            {meal.highlights !== null && '|'}
+            &nbsp;
+            {meal.highlights}
+          </PropertiesText>
+        </Typography>
+      </BottomCard>
     </Meal>
   </Grid>
 );
