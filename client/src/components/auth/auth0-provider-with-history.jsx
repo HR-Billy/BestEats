@@ -1,11 +1,10 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 import { Auth0Provider } from '@auth0/auth0-react';
-import { REACT_APP_AUTH0_DOMAIN, REACT_APP_AUTH0_CLIENT_ID } from '../../../../config.js';
 
 const Auth0ProviderWithHistory = ({ children }) => {
-  const domain = REACT_APP_AUTH0_DOMAIN;
-  const clientId = REACT_APP_AUTH0_CLIENT_ID;
+  const domain = process.env.REACT_APP_AUTH0_DOMAIN;
+  const clientId = process.env.REACT_APP_AUTH0_CLIENT_ID;
 
   const history = useHistory();
 
