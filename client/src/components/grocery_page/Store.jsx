@@ -23,7 +23,7 @@ const H3 = styled.div`
   padding-top: -30px;
   margin-top: -30px;
   color: #B0C800;
-`
+`;
 
 const Container = styled.div`
   width: 85%;
@@ -87,6 +87,7 @@ export default function Store() {
   }, [search]);
 
   return (
+    <>
     <Container>
       <H1>Best Eats</H1>
       <H3>Grocery</H3>
@@ -97,5 +98,6 @@ export default function Store() {
         {activeProducts && <Items products={activeProducts} setCart={setCart} />}
       </Wrapper>
     </Container>
+    </>
   );
 }
