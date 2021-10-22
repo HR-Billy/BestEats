@@ -12,10 +12,10 @@ module.exports = {
         res.status(500).send(err);
         console.log('error', err);
       } else if (!data.rows[0].exists) {
-        db.query(insertNewUser, [req.body.auth_id], (err2, data2) => {
+        db.query(insertNewUser, [req.body.auth_id], (err2) => {
           if (err2) {
             res.status(500).send(err2);
-            console.log('error', err);
+            console.log('error', err2);
           } else {
             // console.log('send false for new user');
             res.status(200).send(false);
@@ -25,7 +25,7 @@ module.exports = {
         db.query(selectSubscribed, [req.body.auth_id], (err3, data3) => {
           if (err3) {
             res.status(500).send(err3);
-            console.log('error', err);
+            console.log('error', err3);
           } else {
             // console.log('here is the data', data.rows[0].subscribed);
             res.status(200).send(data3.rows[0].subscribed);
