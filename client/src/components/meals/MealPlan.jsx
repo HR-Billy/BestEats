@@ -37,7 +37,7 @@ const MealPlan = () => {
   const getSubscriberStatus = () => {
     axios.get(`/meal-plan/user/${user.sub}`)
       .then((response) => {
-        console.log(response);
+        setIsMember(response.data[0].subscribed);
       });
   };
 
