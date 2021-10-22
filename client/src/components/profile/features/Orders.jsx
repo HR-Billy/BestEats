@@ -4,23 +4,23 @@ import {
 } from '@mui/material';
 import useStyles from '../styles.jsx';
 
-const Orders = ({ text, meals }) => {
+const Orders = ({ text, meals, noMeals }) => {
   const classes = useStyles();
   let orders;
 
   if (meals) {
     orders = meals.map((meal) => {
-      const { meal_id, meal_photo, meal_name} = meal;
+      const { mealId, mealPhoto, mealName } = meal;
 
       return (
-        <Grid item xs={4} key={meal_id}>
+        <Grid item xs={4} key={mealId}>
           <Paper className={classes.mealContainer}>
             <Grid container spacing={2} direction="column" alignItems="center">
               <Grid item>
-                <Avatar className={classes.mealPhoto} alt="meal" src={meal_photo} />
+                <Avatar className={classes.mealPhoto} alt="meal" src={mealPhoto} />
               </Grid>
               <Grid item>
-                <Typography>{meal_name}</Typography>
+                <Typography>{mealName}</Typography>
               </Grid>
             </Grid>
           </Paper>
@@ -29,12 +29,8 @@ const Orders = ({ text, meals }) => {
     });
   } else {
     orders = (
-      <Grid item xs={4}>
-        <Paper className={classes.mealContainer}>
-          <Grid container spacing={2} direction="column" alignItems="center">
-            <Typography>Nothing</Typography>
-          </Grid>
-        </Paper>
+      <Grid item xs={12}>
+        <Typography variant="h2">{noMeals}</Typography>
       </Grid>
     );
   }

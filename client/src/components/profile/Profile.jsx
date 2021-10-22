@@ -26,27 +26,28 @@ const Profile = () => {
 
   const [products, setProducts] = useState(null);
 
-  const arriving = 'on its way';
-  const recent = 'recent orders';
-  const suggested = 'suggested meals';
+  const arriving = 'ON ITS WAY:';
+  const recent = 'RECENT ORDERS:';
+  const suggested = 'SUGGESTED MEALS:';
+  const arrivingNone = 'Enjoy Your Meals';
+  const recentNone = 'Order More';
+  const suggestedNone = 'Update Your Preferences For Suggested Meals';
 
   useEffect(() => {
-    axios.get('profile/user/?user_id=1')
+    axios.get('profile/user/?user_id=14')
     // axios.get(`profile/user/?user_id=${userId}`)
       .then(({ data }) => {
-        // console.log(data[0]); DELETE
         const { results } = data[0];
 
         setProfilePhoto(results.photo);
-        setName(results.first_name);
-        setMemberSince(results.member_start_date);
+        setName(results.firstName);
+        setMemberSince(results.memberStartDate);
         setFeed(results.feed);
         setRecentMeals(results.recent);
         setArrivingMeals(results.arriving);
-        setMealAverages(results.meal_averages[0]);
-        setNutritionFacts(results.nutrition_facts);
-
-        setGetNewMealsOn(results.subscription_start_date); // implement later
+        setMealAverages(results.mealAverages[0]);
+        setNutritionFacts(results.nutritionFacts);
+        setGetNewMealsOn(results.subscriptionStartSate); // implement later
       });
   }, []);
 
@@ -60,20 +61,16 @@ const Profile = () => {
     }}
     >
       <Container className={classes.wrapper}>
-        <Grid container spacing={3}>
+        <Grid container align="center" justify="center" alignItems="center" spacing={3}>
 
           <Grid item xs={4}>
             <Grid container spacing={1.5}>
               <Grid item xs={12}>
-                <Paper className={classes.picContainer}>
-                  <Avatar className={classes.profilePhoto} alt="profile picture" src={profilePhoto} />
-                  {/* <Typography>Welcome {name}</Typography> */}
-                </Paper>
+                <Typography>Welcome {name}&#33;</Typography>
+                <Avatar className={classes.profilePhoto} alt="profile picture" src={profilePhoto} />
               </Grid>
               <Grid item xs={12}>
-                <Paper className={classes.nutritionContainer}>
-                  <NutritionFacts />
-                </Paper>
+                <NutritionFacts />
               </Grid>
             </Grid>
           </Grid>
@@ -97,17 +94,17 @@ const Profile = () => {
             <Grid container spacing={3}>
               <Grid item xs={12}>
                 <Paper className={classes.orderContainer}>
-                  <Orders text={suggested} meals={suggestedMeals} />
+                  <Orders text={suggested} meals={suggestedMeals} noMeals={suggestedNone} />
                 </Paper>
               </Grid>
               <Grid item xs={12}>
                 <Paper className={classes.orderContainer}>
-                  <Orders text={recent} meals={recentMeals} />
+                  <Orders text={recent} meals={recentMeals} noMeals={recentNone} />
                 </Paper>
               </Grid>
               <Grid item xs={12}>
                 <Paper className={classes.orderContainer}>
-                  <Orders text={arriving} meals={arrivingMeals} />
+                  <Orders text={arriving} meals={arrivingMeals} noMeals={arrivingNone} />
                 </Paper>
               </Grid>
             </Grid>
@@ -120,4 +117,3 @@ const Profile = () => {
 };
 
 export default Profile;
-
