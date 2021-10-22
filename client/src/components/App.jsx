@@ -39,10 +39,8 @@ const App = () => {
             <NavigationBar>
               <MainSet>
                 <Link to="/" style={{ textDecoration: 'none', margin: "0 0 0 10px", padding: "0 0 0 0", display: 'flex' }}>
-                  {/* <img src="https://images-ext-1.discordapp.net/external/NCEtE_ht5rE9qkVsUk_dtfzbwKvSCGZ1bB4s_kDyIR0/https/static.vecteezy.com/system/resources/previews/002/285/940/original/green-heeathy-food-with-spoon-fork-logo-free-vector.jpg?width=1008&height=1008" alt="best eats logo" height="80px" /> */}
                   <img src="https://www.graphicsprings.com/filestorage/stencils/1c3f83b24f3cd7029f90f9f6e250d09d.png?width=500&height=500" alt="best eats logo" height="70px" />
                   <Typography
-                    // color="#F24B6A"
                     color="#B0C800"
                     align="center"
                     variant="h4"
