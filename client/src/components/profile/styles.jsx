@@ -3,7 +3,6 @@ import { makeStyles } from '@mui/styles';
 const useStyles = makeStyles({
   wrapper: {
     paddingTop: '3%',
-    // backgroundColor: '#F6951E',
   },
   picContainer: {
     minHeight: '20vh',
@@ -15,7 +14,6 @@ const useStyles = makeStyles({
   statusContainer: {
     minHeight: '13vh',
     padding: '2%',
-    // backgroundColor: '#F6951E',
   },
   feedContainer: {
     minHeight: '67.5vh',
@@ -29,7 +27,7 @@ const useStyles = makeStyles({
   messageContainer: {
     minHeight: '10vh',
     padding: '3%',
-    // backgroundColor: '#F6951E',
+    boxShadow: '1px 1px 1px #ccc',
   },
   orderContainer: {
     minHeight: '26.8vh',
@@ -48,7 +46,7 @@ const useStyles = makeStyles({
     minHeight: '18vh',
     maxHeight: '18vh',
     paddingTop: '15%',
-    // backgroundColor: '#F6951E',
+    boxShadow: '4px 4px 4px #ccc',
   },
   mealPhoto: {
     minHeight: '10vh',
