@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
-// import Container from '@mui/material/Container';
+import { useAuth0 } from '@auth0/auth0-react';
 import { Grid, Button, Typography } from '@mui/material';
 import mockupMeals from './mockupMeals.jsx';
 import MealCard from './MealCard.jsx';
@@ -14,6 +14,8 @@ import {
 } from './mealStyles.jsx';
 
 const MealPlan = () => {
+  const { isAuthenticated, user } = useAuth0();
+  const [isMember, setIsMember] = useState(false);
   const [meals, setMeals] = useState([]);
   const [filteredMeals, setFilteredMeals] = useState(meals);
   const [cart, setCart] = useState({});
@@ -60,7 +62,12 @@ const MealPlan = () => {
     null
   );
 
-  useEffect(getMeals, []);
+  useEffect(() => {
+    getMeals();
+    if (isAuthenticated) {
+      setIsMember(user.sub);
+    }
+  }, [isAuthenticated]);
 
   return (
     <>
