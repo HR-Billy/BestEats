@@ -3,10 +3,12 @@ import {
   Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper,
 } from '@mui/material';
 import { ProfileContext } from '../ProfileContext.jsx';
+import useStyles from '../styles.jsx';
 
 const NutritionFacts = () => {
+  const classes = useStyles();
   const { nutritionFacts, mealAverages } = useContext(ProfileContext);
-  const { calories_average, fat_average, carbs_average } = mealAverages;
+  const { caloriesAverage, fatAverage, carbsAverage } = mealAverages;
 
   const createData = (name, calories, fat, carbs) => ({ name, calories, fat, carbs });
   const nutirtionRows = nutritionFacts.map((meal) => {
@@ -44,9 +46,9 @@ const NutritionFacts = () => {
         <TableHead>
           <TableRow>
             <TableCell>Average</TableCell>
-            <TableCell align="right">{calories_average}</TableCell>
-            <TableCell align="right">{fat_average}</TableCell>
-            <TableCell align="right">{carbs_average}</TableCell>
+            <TableCell align="right">{caloriesAverage}</TableCell>
+            <TableCell align="right">{fatAverage}</TableCell>
+            <TableCell align="right">{carbsAverage}</TableCell>
           </TableRow>
         </TableHead>
       </Table>

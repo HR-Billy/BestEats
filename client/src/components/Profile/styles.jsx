@@ -9,12 +9,16 @@ const useStyles = makeStyles({
     paddingLeft: '30%',
   },
   nutritionContainer: {
-    minHeight: '64vh',
+    minHeight: '61vh',
     paddingTop: '2%',
+  },
+  nutritionTable: {
+    minHeight: '20vh',
   },
   statusContainer: {
     minHeight: '13vh',
     padding: '2%',
+    backgroundColor: '#F6951E',
   },
   feedContainer: {
     minHeight: '67.5vh',
@@ -23,22 +27,31 @@ const useStyles = makeStyles({
     paddingRight: '2%',
     maxHeight: '58vh',
     overflow: 'scroll',
+    backgroundColor: '#5F9E00',
   },
   messageContainer: {
     minHeight: '10vh',
+    padding: '3%',
+    backgroundColor: '#F6951E',
   },
   orderContainer: {
-    minHeight: '27.8vh',
+    minHeight: '26.8vh',
+    maxHeight: '26.8vh',
     paddingLeft: '2%',
+    paddingRight: '2%',
+    overflow: 'hidden',
+    backgroundColor: '#5F9E00',
   },
   profilePhoto: {
     minHeight: '20vh',
     minWidth: '10vw',
   },
   mealContainer: {
+    paddingLeft: '3%',
     minHeight: '18vh',
     maxHeight: '18vh',
     paddingTop: '15%',
+    backgroundColor: '#F6951E',
   },
   mealPhoto: {
     minHeight: '10vh',
