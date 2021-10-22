@@ -92,14 +92,15 @@ const App = () => {
           <Router>
             <NavigationBar>
               <MainSet>
-                <Link to="/" style={{ textDecoration: 'none' }}>
+                <Link to="/" style={{ textDecoration: 'none', margin: "0 0 0 10px", padding: "0 0 0 0", display: 'flex' }}>
+                  <img src="https://www.graphicsprings.com/filestorage/stencils/1c3f83b24f3cd7029f90f9f6e250d09d.png?width=500&height=500" alt="best eats logo" height="70px" />
                   <Typography
-                    color="black"
+                    color="#B0C800"
                     align="center"
-                    variant="h5"
-                    sx={{ mb: 3, mt: 3, ml: 3 }}
+                    variant="h4"
+                    sx={{ mb: 3, mt: 3, ml: 0, mr: 5, fontFamily: "Kalam", fontSize: "25px", fontWeight: 'bold' }}
                   >
-                    HOME
+                    Best Eats
                   </Typography>
                 </Link>
                 <Link to="/meal-plan" style={{ textDecoration: 'none' }}>

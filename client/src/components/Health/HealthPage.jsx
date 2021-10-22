@@ -77,7 +77,6 @@ const theme = createTheme(
 export default function HealthPage() {
   return (
     <ThemeProvider theme={theme}>
-      <CssBaseline />
       <main>
         {/* Hero unit */}
         <Box
