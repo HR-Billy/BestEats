@@ -8,10 +8,6 @@ const useStyles = makeStyles({
     minHeight: '20vh',
     paddingLeft: '30%',
   },
-  nutritionContainer: {
-    minHeight: '61vh',
-    paddingTop: '2%',
-  },
   nutritionTable: {
     minHeight: '20vh',
   },

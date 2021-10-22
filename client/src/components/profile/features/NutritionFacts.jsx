@@ -19,7 +19,7 @@ const NutritionFacts = () => {
   });
 
   return (
-    <TableContainer component={Paper}>
+    <TableContainer component={Paper} sx={{ maxHeight: '61vh', minHeight: '61vh', backgroundColor: '#5F9E00' }}>
       <Table>
         <TableHead>
           <TableRow>

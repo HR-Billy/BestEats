@@ -38,7 +38,7 @@ module.exports = {
       ) ORDER BY date_ordered DESC)
       FROM user_meal
       INNER JOIN meal ON meal.id = user_meal.meal_id
-      WHERE user_id = 1)),
+      WHERE user_id = $1)),
     'mealAverages', (WITH avg AS
       (SELECT (sum(meal.carbs)/count(meal.carbs)) AS carbs,
       (sum(meal.fat)/count(meal.fat))AS fat,

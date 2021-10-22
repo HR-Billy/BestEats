@@ -10,7 +10,7 @@ const Orders = ({ text, meals, noMeals }) => {
 
   if (meals) {
     orders = meals.map((meal) => {
-      const { mealId, mealPhoto, mealName} = meal;
+      const { mealId, mealPhoto, mealName } = meal;
 
       return (
         <Grid item xs={4} key={mealId}>
@@ -30,11 +30,7 @@ const Orders = ({ text, meals, noMeals }) => {
   } else {
     orders = (
       <Grid item xs={12}>
-        {/* <Paper className={classes.mealContainer}> */}
-          {/* <Grid container spacing={2} direction="column" alignItems="center"> */}
-            <Typography variant="h2">{noMeals}</Typography>
-          {/* </Grid> */}
-        {/* </Paper> */}
+        <Typography variant="h2">{noMeals}</Typography>
       </Grid>
     );
   }

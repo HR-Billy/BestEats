@@ -34,7 +34,7 @@ const Profile = () => {
   const suggestedNone = 'Update Your Preferences For Suggested Meals';
 
   useEffect(() => {
-    axios.get('profile/user/?user_id=2')
+    axios.get('profile/user/?user_id=14')
     // axios.get(`profile/user/?user_id=${userId}`)
       .then(({ data }) => {
         // console.log(data[0]); DELETE
@@ -71,9 +71,7 @@ const Profile = () => {
                 <Avatar className={classes.profilePhoto} alt="profile picture" src={profilePhoto} />
               </Grid>
               <Grid item xs={12}>
-                <Paper className={classes.nutritionContainer}>
-                  <NutritionFacts />
-                </Paper>
+                <NutritionFacts />
               </Grid>
             </Grid>
           </Grid>
@@ -120,4 +118,3 @@ const Profile = () => {
 };
 
 export default Profile;
-
