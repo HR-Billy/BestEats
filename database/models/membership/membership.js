@@ -22,14 +22,14 @@ module.exports = {
     db.query(getStatusQuery, (err, data) => {
       if (err) {
         res.status(500).send(err);
-        console.log('error', err);
+        // console.log('error', err);
       } else if (!data.rows[0].exists) {
         db.query(newUserQuery, (err, data) => {
           if (err) {
             res.status(500).send(err);
-            console.log('error', err);
+            // console.log('error', err);
           } else {
-            console.log('send false for new user');
+            // console.log('send false for new user');
             res.status(200).send(false);
           }
         });
@@ -37,9 +37,9 @@ module.exports = {
         db.query(getSubscribedQuery, (err, data) => {
           if (err) {
             res.status(500).send(err);
-            console.log('error', err);
+            // console.log('error', err);
           } else {
-            console.log('here is the data', data.rows[0].subscribed);
+            // console.log('here is the data', data.rows[0].subscribed);
             res.status(200).send(data.rows[0].subscribed);
           }
         });
@@ -56,9 +56,9 @@ module.exports = {
     db.query(subscribeQuery, (err, data) => {
       if (err) {
         res.status(500).send(err);
-        console.log('error', err);
+        // console.log('error', err);
       } else {
-        console.log('here is the data', data);
+        // console.log('here is the data', data);
         res.status(200).send(data);
       }
     });

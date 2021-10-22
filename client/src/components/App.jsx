@@ -23,7 +23,7 @@ import ProtectedRoute from './auth/protected-route.jsx';
 const App = () => {
   const { user, isAuthenticated } = useAuth0();
   const [subscribed, setSubscribed] = useState(false);
-  console.log(user);
+  // console.log(user);
 
   const renderSubscribe = () => {
     if (!isAuthenticated) {
@@ -67,7 +67,7 @@ const App = () => {
       };
       axios.post('api/member/login', newUser)
         .then((res) => {
-          console.log(res.data);
+          // console.log(res.data);
           setSubscribed(res.data);
           renderSubscribe();
         })
