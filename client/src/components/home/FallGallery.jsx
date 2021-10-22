@@ -9,7 +9,7 @@ const FallGallery = () => (
   <>
     <Grid container>
       <Grid item>
-        <ImageList sx={{ width: 700 }} cols={3} rowHeight={164}>
+        <ImageList sx={{ width: 700 }} cols={3} rowHeight={164} gap={0}>
           {images.map((item) => (
             <ImageListItem key={item.img}>
               <img
