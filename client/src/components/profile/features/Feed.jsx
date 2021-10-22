@@ -11,8 +11,8 @@ const Feed = () => {
 
   if (feed) {
     userFeed = feed.map((status, index) => {
-      const { text, emoji, created_at} = status;
-      const time = moment(created_at).calendar();
+      const { text, emoji, createdAt} = status;
+      const time = moment(createdAt).calendar();
 
       return (
         <Grid item xs={12} key={index}>
