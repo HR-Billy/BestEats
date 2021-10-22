@@ -11,8 +11,9 @@ module.exports = {
     });
   },
 
-  getUserMeals: (req, res) => {
-    db.query(`SELECT subscribed, meals_per_week FROM users WHERE id=${req.params}`, (err, data) => {
+  getSubscribeStatus: (req, res) => {
+    const { userId } = req.params;
+    db.query(`SELECT subscribed FROM users WHERE auth_id=${userId}`, (err, data) => {
       if (err) {
         res.status(500).send(err);
       } else {

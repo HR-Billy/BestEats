@@ -29,7 +29,8 @@ router.route('/meals')
 
 router.route('/user/:userId')
   .get((req, res) => {
-    model.getUserMeals(req, res);
+    console.log('controller', req.params);
+    model.getSubscribeStatus(req, res);
   });
 
 module.exports = router;

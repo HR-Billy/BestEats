@@ -14,19 +14,29 @@ import {
 } from './mealStyles.jsx';
 
 const MealPlan = () => {
-  const { isAuthenticated, user } = useAuth0();
-  const [isMember, setIsMember] = useState(false);
+  // Authentication
+  const { isAuthenticated, user, loginWithRedirect } = useAuth0();
+
+  // Hooks
   const [meals, setMeals] = useState([]);
   const [filteredMeals, setFilteredMeals] = useState(meals);
   const [cart, setCart] = useState({});
-  // Login Placeholder
-  const [loggedIn, setLoggedIn] = useState(true);
+  const [loggedIn, setLoggedIn] = useState(isAuthenticated);
+  const [isMember, setIsMember] = useState(false);
 
+  // Preload Information
   const getMeals = () => {
     axios.get('/meal-plan/meals')
       .then((response) => {
         setMeals(response.data);
         setFilteredMeals(response.data);
+      });
+  };
+
+  const getSubscriberStatus = () => {
+    axios.get(`/meal-plan/user/${user.sub}`)
+      .then((response) => {
+        console.log(response.data);
       });
   };
 
@@ -53,6 +63,7 @@ const MealPlan = () => {
     });
   };
 
+  // Add to cart if subscribed
   const addToCart = (mealName) => {
     const item = { [mealName]: 1 };
     setCart({ ...cart, ...item });
@@ -62,25 +73,30 @@ const MealPlan = () => {
     null
   );
 
+  // Get info/subscriber status
   useEffect(() => {
     getMeals();
     if (isAuthenticated) {
-      setIsMember(user.sub);
+      getSubscriberStatus();
     }
   }, [isAuthenticated]);
 
   return (
     <>
-      {!loggedIn && (
+      {(!loggedIn || !isMember) ? (
         <Typography variant="h1" align="center">
           Be Sure to Subscibe!
+        </Typography>
+      ) : (
+        <Typography variant="h1" align="center">
+          Select from the menu with a click!
         </Typography>
       )}
       <MealFilter filterMeals={filterMeals} />
       <MealCards>
         <Grid spacing={3} container justify="center">
           {filteredMeals.map((meal) => (
-            !loggedIn ? (
+            !isMember ? (
               <MealCard key={meal.meal_name} meal={meal} click={fillerFunction} />
             ) : (
               <MealCard key={meal.meal_name} meal={meal} click={addToCart} />
@@ -90,6 +106,20 @@ const MealPlan = () => {
         <MealCart cart={cart} setCart={setCart} />
       </MealCards>
       {!loggedIn
+        && (
+          <SubscribeBar>
+            <SubscribeButton>
+              <Button
+                variant="contained"
+                sx={{ m: 1, width: 300, fontSize: 30 }}
+                onClick={loginWithRedirect}
+              >
+                Subscribe
+              </Button>
+            </SubscribeButton>
+          </SubscribeBar>
+        )}
+      {(loggedIn && !isMember)
         && (
           <SubscribeBar>
             <SubscribeButton>
