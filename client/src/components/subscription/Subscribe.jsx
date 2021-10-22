@@ -241,7 +241,7 @@ const Subscribe = () => {
             my: { xs: 3, md: 6 }, p: { xs: 2, md: 3 },
           }}
         >
-          <Typography component="h1" variant="h4" align="center">
+          <Typography component="h1" variant="h2" align="center" color="secondary.light" sx={{ fontWeight: 'medium' }}>
             Subscribe
           </Typography>
           <Stepper alternativeLabel activeStep={activeStep} sx={{ pt: 3, pb: 5 }}>

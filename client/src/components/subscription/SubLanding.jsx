@@ -42,13 +42,13 @@ const SubLanding = () => {
             my: { xs: 3, md: 6 }, p: { xs: 2, md: 3 },
           }}
         >
-          <Typography component="h1" variant="h4" align="center">
+          <Typography component="h1" variant="h2" align="center" color="secondary.light" sx={{ fontWeight: 'medium' }}>
             Subscribe
           </Typography>
           <>
             <Grid container>
-              <Typography variant="h6" sx={{ mb: 5, width: 1 }}>
-                Select Your Meal Plan
+              <Typography variant="h5" sx={{ mt: 3, mb: 5, width: 1 }}>
+                Login or Sign Up to Select a Meal Plan
               </Typography>
               <Grid container spacing={3}>
                 <Grid item xs={12} sm={8} md={5}>
