@@ -7,6 +7,8 @@ const FarmerMockData = [
     farm: 'White lightning',
     email: 'masterchief117@hotmail.com',
     phone: '1-800-117-1337',
+    image:
+      'https://st4.depositphotos.com/13194036/20420/i/1600/depositphotos_204205822-stock-photo-high-angle-view-handsome-farmer.jpg',
   },
   {
     firstName: 'Zeman',
@@ -16,6 +18,8 @@ const FarmerMockData = [
     farm: 'Zeman Farms',
     email: 'cattlemeshimbers@hotmail.com',
     phone: '1-800-123-1234',
+    image:
+      'https://upload.wikimedia.org/wikipedia/commons/8/80/Farmer%2C_Nicaragua.jpg',
   },
   {
     firstName: 'Elise',
@@ -25,6 +29,8 @@ const FarmerMockData = [
     farm: 'Seeds for life',
     email: 'seedsarelife@hotmail.com',
     phone: '1-800-534-2342',
+    image:
+      'https://cdn.pixabay.com/photo/2020/11/14/12/06/farmer-5741416_1280.jpg',
   },
   {
     firstName: 'Kelsey',
@@ -34,6 +40,8 @@ const FarmerMockData = [
     farm: 'Sequatchie Cove Farm',
     email: 'sequatchiecovefarm@hotmail.com',
     phone: '1-800-555-3552',
+    image:
+      'https://upload.wikimedia.org/wikipedia/commons/8/80/Farmer%2C_Nicaragua.jpg',
   },
   {
     firstName: 'John',
@@ -43,6 +51,8 @@ const FarmerMockData = [
     farm: 'Missing Farms',
     email: 'missingFarms.com',
     phone: '1-800-777-7777',
+    image:
+      'https://upload.wikimedia.org/wikipedia/commons/8/80/Farmer%2C_Nicaragua.jpg',
   },
   {
     firstName: 'John',
@@ -52,6 +62,8 @@ const FarmerMockData = [
     farm: 'Missing Farms',
     email: 'missingFarms.com',
     phone: '1-800-777-7777',
+    image:
+      'https://upload.wikimedia.org/wikipedia/commons/8/80/Farmer%2C_Nicaragua.jpg',
   },
   {
     firstName: 'John',
@@ -61,6 +73,8 @@ const FarmerMockData = [
     farm: 'Missing Farms',
     email: 'missingFarms.com',
     phone: '1-800-777-7777',
+    image:
+      'https://upload.wikimedia.org/wikipedia/commons/8/80/Farmer%2C_Nicaragua.jpg',
   },
   {
     firstName: 'John',
@@ -70,6 +84,8 @@ const FarmerMockData = [
     farm: 'Missing Farms',
     email: 'missingFarms.com',
     phone: '1-800-777-7777',
+    image:
+      'https://upload.wikimedia.org/wikipedia/commons/8/80/Farmer%2C_Nicaragua.jpg',
   },
 ];
 
