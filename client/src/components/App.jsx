@@ -110,7 +110,7 @@ const App = () => {
             <CurrentPage>
               <Route exact path="/" render={() => <Home />} />
               <Route exact path="/meal-plan" render={() => <MealPlan />} />
-              <ProtectedRoute exact path="/farmers" component={FarmersPage} />
+              <Route exact path="/farmers" component={FarmersPage} />
               <Route
                 exact
                 path="/store"

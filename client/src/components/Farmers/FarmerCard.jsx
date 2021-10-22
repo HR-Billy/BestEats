@@ -40,7 +40,7 @@ const FarmerCard = ({ farmer }) => {
         }}
       >
         <Typography variant="h6">
-          {farmer.firstName} {farmer.lastName}
+          {farmer.first_name} {farmer.last_name}
         </Typography>
         <Typography>{farmer.biography}</Typography>
 

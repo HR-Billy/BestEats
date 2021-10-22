@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 import {
   Container,
   Button,
@@ -15,9 +16,16 @@ import FarmersList from './FarmersList.jsx';
 
 const FarmersPage = () => {
   const theme = useTheme();
-  const [numberOfProfiles, setNumberOfProfiles] = useState(4);
+  const [numberOfProfiles, setNumberOfProfiles] = useState(10);
   const [farmer, setFarmer] = useState('');
+  const [farmerData, setfarmerData] = useState(FarmersMockData);
   const defaultFilterOptions = createFilterOptions();
+
+  useEffect(() => {
+    axios.get('/farmers').then((response) => {
+      setfarmerData(response.data);
+    });
+  }, []);
 
   const optionsLimit = 1;
 
@@ -71,8 +79,8 @@ const FarmersPage = () => {
             }}
             options={[
               ...new Set(
-                FarmersMockData.map(
-                  (farmer) => `${farmer.firstName} ${farmer.lastName}`
+                farmerData.map(
+                  (farmer) => `${farmer.first_name} ${farmer.last_name}`
                 )
               ),
             ]}
@@ -86,14 +94,14 @@ const FarmersPage = () => {
           <FarmersList
             farmers={
               farmer
-                ? FarmersMockData.filter((farmerMockData) => {
+                ? farmerData.filter((farmerMockData) => {
                     const [firstName, lastName] = farmer.split(' ');
                     return (
-                      farmerMockData.firstName === firstName &&
-                      farmerMockData.lastName === lastName
+                      farmerMockData.first_name === firstName &&
+                      farmerMockData.last_name === lastName
                     );
                   })
-                : FarmersMockData
+                : farmerData
             }
             index={numberOfProfiles}
           />
