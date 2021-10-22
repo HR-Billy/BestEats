@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
 import { ThemeProvider } from '@mui/material/styles';
 import { Button, Typography, Avatar } from '@mui/material';
-import { useAuth0 } from '@auth0/auth0-react';
+import { useAuth0, withAuthenticationRequired } from '@auth0/auth0-react';
 import { Text, NavigationBar, Login, CurrentPage, MainSet } from './styles.jsx';
 import Home from './home/Home.jsx';
 import { Context } from '../Context.jsx';
@@ -21,8 +21,7 @@ import mytheme from './theme.jsx';
 const App = () => {
   const [loggedIn, setLoggedIn] = useState(false);
   const [userId, setUserId] = '';
-  const { user } = useAuth0();
-  console.log(user);
+  const { user, isAuthenticated } = useAuth0();
 
   return (
     <Context.Provider
@@ -137,7 +136,7 @@ const App = () => {
             <Route exact path="/farmers" component={FarmersPage} />
             <Route exact path="/store" render={() => <Store />} />
             <Route exact path="/health" component={HealthPage} />
-            <Route exact path="/subscribe" render={() => <Subscribe />} />
+            <Route exact path="/subscribe" component={Subscribe} />
             <ProtectedRoute exact path="/profile" component={Profile} />
           </CurrentPage>
         </ThemeProvider>
