@@ -10,15 +10,14 @@ import {
   TextField,
 } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
-import styled from 'styled-components';
-import FarmersMockData from './FarmersMockData.js';
+
 import FarmersList from './FarmersList.jsx';
 
 const FarmersPage = () => {
   const theme = useTheme();
   const [numberOfProfiles, setNumberOfProfiles] = useState(10);
   const [farmer, setFarmer] = useState('');
-  const [farmerData, setfarmerData] = useState(FarmersMockData);
+  const [farmerData, setfarmerData] = useState([]);
   const defaultFilterOptions = createFilterOptions();
 
   useEffect(() => {
@@ -81,7 +80,8 @@ const FarmersPage = () => {
             options={[
               ...new Set(
                 farmerData.map(
-                  (farmer) => `${farmer.first_name} ${farmer.last_name}`
+                  (farmerItem) =>
+                    `${farmerItem.first_name} ${farmerItem.last_name}`
                 )
               ),
             ]}
@@ -91,20 +91,22 @@ const FarmersPage = () => {
           />
         </Container>
         <Container maxWidth="lg">
-          <FarmersList
-            farmers={
-              farmer
-                ? farmerData.filter((farmerMockData) => {
-                    const [firstName, lastName] = farmer.split(' ');
-                    return (
-                      farmerMockData.first_name === firstName &&
-                      farmerMockData.last_name === lastName
-                    );
-                  })
-                : farmerData
-            }
-            index={numberOfProfiles}
-          />
+          {farmerData.length > 0 && (
+            <FarmersList
+              farmers={
+                farmer
+                  ? farmerData.filter((farmerMockData) => {
+                      const [firstName, lastName] = farmer.split(' ');
+                      return (
+                        farmerMockData.first_name === firstName &&
+                        farmerMockData.last_name === lastName
+                      );
+                    })
+                  : farmerData
+              }
+              index={numberOfProfiles}
+            />
+          )}
         </Container>
       </Box>
       <Box sx={{ display: 'flex', justifyContent: 'center' }}>
