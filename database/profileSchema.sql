@@ -22,7 +22,7 @@ CREATE TABLE user_products (
   user_id INT NOT NULL REFERENCES users(id),
   product_id INT NOT NULL REFERENCES products(id),
   date_ordered DATE NOT NULL,
-  date_received DATE NOT NULL
+  date_received DATE
 );
 
 SELECT setval('status_id_seq', (SELECT max(id) FROM status));
