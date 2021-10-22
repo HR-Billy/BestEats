@@ -42,10 +42,9 @@ const App = () => {
                   <img src="https://www.graphicsprings.com/filestorage/stencils/1c3f83b24f3cd7029f90f9f6e250d09d.png?width=500&height=500" alt="best eats logo" height="70px" />
                   <Typography
                     color="#B0C800"
-                    text-shadow="2px 2px 3px #ccc"
                     align="center"
                     variant="h4"
-                    sx={{ mb: 3, mt: 3, ml: 0, mr: 5, fontFamily: "Kalam", fontSize: "25px", fontWeight: 'bold' }}
+                    sx={{ mb: 3, mt: 3, ml: 0, mr: 5, fontFamily: "Kalam", fontSize: "25px", fontWeight: 'bold', textShadow: "1px 1px 1px #dfdfdf" }}
                   >
                     Best Eats
                   </Typography>
