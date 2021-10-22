@@ -1,14 +1,9 @@
 module.exports = {
   profileData: `
   SELECT json_build_object(
-    'id', id,
-    'username', username,
     'first_name', first_name,
-    'member_start_date', member_start_date,
     'subscription_start_date', subscription_start_date,
-    'weekly_start_date', weekly_start_date,
     'photo', profile_pic,
-    'subscribed', subscribed,
     'feed', (SELECT jsonb_agg( json_build_object(
       'status_id', id,
       'emoji', 'insert emoji',
@@ -35,7 +30,8 @@ module.exports = {
       INNER JOIN meal ON meal.id = user_meal.meal_id
       WHERE user_id = $1 AND date_received IS NOT NULL),
     'products', 'insert product query',
-    'nutrition-facts', ((SELECT jsonb_agg( json_build_object(
+    'nutrition_facts', ((SELECT jsonb_agg( json_build_object(
+      'name', meal.meal_name,
       'carbs', meal.carbs,
       'fat', meal.fat,
       'calories', meal.calories

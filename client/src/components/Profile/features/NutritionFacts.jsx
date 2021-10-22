@@ -4,17 +4,17 @@ import {
 } from '@mui/material';
 import { ProfileContext } from '../ProfileContext.jsx';
 
-function createData(name, calories, fat, carbs, protein) {
-  return { name, calories, fat, carbs, protein };
-}
-
-const rows = [
-  createData('Frozen yoghurt', 159, 6.0, 24),
-  createData('Gingerbread', 356, 16.0, 49),
-];
-
 const NutritionFacts = () => {
-  const { nutritionFacts } = useContext(ProfileContext);
+  const { nutritionFacts, mealAverages } = useContext(ProfileContext);
+  const { calories_average, fat_average, carbs_average } = mealAverages;
+
+  const createData = (name, calories, fat, carbs) => ({ name, calories, fat, carbs });
+  const nutirtionRows = nutritionFacts.map((meal) => {
+    const { name, calories, fat, carbs } = meal;
+
+    const info = createData(name, calories, fat, carbs);
+    return info;
+  });
 
   return (
     <TableContainer component={Paper}>
@@ -28,7 +28,7 @@ const NutritionFacts = () => {
           </TableRow>
         </TableHead>
         <TableBody>
-          {rows.map((row) => (
+          {nutirtionRows.map((row) => (
             <TableRow
               key={row.name}
             >
@@ -41,6 +41,14 @@ const NutritionFacts = () => {
             </TableRow>
           ))}
         </TableBody>
+        <TableHead>
+          <TableRow>
+            <TableCell>Average</TableCell>
+            <TableCell align="right">{calories_average}</TableCell>
+            <TableCell align="right">{fat_average}</TableCell>
+            <TableCell align="right">{carbs_average}</TableCell>
+          </TableRow>
+        </TableHead>
       </Table>
     </TableContainer>
   );
