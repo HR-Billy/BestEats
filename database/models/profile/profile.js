@@ -18,7 +18,7 @@ module.exports = {
     const { id, text } = req.body;
     // console.log(req.body);
 
-    db.query(status, [id, text], (err) => {
+    db.query(status, [id, text, Date().slice(0, 24)], (err) => {
       if (err) {
         res.status(404).send(err);
       } else {
