@@ -27,6 +27,7 @@ const AddressForm = ({ address, setAddress }) => {
               variant="standard"
               value={address.firstName}
               onChange={handleChange}
+              inputProps={{ maxLength: 50 }}
             />
           </Grid>
           <Grid item xs={12} sm={6}>
@@ -39,6 +40,7 @@ const AddressForm = ({ address, setAddress }) => {
               variant="standard"
               value={address.lastName}
               onChange={handleChange}
+              inputProps={{ maxLength: 50 }}
             />
           </Grid>
           <Grid item xs={12}>
@@ -51,6 +53,7 @@ const AddressForm = ({ address, setAddress }) => {
               variant="standard"
               value={address.address1}
               onChange={handleChange}
+              inputProps={{ maxLength: 100 }}
             />
           </Grid>
           <Grid item xs={12}>
@@ -62,6 +65,7 @@ const AddressForm = ({ address, setAddress }) => {
               variant="standard"
               value={address.address2}
               onChange={handleChange}
+              inputProps={{ maxLength: 100 }}
             />
           </Grid>
           <Grid item xs={12} sm={6}>
@@ -74,6 +78,7 @@ const AddressForm = ({ address, setAddress }) => {
               variant="standard"
               value={address.city}
               onChange={handleChange}
+              inputProps={{ maxLength: 100 }}
             />
           </Grid>
           <Grid item xs={12} sm={6}>
@@ -86,6 +91,7 @@ const AddressForm = ({ address, setAddress }) => {
               variant="standard"
               value={address.state}
               onChange={handleChange}
+              inputProps={{ maxLength: 10 }}
             />
           </Grid>
           <Grid item xs={12} sm={6}>
@@ -98,6 +104,7 @@ const AddressForm = ({ address, setAddress }) => {
               variant="standard"
               value={address.zip}
               onChange={handleChange}
+              inputProps={{ maxLength: 15 }}
             />
           </Grid>
           <Grid item xs={12} sm={6}>
@@ -110,6 +117,7 @@ const AddressForm = ({ address, setAddress }) => {
               variant="standard"
               value={address.country}
               onChange={handleChange}
+              inputProps={{ maxLength: 40 }}
             />
           </Grid>
           <Grid item xs={12}>
