@@ -120,7 +120,7 @@ const App = () => {
               <Route
                 exact
                 path="/store"
-                render={() => <h1>Grocery store component goes here</h1>}
+                render={() => <Store />}
               />
               <Route exact path="/health" component={HealthPage} />
               <Route

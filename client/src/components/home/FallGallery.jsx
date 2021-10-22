@@ -22,10 +22,17 @@ const FallGallery = () => (
           ))}
         </ImageList>
       </Grid>
-      <Grid item style={{marginTop: 140, marginLeft: 140}}>
+      <Grid item style={{ marginTop: 140, marginLeft: 140 }}>
         <Typography color="inherit" align="center" variant="h2" marked="center">We love Fall too.</Typography>
-        {/* <Typography color="inherit" align="center" variant="h4" marked="center">Check out our seasonal items.</Typography> */}
-        <Link to="/store" style={{ textDecoration: 'none' }}>
+        <Link
+          to={{
+            pathname: '/store',
+            state: {
+              fall: true,
+            },
+          }}
+          style={{ textDecoration: 'none' }}
+        >
           <Button style={{ margin: '0 auto', display: 'flex' }}>Go to Fall items</Button>
         </Link>
       </Grid>

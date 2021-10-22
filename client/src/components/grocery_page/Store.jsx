@@ -1,27 +1,36 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
+import { useLocation } from 'react-router-dom';
 import Search from './Search.jsx';
 import Category from './Category.jsx';
 import Items from './Items.jsx';
 import Cart from './Cart.jsx';
+
 const data = require('./MOCK_DATA');
+
+const fallData = [];
+for (let i = 0; i < data.length; i++) {
+  if (data[i].promo === 'Fall') {
+    fallData.push(data[i]);
+  }
+}
 
 const H1 = styled.h1`
   padding-top: 60px;
   text-align: center;
   font-size: 80px;
-`
+`;
 
 const Container = styled.div`
   width: 85%;
   margin: auto;
   font-family: Sans-Serif;
-`
+`;
 
 const Wrapper = styled.div`
   display: flex;
   flex-direction: row-reverse;
-`
+`;
 
 export default function Store() {
   const [activeCategory, setActiveCategory] = useState('Produce');
@@ -45,7 +54,7 @@ export default function Store() {
   return (
     <Container>
       <H1>Best Eats</H1>
-      <Search setSearch={setSearch}/>
+      <Search setSearch={setSearch} />
       <Category setActiveCategory={setActiveCategory} />
       <Wrapper>
         {cart.length > 0 && <Cart cart={cart} setCart={setCart} />}

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button, Typography } from '@mui/material';
 import ProductHeroLayout from './ProductHero.jsx';
+import { Link } from 'react-router-dom';
 
 const backgroundImage = 'https://wallpapercave.com/wp/wp2020196.jpg';
 
@@ -30,16 +31,18 @@ const Landing = () => (
       A one stop shop for the best healthy food,
       and lifestyle advice, delivered right to your door!
     </Typography>
+    <Link to="/subscribe" style={{ textDecoration: 'none' }}>
     <Button
       color="secondary"
       variant="contained"
       size="large"
       component="a"
-      href="/premium-themes/onepirate/sign-up/"
+      // href="/premium-themes/onepirate/sign-up/"
       sx={{ minWidth: 200 }}
     >
       Get started
     </Button>
+    </Link>
     <Typography variant="body2" color="inherit" sx={{ mt: 2 }}>
       Already a member? Log in.
     </Typography>
