@@ -59,27 +59,49 @@ const App = () => {
 
   useEffect(() => {
     if (isAuthenticated) {
-      console.log(user.sub);
-      // check if current user exists in user table
-      axios.get('api/member/status', user.sub)
+      const newUser = {
+        auth_id: user.sub,
+        username: user.nickname,
+        email: user.email,
+        member_start_date: user.updated_at,
+        profile_pic: user.picture,
+      };
+      axios.post('api/member/login', newUser)
         .then((res) => {
-          console.log('status', res.data);
-          // if exists, check subscription status
-          if (res.data) {
-            axios.get('api/member/substatus', user.sub)
-              .then((nextres) => {
-                console.log(nextres.data);
-                setSubscribed(nextres.data);
-                renderSubscribe();
-              })
-              .catch(console.log('error with get request'));
-          // if not, add user. keep subscribe = false.
-          } else {
-            addUser();
-          }
-        });
+          console.log(res.data);
+          setSubscribed(res.data);
+          renderSubscribe();
+        })
+        .catch(console.log('error with get request'));
     }
   }, [isAuthenticated]);
+
+  // useEffect(() => {
+  //   if (isAuthenticated) {
+  //     console.log(user.sub);
+  //     const request = {
+  //       auth_id: user.sub,
+  //     };
+  //     // check if current user exists in user table
+  //     axios.post('api/member/status', request)
+  //       .then((res) => {
+  //         console.log('user status', res.data);
+  //         // if exists, check subscription status
+  //         if (res.data) {
+  //           axios.post('api/member/substatus', request)
+  //             .then((nextres) => {
+  //               console.log(nextres.data);
+  //               setSubscribed(nextres.data);
+  //               renderSubscribe();
+  //             })
+  //             .catch(console.log('error with get request'));
+  //         // if not, add user. keep subscribe = false.
+  //         } else {
+  //           addUser();
+  //         }
+  //       });
+  //   }
+  // }, [isAuthenticated]);
 
   return (
     <Context.Provider value={{
@@ -92,13 +114,20 @@ const App = () => {
           <Router>
             <NavigationBar>
               <MainSet>
-                <Link to="/" style={{ textDecoration: 'none', margin: "0 0 0 10px", padding: "0 0 0 0", display: 'flex' }}>
+                <Link
+                  to="/"
+                  style={{
+                    textDecoration: 'none', margin: '0 0 0 10px', padding: '0 0 0 0', display: 'flex',
+                  }}
+                >
                   <img src="https://www.graphicsprings.com/filestorage/stencils/1c3f83b24f3cd7029f90f9f6e250d09d.png?width=500&height=500" alt="best eats logo" height="70px" />
                   <Typography
                     color="#B0C800"
                     align="center"
                     variant="h4"
-                    sx={{ mb: 3, mt: 3, ml: 0, mr: 5, fontFamily: "Kalam", fontSize: "25px", fontWeight: 'bold' }}
+                    sx={{
+                      mb: 3, mt: 3, ml: 0, mr: 5, fontFamily: 'Kalam', fontSize: '25px', fontWeight: 'bold',
+                    }}
                   >
                     Best Eats
                   </Typography>
