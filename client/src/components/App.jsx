@@ -41,6 +41,20 @@ const App = () => {
   };
 
   const renderSubscribe = () => {
+    if (!isAuthenticated) {
+      return (
+        <Link to="/sublanding" style={{ textDecoration: 'none' }}>
+          <Typography
+            color="black"
+            align="center"
+            variant="h5"
+            sx={{ mb: 3, mt: 3, ml: 3 }}
+          >
+            SUBSCRIBE
+          </Typography>
+        </Link>
+      );
+    }
     if (!subscribed) {
       return (
         <Link to="/subscribe" style={{ textDecoration: 'none' }}>
@@ -185,7 +199,8 @@ const App = () => {
               <Route exact path="/farmers" component={FarmersPage} />
               <Route exact path="/store" render={() => <Store />} />
               <Route exact path="/health" component={HealthPage} />
-              <Route exact path="/subscribe" component={isAuthenticated ? Subscribe : SubLanding} />
+              <Route exact path="/sublanding" component={SubLanding} />
+              <ProtectedRoute exact path="/subscribe" component={Subscribe} />
               <ProtectedRoute exact path="/profile" component={Profile} />
             </CurrentPage>
           </Router>

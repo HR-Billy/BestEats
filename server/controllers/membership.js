@@ -4,6 +4,13 @@ const router = express.Router();
 const model = require('../../database/models/membership/membership');
 
 // adds new member to users table
+router.route('/login')
+  .post((req, res) => {
+    console.log('here is the new login body', req.body);
+    model.postUser(req, res);
+  });
+
+// adds new member to users table
 router.route('/new')
   .post((req, res) => {
     console.log('here is the body', req.body);
