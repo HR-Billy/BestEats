@@ -24,15 +24,16 @@ const Login = styled.button`
 `;
 
 const NavigationBar = styled.div`
-  background-color: white;
+  background-color: #ffffff;
   display: flex;
   align-content: center;
   justify-content: space-between;
   margin-left: -10px;
-  padding: 5px;
+  padding: 0px;
   position: fixed;
   top: 0;
-  width: calc(100% + 10px);
+  /* width: calc(100% + 10px); */
+  width: 100%;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   z-index: 9999;
 `;
@@ -43,7 +44,7 @@ const CurrentPage = styled.div`
 
 const MainSet = styled.div`
   display: flex;
-  gap: 80px;
+  /* gap: 80px; */
 `;
 
 export {

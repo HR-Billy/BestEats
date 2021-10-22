@@ -5,20 +5,20 @@ CREATE DATABASE best_eats;
 
 CREATE TABLE products (
   id SERIAL NOT NULL PRIMARY KEY,
-  product_name VARCHAR(40) NOT NULL,
-  product_price INT NOT NULL,
+  name VARCHAR(40) NOT NULL,
+  price VARCHAR(20) NOT NULL,
   category VARCHAR(40) NOT NULL,
   calories INT NOT NULL,
   carbs INT NOT NULL,
   protein INT NOT NULL,
   fats INT NOT NULL,
-  image VARCHAR(200) NOT NULL,
+  image VARCHAR(400) NOT NULL,
   quantity INT NOT NULL,
-  sale_price INT NOT NULL,
+  onSale BOOLEAN DEFAULT false,
   promo VARCHAR(20),
-  unit_type VARCHAR(20),
-  unit_size INT NOT NULL,
-  serving_size INT NOT NULL
+  unitType VARCHAR(20),
+  unitSize INT NOT NULL,
+  servingSize INT NOT NULL
 );
 
 CREATE TABLE meal (

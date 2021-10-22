@@ -1,23 +1,21 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Grid } from '@mui/material';
+import { Grid, Paper, Box } from '@mui/material';
 
-import FarmersMockData from './FarmersMockData.js';
 import FarmerCard from './FarmerCard.jsx';
 
-const ListContainer = styled.div`
+const ListContainer = styled(Box)`
   background-color: coral;
+  height: 100%;
+  border-radius: 5px;
+  overflow-y: auto;
 `;
 
 const FarmersList = ({ farmers, index }) => (
   <ListContainer>
-    <Grid container>
-      {farmers.slice(0, index).map((farmer) => (
-        <Grid item>
-          <FarmerCard farmer={farmer} />
-        </Grid>
-      ))}
-    </Grid>
+    {farmers.slice(0, index).map((farmer) => (
+      <FarmerCard key={farmer.id} farmer={farmer} />
+    ))}
   </ListContainer>
 );
 
