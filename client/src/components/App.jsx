@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
 import axios from 'axios';
 import { ThemeProvider } from '@mui/material/styles';
-import { Button, Typography } from '@mui/material';
+import { Button, Typography, Avatar } from '@mui/material';
 import { useAuth0 } from '@auth0/auth0-react';
 import {
   Text, NavigationBar, Login, CurrentPage, MainSet,
@@ -15,7 +15,7 @@ import HealthPage from './Health/HealthPage.jsx';
 import Subscribe from './subscription/Subscribe.jsx';
 import SignIn from './SignIn.jsx';
 import MealPlan from './meals/MealPlan.jsx';
-import Profile from './Profile/Profile.jsx';
+import Profile from './profile/Profile.jsx';
 import mytheme from './theme.jsx';
 import AuthButton from './auth/authentication-button.jsx';
 import ProtectedRoute from './auth/protected-route.jsx';
@@ -153,8 +153,8 @@ const App = () => {
               <Route exact path="/farmers" component={FarmersPage} />
               <Route exact path="/store" render={() => <Store />} />
               <Route exact path="/health" component={HealthPage} />
-              <Route exact path="/subscribe" render={() => <Subscribe />} />
-              <Route exact path="/login" render={() => <SignIn />} />
+              <Route exact path="/subscribe" component={Subscribe} />
+              <Route exact path="/profile" render={() => <Profile />} />
             </CurrentPage>
           </Router>
         </ThemeProvider>
