@@ -37,6 +37,7 @@ const useStyles = makeStyles({
   },
   mealContainer: {
     minHeight: '18vh',
+    maxHeight: '18vh',
     paddingTop: '15%',
   },
   mealPhoto: {

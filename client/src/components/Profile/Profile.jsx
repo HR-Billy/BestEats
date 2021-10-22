@@ -34,8 +34,10 @@ const Profile = () => {
         setName(results.first_name);
         setProfilePhoto(results.photo);
         setFeed(results.feed);
+        setSuggestedMeals(null);
+        setArrivingMeals(results.arriving);
+        setRecentMeals(results.recent);
         // setProducts(results.products);
-        // setRecentMeals(results.meals);
       });
   }, []);
 

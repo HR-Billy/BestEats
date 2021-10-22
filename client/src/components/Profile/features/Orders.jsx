@@ -8,7 +8,7 @@ const Orders = ({ text, meals }) => {
   const classes = useStyles();
   let orders;
 
-  if (meals.length) {
+  if (meals) {
     orders = meals.map((meal) => {
       const { meal_id, meal_photo, meal_name} = meal;
 
@@ -27,7 +27,17 @@ const Orders = ({ text, meals }) => {
         </Grid>
       );
     });
-  };
+  } else {
+    orders = (
+      <Grid item xs={4}>
+        <Paper className={classes.mealContainer}>
+          <Grid container spacing={2} direction="column" alignItems="center">
+            <Typography>Nothing</Typography>
+          </Grid>
+        </Paper>
+      </Grid>
+    );
+  }
 
   return (
     <Grid container spacing={1}>

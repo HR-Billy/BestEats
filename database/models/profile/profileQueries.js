@@ -17,8 +17,8 @@ module.exports = {
       ) ORDER BY created_at DESC)
       FROM status
       WHERE user_id = $1),
-    'suggested_meals', 'insert suggested meals query',
-    'arriving_meals', (SELECT jsonb_agg( json_build_object(
+    'suggested', 'insert suggested meals query',
+    'arriving', (SELECT jsonb_agg( json_build_object(
     'meal_id', meal.id,
     'meal_name', meal.meal_name,
     'meal_photo', meal.photo
@@ -26,7 +26,7 @@ module.exports = {
   FROM user_meal
   INNER JOIN meal ON meal.id = user_meal.meal_id
   WHERE user_id = $1 AND date_received IS NULL),
-    'recent_meals', (SELECT jsonb_agg( json_build_object(
+    'recent', (SELECT jsonb_agg( json_build_object(
     'meal_id', meal.id,
     'meal_name', meal.meal_name,
     'meal_photo', meal.photo
