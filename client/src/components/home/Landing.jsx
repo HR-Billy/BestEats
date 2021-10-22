@@ -3,7 +3,7 @@ import { Button, Typography } from '@mui/material';
 import { Link } from 'react-router-dom';
 import ProductHeroLayout from './ProductHero.jsx';
 
-const backgroundImage = 'https://wallpapercave.com/wp/wp2020196.jpg';
+const backgroundImage = 'https://wallpapercave.com/wp/wp2020196.jpg'; // bright fresh fruit "rgba(0, 0, 0, 0.4)"
 
 const Landing = () => (
   <ProductHeroLayout
@@ -46,6 +46,7 @@ const Landing = () => (
     <Typography variant="body2" color="inherit" sx={{ mt: 2 }}>
       Already a member? Log in.
     </Typography>
+    {/* </Grid> */}
   </ProductHeroLayout>
 );
 
