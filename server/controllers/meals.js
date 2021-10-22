@@ -29,7 +29,6 @@ router.route('/meals')
 
 router.route('/user/:userId')
   .get((req, res) => {
-    console.log('controller', req.params);
     model.getSubscribeStatus(req, res);
   });
 

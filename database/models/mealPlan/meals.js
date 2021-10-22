@@ -13,7 +13,7 @@ module.exports = {
 
   getSubscribeStatus: (req, res) => {
     const { userId } = req.params;
-    db.query(`SELECT subscribed FROM users WHERE auth_id=${userId}`, (err, data) => {
+    db.query('SELECT subscribed FROM users WHERE auth_id=$1', [userId], (err, data) => {
       if (err) {
         res.status(500).send(err);
       } else {

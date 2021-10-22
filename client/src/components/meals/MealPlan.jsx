@@ -33,10 +33,11 @@ const MealPlan = () => {
       });
   };
 
+  // Need to add once the database gets new users
   const getSubscriberStatus = () => {
     axios.get(`/meal-plan/user/${user.sub}`)
       .then((response) => {
-        console.log(response.data);
+        console.log(response);
       });
   };
 
@@ -73,7 +74,7 @@ const MealPlan = () => {
     null
   );
 
-  // Get info/subscriber status
+  // Get info/subscriber status (need to fix)
   useEffect(() => {
     getMeals();
     if (isAuthenticated) {
