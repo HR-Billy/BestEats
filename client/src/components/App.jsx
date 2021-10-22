@@ -4,9 +4,7 @@ import axios from 'axios';
 import { ThemeProvider } from '@mui/material/styles';
 import { Button, Typography, Avatar } from '@mui/material';
 import { useAuth0 } from '@auth0/auth0-react';
-import {
-  Text, NavigationBar, Login, CurrentPage, MainSet,
-} from './styles.jsx';
+import { Text, NavigationBar, Login, CurrentPage, MainSet } from './styles.jsx';
 import Home from './home/Home.jsx';
 import { Context } from '../Context.jsx';
 import Store from './grocery_page/Store.jsx';
@@ -22,6 +20,8 @@ import AuthButton from './auth/authentication-button.jsx';
 import ProtectedRoute from './auth/protected-route.jsx';
 
 const App = () => {
+  const [loggedIn, setLoggedIn] = useState(false);
+  const [userId, setUserId] = '';
   const { user, isAuthenticated } = useAuth0();
   const [subscribed, setSubscribed] = useState(false);
 
@@ -33,13 +33,14 @@ const App = () => {
             color="black"
             align="center"
             variant="h5"
-            sx={{ mb: 3, mt: 3, ml: 3 }}
+            sx={{ mb: 3, mt: 4, ml: 3 }}
           >
             SUBSCRIBE
           </Typography>
         </Link>
       );
-    } return '';
+    }
+    return '';
   };
 
   useEffect(() => {
@@ -51,7 +52,8 @@ const App = () => {
         member_start_date: user.updated_at,
         profile_pic: user.picture,
       };
-      axios.post('api/member/login', newUser)
+      axios
+        .post('api/member/login', newUser)
         .then((res) => {
           setSubscribed(res.data);
           renderSubscribe();
@@ -61,10 +63,11 @@ const App = () => {
   }, [isAuthenticated]);
 
   return (
-    <Context.Provider value={{
-      subscribed,
-      setSubscribed,
-    }}
+    <Context.Provider
+      value={{
+        subscribed,
+        setSubscribed,
+      }}
     >
       <div>
         <ThemeProvider theme={mytheme}>
@@ -90,7 +93,7 @@ const App = () => {
                   variant="h4"
                   sx={{
                     mb: 3,
-                    mt: 3,
+                    mt: 4,
                     ml: 0,
                     mr: 5,
                     fontFamily: 'Kalam',
@@ -106,7 +109,7 @@ const App = () => {
                   color="black"
                   align="center"
                   variant="h5"
-                  sx={{ mb: 3, mt: 3, ml: 3 }}
+                  sx={{ mb: 3, mt: 4, ml: 3 }}
                 >
                   MEALS
                 </Typography>
@@ -116,7 +119,7 @@ const App = () => {
                   color="black"
                   align="center"
                   variant="h5"
-                  sx={{ mb: 3, mt: 3, ml: 3 }}
+                  sx={{ mb: 3, mt: 4, ml: 3 }}
                 >
                   FARMERS
                 </Typography>
@@ -126,7 +129,7 @@ const App = () => {
                   color="black"
                   align="center"
                   variant="h5"
-                  sx={{ mb: 3, mt: 3, ml: 3 }}
+                  sx={{ mb: 3, mt: 4, ml: 3 }}
                 >
                   GROCERY
                 </Typography>
@@ -136,7 +139,7 @@ const App = () => {
                   color="black"
                   align="center"
                   variant="h5"
-                  sx={{ mb: 3, mt: 3, ml: 3 }}
+                  sx={{ mb: 3, mt: 4, ml: 3 }}
                 >
                   LIFESTYLE
                 </Typography>
@@ -150,7 +153,7 @@ const App = () => {
               <Avatar
                 align="center"
                 variant="h5"
-                sx={{ mb: 3, mt: 3, ml: 3 }}
+                sx={{ mb: 3, mt: 4, ml: 3 }}
               />
             </Link>
             <AuthButton />
@@ -161,7 +164,11 @@ const App = () => {
             <Route exact path="/farmers" component={FarmersPage} />
             <Route exact path="/store" render={() => <Store />} />
             <Route exact path="/health" component={HealthPage} />
-            <Route exact path="/subscribe" component={isAuthenticated ? Subscribe : SubLanding} />
+            <Route
+              exact
+              path="/subscribe"
+              component={isAuthenticated ? Subscribe : SubLanding}
+            />
             <ProtectedRoute exact path="/profile" component={Profile} />
           </CurrentPage>
         </ThemeProvider>

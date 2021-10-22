@@ -1,6 +1,16 @@
 import React from 'react';
 import { List, Button } from '@mui/material';
 import CartItem from './CartItem.jsx';
+import styled from 'styled-components';
+
+const H3 = styled.h3`
+  font-weight: normal;
+  margin-left: 14px;
+`;
+
+const Span = styled.span`
+  margin-left: 14px;
+`;
 
 export default function Cart({ cart, setCart }) {
   function getTotal() {
@@ -15,13 +25,13 @@ export default function Cart({ cart, setCart }) {
 
   return (
     <List sx={{minWidth: 200, maxWidth: 200, bgcolor: 'background.paper', margin: '70px 20px 0px 50px'}}>
-      <h2>Shopping Cart</h2>
+      <H3>Shopping Cart</H3>
       {cart.map((product) => (
         <CartItem product={product} key={product.id} setCart={setCart} />
       ))}
       <br />
-      <span><strong>{`Total $${total}  `}</strong></span>
-      <Button variant="text">Checkout</Button>
+      <Span>{`Total $${total}  `}</Span>
+      <Button sx={{fontWeight: 'normal'}}variant="text">Checkout</Button>
     </List>
   );
 }

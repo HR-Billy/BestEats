@@ -3,8 +3,17 @@ import React, { useState, useEffect } from 'react';
 import { useAuth0 } from '@auth0/auth0-react';
 import axios from 'axios';
 import {
-  ThemeProvider, CssBaseline, Typography, Grid, Box, Container,
-  Paper, Stepper, Step, StepLabel, Button,
+  ThemeProvider,
+  CssBaseline,
+  Typography,
+  Grid,
+  Box,
+  Container,
+  Paper,
+  Stepper,
+  Step,
+  StepLabel,
+  Button,
 } from '@mui/material';
 import StyleLink from '@mui/material/Link';
 import { Link } from 'react-router-dom';
@@ -19,10 +28,8 @@ const Copyright = () => (
     {'Copyright © '}
     <StyleLink color="inherit" href="https://besteats.com/">
       Best Eats Inc.
-    </StyleLink>
-    {' '}
-    {new Date().getFullYear()}
-    .
+    </StyleLink>{' '}
+    {new Date().getFullYear()}.
   </Typography>
 );
 
@@ -155,9 +162,17 @@ const Subscribe = () => {
       case 1:
         return <AddressForm address={address} setAddress={setAddress} />;
       case 2:
-        return <PaymentForm address={address} payment={payment} setPayment={setPayment} />;
+        return (
+          <PaymentForm
+            address={address}
+            payment={payment}
+            setPayment={setPayment}
+          />
+        );
       case 3:
-        return <Review mealPlan={mealPlan} address={address} payment={payment} />;
+        return (
+          <Review mealPlan={mealPlan} address={address} payment={payment} />
+        );
       default:
         throw new Error('Unknown step');
     }
@@ -244,7 +259,11 @@ const Subscribe = () => {
           <Typography component="h1" variant="h2" align="center" color="secondary.light" sx={{ fontWeight: 'medium' }}>
             Subscribe
           </Typography>
-          <Stepper alternativeLabel activeStep={activeStep} sx={{ pt: 3, pb: 5 }}>
+          <Stepper
+            alternativeLabel
+            activeStep={activeStep}
+            sx={{ pt: 3, pb: 5 }}
+          >
             {steps.map((label) => (
               <Step key={label}>
                 <StepLabel>{label}</StepLabel>
@@ -259,8 +278,8 @@ const Subscribe = () => {
                   Thank you for subscribing!
                 </Typography>
                 <Typography variant="subtitle1">
-                  You have unlocked access to our fresh and tasty meals.
-                  Please head over to our menu to select your first week of meals.
+                  You have unlocked access to our fresh and tasty meals. Please
+                  head over to our menu to select your first week of meals.
                 </Typography>
                 <Box sx={{ display: 'flex', justifyContent: 'flex-end' }}>
                   <Link to="/meal-plan" style={{ textDecoration: 'none' }}>
