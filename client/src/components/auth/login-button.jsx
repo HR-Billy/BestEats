@@ -8,11 +8,11 @@ const LoginButton = () => {
     <Button
       style={{ textDecoration: 'none' }}
       variant="contained"
-      sx={{ mt: 3, mx: 3 }}
+      sx={{ px: 1, m: 3 }}
       className="btn btn-primary btn-block"
       onClick={() => loginWithRedirect()}
     >
-      Log In
+      Login
     </Button>
   );
 };

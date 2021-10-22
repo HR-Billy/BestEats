@@ -176,7 +176,7 @@ const App = () => {
             <Route exact path="/farmers" component={FarmersPage} />
             <Route exact path="/store" render={() => <Store />} />
             <Route exact path="/health" component={HealthPage} />
-            <Route exact path="/sublanding" component={SubLanding} />
+            <Route exact path="/sublanding" component={isAuthenticated ? Subscribe : SubLanding} />
             <ProtectedRoute exact path="/subscribe" component={Subscribe} />
             <ProtectedRoute exact path="/profile" component={Profile} />
           </CurrentPage>
