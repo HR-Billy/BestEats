@@ -55,7 +55,7 @@ const App = () => {
     };
     axios.post('/member/new', newUser)
       .then((res) => {
-        console.log(res);
+        console.log(res.data);
       })
       .catch(console.log);
   };
@@ -82,7 +82,9 @@ const App = () => {
       console.log(user.sub);
       axios.get('/member/substatus', user.sub)
         .then((res) => {
+          console.log(res);
           setSubscribed(res);
+          renderSubscribe();
         })
         .catch(console.log);
     }
