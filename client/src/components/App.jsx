@@ -153,7 +153,7 @@ const App = () => {
               <Route exact path="/farmers" component={FarmersPage} />
               <Route exact path="/store" render={() => <Store />} />
               <Route exact path="/health" component={HealthPage} />
-              <Route exact path="/subscribe" component={Subscribe} />
+              <Route exact path="/subscribe" component={isAuthenticated ? Subscribe : FarmersPage} />
               <Route exact path="/profile" render={() => <Profile />} />
             </CurrentPage>
           </Router>
