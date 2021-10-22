@@ -1,17 +1,9 @@
 import styled from 'styled-components';
-
-const NavigationBar = styled.div`
-  background-color: white;
-  display: flex;
-  align-content: center;
-  justify-content: space-between;
-  margin-left: -10px;
-  padding: 5px;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  zIndex: 9999;
-`;
+/* font-family: 'Kalam', cursive;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Rampart One', cursive;
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Work Sans', sans-serif; */
 
 const Text = styled.span`
   color: black;
@@ -20,6 +12,7 @@ const Text = styled.span`
 `;
 
 const Login = styled.button`
+  font-family: 'Kalam', cursive;
   display: flex;
   align-content: center;
   margin-right: 5px;
@@ -30,13 +23,27 @@ const Login = styled.button`
   }
 `;
 
+const NavigationBar = styled.div`
+  background-color: white;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  margin-left: -10px;
+  padding: 5px;
+  position: fixed;
+  top: 0;
+  width: calc(100% + 10px);
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  z-index: 9999;
+`;
+
 const CurrentPage = styled.div`
   margin-top: 100px;
 `;
 
 const MainSet = styled.div`
   display: flex;
-  gap: 100px;
+  gap: 80px;
 `;
 
 export {

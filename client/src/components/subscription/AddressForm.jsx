@@ -1,7 +1,9 @@
 /* eslint-disable import/extensions */
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Grid, Typography, TextField, FormControlLabel, Checkbox } from '@mui/material';
+import {
+  Grid, Typography, TextField, FormControlLabel, Checkbox,
+} from '@mui/material';
 
 const AddressForm = ({ address, setAddress }) => {
   const handleChange = (e) => {
@@ -76,6 +78,7 @@ const AddressForm = ({ address, setAddress }) => {
           </Grid>
           <Grid item xs={12} sm={6}>
             <TextField
+              required
               id="state"
               name="state"
               label="State/Province/Region"
