@@ -39,8 +39,8 @@ export default function Item({ product, setCart }) {
           {product.price}
         </Typography>
       </CardContent>
-      <CardActions sx={{ bottom: 0 }}>
-        <Button size="small" sx={{color: "#608200"}} onClick={handleClick} >Add To Cart</Button>
+      <CardActions sx={{ bottom: 0}}>
+        <Button size="small" sx={{color: "#608200", fontWeight: "normal"}} onClick={handleClick} >Add To Cart</Button>
         <TextField
           id="outlined-number"
           label="Qty"

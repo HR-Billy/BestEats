@@ -38,7 +38,7 @@ export default function CartItem({ product, setCart }) {
         <ListItemText
           primary={product.name}
           secondary={
-            <React.Fragment>
+            <div style={{display: "flex", justifyContent: "space-between"}}>
               <Typography
                 sx={{ display: 'inline' }}
                 component="span"
@@ -48,7 +48,7 @@ export default function CartItem({ product, setCart }) {
                 {product.price}
               </Typography>
               <Input type="number" value={product.cartQuantity} placeholder="0" onChange={handleChange} />
-            </React.Fragment>
+            </div>
           }
         />
     </ListItem>

@@ -33,7 +33,7 @@ const App = () => {
             color="black"
             align="center"
             variant="h5"
-            sx={{ mb: 3, mt: 3, ml: 3 }}
+            sx={{ mb: 3, mt: 4, ml: 3 }}
           >
             SUBSCRIBE
           </Typography>
@@ -90,7 +90,7 @@ const App = () => {
                   variant="h4"
                   sx={{
                     mb: 3,
-                    mt: 3,
+                    mt: 4,
                     ml: 0,
                     mr: 5,
                     fontFamily: 'Kalam',
@@ -106,7 +106,7 @@ const App = () => {
                   color="black"
                   align="center"
                   variant="h5"
-                  sx={{ mb: 3, mt: 3, ml: 3 }}
+                  sx={{ mb: 3, mt: 4, ml: 3 }}
                 >
                   MEALS
                 </Typography>
@@ -116,7 +116,7 @@ const App = () => {
                   color="black"
                   align="center"
                   variant="h5"
-                  sx={{ mb: 3, mt: 3, ml: 3 }}
+                  sx={{ mb: 3, mt: 4, ml: 3 }}
                 >
                   FARMERS
                 </Typography>
@@ -126,7 +126,7 @@ const App = () => {
                   color="black"
                   align="center"
                   variant="h5"
-                  sx={{ mb: 3, mt: 3, ml: 3 }}
+                  sx={{ mb: 3, mt: 4, ml: 3 }}
                 >
                   GROCERY
                 </Typography>
@@ -136,7 +136,7 @@ const App = () => {
                   color="black"
                   align="center"
                   variant="h5"
-                  sx={{ mb: 3, mt: 3, ml: 3 }}
+                  sx={{ mb: 3, mt: 4, ml: 3 }}
                 >
                   LIFESTYLE
                 </Typography>
@@ -150,7 +150,7 @@ const App = () => {
               <Avatar
                 align="center"
                 variant="h5"
-                sx={{ mb: 3, mt: 3, ml: 3 }}
+                sx={{ mb: 3, mt: 4, ml: 3 }}
               />
             </Link>
             <AuthButton />

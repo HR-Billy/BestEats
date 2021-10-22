@@ -5,6 +5,8 @@ import Cat from './Cat.jsx';
 const Container = styled.div`
   display: flex;
   justify-content: space-around;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
 `;
 
 export default function Category({ setActiveCategory, activeCategory }) {
