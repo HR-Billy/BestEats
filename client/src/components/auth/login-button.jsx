@@ -6,6 +6,7 @@ const LoginButton = () => {
   const { loginWithRedirect } = useAuth0();
   return (
     <Button
+      style={{ textDecoration: 'none' }}
       variant="contained"
       sx={{ mt: 3, mx: 3 }}
       className="btn btn-primary btn-block"

@@ -1,12 +1,6 @@
 import React from 'react';
-import styled from 'styled-components';
+import { List, Button } from '@mui/material';
 import CartItem from './CartItem.jsx';
-
-const Container = styled.div`
-  width: 250px;
-  padding-top: 140px;
-  padding-left: 30px;
-`;
 
 export default function Cart({ cart, setCart }) {
   function getTotal() {
@@ -20,12 +14,14 @@ export default function Cart({ cart, setCart }) {
   const total = getTotal(cart);
 
   return (
-    <Container>
+    <List sx={{minWidth: 200, maxWidth: 200, bgcolor: 'background.paper', margin: '70px 20px 0px 50px'}}>
+      <h2>Shopping Cart</h2>
       {cart.map((product) => (
         <CartItem product={product} key={product.id} setCart={setCart} />
       ))}
+      <br />
       <span><strong>{`Total $${total}  `}</strong></span>
-      <button>Checkout</button>
-    </Container>
+      <Button variant="text">Checkout</Button>
+    </List>
   );
 }

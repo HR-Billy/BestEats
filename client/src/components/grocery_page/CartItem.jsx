@@ -1,15 +1,11 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-
-const Container = styled.div`
-  width: 250px;
-  padding-top: 15px;
-`;
+import { ListItem, Divider, ListItemText, ListItemAvatar, Avatar, Typography } from '@mui/material';
 
 const Input = styled.input`
   width: 30px;
   margin-left: 30px;
-`
+`;
 
 export default function CartItem({ product, setCart }) {
   const [cartQuantity, setCartQuantity] = useState(product.cartQuantity);
@@ -20,10 +16,13 @@ export default function CartItem({ product, setCart }) {
       for (let i = 0; i < cart.length; i++) {
         if (cart[i].id === product.id) {
           cart[i].cartQuantity = Number(e.target.value);
+          if (Number(e.target.value) < 1) {
+            cart.splice(i, 1);
+          }
           return [...cart];
         }
       }
-    })
+    });
   }
 
   function handleClick() {
@@ -31,9 +30,29 @@ export default function CartItem({ product, setCart }) {
   }
 
   return (
-    <Container>
-      <h4><button onClick={handleClick} type="button">X</button> {product.name}</h4>
-      <h5>{product.price} <Input type="number" value={product.cartQuantity} placeholder="0" onChange={handleChange} /></h5>
-    </Container>
+    <>
+      <ListItem alignItems="flex-start" dense={true}>
+        <ListItemAvatar>
+          <Avatar alt={product.name} src={product.image} />
+        </ListItemAvatar>
+        <ListItemText
+          primary={product.name}
+          secondary={
+            <React.Fragment>
+              <Typography
+                sx={{ display: 'inline' }}
+                component="span"
+                variant="body2"
+                color="text.secondary"
+              >
+                {product.price}
+              </Typography>
+              <Input type="number" value={product.cartQuantity} placeholder="0" onChange={handleChange} />
+            </React.Fragment>
+          }
+        />
+    </ListItem>
+    <Divider variant="inset" component="li" />
+  </>
   );
 }

@@ -1,7 +1,7 @@
 /* eslint-disable import/extensions */
 import React, { useState, useEffect, useContext } from 'react';
-import axios from 'axios';
 import { useAuth0 } from '@auth0/auth0-react';
+import axios from 'axios';
 import {
   ThemeProvider, CssBaseline, Typography, Grid, Box, Container,
   Paper, Stepper, Step, StepLabel, Button,
@@ -29,9 +29,14 @@ const Copyright = () => (
 const Subscribe = () => {
   // this component assumes the user is already logged in;
   // below is just a placeholder which will be updated with userId from authentication
-  // const userId = Math.round((Math.random() * 500) + 1);
-  const { user } = useAuth0();
-  const userId = user.sub;
+  const { user, isAuthenticated } = useAuth0();
+
+  let userId;
+  if (isAuthenticated) {
+    userId = user.sub;
+  } else {
+    userId = Math.round((Math.random() * 500) + 1);
+  }
   console.log(userId);
 
   const steps = ['Select Plan', 'Shipping', 'Payment', 'Select Your Meals'];
@@ -199,7 +204,7 @@ const Subscribe = () => {
     }
 
     const userInfo = {
-      auth_id: userId,
+      id: userId,
       first_name: address.firstName,
       last_name: address.lastName,
       address1: address.address1,
@@ -226,7 +231,7 @@ const Subscribe = () => {
     };
 
     console.log(userInfo);
-    axios.patch('api/member/subscribe', userInfo)
+    axios.patch('/subscribe/update', userInfo)
       .then((res) => {
         console.log(res);
       })
@@ -236,8 +241,15 @@ const Subscribe = () => {
   return (
     <ThemeProvider theme={myTheme}>
       <CssBaseline />
-      <Container component="main" maxWidth="md" sx={{ mb: 4, mt: 10 }}>
-        <Paper elevation={0} sx={{ my: { xs: 3, md: 6 }, p: { xs: 2, md: 3 } }}>
+      <Container component="main" maxWidth="md" sx={{ mb: 4, mt: 15 }}>
+        <Paper
+          elevation={3}
+          sx={{
+            my: { xs: 3, md: 6 }, p: { xs: 2, md: 3 },
+            // border: 3, borderColor: 'secondary.light',
+            // mt: 5, ml: 5, mb: 5, mr: 5,
+          }}
+        >
           <Typography component="h1" variant="h4" align="center">
             Subscribe
           </Typography>

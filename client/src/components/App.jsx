@@ -23,11 +23,6 @@ import ProtectedRoute from './auth/protected-route.jsx';
 const App = () => {
   const { user, isAuthenticated } = useAuth0();
   const [subscribed, setSubscribed] = useState(false);
-  // const [loggedIn, setLoggedIn] = useState(false);
-  const [userId, setUserId] = '';
-  // const { user } = useAuth0();
-  // console.log(user);
-
   console.log(user);
 
   const addUser = () => {
@@ -44,8 +39,6 @@ const App = () => {
       })
       .catch(console.log);
   };
-
-  // useEffect(() => addUser(), [isAuthenticated]);
 
   const renderSubscribe = () => {
     if (!subscribed) {
@@ -67,7 +60,6 @@ const App = () => {
   useEffect(() => {
     if (isAuthenticated) {
       console.log(user.sub);
-      // setUserId(user.sub);
       // check if current user exists in user table
       axios.get('api/member/status', user.sub)
         .then((res) => {
@@ -85,7 +77,7 @@ const App = () => {
           } else {
             addUser();
           }
-        })
+        });
     }
   }, [isAuthenticated]);
 
@@ -93,10 +85,6 @@ const App = () => {
     <Context.Provider value={{
       subscribed,
       setSubscribed,
-      // loggedIn,
-      // setLoggedIn,
-      userId,
-      setUserId,
     }}
     >
       <div>
@@ -109,7 +97,6 @@ const App = () => {
                     color="black"
                     align="center"
                     variant="h5"
-                  // sx={{ mb: 4, mt: { sx: 4, sm: 10 } }}
                     sx={{ mb: 3, mt: 3, ml: 3 }}
                   >
                     HOME
@@ -142,7 +129,7 @@ const App = () => {
                     variant="h5"
                     sx={{ mb: 3, mt: 3, ml: 3 }}
                   >
-                    STORE
+                    GROCERY
                   </Typography>
                 </Link>
                 <Link to="/health" style={{ textDecoration: 'none' }}>
@@ -157,22 +144,13 @@ const App = () => {
                 </Link>
                 {renderSubscribe()}
               </MainSet>
-              {/* <Link to="/login" style={{ textDecoration: 'none' }}>
-                <Button variant="contained" sx={{ mt: 3, mx: 3 }}>
-                  LOGIN
-                </Button>
-              </Link> */}
               <AuthButton />
             </NavigationBar>
             <CurrentPage>
               <Route exact path="/" render={() => <Home />} />
               <Route exact path="/meal-plan" render={() => <MealPlan />} />
               <Route exact path="/farmers" component={FarmersPage} />
-              <Route
-                exact
-                path="/store"
-                render={() => <h1>Grocery store component goes here</h1>}
-              />
+              <Route exact path="/store" render={() => <Store />} />
               <Route exact path="/health" component={HealthPage} />
               <Route exact path="/subscribe" render={() => <Subscribe />} />
               <Route exact path="/login" render={() => <SignIn />} />
