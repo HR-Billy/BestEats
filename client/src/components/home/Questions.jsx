@@ -20,6 +20,9 @@ function Questions() {
           py: 2,
           px: 5,
         }}
+        href="https://www.google.com/"
+        rel="noreferror"
+        target="_blank"
       >
         <Typography variant="h4" component="span">
           Got any questions? Need help?

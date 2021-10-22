@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button, Typography } from '@mui/material';
-import ProductHeroLayout from './ProductHero.jsx';
 import { Link } from 'react-router-dom';
+import ProductHeroLayout from './ProductHero.jsx';
 
 const backgroundImage = 'https://wallpapercave.com/wp/wp2020196.jpg';
 
@@ -19,7 +19,7 @@ const Landing = () => (
       src={backgroundImage}
       alt="increase priority"
     />
-    <Typography color="inherit" align="center" variant="h1" marked="center">
+    <Typography color="inherit" align="center" variant="h1" marked="center" sx={{ textShadow: 5 }}>
       Welcome to Best Eats.
     </Typography>
     <Typography
@@ -32,16 +32,16 @@ const Landing = () => (
       and lifestyle advice, delivered right to your door!
     </Typography>
     <Link to="/subscribe" style={{ textDecoration: 'none' }}>
-    <Button
-      color="secondary"
-      variant="contained"
-      size="large"
-      component="a"
+      <Button
+        color="secondary"
+        variant="contained"
+        size="large"
+        component="a"
       // href="/premium-themes/onepirate/sign-up/"
-      sx={{ minWidth: 200 }}
-    >
-      Get started
-    </Button>
+        sx={{ minWidth: 200 }}
+      >
+        Get started
+      </Button>
     </Link>
     <Typography variant="body2" color="inherit" sx={{ mt: 2 }}>
       Already a member? Log in.

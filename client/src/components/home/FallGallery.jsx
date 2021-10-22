@@ -7,7 +7,7 @@ import images from './images.js';
 
 const FallGallery = () => (
   <>
-    <Box sx={{ backgroundColor: 'orange' }}>
+    <Box sx={{ backgroundColor: '#e9ba9f' }}>
       <Grid container align="center" justify="center" alignItems="center">
         <Grid item>
           <ImageList sx={{ width: 700, mt: 0, mb: 0 }} cols={3} rowHeight={164} gap={0}>
@@ -26,7 +26,7 @@ const FallGallery = () => (
         <Grid item style={{ textAlign: 'center', margin: 'auto' }}>
           {/* <Grid item style={{ align: center }}> */}
 
-          <Typography color="white" variant="h2" marked="center">We love Fall too.</Typography>
+          <Typography color="#333333" variant="h2" marked="center">We love Fall too.</Typography>
           <Link
             to={{
               pathname: '/store',
@@ -45,7 +45,7 @@ const FallGallery = () => (
       // href="/premium-themes/onepirate/sign-up/"
               sx={{ mt: 2, minWidth: 200 }}
             >
-              Go to Fall items
+              Start Shopping
 
             </Button>
 
