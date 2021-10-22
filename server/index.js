@@ -3,6 +3,7 @@ const path = require('path');
 const runProfileRte = require('./controllers/profile');
 const runSubscribeRte = require('./controllers/subscribe');
 const runFarmerRte = require('./controllers/farmers');
+const runGroceryRte = require('./controllers/grocery');
 
 require('dotenv').config();
 
@@ -22,6 +23,7 @@ const FIX_ME = () => {
 app.use('/home', FIX_ME);
 app.use('/meal-plan', FIX_ME);
 app.use('/api/farmers', runFarmerRte);
+app.use('/api/store', runGroceryRte);
 app.use('/health', FIX_ME);
 app.use('/subscribe', runSubscribeRte);
 app.use('/login', FIX_ME);

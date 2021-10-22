@@ -38,15 +38,15 @@ const App = () => {
           <Router>
             <NavigationBar>
               <MainSet>
-                <Link to="/" style={{ textDecoration: 'none' }}>
+                <Link to="/" style={{ textDecoration: 'none', margin: "0 0 0 10px", padding: "0 0 0 0", display: 'flex' }}>
+                  <img src="https://www.graphicsprings.com/filestorage/stencils/1c3f83b24f3cd7029f90f9f6e250d09d.png?width=500&height=500" alt="best eats logo" height="70px" />
                   <Typography
-                    color="black"
+                    color="#B0C800"
                     align="center"
-                    variant="h5"
-                    // sx={{ mb: 4, mt: { sx: 4, sm: 10 } }}
-                    sx={{ mb: 3, mt: 3, ml: 3 }}
+                    variant="h4"
+                    sx={{ mb: 3, mt: 3, ml: 0, mr: 5, fontFamily: "Kalam", fontSize: "25px", fontWeight: 'bold' }}
                   >
-                    HOME
+                    Best Eats
                   </Typography>
                 </Link>
                 <Link to="/meal-plan" style={{ textDecoration: 'none' }}>
@@ -76,7 +76,7 @@ const App = () => {
                     variant="h5"
                     sx={{ mb: 3, mt: 3, ml: 3 }}
                   >
-                    STORE
+                    GROCERY
                   </Typography>
                 </Link>
                 <Link to="/health" style={{ textDecoration: 'none' }}>
@@ -100,12 +100,8 @@ const App = () => {
                   </Typography>
                 </Link>
               </MainSet>
-              {/* <Link to="/login" style={{ textDecoration: 'none' }}>
-                <Button variant="contained" sx={{ mt: 3, mx: 3 }}>
-                  LOGIN
-                </Button> */}
-              <Link to="/profile" style={{ textDecoration: 'none' }}>
-                {user && <Avatar />}
+              <Link to="/profile" style={{ textDecoration: 'none', marginRight: '20px' }}>
+                {user && <Avatar align="center" variant="h5" sx={{ mb: 3, mt: 3, ml: 3 }} />}
               </Link>
               <AuthButton />
             </NavigationBar>
@@ -113,14 +109,9 @@ const App = () => {
               <Route exact path="/" render={() => <Home />} />
               <Route exact path="/meal-plan" render={() => <MealPlan />} />
               <Route exact path="/farmers" component={FarmersPage} />
-              <Route
-                exact
-                path="/store"
-                render={() => <h1>Grocery store component goes here</h1>}
-              />
+              <Route exact path="/store" render={() => <Store />} />
               <Route exact path="/health" component={HealthPage} />
               <Route exact path="/subscribe" render={() => <Subscribe />} />
-              {/* <Route exact path="/login" render={() => <SignIn />} /> */}
               <Route exact path="/profile" render={() => <Profile />} />
             </CurrentPage>
           </Router>
