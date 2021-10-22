@@ -4,7 +4,7 @@ import { Grid, TextField, Button } from '@mui/material';
 import { ProfileContext } from '../ProfileContext.jsx';
 
 const Status = () => {
-  const [status, setStatus] = useState({ id: 2, text: '' });
+  const [status, setStatus] = useState({ id: 14, text: '' });
   const { user, feed, setFeed } = useContext(ProfileContext);
 
   const handleTextChange = (e) => {
@@ -29,7 +29,7 @@ const Status = () => {
         console.log('here is the data ', data);
         setFeed([data, ...feed]);
       });
-    setStatus({ id: 2, text: '' });
+    setStatus({ id: 14, text: '' });
   };
 
   return (

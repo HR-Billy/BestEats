@@ -37,7 +37,6 @@ const Profile = () => {
     axios.get('profile/user/?user_id=14')
     // axios.get(`profile/user/?user_id=${userId}`)
       .then(({ data }) => {
-        // console.log(data[0]); DELETE
         const { results } = data[0];
 
         setProfilePhoto(results.photo);
