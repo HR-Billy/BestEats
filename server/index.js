@@ -21,7 +21,7 @@ const FIX_ME = () => {
 };
 app.use('/home', FIX_ME);
 app.use('/meal-plan', FIX_ME);
-app.use('/farmers', runFarmerRte);
+app.use('/api/farmers', runFarmerRte);
 app.use('/health', FIX_ME);
 app.use('/subscribe', runSubscribeRte);
 app.use('/login', FIX_ME);

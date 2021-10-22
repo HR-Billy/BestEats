@@ -22,7 +22,7 @@ const FarmersPage = () => {
   const defaultFilterOptions = createFilterOptions();
 
   useEffect(() => {
-    axios.get('/farmers').then((response) => {
+    axios.get('/api/farmers').then((response) => {
       setfarmerData(response.data);
     });
   }, []);
@@ -35,6 +35,7 @@ const FarmersPage = () => {
 
   const loadMoreFarmers = () => {
     setNumberOfProfiles(numberOfProfiles + 1);
+    setFarmer('');
   };
 
   return (
