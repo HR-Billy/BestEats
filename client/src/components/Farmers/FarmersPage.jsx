@@ -89,7 +89,6 @@ const FarmersPage = () => {
             }}
           />
         </Container>
-
         <Container maxWidth="lg">
           <FarmersList
             farmers={

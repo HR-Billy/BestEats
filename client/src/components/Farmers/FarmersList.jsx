@@ -13,13 +13,9 @@ const ListContainer = styled(Box)`
 
 const FarmersList = ({ farmers, index }) => (
   <ListContainer>
-    <Grid container>
-      {farmers.slice(0, index).map((farmer) => (
-        <Grid item>
-          <FarmerCard key={farmer.id} farmer={farmer} />
-        </Grid>
-      ))}
-    </Grid>
+    {farmers.slice(0, index).map((farmer) => (
+      <FarmerCard key={farmer.id} farmer={farmer} />
+    ))}
   </ListContainer>
 );
 

@@ -12,10 +12,12 @@ const FarmerCard = ({ farmer }) => {
       sx={{
         display: 'grid',
         ...(matchesSm && {
-          gridTemplateRows: '[picture] 1fr [bio] auto',
+          gridTemplateRows: '[picture] auto [bio] 1fr',
           justifyItems: 'center',
         }),
-        ...(matchesSmUp && { gridTemplateColumns: '[picture] 1fr [bio] auto' }),
+        ...(matchesSmUp && {
+          gridTemplateColumns: '[picture] auto [bio] 1fr',
+        }),
         gridColumnGap: theme.spacing(3),
         margin: theme.spacing(1),
         padding: theme.spacing(1),
