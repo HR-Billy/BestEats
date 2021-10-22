@@ -13,7 +13,7 @@ import Store from './grocery_page/Store.jsx';
 import FarmersPage from './Farmers/FarmersPage.jsx';
 import HealthPage from './Health/HealthPage.jsx';
 import Subscribe from './subscription/Subscribe.jsx';
-import SignIn from './SignIn.jsx';
+import SubLanding from './subscription/SubLanding.jsx';
 import MealPlan from './meals/MealPlan.jsx';
 import Profile from './profile/Profile.jsx';
 import mytheme from './theme.jsx';
@@ -145,6 +145,9 @@ const App = () => {
                 </Link>
                 {renderSubscribe()}
               </MainSet>
+              <Link to="/profile" style={{ textDecoration: 'none', marginRight: '20px' }}>
+                {user && <Avatar align="center" variant="h5" sx={{ mb: 3, mt: 3, ml: 3 }} />}
+              </Link>
               <AuthButton />
             </NavigationBar>
             <CurrentPage>
@@ -153,8 +156,8 @@ const App = () => {
               <Route exact path="/farmers" component={FarmersPage} />
               <Route exact path="/store" render={() => <Store />} />
               <Route exact path="/health" component={HealthPage} />
-              <Route exact path="/subscribe" component={isAuthenticated ? Subscribe : FarmersPage} />
-              <Route exact path="/profile" render={() => <Profile />} />
+              <Route exact path="/subscribe" component={isAuthenticated ? Subscribe : SubLanding} />
+              <ProtectedRoute exact path="/profile" component={Profile} />
             </CurrentPage>
           </Router>
         </ThemeProvider>

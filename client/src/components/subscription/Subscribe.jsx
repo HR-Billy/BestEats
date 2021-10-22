@@ -1,5 +1,5 @@
 /* eslint-disable import/extensions */
-import React, { useState, useEffect, useContext } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useAuth0 } from '@auth0/auth0-react';
 import axios from 'axios';
 import {
@@ -27,17 +27,11 @@ const Copyright = () => (
 );
 
 const Subscribe = () => {
-  // this component assumes the user is already logged in;
-  // below is just a placeholder which will be updated with userId from authentication
   const { user, isAuthenticated } = useAuth0();
-
   let userId;
   if (isAuthenticated) {
     userId = user.sub;
-  } else {
-    userId = Math.round((Math.random() * 500) + 1);
   }
-  console.log(userId);
 
   const steps = ['Select Plan', 'Shipping', 'Payment', 'Select Your Meals'];
 
@@ -113,7 +107,6 @@ const Subscribe = () => {
           result = false;
         } else {
           Object.entries(address).forEach((entry) => {
-            // console.log(entry[1]);
             if (entry[0] !== 'address2') {
               if (entry[1] === '') {
                 errorMessage = 'complete all required address fields';
@@ -231,7 +224,7 @@ const Subscribe = () => {
     };
 
     console.log(userInfo);
-    axios.patch('/subscribe/update', userInfo)
+    axios.patch('/api/member/subscribe', userInfo)
       .then((res) => {
         console.log(res);
       })
@@ -246,8 +239,6 @@ const Subscribe = () => {
           elevation={3}
           sx={{
             my: { xs: 3, md: 6 }, p: { xs: 2, md: 3 },
-            // border: 3, borderColor: 'secondary.light',
-            // mt: 5, ml: 5, mb: 5, mr: 5,
           }}
         >
           <Typography component="h1" variant="h4" align="center">
