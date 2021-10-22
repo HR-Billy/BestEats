@@ -56,7 +56,7 @@ module.exports = {
   WHERE id = $1;
   `,
   status: `
-  INSERT INTO status(user_id, text, created_at)
-  VALUES ($1, $2, current_timestamp);
+  INSERT INTO status(user_id, text)
+  VALUES ($1, $2);
   `,
 };
