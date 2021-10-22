@@ -20,6 +20,9 @@ function Questions() {
           py: 2,
           px: 5,
         }}
+        href="https://www.google.com/"
+        rel="noreferror"
+        target="_blank"
       >
         <Typography variant="h4" component="span">
           Got any questions? Need help?
@@ -28,12 +31,6 @@ function Questions() {
       <Typography variant="subtitle1" sx={{ my: 3 }}>
         We are here to help. Get in touch!
       </Typography>
-      <Box
-        component="img"
-        src="/static/themes/onepirate/producBuoy.svg"
-        alt="buoy"
-        sx={{ width: 60 }}
-      />
     </Container>
   );
 }

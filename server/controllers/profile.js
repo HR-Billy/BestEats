@@ -13,7 +13,7 @@ router.route('/user')
 
 router.route('/status')
   .post((req, res) => {
-    console.log('here is the body', req.body);
+    model.insertStatus(req, res);
   })
   .patch((req, res) => {
     model.selectProfileData(req, res);
