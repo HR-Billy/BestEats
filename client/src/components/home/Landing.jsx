@@ -31,10 +31,7 @@ const Landing = () => (
       alt="increase priority"
     />
     <Typography variant="h1" align="center" marked="center" sx={{ mt: 10 }}>
-      <WelcomeText>
-        Welcome to Best Eats.
-      </WelcomeText>
-
+      <WelcomeText>Welcome to Best Eats.</WelcomeText>
     </Typography>
     {/* </WelcomeText> */}
     <Typography
@@ -43,11 +40,10 @@ const Landing = () => (
       variant="h2"
       // sx={{ mb: 4, mt: { sx: 4, sm: 10 } }}
       sx={{ mb: 4, mt: 0 }}
-
     >
       <SloganText>
-        A one stop shop for the best healthy food,
-        and lifestyle advice, delivered right to your door!
+        A one stop shop for the best healthy food, and lifestyle advice,
+        delivered right to your door!
       </SloganText>
     </Typography>
     <Link to="/subscribe" style={{ textDecoration: 'none' }}>
@@ -55,8 +51,8 @@ const Landing = () => (
         color="secondary"
         variant="contained"
         size="large"
-        component="a"
-      // href="/premium-themes/onepirate/sign-up/"
+        // component="a"
+        // href="/premium-themes/onepirate/sign-up/"
         sx={{ minWidth: 200 }}
       >
         Get started
