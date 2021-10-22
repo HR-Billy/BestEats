@@ -1,16 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import styled from 'styled-components';
-
-const Container = styled.div`
-  width: 200px;
-  height: 300px;
-  padding-top: 20px;
-`;
-
-const Input = styled.input`
-  width: 30px;
-  margin-left: 30px;
-`
+import { Card, CardActions, CardContent, CardMedia, Button, Typography, TextField } from '@mui/material';
 
 export default function Item({ product, setCart }) {
   const [cartQuantity, setCartQuantity] = useState(1);
@@ -35,11 +24,34 @@ export default function Item({ product, setCart }) {
   }
 
   return (
-    <Container>
-      <img src={product.image} alt="product" height="150px" />
-      <h4>{product.name}</h4>
-      <h5>{product.price} <Input size={5} type="number" value={cartQuantity} onChange={handleChange} /></h5>
-      <button type="button" onClick={handleClick}>Add To Cart</button>
-    </Container>
+    <Card sx={{ maxWidth: 200, minHeight: 250, maxHeight: 250, margin: "0px 25px 50px 25px", display: 'flex', justifyContent: 'space-between', flexDirection: 'column' }}>
+      <CardMedia
+        component="img"
+        height="100"
+        image={product.image}
+        alt="food item"
+      />
+      <CardContent>
+        <Typography gutterBottom variant="body" component="div">
+          {product.name}
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+          {product.price}
+        </Typography>
+      </CardContent>
+      <CardActions sx={{ bottom: 0 }}>
+        <Button size="small" sx={{color: "#608200"}} onClick={handleClick} >Add To Cart</Button>
+        <TextField
+          id="outlined-number"
+          label="Qty"
+          type="number"
+          value={cartQuantity}
+          onChange={handleChange}
+          InputLabelProps={{
+            shrink: true,
+          }}
+        />
+      </CardActions>
+    </Card>
   );
 }

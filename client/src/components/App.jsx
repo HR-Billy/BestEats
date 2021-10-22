@@ -76,7 +76,7 @@ const App = () => {
                     variant="h5"
                     sx={{ mb: 3, mt: 3, ml: 3 }}
                   >
-                    STORE
+                    GROCERY
                   </Typography>
                 </Link>
                 <Link to="/health" style={{ textDecoration: 'none' }}>
@@ -111,11 +111,7 @@ const App = () => {
               <Route exact path="/" render={() => <Home />} />
               <Route exact path="/meal-plan" render={() => <MealPlan />} />
               <Route exact path="/farmers" component={FarmersPage} />
-              <Route
-                exact
-                path="/store"
-                render={() => <h1>Grocery store component goes here</h1>}
-              />
+              <Route exact path="/store" render={() => <Store />} />
               <Route exact path="/health" component={HealthPage} />
               <Route exact path="/subscribe" render={() => <Subscribe />} />
               <Route exact path="/login" render={() => <SignIn />} />
