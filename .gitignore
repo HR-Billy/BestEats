@@ -6,8 +6,8 @@ bundle.js
 config.js
 coverage
 onepirate
-package-lock.json
-
 #csv files
 database/data
 CSV data
+package-lock.json
+.env

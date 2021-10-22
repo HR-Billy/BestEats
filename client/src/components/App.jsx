@@ -4,13 +4,7 @@ import axios from 'axios';
 import { ThemeProvider } from '@mui/material/styles';
 import { Button, Typography } from '@mui/material';
 import { useAuth0 } from '@auth0/auth0-react';
-import {
-  Text,
-  NavigationBar,
-  Login,
-  CurrentPage,
-  MainSet,
-} from './styles.jsx';
+import { Text, NavigationBar, Login, CurrentPage, MainSet } from './styles.jsx';
 import Home from './home/Home.jsx';
 import { Context } from '../Context.jsx';
 import Store from './grocery_page/Store.jsx';
@@ -24,25 +18,15 @@ import mytheme from './theme.jsx';
 import AuthButton from './auth/authentication-button.jsx';
 import ProtectedRoute from './auth/protected-route.jsx';
 
-// const App = () => {
-//   const [loggedIn, setLoggedIn] = useState(false);
-//   const [userId, setUserId] = ('');
-
-//   return (
-//     <Context.Provider value={{
-//       loggedIn,
-//       setLoggedIn,
-//       userId,
-//       setUserId,
-//     }}
-//     >
-//       <div>
-//         <ThemeProvider theme={mytheme}>
-//           <Router>
 
 const App = () => {
   const { user, isAuthenticated } = useAuth0();
   const [subscribed, setSubscribed] = useState(false);
+  // const [loggedIn, setLoggedIn] = useState(false);
+  // const [userId, setUserId] = '';
+  // const { user } = useAuth0();
+  // console.log(user);
+
   console.log(user);
 
   const addUser = () => {
@@ -94,10 +78,15 @@ const App = () => {
     <Context.Provider value={{
       subscribed,
       setSubscribed,
+      // loggedIn,
+      // setLoggedIn,
+      // userId,
+      // setUserId,
     }}
     >
+      <div>
       <ThemeProvider theme={mytheme}>
-        <div>
+        <Router>
           <NavigationBar>
             <MainSet>
               <Link to="/" style={{ textDecoration: 'none' }}>
@@ -105,7 +94,7 @@ const App = () => {
                   color="black"
                   align="center"
                   variant="h5"
-                // sx={{ mb: 4, mt: { sx: 4, sm: 10 } }}
+                  // sx={{ mb: 4, mt: { sx: 4, sm: 10 } }}
                   sx={{ mb: 3, mt: 3, ml: 3 }}
                 >
                   HOME
@@ -153,48 +142,29 @@ const App = () => {
               </Link>
               {renderSubscribe()}
             </MainSet>
-            {/* <Link to="/login" style={{ textDecoration: 'none' }}> */}
-            <AuthButton />
-            {/* <Button variant="contained" sx={{ mt: 3, mx: 3 }}>LOGIN</Button> */}
-            {/* </Link> */}
-          </NavigationBar>
-          <CurrentPage>
-            <Route
-              exact
-              path="/"
-              render={() => (
-                <Home />
-              )}
-            />
-            <Route
-              exact
-              path="/meal-plan"
-              render={() => <MealPlan />}
-            />
-            <Route exact path="/farmers" component={FarmersPage} />
-            <Route
-              exact
-              path="/store"
-              render={() => <h1>Grocery store component goes here</h1>}
-            />
-            <Route exact path="/health" component={HealthPage} />
-            <Route
-              exact
-              path="/subscribe"
-              render={() => <Subscribe />}
-            />
-            {/* <Route
-            exact
-            path="/login"
-            render={() => (
-              <SignIn />
-            )}
-          /> */}
-          </CurrentPage>
-          {/* </Router> */}
-
-        </div>
-      </ThemeProvider>
+            <Link to="/login" style={{ textDecoration: 'none' }}>
+                <Button variant="contained" sx={{ mt: 3, mx: 3 }}>
+                  LOGIN
+                </Button>
+              </Link>
+              <AuthButton />
+            </NavigationBar>
+            <CurrentPage>
+              <Route exact path="/" render={() => <Home />} />
+              <Route exact path="/meal-plan" render={() => <MealPlan />} />
+              <Route exact path="/farmers" component={FarmersPage} />
+              <Route
+                exact
+                path="/store"
+                render={() => <h1>Grocery store component goes here</h1>}
+              />
+              <Route exact path="/health" component={HealthPage} />
+              <Route exact path="/subscribe" render={() => <Subscribe />} />
+              <Route exact path="/login" render={() => <SignIn />} />
+            </CurrentPage>
+          </Router>
+        </ThemeProvider>
+      </div>
     </Context.Provider>
   );
 };
