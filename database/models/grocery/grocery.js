@@ -14,7 +14,6 @@ module.exports = {
   },
   selectProducts: (req, res) => {
     const queryString = 'SELECT * FROM products';
-    console.log('in select in products');
     db.query(queryString, (err, data) => {
       if (err) {
         res.status(400).send(err);

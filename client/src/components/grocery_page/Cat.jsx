@@ -16,10 +16,10 @@ const Image = styled.img`
   border-radius: 10px;
 `;
 
-export default function Cat({data, handleClick, brightness}) {
+export default function Cat({ data, handleClick, brightness }) {
   function createName(name) {
     if (name === 'Dairy') return 'Dairy & Eggs';
-    else if (name === 'Meat') return 'Meat & Seafood';
+    if (name === 'Meat') return 'Meat & Seafood';
     return name;
   }
   return (
