@@ -4,6 +4,9 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import { Typography } from '@mui/material';
+import GrassIcon from '@mui/icons-material/Grass';
+import FavoriteIcon from '@mui/icons-material/Favorite';
+import FitnessCenterIcon from '@mui/icons-material/FitnessCenter';
 
 const item = {
   display: 'flex',
@@ -23,22 +26,11 @@ function Tiles() {
         mt: 15, mb: 30, display: 'flex', position: 'relative',
       }}
       >
-        {/* <Box
-          component="img"
-          src="/static/themes/onepirate/productCurvyLines.png"
-          alt="curvy lines"
-          sx={{ pointerEvents: 'none', position: 'absolute', top: -180 }}
-        /> */}
         <Grid container spacing={5}>
 
           <Grid item xs={12} md={4}>
             <Box sx={item}>
-              <Box
-                component="img"
-                src="/static/themes/onepirate/productValues3.svg"
-                alt="clock"
-                sx={{ height: 55 }}
-              />
+              <GrassIcon fontSize="large" />
               <Typography variant="h6" sx={{ my: 5 }}>
                 Know your farmers.
               </Typography>
@@ -50,29 +42,7 @@ function Tiles() {
           </Grid>
           <Grid item xs={12} md={4}>
             <Box sx={item}>
-              <Box
-                component="img"
-                src="/static/themes/onepirate/productValues1.svg"
-                alt="suitcase"
-                sx={{ height: 55 }}
-              />
-              <Typography variant="h6" sx={{ my: 5 }}>
-                Health, innovated.
-              </Typography>
-              <Typography variant="h5">
-                We are the cutting edge of the meal planning, healthy recipe curator,
-                and online grocery shopping industry.
-              </Typography>
-            </Box>
-          </Grid>
-          <Grid item xs={12} md={4}>
-            <Box sx={item}>
-              <Box
-                component="img"
-                src="/static/themes/onepirate/productValues2.svg"
-                alt="graph"
-                sx={{ height: 55 }}
-              />
+              <FitnessCenterIcon fontSize="large" />
               <Typography variant="h6" sx={{ my: 5 }}>
                 Lifestyle, not a product.
               </Typography>
@@ -82,7 +52,18 @@ function Tiles() {
               </Typography>
             </Box>
           </Grid>
-
+          <Grid item xs={12} md={4}>
+            <Box sx={item}>
+              <FavoriteIcon fontSize="large" />
+              <Typography variant="h6" sx={{ my: 5 }}>
+                Health, innovated.
+              </Typography>
+              <Typography variant="h5">
+                We are the cutting edge of the meal planning, healthy recipe curator,
+                and online grocery shopping industry.
+              </Typography>
+            </Box>
+          </Grid>
         </Grid>
       </Container>
     </Box>
