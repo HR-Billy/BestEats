@@ -25,21 +25,6 @@ const App = () => {
   const [subscribed, setSubscribed] = useState(false);
   console.log(user);
 
-  const addUser = () => {
-    const newUser = {
-      auth_id: user.sub,
-      username: user.nickname,
-      email: user.email,
-      member_start_date: user.updated_at,
-      profile_pic: user.picture,
-    };
-    axios.post('api/member/new', newUser)
-      .then((res) => {
-        console.log(res.data);
-      })
-      .catch(console.log);
-  };
-
   const renderSubscribe = () => {
     if (!isAuthenticated) {
       return (
@@ -89,33 +74,6 @@ const App = () => {
         .catch(console.log('error with get request'));
     }
   }, [isAuthenticated]);
-
-  // useEffect(() => {
-  //   if (isAuthenticated) {
-  //     console.log(user.sub);
-  //     const request = {
-  //       auth_id: user.sub,
-  //     };
-  //     // check if current user exists in user table
-  //     axios.post('api/member/status', request)
-  //       .then((res) => {
-  //         console.log('user status', res.data);
-  //         // if exists, check subscription status
-  //         if (res.data) {
-  //           axios.post('api/member/substatus', request)
-  //             .then((nextres) => {
-  //               console.log(nextres.data);
-  //               setSubscribed(nextres.data);
-  //               renderSubscribe();
-  //             })
-  //             .catch(console.log('error with get request'));
-  //         // if not, add user. keep subscribe = false.
-  //         } else {
-  //           addUser();
-  //         }
-  //       });
-  //   }
-  // }, [isAuthenticated]);
 
   return (
     <Context.Provider value={{
