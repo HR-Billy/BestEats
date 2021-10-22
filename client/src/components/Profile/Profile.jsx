@@ -1,6 +1,7 @@
 import axios from 'axios';
-import React, { useState, useEffect } from 'react';
-import { Container, Grid, Paper, Avatar } from '@mui/material';
+import React, { useState, useEffect, useContext } from 'react';
+import { Container, Grid, Paper, Typography, Avatar } from '@mui/material';
+import { Context } from '../../Context.jsx';
 import { ProfileContext } from './ProfileContext.jsx';
 import NutritionFacts from './features/NutritionFacts.jsx';
 import Status from './features/Status.jsx';
@@ -10,35 +11,52 @@ import useStyles from './styles.jsx';
 
 const Profile = () => {
   const classes = useStyles();
-  const [user, setUser] = useState([]);
+  const { subscribed } = useContext(Context);
+
   const [profilePhoto, setProfilePhoto] = useState('');
+  const [name, setName] = useState(''); // implement later
+  const [memberSince, setMemberSince] = useState(''); // implement later
   const [feed, setFeed] = useState([]);
+  const [suggestedMeals, setSuggestedMeals] = useState(null); // implement later
+  const [recentMeals, setRecentMeals] = useState([]);
+  const [arrivingMeals, setArrivingMeals] = useState([]);
+  const [mealAverages, setMealAverages] = useState([]);
   const [nutritionFacts, setNutritionFacts] = useState([]);
-  const [status, setStatus] = useState('');
+  const [getNewMealsOn, setGetNewMealsOn] = useState([]); // implement later
+
+  const [products, setProducts] = useState(null);
 
   const arriving = 'on its way';
   const recent = 'recent orders';
   const suggested = 'suggested meals';
 
   useEffect(() => {
-    axios.get('profile/user/?user_id=10')
+    axios.get('profile/user/?user_id=1')
+    // axios.get(`profile/user/?user_id=${userId}`)
       .then(({ data }) => {
-        console.log(data);
+        // console.log(data[0]); DELETE
+        const { results } = data[0];
+
+        setProfilePhoto(results.photo);
+        setName(results.first_name);
+        setMemberSince(results.member_start_date);
+        setFeed(results.feed);
+        setRecentMeals(results.recent);
+        setArrivingMeals(results.arriving);
+        setMealAverages(results.meal_averages[0]);
+        setNutritionFacts(results.nutrition_facts);
+
+        setGetNewMealsOn(results.subscription_start_date); // implement later
       });
-  });
+  }, []);
 
   return (
     <ProfileContext.Provider value={{
-      user,
-      setUser,
-      profilePhoto,
-      setProfilePhoto,
       feed,
       setFeed,
+      products,
       nutritionFacts,
-      setNutritionFacts,
-      status,
-      setStatus,
+      mealAverages,
     }}
     >
       <Container className={classes.wrapper}>
@@ -49,6 +67,7 @@ const Profile = () => {
               <Grid item xs={12}>
                 <Paper className={classes.picContainer}>
                   <Avatar className={classes.profilePhoto} alt="profile picture" src={profilePhoto} />
+                  {/* <Typography>Welcome {name}</Typography> */}
                 </Paper>
               </Grid>
               <Grid item xs={12}>
@@ -78,17 +97,17 @@ const Profile = () => {
             <Grid container spacing={3}>
               <Grid item xs={12}>
                 <Paper className={classes.orderContainer}>
-                  <Orders text={arriving} />
+                  <Orders text={suggested} meals={suggestedMeals} />
                 </Paper>
               </Grid>
               <Grid item xs={12}>
                 <Paper className={classes.orderContainer}>
-                  <Orders text={recent} />
+                  <Orders text={recent} meals={recentMeals} />
                 </Paper>
               </Grid>
               <Grid item xs={12}>
                 <Paper className={classes.orderContainer}>
-                  <Orders text={suggested} />
+                  <Orders text={arriving} meals={arrivingMeals} />
                 </Paper>
               </Grid>
             </Grid>
@@ -101,3 +120,4 @@ const Profile = () => {
 };
 
 export default Profile;
+

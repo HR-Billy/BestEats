@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
 import { ThemeProvider } from '@mui/material/styles';
-import { Button, Typography } from '@mui/material';
+import { Button, Typography, Avatar } from '@mui/material';
 import { useAuth0 } from '@auth0/auth0-react';
 import { Text, NavigationBar, Login, CurrentPage, MainSet } from './styles.jsx';
 import Home from './home/Home.jsx';
@@ -15,7 +15,7 @@ import SignIn from './SignIn.jsx';
 import AuthButton from './auth/authentication-button.jsx';
 import ProtectedRoute from './auth/protected-route.jsx';
 import MealPlan from './meals/MealPlan.jsx';
-import Profile from './Profile/Profile.jsx';
+import Profile from './profile/Profile.jsx';
 import mytheme from './theme.jsx';
 
 const App = () => {
@@ -100,17 +100,10 @@ const App = () => {
                   </Typography>
                 </Link>
               </MainSet>
-              <Link to="/login" style={{ textDecoration: 'none', marginRight: '20px' }}>
-                <Typography
-                  color="black"
-                  align="center"
-                  variant="h5"
-                  sx={{ mb: 3, mt: 3, ml: 3 }}
-                >
-                  LOGIN
-                </Typography>
+              <Link to="/profile" style={{ textDecoration: 'none', marginRight: '20px' }}>
+                {user && <Avatar align="center" variant="h5" sx={{ mb: 3, mt: 3, ml: 3 }} />}
               </Link>
-              {/* <AuthButton /> */}
+              <AuthButton />
             </NavigationBar>
             <CurrentPage>
               <Route exact path="/" render={() => <Home />} />
@@ -119,7 +112,7 @@ const App = () => {
               <Route exact path="/store" render={() => <Store />} />
               <Route exact path="/health" component={HealthPage} />
               <Route exact path="/subscribe" render={() => <Subscribe />} />
-              <Route exact path="/login" render={() => <SignIn />} />
+              <Route exact path="/profile" render={() => <Profile />} />
             </CurrentPage>
           </Router>
         </ThemeProvider>
