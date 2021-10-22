@@ -26,20 +26,6 @@ const App = () => {
   console.log(user);
 
   const renderSubscribe = () => {
-    if (!isAuthenticated) {
-      return (
-        <Link to="/sublanding" style={{ textDecoration: 'none' }}>
-          <Typography
-            color="black"
-            align="center"
-            variant="h5"
-            sx={{ mb: 3, mt: 3, ml: 3 }}
-          >
-            SUBSCRIBE
-          </Typography>
-        </Link>
-      );
-    }
     if (!subscribed) {
       return (
         <Link to="/subscribe" style={{ textDecoration: 'none' }}>
@@ -67,7 +53,6 @@ const App = () => {
       };
       axios.post('api/member/login', newUser)
         .then((res) => {
-          // console.log(res.data);
           setSubscribed(res.data);
           renderSubscribe();
         })
@@ -176,8 +161,7 @@ const App = () => {
             <Route exact path="/farmers" component={FarmersPage} />
             <Route exact path="/store" render={() => <Store />} />
             <Route exact path="/health" component={HealthPage} />
-            <Route exact path="/sublanding" component={SubLanding} />
-            <ProtectedRoute exact path="/subscribe" component={Subscribe} />
+            <Route exact path="/subscribe" component={isAuthenticated ? Subscribe : SubLanding} />
             <ProtectedRoute exact path="/profile" component={Profile} />
           </CurrentPage>
         </ThemeProvider>
