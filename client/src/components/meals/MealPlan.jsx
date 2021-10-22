@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import axios from 'axios';
 import { useAuth0 } from '@auth0/auth0-react';
 import { Grid, Button, Typography } from '@mui/material';
-import mockupMeals from './mockupMeals.jsx';
 import MealCard from './MealCard.jsx';
 import MealFilter from './MealFilter.jsx';
 import MealCart from './MealCart.jsx';
@@ -33,7 +32,6 @@ const MealPlan = () => {
       });
   };
 
-  // Need to add once the database gets new users
   const getSubscriberStatus = () => {
     axios.get(`/meal-plan/user/${user.sub}`)
       .then((response) => {
