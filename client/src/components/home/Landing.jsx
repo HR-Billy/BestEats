@@ -19,7 +19,13 @@ const Landing = () => (
       src={backgroundImage}
       alt="increase priority"
     />
-    <Typography color="inherit" align="center" variant="h1" marked="center" sx={{ textShadow: 5 }}>
+    <Typography
+      color="inherit"
+      align="center"
+      variant="h1"
+      marked="center"
+      sx={{ textShadow: 5 }}
+    >
       Welcome to Best Eats.
     </Typography>
     <Typography
@@ -28,16 +34,16 @@ const Landing = () => (
       variant="h2"
       sx={{ mb: 4, mt: { sx: 4, sm: 10 } }}
     >
-      A one stop shop for the best healthy food,
-      and lifestyle advice, delivered right to your door!
+      A one stop shop for the best healthy food, and lifestyle advice, delivered
+      right to your door!
     </Typography>
     <Link to="/subscribe" style={{ textDecoration: 'none' }}>
       <Button
         color="secondary"
         variant="contained"
         size="large"
-        component="a"
-      // href="/premium-themes/onepirate/sign-up/"
+        // component="a"
+        // href="/premium-themes/onepirate/sign-up/"
         sx={{ minWidth: 200 }}
       >
         Get started
