@@ -7,22 +7,24 @@ import Items from './Items.jsx';
 import Cart from './Cart.jsx';
 
 const H1 = styled.h1`
-  padding-top: 60px;
+  padding-top: 50px;
   text-align: center;
-  font-size: 80px;
+  font-size: 75px;
   color: #608200;
   font-family: "Kalam";
-  padding-bottom: 0px;
-  margin-bottom: 0px;
+  padding-bottom: -20px;
+  margin-bottom: -20px;
+  text-shadow: 2px 2px 2px #ccc;
 `;
 
 const H3 = styled.div`
   text-align: center;
-  font-size: 40px;
+  font-size: 38px;
   font-family: "Kalam";
-  padding-top: -30px;
-  margin-top: -30px;
+  padding-top: -33px;
+  margin-top: -33px;
   color: #B0C800;
+  text-shadow: 2px 2px 2px #ccc;
 `;
 
 const Container = styled.div`

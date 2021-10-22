@@ -3,7 +3,8 @@ import styled from 'styled-components';
 import Item from './Item.jsx';
 
 const Container = styled.div`
-  margin-top: 75px;
+  width: 100%;
+  margin-top: 65px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
