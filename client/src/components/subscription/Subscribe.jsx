@@ -1,5 +1,6 @@
 /* eslint-disable import/extensions */
-import React, { useState, useEffect, useContext } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useAuth0 } from '@auth0/auth0-react';
 import axios from 'axios';
 import {
   ThemeProvider, CssBaseline, Typography, Grid, Box, Container,
@@ -26,11 +27,11 @@ const Copyright = () => (
 );
 
 const Subscribe = () => {
-  // this component assumes the user is already logged in;
-  // below is just a placeholder which will be updated with userId from authentication
-  const userId = Math.round((Math.random() * 500) + 1);
-  console.log(userId);
-
+  const { user, isAuthenticated } = useAuth0();
+  let userId;
+  if (isAuthenticated) {
+    userId = user.sub;
+  }
 
   const steps = ['Select Plan', 'Shipping', 'Payment', 'Select Your Meals'];
 
@@ -106,7 +107,6 @@ const Subscribe = () => {
           result = false;
         } else {
           Object.entries(address).forEach((entry) => {
-            // console.log(entry[1]);
             if (entry[0] !== 'address2') {
               if (entry[1] === '') {
                 errorMessage = 'complete all required address fields';
@@ -224,7 +224,7 @@ const Subscribe = () => {
     };
 
     console.log(userInfo);
-    axios.patch('/subscribe/update', userInfo)
+    axios.patch('/api/member/subscribe', userInfo)
       .then((res) => {
         console.log(res);
       })
@@ -233,9 +233,15 @@ const Subscribe = () => {
 
   return (
     <ThemeProvider theme={myTheme}>
-      <Container component="main" maxWidth="md" sx={{ mb: 4, mt: 10 }}>
-        <Paper elevation={0} sx={{ my: { xs: 3, md: 6 }, p: { xs: 2, md: 3 } }}>
-          <Typography component="h1" variant="h4" align="center">
+      <CssBaseline />
+      <Container component="main" maxWidth="md" sx={{ mb: 4, mt: 15 }}>
+        <Paper
+          elevation={3}
+          sx={{
+            my: { xs: 3, md: 6 }, p: { xs: 2, md: 3 },
+          }}
+        >
+          <Typography component="h1" variant="h2" align="center" color="secondary.light" sx={{ fontWeight: 'medium' }}>
             Subscribe
           </Typography>
           <Stepper alternativeLabel activeStep={activeStep} sx={{ pt: 3, pb: 5 }}>
