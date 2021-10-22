@@ -19,19 +19,19 @@ function Tiles() {
   return (
     <Box
       component="section"
-      sx={{ display: 'flex', overflow: 'hidden', bgcolor: 'primary.light' }}
+      sx={{ display: 'flex', overflow: 'hidden', border: 5, borderColor: 'secondary.light', mt: 5, ml: 5, mb: 5, mr: 5 }}
       // sx={{ display: 'flex', overflow: 'hidden', bgcolor: 'white' }}
     >
       <Container sx={{
-        mt: 15, mb: 30, display: 'flex', position: 'relative',
+        mt: 5, mb: 5, display: 'flex', position: 'relative',
       }}
       >
         <Grid container spacing={5}>
 
           <Grid item xs={12} md={4}>
             <Box sx={item}>
-              <GrassIcon fontSize="large" />
-              <Typography variant="h6" sx={{ my: 5 }}>
+              <GrassIcon fontSize="large" color="primary" />
+              <Typography variant="h6" sx={{ my: 5 }} color="primary">
                 Know your farmers.
               </Typography>
               <Typography variant="h5">
@@ -42,20 +42,20 @@ function Tiles() {
           </Grid>
           <Grid item xs={12} md={4}>
             <Box sx={item}>
-              <FitnessCenterIcon fontSize="large" />
-              <Typography variant="h6" sx={{ my: 5 }}>
+              <FitnessCenterIcon fontSize="large" color="primary" />
+              <Typography variant="h6" sx={{ my: 5 }} color="primary">
                 Lifestyle, not a product.
               </Typography>
               <Typography variant="h5">
                 Our focus is teaching you how to live a healthy and sustainable life;
-                even after you leave our brand
+                even after you leave our brand.
               </Typography>
             </Box>
           </Grid>
           <Grid item xs={12} md={4}>
             <Box sx={item}>
-              <FavoriteIcon fontSize="large" />
-              <Typography variant="h6" sx={{ my: 5 }}>
+              <FavoriteIcon fontSize="large" color="primary"/>
+              <Typography variant="h6" sx={{ my: 5 }} color="primary">
                 Health, innovated.
               </Typography>
               <Typography variant="h5">
