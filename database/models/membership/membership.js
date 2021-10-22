@@ -12,7 +12,7 @@ module.exports = {
         res.status(500).send(err);
         console.log('error', err);
       } else if (!data.rows[0].exists) {
-        db.query(insertNewUser, [req.body.auth_id], (err2) => {
+        db.query(insertNewUser, Object.values(req.body), (err2) => {
           if (err2) {
             res.status(500).send(err2);
             console.log('error', err2);
