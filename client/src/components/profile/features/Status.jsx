@@ -1,15 +1,18 @@
 import axios from 'axios';
 import React, { useState, useContext } from 'react';
+import { useAuth0 } from '@auth0/auth0-react';
 import { Grid, TextField, Button } from '@mui/material';
 import { ProfileContext } from '../ProfileContext.jsx';
 
 const Status = () => {
-  const [status, setStatus] = useState({ id: 14, text: '' });
-  const { user, feed, setFeed } = useContext(ProfileContext);
+  const { user } = useAuth0();
+  const auth = user.sub;
+  const [status, setStatus] = useState({ authId: auth, text: '' });
+  const { feed, setFeed } = useContext(ProfileContext);
 
   const handleTextChange = (e) => {
     setStatus({
-      id: status.id,
+      authId: auth,
       text: e.target.value,
       // emoji: status.emoji,
     });
@@ -28,7 +31,7 @@ const Status = () => {
       .then(({ data }) => {
         setFeed([data, ...feed]);
       });
-    setStatus({ id: 14, text: '' });
+    setStatus({ authId: auth, text: '' });
   };
 
   return (

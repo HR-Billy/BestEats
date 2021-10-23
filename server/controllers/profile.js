@@ -5,10 +5,7 @@ const model = require('../../database/models/profile/profile');
 
 router.route('/user')
   .get((req, res) => {
-    const { user_id } = req.query;
-    console.log(user_id);
-
-    model.selectProfileData(user_id, req, res);
+    model.selectProfileData(req, res);
   });
 
 router.route('/status')

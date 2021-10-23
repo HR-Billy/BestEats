@@ -2,7 +2,7 @@ import { makeStyles } from '@mui/styles';
 
 const useStyles = makeStyles({
   wrapper: {
-    paddingTop: '3%',
+    paddingTop: '6%',
   },
   picContainer: {
     minHeight: '20vh',
@@ -48,6 +48,7 @@ const useStyles = makeStyles({
     minHeight: '18vh',
     maxHeight: '18vh',
     paddingTop: '15%',
+    overflow: 'hidden',
   },
   mealPhoto: {
     minHeight: '10vh',

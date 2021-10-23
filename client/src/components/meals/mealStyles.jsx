@@ -42,9 +42,12 @@ const StyledCart = styled.div`
   top: 0;
   right: 0;
   background-color: white;
-  height: 100%;
+  height: 80%;
   width: 18%;
-  margin-top: 90px;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 `;
 
 const QuantityInput = styled.input`
@@ -93,6 +96,16 @@ const ThankYouMessage = styled.div`
   background-color: #e9eae8;
 `;
 
+const RemainingMeals = styled.div`
+  margin-right: 15px;
+  display: flex;
+  justify-content: flex-end;
+`;
+
+const MealsLeft = styled.h2`
+  font-weight: 400;
+`;
+
 export {
   Filter,
   MealCards,
@@ -108,4 +121,6 @@ export {
   BottomCard,
   SubscribeButton,
   ThankYouMessage,
+  RemainingMeals,
+  MealsLeft,
 };
