@@ -8,11 +8,13 @@ const CartEntry = ({
   quantity,
   changeHandler,
   remove,
+  weeklyMeals,
+  total,
 }) => (
   <>
     <Typography><span>{item}</span></Typography>
     <QuantitySet>
-      <QuantityInput type="number" name={item} value={quantity} onChange={changeHandler} min={1} />
+      <QuantityInput type="number" name={item} value={quantity} onChange={changeHandler} min={1} max={weeklyMeals - total + quantity} />
       <Button name={item} onClick={remove}>Remove</Button>
       <br />
     </QuantitySet>
@@ -24,6 +26,8 @@ CartEntry.propTypes = {
   quantity: PropTypes.number.isRequired,
   changeHandler: PropTypes.func.isRequired,
   remove: PropTypes.func.isRequired,
+  weeklyMeals: PropTypes.number.isRequired,
+  total: PropTypes.number.isRequired,
 };
 
 export default CartEntry;
