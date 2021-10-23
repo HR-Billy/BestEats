@@ -15,19 +15,10 @@ const staticUrl = path.join(__dirname, '../public');
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(staticUrl));
-
-const FIX_ME = () => {
-  console.log(
-    'https://www.youtube.com/watch?v=iM_S4RczozU router helper video'
-  );
-};
-app.use('/home', FIX_ME);
 app.use('/meal-plan', runMealRte);
 app.use('/api/farmers', runFarmerRte);
 app.use('/api/store', runGroceryRte);
-app.use('/health', FIX_ME);
 app.use('/api/member', runMembershipRte);
-app.use('/login', FIX_ME); // we can delete this route
 app.use('/profile', runProfileRte);
 
 app.get('/*', (req, res) => {

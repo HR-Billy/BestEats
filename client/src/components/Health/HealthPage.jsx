@@ -49,8 +49,11 @@ const cardLayout = [{
 const theme = createTheme(
   {
     typography: {
+      fontFamily: "'Source Sans Pro', sans-serif",
       h2: {
-        fontSize: 36,
+        fontFamily: "'Kalam', sans-serif",
+        fontSize: 44,
+        fontWeight: 400,
         marginbottom: 12,
       },
     },
@@ -82,8 +85,8 @@ export default function HealthPage() {
         <Box
           sx={{
             bgcolor: '#FFDE32',
-            pt: 8,
-            pb: 1,
+            pt: 13,
+            pb: 2,
           }}
         >
           <Container maxWidth="sm">

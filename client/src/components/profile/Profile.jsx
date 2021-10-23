@@ -1,7 +1,6 @@
 import axios from 'axios';
 import React, { useState, useEffect, useContext } from 'react';
 import { Container, Grid, Paper, Typography, Avatar } from '@mui/material';
-import { Context } from '../../Context.jsx';
 import { ProfileContext } from './ProfileContext.jsx';
 import NutritionFacts from './features/NutritionFacts.jsx';
 import Status from './features/Status.jsx';
@@ -11,7 +10,6 @@ import useStyles from './styles.jsx';
 
 const Profile = () => {
   const classes = useStyles();
-  const { subscribed } = useContext(Context);
 
   const [profilePhoto, setProfilePhoto] = useState('');
   const [name, setName] = useState(''); // implement later

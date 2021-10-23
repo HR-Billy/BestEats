@@ -28,8 +28,10 @@ const Copyright = () => (
     {'Copyright © '}
     <StyleLink color="inherit" href="https://besteats.com/">
       Best Eats Inc.
-    </StyleLink>{' '}
-    {new Date().getFullYear()}.
+    </StyleLink>
+    {' '}
+    {new Date().getFullYear()}
+    .
   </Typography>
 );
 
@@ -237,26 +239,26 @@ const Subscribe = () => {
       billing_postal_code: payment.billing_zip,
       billing_country: payment.billing_country,
     };
-
-    console.log(userInfo);
     axios.patch('/api/member/subscribe', userInfo)
       .then((res) => {
-        console.log(res);
+        console.log('Success:', res);
       })
-      .catch(console.log);
+      .catch((err) => {
+        console.log('Error:', err.response);
+      });
   };
 
   return (
     <ThemeProvider theme={myTheme}>
       <CssBaseline />
-      <Container component="main" maxWidth="md" sx={{ mb: 4, mt: 15 }}>
+      <Container component="main" maxWidth="md" sx={{ mb: 4, mt: 13 }}>
         <Paper
           elevation={3}
           sx={{
             my: { xs: 3, md: 6 }, p: { xs: 2, md: 3 },
           }}
         >
-          <Typography component="h1" variant="h2" align="center" color="secondary.light" sx={{ fontWeight: 'medium' }}>
+          <Typography component="h1" variant="h2" align="center" color="secondary.light">
             Subscribe
           </Typography>
           <Stepper

@@ -88,15 +88,9 @@ const MealPlan = () => {
 
   return (
     <>
-      {(!loggedIn || !isMember) ? (
-        <Typography variant="h1" align="center">
-          Be Sure to Subscibe!
-        </Typography>
-      ) : (
-        <Typography variant="h1" align="center">
-          Select from the menu with a click!
-        </Typography>
-      )}
+      <Typography variant="h2" align="center" sx={{ mt: 14, pb: 1 }}>
+        {(!loggedIn || !isMember) ? 'Be Sure to Subscribe' : 'Select from the menu with a click!'}
+      </Typography>
       <MealFilter filterMeals={filterMeals} />
       <MealCards>
         <Grid spacing={3} container justify="center">

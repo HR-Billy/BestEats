@@ -1,13 +1,14 @@
 /* eslint-disable import/extensions */
 import React, { useState } from 'react';
+import { useAuth0 } from '@auth0/auth0-react';
 import {
-  ThemeProvider, CssBaseline, Typography, Grid, Container,
+  ThemeProvider, CssBaseline, Typography, Grid, Container, Button,
   Paper, Box, FormControl, InputLabel, Select, MenuItem, List, ListItem, ListItemText,
 } from '@mui/material';
 import myTheme from '../theme.jsx';
-import LoginButton from '../auth/login-button.jsx';
 
 const SubLanding = () => {
+  const { loginWithRedirect } = useAuth0();
   const [mealQty, setMealQty] = useState(3);
 
   const planOptions = {
@@ -35,20 +36,20 @@ const SubLanding = () => {
   return (
     <ThemeProvider theme={myTheme}>
       <CssBaseline />
-      <Container component="main" maxWidth="md" sx={{ mb: 4, mt: 15 }}>
+      <Container component="main" maxWidth="md" sx={{ mb: 4, mt: 13 }}>
         <Paper
           elevation={3}
           sx={{
             my: { xs: 3, md: 6 }, p: { xs: 2, md: 3 },
           }}
         >
-          <Typography component="h1" variant="h2" align="center" color="secondary.light" sx={{ fontWeight: 'medium' }}>
+          <Typography component="h1" variant="h2" align="center" color="secondary.light">
             Subscribe
           </Typography>
           <>
             <Grid container>
               <Typography variant="h5" sx={{ mt: 3, mb: 5, width: 1 }}>
-                Login or Sign Up to Select a Meal Plan
+                Login or sign up to select a meal plan
               </Typography>
               <Grid container spacing={3}>
                 <Grid item xs={12} sm={8} md={5}>
@@ -128,7 +129,16 @@ const SubLanding = () => {
             </Grid>
           </>
           <Box sx={{ display: 'flex', justifyContent: 'flex-end' }}>
-            <LoginButton />
+            <Button
+              style={{ textDecoration: 'none' }}
+              variant="contained"
+              sx={{ mt: 3, mb: 2, p: 1 }}
+              onClick={() => {
+                loginWithRedirect({ appState: { returnTo: '/subscribe' } });
+              }}
+            >
+              Log In / Sign Up
+            </Button>
           </Box>
         </Paper>
       </Container>

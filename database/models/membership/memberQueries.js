@@ -1,6 +1,6 @@
 module.exports = {
   selectStatus:
-    `SELECT exists(SELECT 1 from users WHERE auth_id = $1)`,
+    'SELECT exists(SELECT 1 from users WHERE auth_id = $1)',
 
   insertNewUser:
     `INSERT INTO users (auth_id, username, email, member_start_date, profile_pic)
