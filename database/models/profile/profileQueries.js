@@ -60,3 +60,5 @@ module.exports = {
   VALUES ($1, $2, $3);
   `,
 };
+
+// change all user_id to auth_id after refactoring

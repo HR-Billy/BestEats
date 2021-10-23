@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { useState, useEffect, useContext } from 'react';
 import { Container, Grid, Paper, Typography, Avatar } from '@mui/material';
+import { useAuth0 } from '@auth0/auth0-react';
 import { Context } from '../../Context.jsx';
 import { ProfileContext } from './ProfileContext.jsx';
 import NutritionFacts from './features/NutritionFacts.jsx';
@@ -10,8 +11,10 @@ import Orders from './features/Orders.jsx';
 import useStyles from './styles.jsx';
 
 const Profile = () => {
-  const classes = useStyles();
+  const { user } = useAuth0();
   const { subscribed } = useContext(Context);
+  const classes = useStyles();
+  console.log(user.sub);
 
   const [profilePhoto, setProfilePhoto] = useState('');
   const [name, setName] = useState(''); // implement later
