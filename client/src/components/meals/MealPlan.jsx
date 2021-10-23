@@ -111,7 +111,11 @@ const MealPlan = () => {
               <Button
                 variant="contained"
                 sx={{ m: 1, width: 300, fontSize: 30 }}
-                onClick={loginWithRedirect}
+                onClick={() => {
+                  loginWithRedirect({
+                    appState: { returnTo: '/subscribe' },
+                  });
+                }}
               >
                 Subscribe
               </Button>
