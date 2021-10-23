@@ -20,7 +20,9 @@ const MealPlan = () => {
   const [meals, setMeals] = useState([]);
   const [filteredMeals, setFilteredMeals] = useState(meals);
   const [cart, setCart] = useState({});
-  const [loggedIn, setLoggedIn] = useState(isAuthenticated);
+  const [weeklyMeals, setWeeklyMeals] = useState(0);
+  const [total, setTotal] = useState(0);
+  const [loggedIn] = useState(isAuthenticated);
   const [isMember, setIsMember] = useState(false);
 
   // Preload Information
@@ -35,7 +37,9 @@ const MealPlan = () => {
   const getSubscriberStatus = () => {
     axios.get(`/meal-plan/user/${user.sub}`)
       .then((response) => {
-        setIsMember(response.data[0].subscribed);
+        const { subscribed, meals_per_week } = response.data[0];
+        setIsMember(subscribed);
+        setWeeklyMeals(meals_per_week);
       });
   };
 
@@ -64,8 +68,10 @@ const MealPlan = () => {
 
   // Add to cart if subscribed
   const addToCart = (mealName) => {
-    const item = { [mealName]: 1 };
-    setCart({ ...cart, ...item });
+    if (total < weeklyMeals) {
+      const item = { [mealName]: 1 };
+      setCart({ ...cart, ...item });
+    }
   };
 
   const fillerFunction = () => (
@@ -102,7 +108,13 @@ const MealPlan = () => {
             )
           ))}
         </Grid>
-        <MealCart cart={cart} setCart={setCart} />
+        <MealCart
+          cart={cart}
+          setCart={setCart}
+          total={total}
+          setTotal={setTotal}
+          weeklyMeals={weeklyMeals}
+        />
       </MealCards>
       {!loggedIn
         && (
