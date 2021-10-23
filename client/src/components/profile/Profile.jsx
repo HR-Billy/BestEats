@@ -14,7 +14,8 @@ const Profile = () => {
   const { user } = useAuth0();
   const { subscribed } = useContext(Context);
   const classes = useStyles();
-  console.log(user.sub);
+  const authId = '14mwalhedddum3o8EYUp';
+  console.log(user.sub); // move user.sub to auth id
 
   const [profilePhoto, setProfilePhoto] = useState('');
   const [name, setName] = useState(''); // implement later
@@ -37,8 +38,7 @@ const Profile = () => {
   const suggestedNone = 'Update Your Preferences For Suggested Meals';
 
   useEffect(() => {
-    axios.get('profile/user/?user_id=14')
-    // axios.get(`profile/user/?user_id=${userId}`)
+    axios.get(`profile/user/?user_id=${authId}`)
       .then(({ data }) => {
         const { results } = data[0];
 
