@@ -3,34 +3,31 @@ const authIds = [
 ];
 
 const random0toN = (n) => (Math.floor(Math.random() * (n + 1)));
+const random1toN = (n) => (Math.floor(Math.random() * (n + 1)) + 1);
 const randomDate = () => {
   const year = Math.floor(Math.random() * (2021 - 2018) + 2018);
-  const month = Math.floor(Math.random() * 12) + 1;
+  const month = random1toN(60);
   const day = Math.floor(Math.random() * 28) + 1;
-  const hour = Math.floor(Math.random() * 12) + 1;
-  const minSec = Math.floor(Math.random() * 60) + 1;
+  const hour = random1toN(60);
+  const minSec = random1toN(60);
 
-  const date = new Date(year, month, day, hour, minSec, minSec);
-
-  return date.toISOString();
+  return new Date(year, month, day, hour, minSec, minSec).toISOString();
 };
 const dateOrdered = () => {
   const day = Math.floor(Math.random() * (23 - 18) + 18);
-  const hour = Math.floor(Math.random() * 12) + 1;
-  const minSec = Math.floor(Math.random() * 60) + 1;
-  const date = (2021, 8, day, hour, minSec, minSec);
+  const hour = random1toN(60);
+  const minSec = random1toN(60);
 
-  return date.toISOString();
+  return new Date(2021, 8, day, hour, minSec, minSec).toISOString();
 };
-const dateReceived = () => {
+const dateExpected = () => {
   const day = Math.floor(Math.random() * (29 - 25) + 25);
-  const hour = Math.floor(Math.random() * 12) + 1;
-  const minSec = Math.floor(Math.random() * 60) + 1;
-  const date = (2021, 8, day, hour, minSec, minSec);
+  const hour = random1toN(60);
+  const minSec = random1toN(60);
 
-  return date.toISOString();
+  return new Date(2021, 8, day, hour, minSec, minSec).toISOString();
 };
-const randomId = () => authIds[random0toN(500)];
+const randomAuthId = () => authIds[random0toN(500)];
 
 const status = () => {
   let str = 'id,text,created_at,auth_id\n';
@@ -51,7 +48,7 @@ const status = () => {
 
   const randomText = () => sentence[random0toN(9)];
   for (let i = 0; i < 1000; i += 1) {
-    str += `${i + 1},${randomText()},${randomDate()},${randomId()}\n`;
+    str += `${i + 1},${randomText()},${randomDate()},${randomAuthId()}\n`;
   }
 
   str = str.slice(0, str.length - 1);
@@ -59,15 +56,22 @@ const status = () => {
   return str;
 };
 
-// const userMeals = () => {
-//   let str = 'id,auth_id,meal_id,date_ordered,date_received\n';
+const userMeals = () => {
+  let str = 'id,date_ordered,date_received,meal_id,auth_id\n';
+  const expected = () => new Date(2050, random1toN(12), random1toN(28), 5, 5, 5).toISOString();
 
-//   for (let i = 0; i < 5; i += 1) {
-//     // id,auth_id,meal_id,date_ordered,date_received
-//   // ${i}, ${authId[random500()]}, ${}
-//   }
+  // id, date_ordered, date_received, meal_id, auth_id
+  for (let i = 0; i < 1000; i += 1) {
+    if (i % 6 === 0) {
+      str += `${i + 1},${dateOrdered()},${expected()},${random1toN(9)},${randomAuthId()}\n`;
+    } else if (i % 9 === 0) {
+      str += `${i + 1},${dateOrdered()},${expected()},${randomAuthId()}\n`;
+    } else {
+      str += `${i + 1},${dateOrdered()},${dateExpected()},${random1toN(9)},${randomAuthId()}\n`;
+    }
+  }
 
-//   return str;
-// };
+  return str;
+};
 
-console.log(status());
+console.log(userMeals());

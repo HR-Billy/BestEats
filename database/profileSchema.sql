@@ -12,7 +12,7 @@ CREATE TABLE status (
 CREATE TABLE user_meals (
   id SERIAL NOT NULL,
   date_ordered DATE NOT NULL,
-  date_received DATE,
+  date_expected DATE,
   meal_id INT NOT NULL REFERENCES meal(id),
   auth_id VARCHAR(50) NOT NULL REFERENCES users(auth_id)
 );
@@ -20,7 +20,7 @@ CREATE TABLE user_meals (
 CREATE TABLE user_products (
   id SERIAL NOT NULL,
   date_ordered DATE NOT NULL,
-  date_received DATE,
+  date_expected DATE,
   product_id INT NOT NULL REFERENCES products(id),
   auth_id VARCHAR(50) NOT NULL REFERENCES users(auth_id)
 );
@@ -35,4 +35,4 @@ CREATE INDEX idx_user_meals_auth ON user_meals(auth_id);
 CREATE INDEX idx_user_products_auth ON user_products(auth_id);
 CREATE INDEX idx_status_created_at ON status(created_at DESC);
 CREATE INDEX idx_user_meal_ordered on user_meal(date_ordered DESC);
-CREATE INDEX idx_user_meal_received on user_meal(date_received DESC);
+CREATE INDEX idx_user_meal_received on user_meal(date_expected DESC);
