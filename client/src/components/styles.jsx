@@ -32,19 +32,23 @@ const NavigationBar = styled.div`
   padding: 0px;
   position: fixed;
   top: 0;
-  /* width: calc(100% + 10px); */
-  width: 100%;
+  width: calc(100% + 10px);
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   z-index: 9999;
 `;
 
 const CurrentPage = styled.div`
-  margin-top: 100px;
+  margin-top: 0px;
 `;
 
 const MainSet = styled.div`
   display: flex;
   /* gap: 80px; */
+`;
+
+const NavIcons = styled.div`
+  display: flex;
+  align-content: right;
 `;
 
 export {
@@ -53,4 +57,5 @@ export {
   Login,
   CurrentPage,
   MainSet,
+  NavIcons,
 };
