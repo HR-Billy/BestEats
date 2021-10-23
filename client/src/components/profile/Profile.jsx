@@ -1,6 +1,9 @@
 import axios from 'axios';
 import React, { useState, useEffect, useContext } from 'react';
-import { Container, Grid, Paper, Typography, Avatar } from '@mui/material';
+import {
+  Container, Grid, Paper, Typography, Avatar,
+} from '@mui/material';
+import { useAuth0 } from '@auth0/auth0-react';
 import { ProfileContext } from './ProfileContext.jsx';
 import NutritionFacts from './features/NutritionFacts.jsx';
 import Status from './features/Status.jsx';
@@ -9,7 +12,9 @@ import Orders from './features/Orders.jsx';
 import useStyles from './styles.jsx';
 
 const Profile = () => {
+  const { user } = useAuth0();
   const classes = useStyles();
+  const authId = user.sub;
 
   const [profilePhoto, setProfilePhoto] = useState('');
   const [name, setName] = useState(''); // implement later
@@ -32,13 +37,12 @@ const Profile = () => {
   const suggestedNone = 'Update Your Preferences For Suggested Meals';
 
   useEffect(() => {
-    axios.get('profile/user/?user_id=14')
-    // axios.get(`profile/user/?user_id=${userId}`)
+    axios.get(`profile/user/?authId=${authId}`)
       .then(({ data }) => {
         const { results } = data[0];
 
         setProfilePhoto(results.photo);
-        setName(results.firstName);
+        setName(results.username);
         setMemberSince(results.memberStartDate);
         setFeed(results.feed);
         setRecentMeals(results.recent);

@@ -8,11 +8,13 @@ const Feed = () => {
   const classes = useStyles();
   const { feed } = useContext(ProfileContext);
   let userFeed;
+  let time;
 
   if (feed) {
     userFeed = feed.map((status, index) => {
-      const { text, emoji, createdAt} = status;
-      const time = moment(createdAt).calendar();
+      const { text, emoji, createdAt } = status;
+
+      time = moment(createdAt).calendar();
 
       return (
         <Grid item xs={12} key={index}>
