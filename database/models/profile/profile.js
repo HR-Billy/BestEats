@@ -2,8 +2,9 @@ const db = require('../..');
 const { profileData, status } = require('./profileQueries');
 
 module.exports = {
-  selectProfileData: (auth, req, res) => {
+  selectProfileData: (req, res) => {
     const { authId } = req.query;
+    console.log('here is the query', req.query);
 
     db.query(profileData, [authId], (err, data) => {
       if (err) {

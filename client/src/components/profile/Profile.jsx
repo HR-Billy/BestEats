@@ -12,10 +12,8 @@ import useStyles from './styles.jsx';
 
 const Profile = () => {
   const { user } = useAuth0();
-  const { subscribed } = useContext(Context);
   const classes = useStyles();
-  const authId = '14mwalhedddum3o8EYUp';
-  console.log(user.sub); // move user.sub to auth id
+  const authId = user.sub;
 
   const [profilePhoto, setProfilePhoto] = useState('');
   const [name, setName] = useState(''); // implement later
