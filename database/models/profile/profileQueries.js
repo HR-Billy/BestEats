@@ -17,10 +17,10 @@ module.exports = {
     'mealId', meal.id,
     'mealName', meal.meal_name,
     'mealPhoto', meal.photo
-    ) ORDER BY date_received DESC)
+    ) ORDER BY date_expected DESC)
   FROM user_meal
   INNER JOIN meal ON meal.id = user_meal.meal_id
-  WHERE auth_id = $1 AND date_received IS NULL),
+  WHERE auth_id = $1 AND date_expected IS NULL),
     'recent', (SELECT json_agg( json_build_object(
     'mealId', meal.id,
     'mealName', meal.meal_name,
@@ -28,7 +28,7 @@ module.exports = {
     ) ORDER BY date_ordered DESC)
       FROM user_meal
       INNER JOIN meal ON meal.id = user_meal.meal_id
-      WHERE auth_id = $1 AND date_received IS NOT NULL),
+      WHERE auth_id = $1 AND date_expected IS NOT NULL),
     'products', 'insert product query',
     'nutritionFacts', ((SELECT json_agg( json_build_object(
       'name', meal.meal_name,
@@ -56,7 +56,7 @@ module.exports = {
   WHERE id = $1;
   `,
   status: `
-  INSERT INTO status(auth_id, text, created_At)
+  INSERT INTO status(auth_id, text, created_at)
   VALUES ($1, $2, $3);
   `,
 };

@@ -26,7 +26,7 @@ CREATE TABLE user_products (
 );
 
 SELECT setval('status_id_seq', (SELECT max(id) FROM status));
-SELECT setval('user_meal_id_seq', (SELECT max(id) FROM user_meal));
+SELECT setval('user_meals_id_seq', (SELECT max(id) FROM user_meals));
 SELECT setval('user_products_id_seq', (SELECT max(id) FROM user_products));
 
 CREATE INDEX idx_auth ON users(auth_id);
