@@ -10,29 +10,29 @@
 
 ### Contributors
 **Full-Stack Developers:**
-<a href="https://github.com/github_username/repo_name">Alan Fong</a>
-<a href="https://github.com/github_username/repo_name">Andy Lei</a>,
-<a href="https://github.com/github_username/repo_name">Fikri Anuar</a>,
-<a href="https://github.com/github_username/repo_name">Josh Zigler</a>,
-<a href="https://github.com/github_username/repo_name">Katherine Yu</a>,
-<a href="https://github.com/github_username/repo_name">Savanna Parangan</a>,
-<a href="https://github.com/github_username/repo_name">Tim Jordan</a>
+<a href="https://github.com/afong888">Alan Fong</a>
+<a href="https://github.com/jleiandy">Andy Lei</a>,
+<a href="https://github.com/FikriAnuar">Fikri Anuar</a>,
+<a href="https://github.com/jshzglr">Josh Zigler</a>,
+<a href="https://github.com/chiakat">Katherine Yu</a>,
+<a href="https://github.com/sparangan">Savanna Parangan</a>,
+<a href="https://github.com/theGuyNextDoor">Tim Jordan</a>
 
 **Architecture Owner:**
-<a href="https://github.com/github_username/repo_name">Alan Fong</a>
+<a href="https://github.com/afong888">Alan Fong</a>
 
 **UI Owner:**
-<a href="https://github.com/github_username/repo_name">Katherine Yu</a>
+<a href="https://github.com/chiakat">Katherine Yu</a>
 
 **Product Manager:**
-<a href="https://github.com/github_username/repo_name">Savanna Parangan</a>
+<a href="https://github.com/sparangan">Savanna Parangan</a>
 
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 <br />
 <div align="center">
-  <img src="images/home_screenshot.png" alt="Home Page Screeshot" >
+  <img src="images/home_screenshot2.png" alt="Home Page Screeshot" >
 </div>
 
 This project was a brief 1-week sprint where our team completed an MVP for an external client, BestEats, a one-stop grocery shop for working adults and young families. This website is designed to assist those with little to no time to shop for groceries find a quick alternative. Aside from grocery shopping this website offers meal plans, nutrition tracking, avenue to local farmers, and more.
