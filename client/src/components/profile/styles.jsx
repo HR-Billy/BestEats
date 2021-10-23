@@ -48,6 +48,7 @@ const useStyles = makeStyles({
     minHeight: '18vh',
     maxHeight: '18vh',
     paddingTop: '15%',
+    overflow: 'hidden',
   },
   mealPhoto: {
     minHeight: '10vh',
