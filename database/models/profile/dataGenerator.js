@@ -30,10 +30,10 @@ const dateReceived = () => {
 
   return date.toISOString();
 };
-const randomId = () => authIds[random0toN];
+const randomId = () => authIds[random0toN(500)];
 
 const status = () => {
-  let str = 'id,text,auth_id,created_at\n';
+  let str = 'id,text,created_at,auth_id\n';
 
   const words = ['apples', 'fruits', 'milk', 'carbs', 'ice-cream', 'vegitables', 'lettuce', 'corn', 'healthy', 'something'];
   const sentence = [
@@ -50,8 +50,8 @@ const status = () => {
   ];
 
   const randomText = () => sentence[random0toN(9)];
-  for (let i = 0; i < 5; i += 1) {
-    str += `${i}, ${randomId()}, ${randomText()}, ${randomDate()}\n`;
+  for (let i = 0; i < 1000; i += 1) {
+    str += `${i + 1},${randomText()},${randomDate()},${randomId()}\n`;
   }
 
   str = str.slice(0, str.length - 1);
