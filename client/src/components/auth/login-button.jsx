@@ -12,8 +12,9 @@ const LoginButton = () => {
     <Button
       style={{ textDecoration: 'none' }}
       variant="contained"
-      sx={{ px: 1, m: 3 }}
-      className="btn btn-primary btn-block"
+      sx={{
+        mt: 3, mb: 3, mr: 3, p: 0,
+      }}
       onClick={() => {
         loginWithRedirect({ appState: { returnTo: location?.pathname } });
       }}

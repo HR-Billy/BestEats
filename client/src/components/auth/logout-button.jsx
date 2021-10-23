@@ -7,8 +7,9 @@ const LogoutButton = () => {
   return (
     <Button
       variant="contained"
-      sx={{ px: 1, m: 3 }}
-      className="btn btn-danger btn-block"
+      sx={{
+        mt: 3, mb: 3, mr: 3, p: 0,
+      }}
       onClick={() => logout({
         returnTo: window.location.origin,
       })}

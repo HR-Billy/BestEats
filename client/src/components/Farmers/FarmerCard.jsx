@@ -19,8 +19,8 @@ const FarmerCard = ({ farmer }) => {
           gridTemplateColumns: '[picture] auto [bio] 1fr',
         }),
         gridColumnGap: theme.spacing(3),
-        margin: theme.spacing(1),
-        padding: theme.spacing(1),
+        margin: theme.spacing(2),
+        padding: theme.spacing(2),
         alignItems: 'center',
       }}
     >

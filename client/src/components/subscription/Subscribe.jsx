@@ -251,14 +251,14 @@ const Subscribe = () => {
   return (
     <ThemeProvider theme={myTheme}>
       <CssBaseline />
-      <Container component="main" maxWidth="md" sx={{ mb: 4, mt: 15 }}>
+      <Container component="main" maxWidth="md" sx={{ mb: 4, mt: 13 }}>
         <Paper
           elevation={3}
           sx={{
             my: { xs: 3, md: 6 }, p: { xs: 2, md: 3 },
           }}
         >
-          <Typography component="h1" variant="h2" align="center" color="secondary.light" sx={{ fontWeight: 'medium' }}>
+          <Typography component="h1" variant="h2" align="center" color="secondary.light">
             Subscribe
           </Typography>
           <Stepper
