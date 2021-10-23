@@ -44,6 +44,7 @@ const FarmersPage = () => {
         display: 'grid',
         gridTemplateRows: '[intro] auto [body] 1fr [button] auto',
         gridGap: theme.spacing(1),
+        mt: 20,
       }}
     >
       <Box>

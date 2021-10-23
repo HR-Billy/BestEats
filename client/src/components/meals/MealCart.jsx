@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
+import { Typography, Button } from '@mui/material';
 import CartEntry from './CartEntry.jsx';
 import { StyledCart } from './mealStyles.jsx';
 
 const MealCart = ({ cart, setCart }) => {
-  // const [total, setTotal] = useState(0);
+  const [total, setTotal] = useState(0);
   const [accordion, setAccordion] = useState(false);
 
   const checkCart = () => {
@@ -12,6 +15,14 @@ const MealCart = ({ cart, setCart }) => {
     } else {
       setAccordion(false);
     }
+  };
+
+  const countTotal = () => {
+    let sum = 0;
+    Object.values(cart).forEach((value) => {
+      sum += Number(value);
+    });
+    setTotal(sum);
   };
 
   const changeQuantity = (event) => {
@@ -23,16 +34,17 @@ const MealCart = ({ cart, setCart }) => {
     setCart(rest);
   };
 
-  useEffect(
-    checkCart, [cart],
-  );
+  useEffect(() => {
+    checkCart();
+    countTotal();
+  }, [cart]);
 
   return (
     <>
       {accordion
         && (
           <StyledCart>
-            <h1> Choose Your Meals </h1>
+            <Typography variant="h2"> Choose Your Meals </Typography>
             {Object.keys(cart).map((item) => (
               <CartEntry
                 key={item}
@@ -42,11 +54,19 @@ const MealCart = ({ cart, setCart }) => {
                 remove={removeFromCart}
               />
             ))}
-            <button type="button"> Confirm </button>
+            <Link to="/meal-plan/thankyou" style={{ textDecoration: 'none' }}>
+              <Button variant="contained"> Confirm </Button>
+            </Link>
           </StyledCart>
         )}
     </>
   );
+};
+
+MealCart.propTypes = {
+  cart: PropTypes.shape({
+  }).isRequired,
+  setCart: PropTypes.func.isRequired,
 };
 
 export default MealCart;
