@@ -3,10 +3,15 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import { Typography, Button } from '@mui/material';
 import CartEntry from './CartEntry.jsx';
-import { StyledCart } from './mealStyles.jsx';
+import { StyledCart, MealsLeft, RemainingMeals } from './mealStyles.jsx';
 
-const MealCart = ({ cart, setCart }) => {
-  const [total, setTotal] = useState(0);
+const MealCart = ({
+  cart,
+  setCart,
+  total,
+  setTotal,
+  weeklyMeals,
+}) => {
   const [accordion, setAccordion] = useState(false);
 
   const checkCart = () => {
@@ -44,19 +49,31 @@ const MealCart = ({ cart, setCart }) => {
       {accordion
         && (
           <StyledCart>
-            <Typography variant="h2"> Choose Your Meals </Typography>
-            {Object.keys(cart).map((item) => (
-              <CartEntry
-                key={item}
-                item={item}
-                quantity={cart[item]}
-                changeHandler={changeQuantity}
-                remove={removeFromCart}
-              />
-            ))}
-            <Link to="/meal-plan/thankyou" style={{ textDecoration: 'none' }}>
-              <Button variant="contained"> Confirm </Button>
-            </Link>
+            <div>
+              <Typography variant="h2"> Choose Your Meals </Typography>
+              {Object.keys(cart).map((item) => (
+                <CartEntry
+                  key={item}
+                  item={item}
+                  quantity={cart[item]}
+                  changeHandler={changeQuantity}
+                  remove={removeFromCart}
+                  weeklyMeals={weeklyMeals}
+                  total={total}
+                />
+              ))}
+              <Link to="/meal-plan/thankyou" style={{ textDecoration: 'none' }}>
+                <Button variant="contained"> Confirm </Button>
+              </Link>
+            </div>
+            <RemainingMeals>
+              <Typography>
+                <MealsLeft>
+                  Meals Left:&nbsp;
+                  {weeklyMeals - total}
+                </MealsLeft>
+              </Typography>
+            </RemainingMeals>
           </StyledCart>
         )}
     </>
@@ -67,6 +84,9 @@ MealCart.propTypes = {
   cart: PropTypes.shape({
   }).isRequired,
   setCart: PropTypes.func.isRequired,
+  weeklyMeals: PropTypes.number.isRequired,
+  total: PropTypes.number.isRequired,
+  setTotal: PropTypes.func.isRequired,
 };
 
 export default MealCart;

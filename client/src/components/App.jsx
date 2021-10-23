@@ -160,6 +160,7 @@ const App = () => {
         <CurrentPage>
           <Route exact path="/" render={() => <Home />} />
           <Route exact path="/meal-plan" render={() => <MealPlan />} />
+          <Route exact path="/meal-plan/thankyou" render={() => <ThankYou />} />
           <Route exact path="/farmers" component={FarmersPage} />
           <Route exact path="/store" render={() => <Store />} />
           <Route exact path="/health" component={HealthPage} />
