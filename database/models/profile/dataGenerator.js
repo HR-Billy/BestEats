@@ -3,7 +3,7 @@ const authIds = [
 ];
 
 const random0toN = (n) => (Math.floor(Math.random() * (n + 1)));
-const random1toN = (n) => (Math.floor(Math.random() * (n + 1)) + 1);
+const random1toN = (n) => (Math.floor(Math.random() * (n)) + 1);
 const randomDate = () => {
   const year = Math.floor(Math.random() * (2021 - 2018) + 2018);
   const month = random1toN(60);
@@ -20,13 +20,14 @@ const dateOrdered = () => {
 
   return new Date(2021, 8, day, hour, minSec, minSec).toISOString();
 };
-const dateExpected = () => {
+const dateExpectedNow = () => {
   const day = Math.floor(Math.random() * (29 - 25) + 25);
   const hour = random1toN(60);
   const minSec = random1toN(60);
 
   return new Date(2021, 8, day, hour, minSec, minSec).toISOString();
 };
+const dateExpectedFuture = () => new Date(2050, random1toN(12), random1toN(28), 5, 5, 5).toISOString();
 const randomAuthId = () => authIds[random0toN(500)];
 
 const status = () => {
@@ -58,20 +59,32 @@ const status = () => {
 
 const userMeals = () => {
   let str = 'id,date_ordered,date_received,meal_id,auth_id\n';
-  const expected = () => new Date(2050, random1toN(12), random1toN(28), 5, 5, 5).toISOString();
 
-  // id, date_ordered, date_received, meal_id, auth_id
   for (let i = 0; i < 1000; i += 1) {
     if (i % 6 === 0) {
-      str += `${i + 1},${dateOrdered()},${expected()},${random1toN(9)},${randomAuthId()}\n`;
+      str += `${i + 1},${dateOrdered()},${dateExpectedFuture()},${random1toN(9)},${randomAuthId()}\n`;
     } else if (i % 9 === 0) {
-      str += `${i + 1},${dateOrdered()},${expected()},${randomAuthId()}\n`;
+      str += `${i + 1},${dateOrdered()},${dateExpectedFuture()},${random1toN(9)},${randomAuthId()}\n`;
     } else {
-      str += `${i + 1},${dateOrdered()},${dateExpected()},${random1toN(9)},${randomAuthId()}\n`;
+      str += `${i + 1},${dateOrdered()},${dateExpectedNow()},${random1toN(9)},${randomAuthId()}\n`;
     }
   }
 
   return str;
 };
 
-console.log(userMeals());
+const userProducts = () => {
+  let str = 'id,date_ordered,date_received,product_id,auth_id\n';
+
+  for (let i = 0; i < 1000; i += 1) {
+    if (i % 38 === 0) {
+      str += `${i + 1},${dateOrdered()},${dateExpectedFuture()},${random1toN(61)},${randomAuthId()}\n`;
+    } else {
+      str += `${i + 1},${dateOrdered()},${dateExpectedNow()},${random1toN(61)},${randomAuthId()}\n`;
+    }
+  }
+
+  return str;
+};
+
+console.log(userProducts());
