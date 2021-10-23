@@ -20,8 +20,6 @@ import AuthButton from './auth/authentication-button.jsx';
 import ProtectedRoute from './auth/protected-route.jsx';
 
 const App = () => {
-  const [loggedIn, setLoggedIn] = useState(false);
-  const [userId, setUserId] = '';
   const { user, isAuthenticated } = useAuth0();
   const [subscribed, setSubscribed] = useState(false);
 
@@ -58,17 +56,13 @@ const App = () => {
           setSubscribed(res.data);
           renderSubscribe();
         })
-        .catch(console.log('not new user'));
+        .catch((err) => {
+          console.log('Error:', err.response);
+        });
     }
   }, [isAuthenticated]);
 
   return (
-    <Context.Provider
-      value={{
-        subscribed,
-        setSubscribed,
-      }}
-    >
       <div>
         <ThemeProvider theme={mytheme}>
           <NavigationBar>
@@ -173,7 +167,6 @@ const App = () => {
           </CurrentPage>
         </ThemeProvider>
       </div>
-    </Context.Provider>
   );
 };
 

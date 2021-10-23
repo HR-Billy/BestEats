@@ -28,8 +28,10 @@ const Copyright = () => (
     {'Copyright © '}
     <StyleLink color="inherit" href="https://besteats.com/">
       Best Eats Inc.
-    </StyleLink>{' '}
-    {new Date().getFullYear()}.
+    </StyleLink>
+    {' '}
+    {new Date().getFullYear()}
+    .
   </Typography>
 );
 
