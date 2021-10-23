@@ -4,6 +4,7 @@
   <a href="https://github.com/HR-Billy/BestEats">
     <img src="images/besteatslogo.png" alt="Best Eats Logo" >
   </a>
+</div>
 
 # BestEats
 
@@ -29,8 +30,10 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-
-[product-screenshot]
+<br />
+<div align="center">
+  <img src="images/home_screenshot.png" alt="Home Page Screeshot" >
+</div>
 
 This project was a brief 1-week sprint where our team completed an MVP for an external client, BestEats, a one-stop grocery shop for working adults and young families. This website is designed to assist those with little to no time to shop for groceries find a quick alternative. Aside from grocery shopping this website offers meal plans, nutrition tracking, avenue to local farmers, and more.
 
@@ -75,10 +78,3 @@ To start server:
 npm run start
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[product-screenshot]: images/home_screenshot.png
