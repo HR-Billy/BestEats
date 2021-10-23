@@ -48,7 +48,7 @@ const SubLanding = () => {
           <>
             <Grid container>
               <Typography variant="h5" sx={{ mt: 3, mb: 5, width: 1 }}>
-                Login or Sign Up to Select a Meal Plan
+                Login or sign up to select a meal plan
               </Typography>
               <Grid container spacing={3}>
                 <Grid item xs={12} sm={8} md={5}>

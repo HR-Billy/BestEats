@@ -6,7 +6,6 @@ import { Button, Typography, Avatar } from '@mui/material';
 import { useAuth0 } from '@auth0/auth0-react';
 import { Text, NavigationBar, Login, CurrentPage, MainSet } from './styles.jsx';
 import Home from './home/Home.jsx';
-import { Context } from '../Context.jsx';
 import Store from './grocery_page/Store.jsx';
 import FarmersPage from './Farmers/FarmersPage.jsx';
 import HealthPage from './Health/HealthPage.jsx';

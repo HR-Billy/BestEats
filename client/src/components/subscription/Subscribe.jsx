@@ -239,13 +239,13 @@ const Subscribe = () => {
       billing_postal_code: payment.billing_zip,
       billing_country: payment.billing_country,
     };
-
-    console.log(userInfo);
     axios.patch('/api/member/subscribe', userInfo)
       .then((res) => {
-        console.log(res);
+        console.log('Success:', res);
       })
-      .catch(console.log);
+      .catch((err) => {
+        console.log('Error:', err.response);
+      });
   };
 
   return (
