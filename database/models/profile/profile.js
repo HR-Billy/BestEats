@@ -2,8 +2,10 @@ const db = require('../..');
 const { profileData, status } = require('./profileQueries');
 
 module.exports = {
-  selectProfileData: (username, req, res) => {
-    db.query(profileData, [username], (err, data) => {
+  selectProfileData: (auth, req, res) => {
+    const { authId } = req.query;
+
+    db.query(profileData, [authId], (err, data) => {
       if (err) {
         res.status(404).send(err);
       } else {
@@ -15,10 +17,10 @@ module.exports = {
     // db.query(updatePic)
   },
   insertStatus: (req, res) => {
-    const { id, text } = req.body;
+    const { auth, text } = req.body;
     // console.log(req.body);
 
-    db.query(status, [id, text, Date().slice(0, 24)], (err) => {
+    db.query(status, [auth, text, Date().slice(0, 24)], (err) => {
       if (err) {
         res.status(404).send(err);
       } else {

@@ -38,7 +38,7 @@ const Profile = () => {
   const suggestedNone = 'Update Your Preferences For Suggested Meals';
 
   useEffect(() => {
-    axios.get(`profile/user/?user_id=${authId}`)
+    axios.get(`profile/user/?authId=${authId}`)
       .then(({ data }) => {
         const { results } = data[0];
 
