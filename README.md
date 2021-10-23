@@ -5,42 +5,36 @@
     <img src="images/besteatslogo.png" alt="Best Eats Logo" >
   </a>
 
-<h3 align="center">Best Eats</h3>
-
-  <p align="center">
-    A one-stop grocery shop for working adults and young families. This website is designed to assist those with little to no time to shop for groceries find a quick alternative. Aside from grocery shopping this website offers meal plans, nutrition tracking, avenue to local farmers, and more.
-    <br />
-    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/github_username/repo_name">View Demo</a>
-  </p>
-</div>
-
 # BestEats
 
-## Contributors
-<br />
-Full-Stack Developers:
+### Contributors
+**Full-Stack Developers:**
 <a href="https://github.com/github_username/repo_name">Alan Fong</a>
 <a href="https://github.com/github_username/repo_name">Andy Lei</a>,
 <a href="https://github.com/github_username/repo_name">Fikri Anuar</a>,
 <a href="https://github.com/github_username/repo_name">Josh Zigler</a>,
 <a href="https://github.com/github_username/repo_name">Katherine Yu</a>,
-<a href="https://github.com/github_username/repo_name">Savanna Parangan</a>, and
+<a href="https://github.com/github_username/repo_name">Savanna Parangan</a>,
 <a href="https://github.com/github_username/repo_name">Tim Jordan</a>
-<br />
-Architecture Owner: <a href="https://github.com/github_username/repo_name">Alan Fong</a>
-<br />
-UI Owner: <a href="https://github.com/github_username/repo_name">Katherine Yu</a>
-<br />
-Product Manager: <a href="https://github.com/github_username/repo_name">Savanna Parangan</a>
+
+**Architecture Owner:**
+<a href="https://github.com/github_username/repo_name">Alan Fong</a>
+
+**UI Owner:**
+<a href="https://github.com/github_username/repo_name">Katherine Yu</a>
+
+**Product Manager:**
+<a href="https://github.com/github_username/repo_name">Savanna Parangan</a>
 
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
+[product-screenshot]
+
 This project was a brief 1-week sprint where our team completed an MVP for an external client, BestEats, a one-stop grocery shop for working adults and young families. This website is designed to assist those with little to no time to shop for groceries find a quick alternative. Aside from grocery shopping this website offers meal plans, nutrition tracking, avenue to local farmers, and more.
+
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 ## App Features
 
@@ -58,7 +52,7 @@ This project was a brief 1-week sprint where our team completed an MVP for an ex
 
 **User Profile:** Users can keep track of their past orders, see their upcoming meals and see recommended meals for future weeks. They can also view the nutrition information for all meals they have ordered for the week and post to a journal to reflect on their well-being over time.
 
-
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 ### Built With
 
@@ -79,3 +73,12 @@ npm run react-dev
 
 To start server:
 npm run start
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
+
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[product-screenshot]: images/home_screenshot.png
