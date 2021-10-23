@@ -2,7 +2,7 @@ import { makeStyles } from '@mui/styles';
 
 const useStyles = makeStyles({
   wrapper: {
-    paddingTop: '3%',
+    paddingTop: '6%',
   },
   picContainer: {
     minHeight: '20vh',

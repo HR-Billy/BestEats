@@ -40,7 +40,7 @@ const Profile = () => {
         const { results } = data[0];
 
         setProfilePhoto(results.photo);
-        setName(results.firstName);
+        setName(results.username);
         setMemberSince(results.memberStartDate);
         setFeed(results.feed);
         setRecentMeals(results.recent);

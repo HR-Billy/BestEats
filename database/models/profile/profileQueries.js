@@ -1,7 +1,7 @@
 module.exports = {
   profileData: `
   SELECT json_build_object(
-    'firstName', first_name,
+    'username', username,
     'subscriptionStartDate', subscription_start_date,
     'photo', profile_pic,
     'feed', (SELECT json_agg( json_build_object(

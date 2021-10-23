@@ -22,11 +22,13 @@ const myTheme = createTheme({
     },
     h4: {
       fontWeight: 300,
+      margin: 0,
     },
     h5: {
       // fontFamily: "'Kalam', sans-serif",
-      fontSize: 20,
+      fontSize: 18,
       fontColor: 'white',
+      margin: 0,
     },
     h6: {
       fontFamily: "'Kalam', sans-serif",

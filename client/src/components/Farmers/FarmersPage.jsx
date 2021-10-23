@@ -28,9 +28,7 @@ const FarmersPage = () => {
 
   const optionsLimit = 1;
 
-  const filterOptions = (options, state) => {
-    return defaultFilterOptions(options, state).slice(0, optionsLimit);
-  };
+  const filterOptions = (options, state) => defaultFilterOptions(options, state).slice(0, optionsLimit);
 
   const loadMoreFarmers = () => {
     setNumberOfProfiles(numberOfProfiles + 1);
@@ -44,11 +42,11 @@ const FarmersPage = () => {
         display: 'grid',
         gridTemplateRows: '[intro] auto [body] 1fr [button] auto',
         gridGap: theme.spacing(1),
-        mt: 20,
+        mt: 14,
       }}
     >
       <Box>
-        <Typography align="center" sx={{ fontWeight: 'bold' }}>
+        <Typography variant="h2" align="center" gutterBottom>
           Meet your farmers!
         </Typography>
         <Typography align="center">
@@ -64,8 +62,8 @@ const FarmersPage = () => {
           overflowY: 'auto',
           display: 'grid',
           gridTemplateRows: '[search] auto [content] minmax(0,1fr)',
-          gridGap: theme.spacing(1),
-          paddingTop: theme.spacing(1),
+          gridGap: theme.spacing(2),
+          paddingTop: theme.spacing(2),
         }}
       >
         <Container>
@@ -81,14 +79,11 @@ const FarmersPage = () => {
             options={[
               ...new Set(
                 farmerData.map(
-                  (farmerItem) =>
-                    `${farmerItem.first_name} ${farmerItem.last_name}`
-                )
+                  (farmerItem) => `${farmerItem.first_name} ${farmerItem.last_name}`,
+                ),
               ),
             ]}
-            renderInput={(params) => {
-              return <TextField {...params} label="Farmer Search" />;
-            }}
+            renderInput={(params) => <TextField {...params} label="Farmer Search" />}
           />
         </Container>
         <Container maxWidth="lg">
@@ -97,12 +92,12 @@ const FarmersPage = () => {
               farmers={
                 farmer
                   ? farmerData.filter((farmerMockData) => {
-                      const [firstName, lastName] = farmer.split(' ');
-                      return (
-                        farmerMockData.first_name === firstName &&
-                        farmerMockData.last_name === lastName
-                      );
-                    })
+                    const [firstName, lastName] = farmer.split(' ');
+                    return (
+                      farmerMockData.first_name === firstName
+                        && farmerMockData.last_name === lastName
+                    );
+                  })
                   : farmerData
               }
               index={numberOfProfiles}
