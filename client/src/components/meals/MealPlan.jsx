@@ -83,11 +83,11 @@ const MealPlan = () => {
   return (
     <>
       {(!loggedIn || !isMember) ? (
-        <Typography variant="h1" align="center">
-          Be Sure to Subscibe!
+        <Typography variant="h2" align="center">
+          Be Sure to Subscribe!
         </Typography>
       ) : (
-        <Typography variant="h1" align="center">
+        <Typography variant="h2" align="center">
           Select from the menu with a click!
         </Typography>
       )}

@@ -153,7 +153,7 @@ const App = () => {
               <Avatar
                 align="center"
                 variant="h5"
-                sx={{ mb: 3, mt: 4, ml: 3 }}
+                sx={{ mb: 3, mt: 4, ml: 60 }}
               />
             </Link>
             <AuthButton />
