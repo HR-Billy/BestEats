@@ -52,8 +52,6 @@ const status = () => {
     str += `${i + 1},${randomText()},${randomDate()},${randomAuthId()}\n`;
   }
 
-  str = str.slice(0, str.length - 1);
-
   return str;
 };
 
@@ -69,6 +67,7 @@ const userMeals = () => {
       str += `${i + 1},${dateOrdered()},${dateExpectedNow()},${random1toN(9)},${randomAuthId()}\n`;
     }
   }
+
 
   return str;
 };
