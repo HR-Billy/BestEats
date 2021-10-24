@@ -33,7 +33,7 @@
 ## About The Project
 
 <div align="center">
-  <img src="images/home.png" alt="Home Page Screeshot" >
+  <img src="images/home.png" alt="Home Page Screenshot" >
 </div>
 
 This project was a brief 1-week sprint where our team completed an MVP for Best Eats, a one-stop grocery shop for working adults and young families. This website is designed to assist those with little to no time to shop for groceries find a quick alternative while maintaining a healthy lifestyle. Aside from grocery shopping, this website offers meal plans, nutrition tracking, avenue to local farmers, and more.
@@ -48,7 +48,7 @@ This project was a brief 1-week sprint where our team completed an MVP for Best 
       <img src="images/login.png" alt="Login Screenshot" width="500">
     </td>
     <td>
-      <b>User authentication:</b> Users must sign up and be authenticated to subscribe to meal plans, purchase groceries, and access user profiles where they can keeping track of how they feel on a daily-basis. Users are authenticated through Auth0.
+      <b>User Authentication:</b> Users must sign up and be authenticated to subscribe to meal plans, purchase groceries, and access user profiles where they can keep track of how they feel on a daily-basis. Users are authenticated through Auth0.
     </td>
   </tr>
   <tr>
@@ -72,7 +72,7 @@ This project was a brief 1-week sprint where our team completed an MVP for Best 
       <img src="images/grocery.png" alt="Grocery Page Screenshot" width="500">
     </td>
     <td>
-      <b>Grocery Store:</b>  The store displays grocery items availabe for purchase. The items available will be what local farmers are able to provide. This store is separate from other grocery chains and is the main feature that facilitates interaction between farmers and users.
+      <b>Grocery Store:</b>  The store displays grocery items available for purchase. The items available will be what local farmers are able to provide. This store is separate from other grocery chains and is the main feature that facilitates interaction between farmers and users.
     </td>
   </tr>
   <tr>
